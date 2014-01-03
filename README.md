@@ -1,4 +1,4 @@
-dota2handbook
-=============
+Dota2Handbook
+==========================
 
-LungoJS, AngularJS, PhoneGap
+Simple dota 2 guide
