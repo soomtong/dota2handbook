@@ -1,0 +1,112 @@
+<side-menus>
+    <pane side-menu-content>
+        <div class="bar bar-header bar-energized">
+            <button class="button icon ion-search" ng-click="openLeft()"></button>
+            <h1 class="title">Hero</h1>
+            <button class="button button-energized">Item</button>
+        </div>
+        <content has-header="true">
+            <div class="list hero-list">
+                <label class="item item-input">
+                    <i class="icon ion-search placeholder-icon"></i>&nbsp;
+                    <input type="text" placeholder="검색어" ng-model="searchKeyword">
+                </label>
+                <div class="item item-divider hero-str">
+                    힘 영웅(Strength)
+                </div>
+                <a ng-repeat="hero in heros_strength | filter:searchKeyword" class="item item-thumbnail-left" href="#/hero/{{hero.id}}">
+                    <img ng-src="{{hero.pic}}"> <!--256*144 128*72-->
+                    <h2>{{hero.title}} <span class="subtitle">{{hero.subtitle}}</span></h2>
+                    <p><span class="hero-type" ng-repeat="type in hero.display_type">{{type}}</span></p>
+                    <p class="hero-stat" ng-show="heroStatType">
+                        <span class="hero-stat-attack">{{hero.attack}}</span>
+                        <span class="hero-stat-speed">{{hero.speed}}</span>
+                        <span class="hero-stat-armor">{{hero.armor}}</span>
+                        <span class="hero-stat-range">{{hero.range}}</span>
+                        <span class="hero-stat-sight">{{hero.sight}}</span>
+                    </p>
+                    <p class="hero-stat" ng-hide="heroStatType">
+                        <span class="hero-stat-str">{{hero.stat_str}}</span>
+                        <span class="hero-stat-agi">{{hero.stat_agi}}</span>
+                        <span class="hero-stat-int">{{hero.stat_int}}</span>
+                    </p>
+                </a>
+                <div class="item item-divider hero-agi">
+                    민첩 영웅(Agility)
+                </div>
+                <a ng-repeat="hero in heros_agility | filter:searchKeyword" class="item item-thumbnail-left" href="#/hero/{{hero.id}}">
+                    <img ng-src="{{hero.pic}}"> <!--256*144 128*72-->
+                    <h2>{{hero.title}} <span class="subtitle">{{hero.subtitle}}</span></h2>
+                    <p><span class="hero-type" ng-repeat="type in hero.display_type">{{type}}</span></p>
+                    <p class="hero-stat" ng-show="heroStatType">
+                        <span class="hero-stat-attack">{{hero.attack}}</span>
+                        <span class="hero-stat-speed">{{hero.speed}}</span>
+                        <span class="hero-stat-armor">{{hero.armor}}</span>
+                        <span class="hero-stat-range">{{hero.range}}</span>
+                        <span class="hero-stat-sight">{{hero.sight}}</span>
+                    </p>
+                    <p class="hero-stat" ng-hide="heroStatType">
+                        <span class="hero-stat-str">{{hero.stat_str}}</span>
+                        <span class="hero-stat-agi">{{hero.stat_agi}}</span>
+                        <span class="hero-stat-int">{{hero.stat_int}}</span>
+                    </p>
+                </a>
+                <div class="item item-divider hero-int">
+                    지능 영웅(Intelligence)
+                </div>
+                <a ng-repeat="hero in heros_intelligence | filter:searchKeyword" class="item item-thumbnail-left" href="#/hero/{{hero.id}}">
+                    <img ng-src="{{hero.pic}}"> <!--256*144 128*72-->
+                    <h2>{{hero.title}} <span class="subtitle">{{hero.subtitle}}</span></h2>
+                    <p><span class="hero-type" ng-repeat="type in hero.display_type">{{type}}</span></p>
+                    <p class="hero-stat" ng-show="heroStatType">
+                        <span class="hero-stat-attack">{{hero.attack}}</span>
+                        <span class="hero-stat-speed">{{hero.speed}}</span>
+                        <span class="hero-stat-armor">{{hero.armor}}</span>
+                        <span class="hero-stat-range">{{hero.range}}</span>
+                        <span class="hero-stat-sight">{{hero.sight}}</span>
+                    </p>
+                    <p class="hero-stat" ng-hide="heroStatType">
+                        <span class="hero-stat-str">{{hero.stat_str}}</span>
+                        <span class="hero-stat-agi">{{hero.stat_agi}}</span>
+                        <span class="hero-stat-int">{{hero.stat_int}}</span>
+                    </p>
+                </a>
+            </div>
+        </content>
+    </pane>
+
+    <side-menu side="left">
+        <header class="bar bar-header bar-energized">
+            <h1 class="title">검색 필터</h1>
+        </header>
+        <content has-header="true">
+            <ul class="list">
+                <li class="">
+                    <label class="item item-input hide">
+                        <i class="icon ion-search placeholder-icon"></i>&nbsp;
+                        <input type="text" placeholder="검색어" ng-model="searchHero">
+                    </label>
+                </li>
+                <li class="item item-divider">공격 분류</li>
+                <li class="item item-checkbox" ng-repeat="item in filters_att_type">
+                    <label class="checkbox">
+                        <input type="checkbox" name="{{item.id}}">
+                    </label>{{item.text}}
+                </li>
+                <li class="item item-divider">역할 분류</li>
+                <li class="item item-checkbox" ng-repeat="item in filters_rule_type">
+                    <label class="checkbox">
+                        <input type="checkbox" name="{{item.id}}">
+                    </label>{{item.text}}
+                </li>
+                <li class="item item-divider">스킬 분류</li>
+                <li class="item item-checkbox" ng-repeat="item in filters_skill_type">
+                    <label class="checkbox">
+                        <input type="checkbox" name="{{item.id}}">
+                    </label>{{item.text}}
+                </li>
+            </ul>
+        </content>
+    </side-menu>
+</side-menus>
+

@@ -1,0 +1,115 @@
+#splash-page {
+  background-color: white;
+}
+#logo {
+  background: url('../img/ionic.png') no-repeat transparent;
+  width: 128px;
+  height: 128px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -64px 0px 0px -64px;
+}
+
+/* patch */
+.item-thumbnail-left > img:first-child, .item-thumbnail-left > .item-image {
+  max-width: 128px;
+  max-height: 72px;
+}
+.item-thumbnail-left {
+  padding-left: 146px;
+  min-height: 92px;
+}
+.item-thumbnail-left p {
+  margin: 0;
+}
+
+/* hero */
+.hero-list {
+  .subtitle {
+    font-size: 0.8em;
+    color: #8697aa;
+  }
+  .hero-type {
+    padding: 0 2px;
+    font-size: 0.9em;
+    color: #145dd7;
+    letter-spacing: -1px;
+  }
+  .hero-type:first-child {
+    padding-left: 0;
+  }
+
+  .hero-str {
+    background: url('/data/images/heropedia/overviewicon_str.png') no-repeat 10px 60%;
+    background-size: 25px;
+    padding-left: 2.5em;
+  }
+  .hero-agi {
+    background: url('/data/images/heropedia/overviewicon_agi.png') no-repeat 10px 60%;
+    background-size: 25px;
+    padding-left: 2.5em;
+  }
+  .hero-int {
+    background: url('/data/images/heropedia/overviewicon_int.png') no-repeat 10px 60%;
+    background-size: 25px;
+    padding-left: 2.5em;
+  }
+}
+
+.hero-stat {
+  span {
+    padding-right: 0.2em;
+    font-size: 0.9em;
+    letter-spacing: -1px;
+  }
+  .hero-stat-str {
+    background: url('/data/images/heropedia/overviewicon_str.png') no-repeat 0px 50%;
+    background-size: 15px;
+    padding-left: 1.5em;
+    color: #a85141;
+  }
+  .hero-stat-agi {
+    background: url('/data/images/heropedia/overviewicon_agi.png') no-repeat 0px 50%;
+    background-size: 15px;
+    padding-left: 1.5em;
+    color: #49a840;
+  }
+  .hero-stat-int {
+    background: url('/data/images/heropedia/overviewicon_int.png') no-repeat 0px 50%;
+    background-size: 15px;
+    padding-left: 1.5em;
+    color: #429dc4;
+  }
+  .hero-stat-attack {
+    background: url('/data/images/heropedia/overviewicon_attack.png') no-repeat 0% 50%;
+    background-size: 16px;
+    padding-left: 1.5em;
+    color: #cc2511;
+  }
+  .hero-stat-speed {
+    background: url('/data/images/heropedia/overviewicon_speed.png') no-repeat 0% 50%;
+    background-size: 20px;
+    padding-left: 1.6em;
+    color: #478f24;
+  }
+  .hero-stat-armor {
+    background: url('/data/images/heropedia/overviewicon_defense.png') no-repeat 0% 50%;
+    background-size: 12px;
+    padding-left: 1.1em;
+    color: #d39511;
+  }
+  .hero-stat-range {
+    background: url('/data/images/heropedia/meanicons_55-32.png') no-repeat 0% 50%;
+    background-size: 14px;
+    padding-left: 1.3em;
+    color: #187c93;
+  }
+  .hero-stat-sight {
+    background: url('/data/images/heropedia/view_eye_sight-32.png') no-repeat 0% 50%;
+    background-size: 12px;
+    padding-left: 1.1em;
+    color: #187c93;
+  }
+}
+
