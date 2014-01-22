@@ -17,47 +17,47 @@ angular.module('dota2handbook.services', ['ngResource'])
     })
     .factory('HeroFilters', function () {
         var filters_att_type = [
-            {id: "melee", text: "근거리(Melee)"},
-            {id: "range", text: "원거리(Range)"}
+            {id: "melee", text: "근거리(Melee)", selected: false},
+            {id: "range", text: "원거리(Range)", selected: false}
         ];
-        var filters_rule_type = [
-            {id: "carry", text: "캐리(Carry)"},
-            {id: "disable", text: "무력화(Disabler)"},
-            {id: "lane-supp", text: "전선지원(Lane Supporter)"},
-            {id: "init", text: "전투개시자(Initiator)"},
-            {id: "jungle", text: "정글러(Jungler)"},
-            {id: "supp", text: "지원(Support)"},
-            {id: "durable", text: "생존력(Durable)"},
-            {id: "push", text: "압박(Pusher)"},
-            {id: "nuke", text: "누커(Nuker)"},
-            {id: "escape", text: "도주기(Escape)"}
+        var filters_role_type = [
+            {id: "carry", text: "캐리(Carry)", selected: false},
+            {id: "disable", text: "무력화(Disabler)", selected: false},
+            {id: "lane", text: "전선지원(Lane Supporter)", selected: false},
+            {id: "init", text: "전투개시자(Initiator)", selected: false},
+            {id: "jungle", text: "정글러(Jungler)", selected: false},
+            {id: "supp", text: "지원(Support)", selected: false},
+            {id: "durable", text: "생존력(Durable)", selected: false},
+            {id: "push", text: "압박(Pusher)", selected: false},
+            {id: "nuke", text: "누커(Nuker)", selected: false},
+            {id: "escape", text: "도주기(Escape)", selected: false}
         ];
         var filters_skill_type = [
-            {id: "", text: "실명"},
-            {id: "", text: "속박"},
-            {id: "", text: "기절"},
-            {id: "", text: "밀어내기"},
-            {id: "", text: "둔화"},
-            {id: "", text: "은신"},
-            {id: "", text: "가두기"},
-            {id: "", text: "돌진"},
-            {id: "", text: "침묵"},
-            {id: "", text: "치유"},
-            {id: "", text: "집중기술"},
-            {id: "", text: "도발"},
-            {id: "", text: "소환"},
-            {id: "", text: "띄우기"},
-            {id: "", text: "무적"},
-            {id: "", text: "변이"},
-            {id: "", text: "순간이동"},
-            {id: "", text: "방어력 감소"},
-            {id: "", text: "마법방어력 감소"},
-            {id: "", text: "마나번"},
-            {id: "", text: "능력치 변화"},
-            {id: "", text: "끌어오기"},
-            {id: "", text: "흡혈"},
-            {id: "", text: "치명타"},
-            {id: "", text: "피해반사"}
+            {id: "", text: "실명", selected: false},
+            {id: "", text: "속박", selected: false},
+            {id: "", text: "기절", selected: false},
+            {id: "", text: "밀어내기", selected: false},
+            {id: "", text: "둔화", selected: false},
+            {id: "", text: "은신", selected: false},
+            {id: "", text: "가두기", selected: false},
+            {id: "", text: "돌진", selected: false},
+            {id: "", text: "침묵", selected: false},
+            {id: "", text: "치유", selected: false},
+            {id: "", text: "집중기술", selected: false},
+            {id: "", text: "도발", selected: false},
+            {id: "", text: "소환", selected: false},
+            {id: "", text: "띄우기", selected: false},
+            {id: "", text: "무적", selected: false},
+            {id: "", text: "변이", selected: false},
+            {id: "", text: "순간이동", selected: false},
+            {id: "", text: "방어력 감소", selected: false},
+            {id: "", text: "마법방어력 감소", selected: false},
+            {id: "", text: "마나번", selected: false},
+            {id: "", text: "능력치 변화", selected: false},
+            {id: "", text: "끌어오기", selected: false},
+            {id: "", text: "흡혈", selected: false},
+            {id: "", text: "치명타", selected: false},
+            {id: "", text: "피해반사", selected: false}
         ];
         var searchKeyword = '';
 
@@ -66,8 +66,8 @@ angular.module('dota2handbook.services', ['ngResource'])
             getAttackType: function () {
                 return filters_att_type;
             },
-            getRuleType: function () {
-                return filters_rule_type;
+            getRoleType: function () {
+                return filters_role_type;
             },
             getSkillType: function () {
                 return filters_skill_type;
