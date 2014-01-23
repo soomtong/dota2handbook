@@ -34,42 +34,38 @@ angular.module('dota2handbook.controllers', [])
         }, true);
 
         $scope.typeQuery = function (item) {
-            var index, type;
+            var attackResult = true;
+            var roleResult = true;
+            var skillResult = true;
             if ($scope.searchFilter.attackType.length) {
-                for (index in $scope.searchFilter.attackType) {
-                    type = $scope.searchFilter.attackType[index];
-                    return (item['hero_type'].indexOf(type) > -1);
-                }
+                var attackPattern = $scope.searchFilter.attackType.map(function (type) {
+                        return item['hero_type'].indexOf(type) > -1;
+                    }).filter(function (result) {
+                        return result;
+                    });
+
+                attackResult = $scope.searchFilter.attackType.length == attackPattern.length;
             }
             if ($scope.searchFilter.roleType.length) {
-                for (index in $scope.searchFilter.roleType) {
-                    type = $scope.searchFilter.roleType[index];
-                    return (item['hero_type'].indexOf(type) > -1);
-                }
+                var rolePattern = $scope.searchFilter.roleType.map(function (type) {
+                        return item['hero_type'].indexOf(type) > -1;
+                    }).filter(function (result) {
+                        return result;
+                    });
+
+                roleResult = $scope.searchFilter.roleType.length == rolePattern.length;
             }
             if ($scope.searchFilter.skillType.length) {
-                for (index in $scope.searchFilter.skillType) {
-                    type = $scope.searchFilter.skillType[index];
-                    return (item['hero_type'].indexOf(type) > -1);
-                }
+                var skillPattern = $scope.searchFilter.roleType.map(function (type) {
+                        return item['hero_type'].indexOf(type) > -1;
+                    }).filter(function (result) {
+                        return result;
+                    });
+
+                skillResult = $scope.searchFilter.skillType.length == skillPattern.length;
             }
-            if (!($scope.searchFilter.attackType.length + $scope.searchFilter.roleType.length + $scope.searchFilter.skillType.length)) return true;
-        };
 
-        // http://stackoverflow.com/questions/14514461/how-can-angularjs-bind-to-list-of-checkbox-values
-        $scope.toggleAttType = function () {
-//            console.log($scope.searchFilter.attackType['melee']);
-//            console.log($scope.searchFilter.attackType['range']);
-//            console.log($scope.searchFilter.typeHolder);
-//            var typeHolder = $scope.searchFilter.typeHolder;
-//            var index = typeHolder.indexOf(type);
-
-//            if (index > -1) {
-//                typeHolder.splice(index, 1);
-//            } else {
-//                typeHolder.push(type);
-//            }
-//            console.log(typeHolder);
+            return attackResult && roleResult && skillResult;
         };
 
         $scope.openLeft = function() {
