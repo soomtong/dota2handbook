@@ -22,14 +22,16 @@ angular.module('dota2handbook.services', ['ngResource'])
         ];
         var filters_role_type = [
             {id: "carry", text: "캐리(Carry)", selected: false},
-            {id: "disable", text: "무력화(Disabler)", selected: false},
-            {id: "lane", text: "전선지원(Lane Supporter)", selected: false},
-            {id: "init", text: "전투개시자(Initiator)", selected: false},
-            {id: "jungle", text: "정글러(Jungler)", selected: false},
+            {id: "hard", text: "하드캐리(Hard Carry)", selected: false},
             {id: "supp", text: "지원(Support)", selected: false},
+            {id: "tank", text: "탱커(Tank)", selected: false},
+            {id: "init", text: "전투개시자(Initiator)", selected: false},
+            {id: "nuke", text: "누커(Nuker)", selected: false},
+            {id: "disable", text: "무력화(Disabler)", selected: false},
+            {id: "jungle", text: "정글러(Jungler)", selected: false},
+            {id: "lane", text: "전선지원(Lane Supporter)", selected: false},
             {id: "durable", text: "생존력(Durable)", selected: false},
             {id: "push", text: "압박(Pusher)", selected: false},
-            {id: "nuke", text: "누커(Nuker)", selected: false},
             {id: "escape", text: "도주기(Escape)", selected: false}
         ];
         var filters_skill_type = [
@@ -44,7 +46,7 @@ angular.module('dota2handbook.services', ['ngResource'])
             {id: "침", text: "침묵", selected: false},
             {id: "힐", text: "치유", selected: false},
             {id: "집", text: "집중기술", selected: false},
-            {id: "도", text: "도발", selected: false},
+            {id: "발", text: "도발", selected: false},
             {id: "환", text: "소환", selected: false},
             {id: "띄", text: "띄우기", selected: false},
             {id: "무", text: "무적", selected: false},

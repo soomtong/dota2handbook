@@ -56,8 +56,8 @@ angular.module('dota2handbook.controllers', [])
                 roleResult = $scope.searchFilter.roleType.length == rolePattern.length;
             }
             if ($scope.searchFilter.skillType.length) {
-                var skillPattern = $scope.searchFilter.roleType.map(function (type) {
-                        return item['hero_type'].indexOf(type) > -1;
+                var skillPattern = $scope.searchFilter.skillType.map(function (type) {
+                        return item['skill_type'].indexOf(type) > -1;
                     }).filter(function (result) {
                         return result;
                     });
