@@ -1,6 +1,7 @@
 angular.module('dota2handbook.controllers', [])
-    .controller('HeroListCtrl',function ($scope, $timeout, $routeParams, Heroes, HeroType, HeroFilters) {
+    .controller('HeroListCtrl',function ($scope, $timeout, $routeParams, Handbook, Heroes, HeroType, HeroFilters) {
         // filter list
+        $scope.app = Handbook;
         $scope.filters_att_type = HeroFilters.getAttackType();
         $scope.filters_role_type = HeroFilters.getRoleType();
         $scope.filters_skill_type = HeroFilters.getSkillType();
@@ -71,6 +72,9 @@ angular.module('dota2handbook.controllers', [])
         $scope.openLeft = function() {
             $scope.sideMenuController.toggleLeft();
         };
+        $scope.openRight = function() {
+            $scope.sideMenuController.toggleRight();
+        };
 
         var heroes = Heroes.all();
 
@@ -78,13 +82,13 @@ angular.module('dota2handbook.controllers', [])
 //        console.log(heroes['$promise']);
         heroes['$promise'].then(function (heroList) {
             $scope.heros_strength = heroList.filter(function (item) {
-                return item['hero_category'] == 1;
+                return item['hero_category'] == HeroType.strength;
             });
             $scope.heros_agility = heroList.filter(function (item) {
-                return item['hero_category'] == 2;
+                return item['hero_category'] == HeroType.agility;
             });
             $scope.heros_intelligence = heroList.filter(function (item) {
-                return item['hero_category'] == 3;
+                return item['hero_category'] == HeroType.intelligence;
             });
         });
 

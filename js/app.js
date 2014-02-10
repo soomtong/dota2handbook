@@ -1,3 +1,4 @@
+// cloned from https://github.com/driftyco/ionic-angular-cordova-seed
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'dota2handbook.services' is found in services.js
 // 'dota2handbook.controllers' is found in controllers.js

@@ -23,6 +23,10 @@
 .item-thumbnail-left p {
   margin: 0;
 }
+.ad-line .copyright {
+  float: none;
+  border-radius: 0px;
+}
 /* hero */
 .hero-list .subtitle {
   font-size: 0.8em;

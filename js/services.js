@@ -3,6 +3,12 @@ angular.module('dota2handbook.services', ['ngResource'])
 /**
  * A simple example service that returns some data.
  */
+    .factory('Handbook', function () {
+        return {
+            version: '1.0',
+            compatible: '6.80'
+        };
+    })
     .factory('Heroes', function ($resource) {
         return $resource('/data/:heroId.json', {}, {
             all: { method: 'GET', params: { heroId: 'heroes' }, isArray: true }
