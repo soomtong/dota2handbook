@@ -1,5 +1,45 @@
 angular.module('dota2handbook.controllers', [])
-    .controller('HeroListCtrl',function ($scope, $timeout, $routeParams, Handbook, Heroes, HeroType, HeroFilters) {
+    .controller('HeroListCtrl',function ($scope) {
+        $scope.openLeft = function() {
+            $scope.sideMenuController.toggleLeft();
+        };
+        $scope.openRight = function() {
+            $scope.sideMenuController.toggleRight();
+        };
+    })
+    .controller('HeroDetailCtrl', function ($scope, $ionicLoading, $stateParams, Heroes) {
+        $scope.showLoading();
+        $scope.hero = Heroes.get({ heroId: $stateParams.heroId });
+        $scope.hideLoading();
+    })
+    .controller('ItemListCtrl', function ($scope) {
+        $scope.openLeft = function() {
+            $scope.sideMenuController.toggleLeft();
+        };
+        $scope.openRight = function() {
+            $scope.sideMenuController.toggleRight();
+        };
+    })
+    .controller('ItemDetailCtrl', function ($scope, $stateParams, Items) {
+        $scope.item = Items.get({ itemId: $stateParams.itemId });
+    })
+    .controller('AppCtrl', function ($scope, $ionicLoading, Handbook, Heroes, HeroType, HeroFilters, Items) {
+        // loading indicator
+        $scope.showLoading = function() {
+            $scope.loading = $ionicLoading.show({
+                content: '데이터를 불러옵니다'
+            });
+        };
+        $scope.hideLoading = function(){
+            $scope.loading.hide();
+        };
+
+        $scope.goBack = function () {
+            window.history.back();
+        };
+
+        //$scope.showLoading();
+
         // filter list
         $scope.app = Handbook;
         $scope.filters_att_type = HeroFilters.getAttackType();
@@ -34,14 +74,14 @@ angular.module('dota2handbook.controllers', [])
             $scope.searchFilter.skillType = type;
         }, true);
 
-        $scope.typeQuery = function (item) {
+        $scope.heroTypeQuery = function (item) {
             var attackResult = true;
             var roleResult = true;
             var skillResult = true;
             if ($scope.searchFilter.attackType.length) {
                 var attackPattern = $scope.searchFilter.attackType.map(function (type) {
-                        return item['hero_type'].indexOf(type) > -1;
-                    }).filter(function (result) {
+                    return item['hero_type'].indexOf(type) > -1;
+                }).filter(function (result) {
                         return result;
                     });
 
@@ -49,8 +89,8 @@ angular.module('dota2handbook.controllers', [])
             }
             if ($scope.searchFilter.roleType.length) {
                 var rolePattern = $scope.searchFilter.roleType.map(function (type) {
-                        return item['hero_type'].indexOf(type) > -1;
-                    }).filter(function (result) {
+                    return item['hero_type'].indexOf(type) > -1;
+                }).filter(function (result) {
                         return result;
                     });
 
@@ -58,8 +98,8 @@ angular.module('dota2handbook.controllers', [])
             }
             if ($scope.searchFilter.skillType.length) {
                 var skillPattern = $scope.searchFilter.skillType.map(function (type) {
-                        return item['skill_type'].indexOf(type) > -1;
-                    }).filter(function (result) {
+                    return item['skill_type'].indexOf(type) > -1;
+                }).filter(function (result) {
                         return result;
                     });
 
@@ -69,17 +109,9 @@ angular.module('dota2handbook.controllers', [])
             return attackResult && roleResult && skillResult;
         };
 
-        $scope.openLeft = function() {
-            $scope.sideMenuController.toggleLeft();
-        };
-        $scope.openRight = function() {
-            $scope.sideMenuController.toggleRight();
-        };
-
         var heroes = Heroes.all();
 
-//        return value has $promise object... WTF
-//        console.log(heroes['$promise']);
+        // return value has $promise object
         heroes['$promise'].then(function (heroList) {
             $scope.heros_strength = heroList.filter(function (item) {
                 return item['hero_category'] == HeroType.strength;
@@ -92,19 +124,50 @@ angular.module('dota2handbook.controllers', [])
             });
         });
 
+        $scope.itemTypeQuery = function (item) {
+            var attackResult = true;
+            var roleResult = true;
+            var skillResult = true;
+            if ($scope.searchFilter.attackType.length) {
+                var attackPattern = $scope.searchFilter.attackType.map(function (type) {
+                    return item['hero_type'].indexOf(type) > -1;
+                }).filter(function (result) {
+                        return result;
+                    });
 
-    })
-    .controller('HeroDetailCtrl', function ($scope, $routeParams, Heroes) {
-        $scope.hero = Heroes.get({ heroId: $routeParams.heroId });
-    })
-    .controller('ItemListCtrl', function ($scope, Items) {
-        $scope.items = Items.all();
-    })
-    .controller('ItemDetailCtrl', function ($scope, $routeParams, Items) {
-        $scope.item = Items.get({ itemId: $routeParams.itemId });
-    })
-    .controller('AppCtrl', function ($scope, $routeParams, Heros) {
-        // Main app controller, empty for the example
+                attackResult = $scope.searchFilter.attackType.length == attackPattern.length;
+            }
+            if ($scope.searchFilter.roleType.length) {
+                var rolePattern = $scope.searchFilter.roleType.map(function (type) {
+                    return item['hero_type'].indexOf(type) > -1;
+                }).filter(function (result) {
+                        return result;
+                    });
+
+                roleResult = $scope.searchFilter.roleType.length == rolePattern.length;
+            }
+            if ($scope.searchFilter.skillType.length) {
+                var skillPattern = $scope.searchFilter.skillType.map(function (type) {
+                    return item['skill_type'].indexOf(type) > -1;
+                }).filter(function (result) {
+                        return result;
+                    });
+
+                skillResult = $scope.searchFilter.skillType.length == skillPattern.length;
+            }
+
+            return attackResult && roleResult && skillResult;
+        };
+
+        var items = Items.all();
+
+        items['$promise'].then(function (heroList) {
+            $scope.item_basic = heroList.filter(function (item) {
+                return item['item_category'] == HeroType.strength;
+            });
+        });
+
+        //$scope.hideLoading();
     });
 
 

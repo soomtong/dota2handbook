@@ -6,21 +6,19 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <!-- ionic css -->
-    <link href="css/ionic.css" rel="stylesheet">
+    <link href="http://code.ionicframework.com/0.9.23/css/ionic.css" rel="stylesheet">
 
     <!-- your app's css -->
     <link href="css/app.css" rel="stylesheet">
 
     <!-- ionic/angularjs scripts -->
-    <script src="js/ionic.js"></script>
-    <script src="js/angular/angular.js"></script>
+    <script src="http://code.ionicframework.com/0.9.23/js/ionic.js"></script>
+    <script src="http://code.ionicframework.com/0.9.23/js/angular/angular.js"></script>
+    <script src="http://code.ionicframework.com/0.9.23/js/angular/angular-animate.min.js"></script>
+    <script src="http://code.ionicframework.com/0.9.23/js/angular/angular-sanitize.min.js"></script>
+    <script src="http://code.ionicframework.com/0.9.23/js/angular-ui/angular-ui-router.min.js"></script>
+    <script src="http://code.ionicframework.com/0.9.23/js/ionic-angular.js"></script>
     <script src="js/angular/angular-resource.js"></script>
-    <script src="js/angular/angular-animate.js"></script>
-    <script src="js/angular/angular-route.js"></script>
-    <script src="js/angular/angular-touch.js"></script>
-    <script src="js/angular/angular-sanitize.js"></script>
-    <script src="js/angular/angular-ui-router.js"></script>
-    <script src="js/ionic-angular.js"></script>
 
     <!-- cordova script -->
     <!--<script src="cordova.js"></script>-->
@@ -32,13 +30,9 @@
 </head>
 
 <!-- 'starter' is the name of this angular module (js/app.js)-->
-<body ng-app="dota2handbook">
-
-<!-- Our navigation router with some animations set -->
-<pane nav-router animation="slide-left-right-ios7">
-
-    <!-- where the content of each page will be rendered -->
-    <ng-view></ng-view>
-</pane>
+<body ng-app="dota2handbook" animation="slide-left-right-ios7">
+<div ng-controller="AppCtrl">
+    <nav-view></nav-view>
+</div>
 </body>
 </html>

@@ -3,15 +3,15 @@
     <pane side-menu-content>
         <div class="bar bar-header bar-energized">
             <button class="button icon ion-search" ng-click="openLeft()"></button>
-            <h1 class="title">영웅 Hero</h1>
+            <h1 class="title">아이템 Item</h1>
             <button class="button button-energized" ng-click="openRight()">Menu</button>
         </div>
         <content has-header="true">
             <div class="list hero-list">
                 <div class="item item-divider hero-str">
-                    힘 영웅(Strength)
+                    기본 아이템
                 </div>
-                <a ng-repeat="hero in heros_strength | filter:heroTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/hero/{{hero.id}}">
+                <a ng-repeat="hero in item_basic | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{hero.id}}">
                     <img ng-src="{{hero.pic}}"> <!--256*144 128*72-->
                     <h2>{{hero.title}} <span class="subtitle">{{hero.subtitle}}</span></h2>
                     <p class="hero-stat">
@@ -28,28 +28,9 @@
                     </p>
                 </a>
                 <div class="item item-divider hero-agi">
-                    민첩 영웅(Agility)
+                    고급 아이템
                 </div>
-                <a ng-repeat="hero in heros_agility | filter:heroTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/hero/{{hero.id}}">
-                    <img ng-src="{{hero.pic}}"> <!--256*144 128*72-->
-                    <h2>{{hero.title}} <span class="subtitle">{{hero.subtitle}}</span></h2>
-                    <p class="hero-stat">
-                        <span class="hero-stat-str">{{hero.stat_str}}</span>
-                        <span class="hero-stat-agi">{{hero.stat_agi}}</span>
-                        <span class="hero-stat-int">{{hero.stat_int}}</span>
-                    </p>
-                    <p class="hero-stat">
-                        <span class="hero-stat-attack">{{hero.attack}}</span>
-                        <span class="hero-stat-speed">{{hero.speed}}</span>
-                        <span class="hero-stat-armor">{{hero.armor}}</span>
-                        <span class="hero-stat-range">{{hero.range}}</span>
-                        <span class="hero-stat-sight">{{hero.sight}}</span>
-                    </p>
-                </a>
-                <div class="item item-divider hero-int">
-                    지능 영웅(Intelligence)
-                </div>
-                <a ng-repeat="hero in heros_intelligence | filter:heroTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/hero/{{hero.id}}">
+                <a ng-repeat="hero in item_basic | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/hero/{{hero.id}}">
                     <img ng-src="{{hero.pic}}"> <!--256*144 128*72-->
                     <h2>{{hero.title}} <span class="subtitle">{{hero.subtitle}}</span></h2>
                     <p class="hero-stat">
