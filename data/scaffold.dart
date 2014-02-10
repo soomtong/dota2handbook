@@ -17,15 +17,16 @@ void main () {
   var herosFile = new File(heroesFileName).readAsString().then((String data) {
     List heroesData = JSON.decode(data);
 
-    var heroName, fileName, content;
+    var heroName, heroTitle, fileName, content;
     var createdFileCount = 0;
 
     for (var hero in heroesData) {
       heroName = hero['id'];
+      heroTitle = hero['title'] + ' ' + hero['subtitle'];
       fileName = heroName + '.json';
-      content = '''{ "id": "${heroName}", "title": "", "description": "" }''';
+      content = '''{ "id": "${heroName}", "title": "${heroTitle}", "description": "${heroTitle}" }''';
 
-      if (!new File(fileName).existsSync()) {
+      if (true || !new File(fileName).existsSync()) {
         new File(fileName).writeAsStringSync(content);
         createdFileCount++;
       }
