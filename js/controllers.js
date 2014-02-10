@@ -1,47 +1,13 @@
 angular.module('dota2handbook.controllers', [])
-    .controller('HeroListCtrl',function ($scope) {
+    .controller('HeroListCtrl',function ($scope, HeroFilters) {
         $scope.openLeft = function() {
             $scope.sideMenuController.toggleLeft();
         };
         $scope.openRight = function() {
             $scope.sideMenuController.toggleRight();
         };
-    })
-    .controller('HeroDetailCtrl', function ($scope, $ionicLoading, $stateParams, Heroes) {
-        $scope.showLoading();
-        $scope.hero = Heroes.get({ heroId: $stateParams.heroId });
-        $scope.hideLoading();
-    })
-    .controller('ItemListCtrl', function ($scope) {
-        $scope.openLeft = function() {
-            $scope.sideMenuController.toggleLeft();
-        };
-        $scope.openRight = function() {
-            $scope.sideMenuController.toggleRight();
-        };
-    })
-    .controller('ItemDetailCtrl', function ($scope, $stateParams, Items) {
-        $scope.item = Items.get({ itemId: $stateParams.itemId });
-    })
-    .controller('AppCtrl', function ($scope, $ionicLoading, Handbook, Heroes, HeroType, HeroFilters, Items) {
-        // loading indicator
-        $scope.showLoading = function() {
-            $scope.loading = $ionicLoading.show({
-                content: '데이터를 불러옵니다'
-            });
-        };
-        $scope.hideLoading = function(){
-            $scope.loading.hide();
-        };
-
-        $scope.goBack = function () {
-            window.history.back();
-        };
-
-        //$scope.showLoading();
 
         // filter list
-        $scope.app = Handbook;
         $scope.filters_att_type = HeroFilters.getAttackType();
         $scope.filters_role_type = HeroFilters.getRoleType();
         $scope.filters_skill_type = HeroFilters.getSkillType();
@@ -108,21 +74,59 @@ angular.module('dota2handbook.controllers', [])
 
             return attackResult && roleResult && skillResult;
         };
+    })
+    .controller('HeroDetailCtrl', function ($scope, $ionicLoading, $stateParams, Heroes) {
+        $scope.openLeft = function() {
+            window.history.back();
+        };
+        $scope.openRight = function() {
+            $scope.sideMenuController.toggleRight();
+        };
 
-        var heroes = Heroes.all();
+        $scope.showLoading();
+        $scope.hero = Heroes.get({ heroId: $stateParams.heroId });
+        $scope.hideLoading();
+    })
+    .controller('ItemListCtrl', function ($scope, HeroFilters) {
+        $scope.openLeft = function() {
+            $scope.sideMenuController.toggleLeft();
+        };
+        $scope.openRight = function() {
+            $scope.sideMenuController.toggleRight();
+        };
 
-        // return value has $promise object
-        heroes['$promise'].then(function (heroList) {
-            $scope.heros_strength = heroList.filter(function (item) {
-                return item['hero_category'] == HeroType.strength;
+        // filter list
+        $scope.filters_att_type = HeroFilters.getAttackType();
+        $scope.filters_role_type = HeroFilters.getRoleType();
+        $scope.filters_skill_type = HeroFilters.getSkillType();
+
+        $scope.searchFilter = {
+            attackType: [],
+            roleType: [],
+            skillType: []
+        };
+
+        $scope.$watch('filters_att_type', function () {
+            var type = [];
+            angular.forEach($scope.filters_att_type, function (value) {
+                if (value.selected) type.push(value.id);
             });
-            $scope.heros_agility = heroList.filter(function (item) {
-                return item['hero_category'] == HeroType.agility;
+            $scope.searchFilter.attackType = type;
+        }, true);
+        $scope.$watch('filters_role_type', function () {
+            var type = [];
+            angular.forEach($scope.filters_role_type, function (value) {
+                if (value.selected) type.push(value.id);
             });
-            $scope.heros_intelligence = heroList.filter(function (item) {
-                return item['hero_category'] == HeroType.intelligence;
+            $scope.searchFilter.roleType = type;
+        }, true);
+        $scope.$watch('filters_skill_type', function () {
+            var type = [];
+            angular.forEach($scope.filters_skill_type, function (value) {
+                if (value.selected) type.push(value.id);
             });
-        });
+            $scope.searchFilter.skillType = type;
+        }, true);
 
         $scope.itemTypeQuery = function (item) {
             var attackResult = true;
@@ -158,6 +162,49 @@ angular.module('dota2handbook.controllers', [])
 
             return attackResult && roleResult && skillResult;
         };
+
+    })
+    .controller('ItemDetailCtrl', function ($scope, $stateParams, Items) {
+        $scope.openLeft = function() {
+            window.history.back();
+        };
+        $scope.openRight = function() {
+            $scope.sideMenuController.toggleRight();
+        };
+
+        $scope.showLoading();
+        $scope.item = Items.get({ itemId: $stateParams.itemId });
+        $scope.hideLoading();
+    })
+    .controller('AppCtrl', function ($scope, $ionicLoading, Handbook, Heroes, HeroType, Items) {
+        // loading indicator
+        $scope.showLoading = function() {
+            $scope.loading = $ionicLoading.show({
+                content: '데이터를 불러옵니다'
+            });
+        };
+        $scope.hideLoading = function(){
+            $scope.loading.hide();
+        };
+
+        //$scope.showLoading();
+
+        $scope.app = Handbook;
+
+        var heroes = Heroes.all();
+
+        // return value has $promise object
+        heroes['$promise'].then(function (heroList) {
+            $scope.heros_strength = heroList.filter(function (item) {
+                return item['hero_category'] == HeroType.strength;
+            });
+            $scope.heros_agility = heroList.filter(function (item) {
+                return item['hero_category'] == HeroType.agility;
+            });
+            $scope.heros_intelligence = heroList.filter(function (item) {
+                return item['hero_category'] == HeroType.intelligence;
+            });
+        });
 
         var items = Items.all();
 

@@ -6,7 +6,9 @@ angular.module('dota2handbook.services', ['ngResource'])
     .factory('Handbook', function () {
         return {
             version: '1.0',
-            compatible: '6.80'
+            compatible: '6.80',
+            heroFilter: false,
+            itemFilter: false
         };
     })
     .factory('Heroes', function ($resource) {
