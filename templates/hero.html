@@ -5,10 +5,90 @@
             <h1 class="title">{{ hero.title }}</h1>
             <button class="button icon ion-navicon-round" ng-click="openRight()"></button>
         </div>
-        <content has-header="true" padding="true">
-            {{ hero.description }}
+        <content has-header="true">
+            <div class="hero-content">
+                {{ hero.description }}
+            </div>
+            <div class="google">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- 도타2핸드북 -->
+                <ins class="adsbygoogle"
+                     style="display:inline-block;width:320px;height:50px"
+                     data-ad-client="ca-pub-1102159590964555"
+                     data-ad-slot="2780924992"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
         </content>
     </pane>
+
+    <side-menu side="left">
+        <header class="bar bar-header bar-energized">
+            <h1 class="title">영웅 Hero</h1>
+        </header>
+        <content has-header="true">
+            <div class="list hero-list">
+                <div class="item item-divider hero-str">
+                    힘 영웅(Strength)
+                </div>
+                <a ng-repeat="hero in heros_strength | filter:heroTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/hero/{{hero.id}}">
+                    <img ng-src="{{hero.pic}}"> <!--256*144 128*72-->
+                    <h2>{{hero.title}} <span class="subtitle">{{hero.subtitle}}</span></h2>
+                    <p class="hero-stat">
+                        <span class="hero-stat-str">{{hero.stat_str}}</span>
+                        <span class="hero-stat-agi">{{hero.stat_agi}}</span>
+                        <span class="hero-stat-int">{{hero.stat_int}}</span>
+                    </p>
+                    <p class="hero-stat">
+                        <span class="hero-stat-attack">{{hero.attack}}</span>
+                        <span class="hero-stat-speed">{{hero.speed}}</span>
+                        <span class="hero-stat-armor">{{hero.armor}}</span>
+                        <span class="hero-stat-range">{{hero.range}}</span>
+                        <span class="hero-stat-sight">{{hero.sight}}</span>
+                    </p>
+                </a>
+                <div class="item item-divider hero-agi">
+                    민첩 영웅(Agility)
+                </div>
+                <a ng-repeat="hero in heros_agility | filter:heroTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/hero/{{hero.id}}">
+                    <img ng-src="{{hero.pic}}"> <!--256*144 128*72-->
+                    <h2>{{hero.title}} <span class="subtitle">{{hero.subtitle}}</span></h2>
+                    <p class="hero-stat">
+                        <span class="hero-stat-str">{{hero.stat_str}}</span>
+                        <span class="hero-stat-agi">{{hero.stat_agi}}</span>
+                        <span class="hero-stat-int">{{hero.stat_int}}</span>
+                    </p>
+                    <p class="hero-stat">
+                        <span class="hero-stat-attack">{{hero.attack}}</span>
+                        <span class="hero-stat-speed">{{hero.speed}}</span>
+                        <span class="hero-stat-armor">{{hero.armor}}</span>
+                        <span class="hero-stat-range">{{hero.range}}</span>
+                        <span class="hero-stat-sight">{{hero.sight}}</span>
+                    </p>
+                </a>
+                <div class="item item-divider hero-int">
+                    지능 영웅(Intelligence)
+                </div>
+                <a ng-repeat="hero in heros_intelligence | filter:heroTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/hero/{{hero.id}}">
+                    <img ng-src="{{hero.pic}}"> <!--256*144 128*72-->
+                    <h2>{{hero.title}} <span class="subtitle">{{hero.subtitle}}</span></h2>
+                    <p class="hero-stat">
+                        <span class="hero-stat-str">{{hero.stat_str}}</span>
+                        <span class="hero-stat-agi">{{hero.stat_agi}}</span>
+                        <span class="hero-stat-int">{{hero.stat_int}}</span>
+                    </p>
+                    <p class="hero-stat">
+                        <span class="hero-stat-attack">{{hero.attack}}</span>
+                        <span class="hero-stat-speed">{{hero.speed}}</span>
+                        <span class="hero-stat-armor">{{hero.armor}}</span>
+                        <span class="hero-stat-range">{{hero.range}}</span>
+                        <span class="hero-stat-sight">{{hero.sight}}</span>
+                    </p>
+                </a>
+            </div>
+        </content>
+    </side-menu>
 
     <side-menu side="right">
         <header class="bar bar-header bar-energized">
