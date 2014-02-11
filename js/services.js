@@ -82,10 +82,70 @@ angular.module('dota2handbook.services', ['ngResource'])
             getSkillType: function () {
                 return filters_skill_type;
             }
-        }
+        };
     })
     .factory('Items', function ($resource) {
         return $resource('/data/items/:itemId.json', {}, {
             all: { method: 'GET', params: { itemId: 'items' }, isArray: true }
         });
-    });
+    })
+    .factory('ItemType', function () {
+        return {
+            consumable: 1,
+            attribute: 2,
+            armament: 3,
+            arcane: 4,
+            common: 5,
+            support: 6,
+            caster: 7,
+            weapon: 8,
+            armor: 9,
+            artifact: 10,
+            secret: 11,
+            etc: 12 // roshan, rune
+        };
+    })
+    .factory('ItemFilters', function () {
+        var filter_grade_type = [
+            {id: "consumable", text: "소모품", selected: false},
+            {id: "attribute", text: "능력치", selected: false},
+            {id: "armament", text: "기본장비", selected: false},
+            {id: "secret", text: "비밀상점", selected: false},
+            {id: "arcane", text: "마법장비", selected: false},
+            {id: "common", text: "일반", selected: false},
+            {id: "support", text: "보조", selected: false},
+            {id: "caster", text: "마법", selected: false},
+            {id: "weapon", text: "무기", selected: false},
+            {id: "armor", text: "방어구", selected: false},
+            {id: "artifact", text: "공예품", selected: false},
+            {id: "roshan", text: "로샨", selected: false},
+            {id: "rune", text: "룬", selected: false}
+        ];
+        var filter_group_type = [
+            {id: "basic", text: "일반 아이템", selected: false},
+            {id: "upgrade", text: "고급 아이템", selected: false},
+            {id: "side", text: "사이드 상점", selected: false},
+            {id: "stat", text: "기본 스텟", selected: false},
+            {id: "attack", text: "공격", selected: false},
+            {id: "speed", text: "속도", selected: false},
+            {id: "life", text: "생존", selected: false}
+        ];
+        var filter_spec_type = [
+            {id: "power", text: "힘", selected: false}
+        ];
+        var searchKeyword = '';
+
+        return {
+            keyword: searchKeyword,
+            getGradeType: function () {
+                return filter_grade_type;
+            },
+            getGroupType: function () {
+                return filter_group_type;
+            },
+            getSpecType: function () {
+                return filter_spec_type;
+            }
+        };
+    })
+;

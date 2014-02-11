@@ -2,8 +2,8 @@
     {
         "id": "item1", "title": "아이템", "subtitle": "Earthshaker",
         "pic": "/data/images/heroes/earthshaker_full.png",
-        "item_category": 1, "hero_type": "melee,init,disable,supp,lane",
-        "skill_type": "절가",
+        "item_category": 1, "item_type": "consumable,basic",
+        "spec_type": "힘",
         "display_type": ["근접","전투 개시자","무력화","지원","전선 지원"],
         "stat_str": "22+2.5", "stat_agi": "12+1.5", "stat_int": "16+1.8",
         "speed": "300", "armor": "2.68", "attack": "46-56", "range": "128", "sight": "18/8"
