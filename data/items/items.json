@@ -1,7 +1,7 @@
 [
     {
         "id": "item1", "title": "아이템", "subtitle": "Earthshaker",
-        "pic": "/data/images/heroes/earthshaker_full.png",
+        "pic": "data/images/heroes/earthshaker_full.png",
         "item_category": 1, "item_type": "consumable,basic",
         "spec_type": "힘",
         "display_type": ["근접","전투 개시자","무력화","지원","전선 지원"],

@@ -12,7 +12,7 @@ angular.module('dota2handbook.services', ['ngResource'])
         };
     })
     .factory('Heroes', function ($resource) {
-        return $resource('/data/heroes/:heroId.json', {}, {
+        return $resource('data/heroes/:heroId.json', {}, {
             all: { method: 'GET', params: { heroId: 'heroes' }, isArray: true }
         });
     })
@@ -85,7 +85,7 @@ angular.module('dota2handbook.services', ['ngResource'])
         };
     })
     .factory('Items', function ($resource) {
-        return $resource('/data/items/:itemId.json', {}, {
+        return $resource('data/items/:itemId.json', {}, {
             all: { method: 'GET', params: { itemId: 'items' }, isArray: true }
         });
     })

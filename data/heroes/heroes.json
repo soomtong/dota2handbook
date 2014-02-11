@@ -1,7 +1,7 @@
 [
     {
         "id": "earthshaker", "title": "지진술사", "subtitle": "Earthshaker",
-        "pic": "/data/images/heroes/earthshaker_full.png",
+        "pic": "data/images/heroes/earthshaker_full.png",
         "hero_category": 1, "hero_type": "melee,init,disable,supp,lane",
         "skill_type": "절가",
         "display_type": ["근접","전투 개시자","무력화","지원","전선 지원"],
@@ -10,7 +10,7 @@
     },
     {
         "id": "sven", "title": "스벤", "subtitle": "Sven",
-        "pic": "/data/images/heroes/sven_full.png",
+        "pic": "data/images/heroes/sven_full.png",
         "hero_category": 1, "hero_type": "melee,disable,init,carry,supp",
         "skill_type": "절",
         "display_type": ["근접","무력화","전투 개시자","캐리","지원"],
@@ -19,7 +19,7 @@
     },
     {
         "id": "tiny", "title": "타이니", "subtitle": "Tiny",
-        "pic": "/data/images/heroes/tiny_full.png",
+        "pic": "data/images/heroes/tiny_full.png",
         "hero_category": 1, "hero_type": "melee,disable,nuke,init,durable",
         "skill_type": "절띄반",
         "display_type": ["근접","무력화","누커","전투 개시자","생존력"],
@@ -28,7 +28,7 @@
     },
     {
         "id": "kunkka", "title": "컨카", "subtitle": "Kunkka",
-        "pic": "/data/images/heroes/kunkka_full.png",
+        "pic": "data/images/heroes/kunkka_full.png",
         "hero_category": 1, "hero_type": "melee,disable,init,carry,durable",
         "skill_type": "절둔끌",
         "display_type": ["근접","무력화","전투 개시자","캐리","생존력"],
@@ -37,7 +37,7 @@
     },
     {
         "id": "beastmaster", "title": "야수지배자", "subtitle": "Beastmaster",
-        "pic": "/data/images/heroes/beastmaster_full.png",
+        "pic": "data/images/heroes/beastmaster_full.png",
         "hero_category": 1, "hero_type": "melee,init,disable,durable",
         "skill_type": "절밀둔환",
         "display_type": ["근접","전투 개시자","무력화","생존력"],
@@ -46,7 +46,7 @@
     },
     {
         "id": "dragon_knight", "title": "용기사", "subtitle": "Dragon Knight",
-        "pic": "/data/images/heroes/dragon_knight_full.png",
+        "pic": "data/images/heroes/dragon_knight_full.png",
         "hero_category": 1, "hero_type": "melee,carry,durable,disable,push",
         "skill_type": "절둔",
         "display_type": ["근접","캐리","생존력","무력화","압박"],
@@ -55,7 +55,7 @@
     },
     {
         "id": "rattletrap", "title": "태엽장이", "subtitle": "Clockwerk",
-        "pic": "/data/images/heroes/rattletrap_full.png",
+        "pic": "data/images/heroes/rattletrap_full.png",
         "hero_category": 1, "hero_type": "melee,init,durable",
         "skill_type": "절가돌번",
         "display_type": ["근접","전투 개시자","생존력"],
@@ -64,7 +64,7 @@
     },
     {
         "id": "omniknight", "title": "전능기사", "subtitle": "Omniknight",
-        "pic": "/data/images/heroes/omniknight_full.png",
+        "pic": "data/images/heroes/omniknight_full.png",
         "hero_category": 1, "hero_type": "melee,durable,lane,supp",
         "skill_type": "둔힐무",
         "display_type": ["근접","생존력","전선 지원","지원"],
@@ -73,7 +73,7 @@
     },
     {
         "id": "huskar", "title": "허스카", "subtitle": "Huskar",
-        "pic": "/data/images/heroes/huskar_full.png",
+        "pic": "data/images/heroes/huskar_full.png",
         "hero_category": 1, "hero_type": "range,carry,init,durable",
         "skill_type": "둔돌힐",
         "display_type": ["원거리","캐리","전투 개시자","생존력"],
@@ -82,7 +82,7 @@
     },
     {
         "id": "alchemist", "title": "연금술사", "subtitle": "Alchemist",
-        "pic": "/data/images/heroes/alchemist_full.png",
+        "pic": "data/images/heroes/alchemist_full.png",
         "hero_category": 1, "hero_type": "melee,durable,carry,disable",
         "skill_type": "절방",
         "display_type": ["근접","생존력","캐리","무력화"],
@@ -91,7 +91,7 @@
     },
     {
         "id": "brewmaster", "title": "취권도사", "subtitle": "Brewmaster",
-        "pic": "/data/images/heroes/brewmaster_full.png",
+        "pic": "data/images/heroes/brewmaster_full.png",
         "hero_category": 1, "hero_type": "melee,carry,durable,init,push",
         "skill_type": "실절둔은환띄치",
         "display_type": ["근접","캐리","생존력","전투 개시자","압박"],
@@ -100,7 +100,7 @@
     },
     {
         "id": "treant", "title": "나무정령 수호자", "subtitle": "Treant Protector",
-        "pic": "/data/images/heroes/treant_full.png",
+        "pic": "data/images/heroes/treant_full.png",
         "hero_category": 1, "hero_type": "melee,durable,init,lane,disable",
         "skill_type": "속둔은힐",
         "display_type": ["근접","생존력","전투 개시자","전선 지원","무력화"],
@@ -109,7 +109,7 @@
     },
     {
         "id": "wisp", "title": "이오", "subtitle": "Io",
-        "pic": "/data/images/heroes/wisp_full.png",
+        "pic": "data/images/heroes/wisp_full.png",
         "hero_category": 1, "hero_type": "range,supp,lane,nuke",
         "skill_type": "절순",
         "display_type": ["원거리","지원","전선 지원","누커"],
@@ -118,7 +118,7 @@
     },
     {
         "id": "centaur", "title": "켄타우로스 전쟁용사", "subtitle": "Centaur Warrunner",
-        "pic": "/data/images/heroes/centaur_full.png",
+        "pic": "data/images/heroes/centaur_full.png",
         "hero_category": 1, "hero_type": "melee,durable,disable,init,tank",
         "skill_type": "절돌반",
         "display_type": ["근접","생존력","무력화","전투 개시자"],
@@ -127,7 +127,7 @@
     },
     {
         "id": "shredder", "title": "벌목꾼", "subtitle": "Timbersaw",
-        "pic": "/data/images/heroes/shredder_full.png",
+        "pic": "data/images/heroes/shredder_full.png",
         "hero_category": 1, "hero_type": "melee,durable,nuke,escape",
         "skill_type": "둔돌능",
         "display_type": ["근접","생존력","누커","도주기"],
@@ -136,7 +136,7 @@
     },
     {
         "id": "bristleback", "title": "가시맷돼지", "subtitle": "Bristleback",
-        "pic": "/data/images/heroes/bristleback_full.png",
+        "pic": "data/images/heroes/bristleback_full.png",
         "hero_category": 1, "hero_type": "melee,durable,init,disable,tank",
         "skill_type": "둔방",
         "display_type": ["근접","생존력","전투 개시자","무력화"],
@@ -145,7 +145,7 @@
     },
     {
         "id": "tusk", "title": "얼음폭군", "subtitle": "Tusk",
-        "pic": "/data/images/heroes/tusk_full.png",
+        "pic": "data/images/heroes/tusk_full.png",
         "hero_category": 1, "hero_type": "melee,init,durable",
         "skill_type": "절둔돌띄",
         "display_type": ["근접","전투 개시자","생존력"],
@@ -154,7 +154,7 @@
     },
     {
         "id": "elder_titan", "title": "고대 티탄", "subtitle": "Elder Titan",
-        "pic": "/data/images/heroes/elder_titan_full.png",
+        "pic": "data/images/heroes/elder_titan_full.png",
         "hero_category": 1, "hero_type": "melee,init,durable",
         "skill_type": "절방마",
         "display_type": ["근접","전투 개시자","생존력"],
@@ -163,7 +163,7 @@
     },
     {
         "id": "legion_commander", "title": "군단 사령관", "subtitle": "Legion Commander",
-        "pic": "/data/images/heroes/legion_commander_full.png",
+        "pic": "data/images/heroes/legion_commander_full.png",
         "hero_category": 1, "hero_type": "melee,carry,durable",
         "skill_type": "발능흡",
         "display_type": ["근접","캐리","생존력"],
@@ -172,7 +172,7 @@
     },
     {
         "id": "earth_spirit", "title": "대지령", "subtitle": "Earth Spirit",
-        "pic": "/data/images/heroes/earth_spirit_full.png",
+        "pic": "data/images/heroes/earth_spirit_full.png",
         "hero_category": 1, "hero_type": "melee,carry,nuke",
         "skill_type": "절밀둔돌침환끌",
         "display_type": ["근접","캐리","누커"],
@@ -181,7 +181,7 @@
     },
     {
         "id": "phoenix", "title": "불사조", "subtitle": "Phoenix",
-        "pic": "/data/images/heroes/phoenix_full.png",
+        "pic": "data/images/heroes/phoenix_full.png",
         "hero_category": 2, "hero_type": "range,init,disable,nuke",
         "skill_type": "절둔돌힐집",
         "display_type": ["원거리","전투개시자","무력화","누커"],
@@ -190,7 +190,7 @@
     },
     {
         "id": "axe", "title": "도끼전사", "subtitle": "Axe",
-        "pic": "/data/images/heroes/axe_full.png",
+        "pic": "data/images/heroes/axe_full.png",
         "hero_category": 1, "hero_type": "melee,durable,init,disable,jungle,tank",
         "skill_type": "둔발",
         "display_type": ["근접","생존력","전투 개시자","무력화","정글러"],
@@ -199,7 +199,7 @@
     },
     {
         "id": "pudge", "title": "퍼지", "subtitle": "Pudge",
-        "pic": "/data/images/heroes/pudge_full.png",
+        "pic": "data/images/heroes/pudge_full.png",
         "hero_category": 1, "hero_type": "melee,durable,disable",
         "skill_type": "절둔끌",
         "display_type": ["근접","생존력","무력화"],
@@ -208,7 +208,7 @@
     },
     {
         "id": "sand_king", "title": "모래 제왕", "subtitle": "Sand King",
-        "pic": "/data/images/heroes/sand_king_full.png",
+        "pic": "data/images/heroes/sand_king_full.png",
         "hero_category": 1, "hero_type": "melee,init,disable,nuke",
         "skill_type": "절둔은돌집",
         "display_type": ["근접","전투 개시자","무력화","누커"],
@@ -217,7 +217,7 @@
     },
     {
         "id": "slardar", "title": "슬라다", "subtitle": "Slardar",
-        "pic": "/data/images/heroes/slardar_full.png",
+        "pic": "data/images/heroes/slardar_full.png",
         "hero_category": 1, "hero_type": "melee,carry,durable,disable,init",
         "skill_type": "절방",
         "display_type": ["근접","캐리","생존력","무력화","전투 개시자"],
@@ -226,7 +226,7 @@
     },
     {
         "id": "tidehunter", "title": "파도사냥꾼", "subtitle": "Tidehunter",
-        "pic": "/data/images/heroes/tidehunter_full.png",
+        "pic": "data/images/heroes/tidehunter_full.png",
         "hero_category": 1, "hero_type": "melee,init,durable,disable,supp",
         "skill_type": "절둔",
         "display_type": ["근접","전투 개시자","생존력","무력화","지원"],
@@ -235,7 +235,7 @@
     },
     {
         "id": "skeleton_king", "title": "망령 제왕", "subtitle": "Wraith King",
-        "pic": "/data/images/heroes/skeleton_king_full.png",
+        "pic": "data/images/heroes/skeleton_king_full.png",
         "hero_category": 1, "hero_type": "melee,durable,carry,disable,tank",
         "skill_type": "절둔흡치",
         "display_type": ["근접","생존력","캐리","무력화"],
@@ -244,7 +244,7 @@
     },
     {
         "id": "life_stealer", "title": "흡혈마", "subtitle": "Lifestealer",
-        "pic": "/data/images/heroes/life_stealer_full.png",
+        "pic": "data/images/heroes/life_stealer_full.png",
         "hero_category": 1, "hero_type": "melee,carry,durable,jungle,escape",
         "skill_type": "둔무흡",
         "display_type": ["근접","캐리","생존력","정글러","도주기"],
@@ -253,7 +253,7 @@
     },
     {
         "id": "night_stalker", "title": "밤의 추격자", "subtitle": "Night Stalker",
-        "pic": "/data/images/heroes/night_stalker_full.png",
+        "pic": "data/images/heroes/night_stalker_full.png",
         "hero_category": 1, "hero_type": "melee,durable,init",
         "skill_type": "실절둔침",
         "display_type": ["근접","생존력","전투개시자"],
@@ -262,7 +262,7 @@
     },
     {
         "id": "doom_bringer", "title": "파멸의 사도", "subtitle": "Doom",
-        "pic": "/data/images/heroes/doom_bringer_full.png",
+        "pic": "data/images/heroes/doom_bringer_full.png",
         "hero_category": 1, "hero_type": "melee,durable,carry,nuke",
         "skill_type": "절침",
         "display_type": ["근접","생존력","캐리","누커"],
@@ -271,7 +271,7 @@
     },
     {
         "id": "spirit_breaker", "title": "영혼 파괴자", "subtitle": "Spirit Breaker",
-        "pic": "/data/images/heroes/spirit_breaker_full.png",
+        "pic": "data/images/heroes/spirit_breaker_full.png",
         "hero_category": 1, "hero_type": "melee,durable,carry,init,disable",
         "skill_type": "절돌",
         "display_type": ["근접","생존력","캐리","전투 개시자","무력화"],
@@ -280,7 +280,7 @@
     },
     {
         "id": "lycan", "title": "늑대인간", "subtitle": "Lycan",
-        "pic": "/data/images/heroes/lycan_full.png",
+        "pic": "data/images/heroes/lycan_full.png",
         "hero_category": 1, "hero_type": "melee,carry,jungle,push,durable",
         "skill_type": "환치",
         "display_type": ["근접","캐리","정글러","압박","생존력"],
@@ -289,7 +289,7 @@
     },
     {
         "id": "chaos_knight", "title": "혼돈 기사", "subtitle": "Chaos Knight",
-        "pic": "/data/images/heroes/chaos_knight_full.png",
+        "pic": "data/images/heroes/chaos_knight_full.png",
         "hero_category": 1, "hero_type": "melee,carry,disable,durable,push,hard",
         "skill_type": "절돌환치",
         "display_type": ["근접","캐리","무력화","생존력","압박"],
@@ -298,7 +298,7 @@
     },
     {
         "id": "undying", "title": "언다잉", "subtitle": "Undying",
-        "pic": "/data/images/heroes/undying_full.png",
+        "pic": "data/images/heroes/undying_full.png",
         "hero_category": 1, "hero_type": "melee,durable,push,disable,init",
         "skill_type": "둔힐환방능",
         "display_type": ["근접","생존력","압박","무력화","전투 개시자"],
@@ -307,7 +307,7 @@
     },
     {
         "id": "magnataur", "title": "마그누스", "subtitle": "Magnus",
-        "pic": "/data/images/heroes/magnataur_full.png",
+        "pic": "data/images/heroes/magnataur_full.png",
         "hero_category": 1, "hero_type": "melee,init,disable,nuke,carry",
         "skill_type": "절둔돌",
         "display_type": ["근접","전투 개시자","무력화","누커","캐리"],
@@ -316,7 +316,7 @@
     },
     {
         "id": "abaddon", "title": "아바돈", "subtitle": "Abaddon",
-        "pic": "/data/images/heroes/abaddon_full.png",
+        "pic": "data/images/heroes/abaddon_full.png",
         "hero_category": 1, "hero_type": "melee,durable,supp,lane,tank",
         "skill_type": "둔힐",
         "display_type": ["근접","생존력","지원","전선 지원"],
@@ -325,7 +325,7 @@
     },
     {
         "id": "antimage", "title": "항마사", "subtitle": "Anti-Mage",
-        "pic": "/data/images/heroes/antimage_full.png",
+        "pic": "data/images/heroes/antimage_full.png",
         "hero_category": 2, "hero_type": "melee,carry,escape,hard",
         "skill_type": "절돌순번",
         "display_type": ["근접","캐리","도주기"],
@@ -334,7 +334,7 @@
     },
     {
         "id": "drow_ranger", "title": "드로우 레인저", "subtitle": "Drow Ranger",
-        "pic": "/data/images/heroes/drow_ranger_full.png",
+        "pic": "data/images/heroes/drow_ranger_full.png",
         "hero_category": 2, "hero_type": "range,carry,hard",
         "skill_type": "둔침",
         "display_type": ["원거리","캐리"],
@@ -343,7 +343,7 @@
     },
     {
         "id": "juggernaut", "title": "가면무사", "subtitle": "Juggernaut",
-        "pic": "/data/images/heroes/juggernaut_full.png",
+        "pic": "data/images/heroes/juggernaut_full.png",
         "hero_category": 2, "hero_type": "melee,carry,push",
         "skill_type": "힐무치",
         "display_type": ["근접","캐리","압박"],
@@ -352,7 +352,7 @@
     },
     {
         "id": "mirana", "title": "미라나", "subtitle": "Mirana",
-        "pic": "/data/images/heroes/mirana_full.png",
+        "pic": "data/images/heroes/mirana_full.png",
         "hero_category": 2, "hero_type": "range,carry,nuke,disable,escape",
         "skill_type": "절은돌",
         "display_type": ["원거리","캐리","누커","무력화","도주기"],
@@ -361,7 +361,7 @@
     },
     {
         "id": "morphling", "title": "모플링", "subtitle": "Morphling",
-        "pic": "/data/images/heroes/morphling_full.png",
+        "pic": "data/images/heroes/morphling_full.png",
         "hero_category": 2, "hero_type": "range,carry,escape,init,nuke",
         "skill_type": "절돌환무순",
         "display_type": ["원거리","캐리","도주기","전투 개시자","누커"],
@@ -370,7 +370,7 @@
     },
     {
         "id": "phantom_lancer", "title": "환영 창기사", "subtitle": "Phantom Lancer",
-        "pic": "/data/images/heroes/phantom_lancer_full.png",
+        "pic": "data/images/heroes/phantom_lancer_full.png",
         "hero_category": 2, "hero_type": "melee,carry,escape,push,hard",
         "skill_type": "둔은환",
         "display_type": ["근접","캐리","도주기","압박"],
@@ -379,7 +379,7 @@
     },
     {
         "id": "vengefulspirit", "title": "복수 혼령", "subtitle": "Vengeful Spirit",
-        "pic": "/data/images/heroes/vengefulspirit_full.png",
+        "pic": "data/images/heroes/vengefulspirit_full.png",
         "hero_category": 2, "hero_type": "range,supp,disable,lane,init",
         "skill_type": "절순",
         "display_type": ["원거리","지원","무력화","전선 지원","전투 개시자"],
@@ -388,7 +388,7 @@
     },
     {
         "id": "riki", "title": "리키", "subtitle": "Riki",
-        "pic": "/data/images/heroes/riki_full.png",
+        "pic": "data/images/heroes/riki_full.png",
         "hero_category": 2, "hero_type": "melee,carry,escape",
         "skill_type": "실둔은돌침",
         "display_type": ["근접","캐리","도주기"],
@@ -397,7 +397,7 @@
     },
     {
         "id": "sniper", "title": "저격수", "subtitle": "Sniper",
-        "pic": "/data/images/heroes/sniper_full.png",
+        "pic": "data/images/heroes/sniper_full.png",
         "hero_category": 2, "hero_type": "range,carry",
         "skill_type": "절둔",
         "display_type": ["원거리","캐리"],
@@ -406,7 +406,7 @@
     },
     {
         "id": "templar_assassin", "title": "암살 기사", "subtitle": "Templar Assassin",
-        "pic": "/data/images/heroes/templar_assassin_full.png",
+        "pic": "data/images/heroes/templar_assassin_full.png",
         "hero_category": 2, "hero_type": "range,carry,escape",
         "skill_type": "둔은방",
         "display_type": ["근거리","캐리","도주기"],
@@ -415,7 +415,7 @@
     },
     {
         "id": "luna", "title": "루나", "subtitle": "Luna",
-        "pic": "/data/images/heroes/luna_full.png",
+        "pic": "data/images/heroes/luna_full.png",
         "hero_category": 2, "hero_type": "range,carry,nuke",
         "skill_type": "절",
         "display_type": ["원거리","캐리","누커"],
@@ -424,7 +424,7 @@
     },
     {
         "id": "bounty_hunter", "title": "현상금 사냥꾼", "subtitle": "Bounty Hunter",
-        "pic": "/data/images/heroes/bounty_hunter_full.png",
+        "pic": "data/images/heroes/bounty_hunter_full.png",
         "hero_category": 2, "hero_type": "melee,carry,escape,nuke",
         "skill_type": "절둔은치",
         "display_type": ["근접","캐리","도주기","누커"],
@@ -433,7 +433,7 @@
     },
     {
         "id": "ursa", "title": "우르사", "subtitle": "Ursa",
-        "pic": "/data/images/heroes/ursa_full.png",
+        "pic": "data/images/heroes/ursa_full.png",
         "hero_category": 2, "hero_type": "melee,carry,jungle,durable",
         "skill_type": "둔",
         "display_type": ["근접","캐리","정글러","생존력"],
@@ -442,7 +442,7 @@
     },
     {
         "id": "gyrocopter", "title": "자이로콥터", "subtitle": "Gyrocopter",
-        "pic": "/data/images/heroes/gyrocopter_full.png",
+        "pic": "data/images/heroes/gyrocopter_full.png",
         "hero_category": 2, "hero_type": "range,disable,init,nuke",
         "skill_type": "절둔",
         "display_type": ["원거리","무력화","전투 개시자","누커"],
@@ -451,7 +451,7 @@
     },
     {
         "id": "lone_druid", "title": "고독한 드루이드", "subtitle": "Lone Druid",
-        "pic": "/data/images/heroes/lone_druid_full.png",
+        "pic": "data/images/heroes/lone_druid_full.png",
         "hero_category": 2, "hero_type": "range,carry,durable,push,jungle",
         "skill_type": "속환",
         "display_type": ["원거리","캐리","생존력","압박","정글러"],
@@ -460,7 +460,7 @@
     },
     {
         "id": "naga_siren", "title": "나가 세이렌", "subtitle": "Naga Siren",
-        "pic": "/data/images/heroes/naga_siren_full.png",
+        "pic": "data/images/heroes/naga_siren_full.png",
         "hero_category": 2, "hero_type": "melee,carry,disable,push,escape",
         "skill_type": "속환방",
         "display_type": ["근접","캐리","무력화","압박","도주기"],
@@ -469,7 +469,7 @@
     },
     {
         "id": "troll_warlord", "title": "트롤 전쟁군주", "subtitle": "Troll Warlord",
-        "pic": "/data/images/heroes/troll_warlord_full.png",
+        "pic": "data/images/heroes/troll_warlord_full.png",
         "hero_category": 2, "hero_type": "range,carry,hard",
         "skill_type": "실절둔",
         "display_type": ["원거리","캐리"],
@@ -478,7 +478,7 @@
     },
     {
         "id": "ember_spirit", "title": "불꽃령", "subtitle": "Ember Spirit",
-        "pic": "/data/images/heroes/ember_spirit_full.png",
+        "pic": "data/images/heroes/ember_spirit_full.png",
         "hero_category": 2, "hero_type": "melee,carry,nuke",
         "skill_type": "속환순",
         "display_type": ["근접","캐리","누커"],
@@ -487,7 +487,7 @@
     },
     {
         "id": "bloodseeker", "title": "혈귀", "subtitle": "Bloodseeker",
-        "pic": "/data/images/heroes/bloodseeker_full.png",
+        "pic": "data/images/heroes/bloodseeker_full.png",
         "hero_category": 2, "hero_type": "melee,carry,jungle",
         "skill_type": "침힐흡",
         "display_type": ["근접","캐리","정글러"],
@@ -496,7 +496,7 @@
     },
     {
         "id": "nevermore", "title": "그림자 마귀", "subtitle": "Shadow Fiend",
-        "pic": "/data/images/heroes/nevermore_full.png",
+        "pic": "data/images/heroes/nevermore_full.png",
         "hero_category": 2, "hero_type": "range,carry,nuke",
         "skill_type": "둔방",
         "display_type": ["원거리","캐리","누커"],
@@ -505,7 +505,7 @@
     },
     {
         "id": "razor", "title": "레이저", "subtitle": "Razor",
-        "pic": "/data/images/heroes/razor_full.png",
+        "pic": "data/images/heroes/razor_full.png",
         "hero_category": 2, "hero_type": "range,carry,durable,nuke",
         "skill_type": "둔방능",
         "display_type": ["원거리","캐리","생존력","누커"],
@@ -514,7 +514,7 @@
     },
     {
         "id": "venomancer", "title": "맹독사", "subtitle": "Venomancer",
-        "pic": "/data/images/heroes/venomancer_full.png",
+        "pic": "data/images/heroes/venomancer_full.png",
         "hero_category": 2, "hero_type": "range,supp,nuke,init,push",
         "skill_type": "둔환",
         "display_type": ["원거리","지원","누커","전투 개시자","압박"],
@@ -523,7 +523,7 @@
     },
     {
         "id": "faceless_void", "title": "얼굴없는 전사", "subtitle": "Faceless Void",
-        "pic": "/data/images/heroes/faceless_void_full.png",
+        "pic": "data/images/heroes/faceless_void_full.png",
         "hero_category": 2, "hero_type": "melee,carry,init,disable,escape,hard",
         "skill_type": "절둔돌",
         "display_type": ["근접","캐리","전투 개시자","무력화","도주기"],
@@ -532,7 +532,7 @@
     },
     {
         "id": "phantom_assassin", "title": "유령 자객", "subtitle": "Phantom Assassin",
-        "pic": "/data/images/heroes/phantom_assassin_full.png",
+        "pic": "data/images/heroes/phantom_assassin_full.png",
         "hero_category": 2, "hero_type": "melee,carry,escape,hard",
         "skill_type": "둔돌치",
         "display_type": ["근접","캐리","도주기"],
@@ -541,7 +541,7 @@
     },
     {
         "id": "viper", "title": "바이퍼", "subtitle": "Viper",
-        "pic": "/data/images/heroes/viper_full.png",
+        "pic": "data/images/heroes/viper_full.png",
         "hero_category": 2, "hero_type": "range,carry,durable",
         "skill_type": "둔",
         "display_type": ["원거리","캐리","생존력"],
@@ -550,7 +550,7 @@
     },
     {
         "id": "clinkz", "title": "클링츠", "subtitle": "Clinkz",
-        "pic": "/data/images/heroes/clinkz_full.png",
+        "pic": "data/images/heroes/clinkz_full.png",
         "hero_category": 2, "hero_type": "range,carry,escape",
         "skill_type": "은",
         "display_type": ["원거리","캐리","도주기"],
@@ -559,7 +559,7 @@
     },
     {
         "id": "broodmother", "title": "거미여왕", "subtitle": "Broodmother",
-        "pic": "/data/images/heroes/broodmother_full.png",
+        "pic": "data/images/heroes/broodmother_full.png",
         "hero_category": 2, "hero_type": "melee,push,carry,escape",
         "skill_type": "둔은",
         "display_type": ["근접","압박","캐리","도주기"],
@@ -568,7 +568,7 @@
     },
     {
         "id": "weaver", "title": "길쌈꾼", "subtitle": "Weaver",
-        "pic": "/data/images/heroes/weaver_full.png",
+        "pic": "data/images/heroes/weaver_full.png",
         "hero_category": 2, "hero_type": "range,carry,escape",
         "skill_type": "은방",
         "display_type": ["원거리","캐리","도주기"],
@@ -577,7 +577,7 @@
     },
     {
         "id": "spectre", "title": "악령", "subtitle": "Spectre",
-        "pic": "/data/images/heroes/spectre_full.png",
+        "pic": "data/images/heroes/spectre_full.png",
         "hero_category": 2, "hero_type": "melee,carry,durable,hard",
         "skill_type": "둔순방반",
         "display_type": ["근접","캐리","생존력"],
@@ -586,7 +586,7 @@
     },
     {
         "id": "meepo", "title": "미포", "subtitle": "Meepo",
-        "pic": "/data/images/heroes/meepo_full.png",
+        "pic": "data/images/heroes/meepo_full.png",
         "hero_category": 2, "hero_type": "melee,carry,disable,init",
         "skill_type": "속환순",
         "display_type": ["근접","캐리","전투 개시자","무력화"],
@@ -595,7 +595,7 @@
     },
     {
         "id": "nyx_assassin", "title": "닉스 암살자", "subtitle": "Nyx Assassin",
-        "pic": "/data/images/heroes/nyx_assassin_full.png",
+        "pic": "data/images/heroes/nyx_assassin_full.png",
         "hero_category": 2, "hero_type": "melee,disable,nuke",
         "skill_type": "실은번반",
         "display_type": ["근접","무력화","누커"],
@@ -604,7 +604,7 @@
     },
     {
         "id": "slark", "title": "슬라크", "subtitle": "Slark",
-        "pic": "/data/images/heroes/slark_full.png",
+        "pic": "data/images/heroes/slark_full.png",
         "hero_category": 2, "hero_type": "melee,escape",
         "skill_type": "속둔은능",
         "display_type": ["근접","도주기"],
@@ -613,7 +613,7 @@
     },
     {
         "id": "medusa", "title": "메두사", "subtitle": "Medusa",
-        "pic": "/data/images/heroes/medusa_full.png",
+        "pic": "data/images/heroes/medusa_full.png",
         "hero_category": 2, "hero_type": "range,carry",
         "skill_type": "둔",
         "display_type": ["원거리","캐리"],
@@ -622,7 +622,7 @@
     },
     {
         "id": "terrorblade", "title": "테러블레이드", "subtitle": "Terrorblade",
-        "pic": "/data/images/heroes/terrorblade_full.png",
+        "pic": "data/images/heroes/terrorblade_full.png",
         "hero_category": 1, "hero_type": "melee,carry",
         "skill_type": "둔환",
         "display_type": ["근접","캐리"],
@@ -631,7 +631,7 @@
     },
     {
         "id": "crystal_maiden", "title": "수정의 여인", "subtitle": "Crystal Maiden - CM",
-        "pic": "/data/images/heroes/crystal_maiden_full.png",
+        "pic": "data/images/heroes/crystal_maiden_full.png",
         "hero_category": 3, "hero_type": "range,supp,disable,nuke,lane",
         "skill_type": "속둔집",
         "display_type": ["원거리","지원","무력화","누커","전선 지원"],
@@ -640,7 +640,7 @@
     },
     {
         "id": "puck", "title": "퍽", "subtitle": "Puck",
-        "pic": "/data/images/heroes/puck_full.png",
+        "pic": "data/images/heroes/puck_full.png",
         "hero_category": 3, "hero_type": "range,init,nuke,disable,escape",
         "skill_type": "절돌무순",
         "display_type": ["원거리","전투 개시자","누커","무력화","도주기"],
@@ -649,7 +649,7 @@
     },
     {
         "id": "storm_spirit", "title": "폭풍령", "subtitle": "Storm Spirit",
-        "pic": "/data/images/heroes/storm_spirit_full.png",
+        "pic": "data/images/heroes/storm_spirit_full.png",
         "hero_category": 3, "hero_type": "range,carry,init,escape,disable",
         "skill_type": "둔돌끌",
         "display_type": ["원거리","캐리","전투 개시자","도주기","무력화"],
@@ -658,7 +658,7 @@
     },
     {
         "id": "windrunner", "title": "바람순찰자", "subtitle": "Windranger",
-        "pic": "/data/images/heroes/windrunner_full.png",
+        "pic": "data/images/heroes/windrunner_full.png",
         "hero_category": 3, "hero_type": "range,disable,nuke,supp,escape",
         "skill_type": "절",
         "display_type": ["원거리","무력화","누커","지원","도주기"],
@@ -667,7 +667,7 @@
     },
     {
         "id": "zuus", "title": "제우스", "subtitle": "Zeus",
-        "pic": "/data/images/heroes/zuus_full.png",
+        "pic": "data/images/heroes/zuus_full.png",
         "hero_category": 3, "hero_type": "range,nuke,supp",
         "skill_type": "절",
         "display_type": ["원거리","누커","지원"],
@@ -676,7 +676,7 @@
     },
     {
         "id": "lina", "title": "리나", "subtitle": "Lina",
-        "pic": "/data/images/heroes/lina_full.png",
+        "pic": "data/images/heroes/lina_full.png",
         "hero_category": 3, "hero_type": "range,nuke,disable,supp",
         "skill_type": "절",
         "display_type": ["원거리","누커","무력화","지원"],
@@ -685,7 +685,7 @@
     },
     {
         "id": "shadow_shaman", "title": "그림자 주술사", "subtitle": "Shadow Shaman",
-        "pic": "/data/images/heroes/shadow_shaman_full.png",
+        "pic": "data/images/heroes/shadow_shaman_full.png",
         "hero_category": 3, "hero_type": "range,push,disable,nuke,supp",
         "skill_type": "절집변",
         "display_type": ["원거리","압박","무력화","누커","지원"],
@@ -694,7 +694,7 @@
     },
     {
         "id": "tinker", "title": "땜장이", "subtitle": "Tinker",
-        "pic": "/data/images/heroes/tinker_full.png",
+        "pic": "data/images/heroes/tinker_full.png",
         "hero_category": 3, "hero_type": "range,nuke,push",
         "skill_type": "실집",
         "display_type": ["원거리","누커","압박"],
@@ -703,7 +703,7 @@
     },
     {
         "id": "furion", "title": "자연의 예언자", "subtitle": "Nature's Prophet - Furion",
-        "pic": "/data/images/heroes/furion_full.png",
+        "pic": "data/images/heroes/furion_full.png",
         "hero_category": 3, "hero_type": "range,jungle,push,carry,escape",
         "skill_type": "가환순",
         "display_type": ["원거리","정글러","압박","캐리","도주기"],
@@ -712,7 +712,7 @@
     },
     {
         "id": "enchantress", "title": "요술사", "subtitle": "Enchantress",
-        "pic": "/data/images/heroes/enchantress_full.png",
+        "pic": "data/images/heroes/enchantress_full.png",
         "hero_category": 3, "hero_type": "range,supp,push,durable,jungle",
         "skill_type": "둔힐",
         "display_type": ["원거리","지원","압박","생존력","정글러"],
@@ -721,7 +721,7 @@
     },
     {
         "id": "jakiro", "title": "자키로", "subtitle": "Jakiro",
-        "pic": "/data/images/heroes/jakiro_full.png",
+        "pic": "data/images/heroes/jakiro_full.png",
         "hero_category": 3, "hero_type": "range,nuke,push,lane,disable",
         "skill_type": "절둔",
         "display_type": ["원거리","누커","압박","전선 지원","무력화"],
@@ -730,7 +730,7 @@
     },
     {
         "id": "chen", "title": "첸", "subtitle": "Chen",
-        "pic": "/data/images/heroes/chen_full.png",
+        "pic": "data/images/heroes/chen_full.png",
         "hero_category": 3, "hero_type": "range,supp,jungle,push",
         "skill_type": "둔힐순",
         "display_type": ["원거리","지원","정글러","압박"],
@@ -739,7 +739,7 @@
     },
     {
         "id": "silencer", "title": "침묵술사", "subtitle": "Silencer",
-        "pic": "/data/images/heroes/silencer_full.png",
+        "pic": "data/images/heroes/silencer_full.png",
         "hero_category": 3, "hero_type": "range,supp,carry,init",
         "skill_type": "침번능",
         "display_type": ["원거리","지원","캐리","전투 개시자"],
@@ -748,7 +748,7 @@
     },
     {
         "id": "ogre_magi", "title": "오거 마법사", "subtitle": "Ogre Magi",
-        "pic": "/data/images/heroes/ogre_magi_full.png",
+        "pic": "data/images/heroes/ogre_magi_full.png",
         "hero_category": 3, "hero_type": "range,nuke,disable,durable",
         "skill_type": "절",
         "display_type": ["원거리","누커","무력화","생존력"],
@@ -757,7 +757,7 @@
     },
     {
         "id": "rubick", "title": "루빅", "subtitle": "Rubick",
-        "pic": "/data/images/heroes/rubick_full.png",
+        "pic": "data/images/heroes/rubick_full.png",
         "hero_category": 3, "hero_type": "range,disable,nuke",
         "skill_type": "절",
         "display_type": ["원거리","무력화","누커"],
@@ -766,7 +766,7 @@
     },
     {
         "id": "disruptor", "title": "디스럽터", "subtitle": "Disruptor",
-        "pic": "/data/images/heroes/disruptor_full.png",
+        "pic": "data/images/heroes/disruptor_full.png",
         "hero_category": 3, "hero_type": "range,nuke,supp,init,disable",
         "skill_type": "가침순",
         "display_type": ["원거리","누커","지원","전투 개시자","무력화"],
@@ -775,7 +775,7 @@
     },
     {
         "id": "keeper_of_the_light", "title": "빛의 수호자", "subtitle": "Keeper of the Light",
-        "pic": "/data/images/heroes/keeper_of_the_light_full.png",
+        "pic": "data/images/heroes/keeper_of_the_light_full.png",
         "hero_category": 3, "hero_type": "range,nuke,supp,lane",
         "skill_type": "절밀순번",
         "display_type": ["원거리","누커","지원","전선 지원"],
@@ -784,7 +784,7 @@
     },
     {
         "id": "skywrath_mage", "title": "하늘분노 마법사", "subtitle": "Skywrath Mage",
-        "pic": "/data/images/heroes/skywrath_mage_full.png",
+        "pic": "data/images/heroes/skywrath_mage_full.png",
         "hero_category": 3, "hero_type": "range,nuke,supp",
         "skill_type": "둔침마",
         "display_type": ["원거리","누커","지원"],
@@ -793,7 +793,7 @@
     },
     {
         "id": "bane", "title": "악몽의 그림자", "subtitle": "Bane",
-        "pic": "/data/images/heroes/bane_full.png",
+        "pic": "data/images/heroes/bane_full.png",
         "hero_category": 3, "hero_type": "range,disable,nuke,supp",
         "skill_type": "절집번능",
         "display_type": ["원거리","무력화","누커","지원"],
@@ -802,7 +802,7 @@
     },
     {
         "id": "lich", "title": "리치", "subtitle": "Lich",
-        "pic": "/data/images/heroes/lich_full.png",
+        "pic": "data/images/heroes/lich_full.png",
         "hero_category": 3, "hero_type": "range,supp,lane,nuke",
         "skill_type": "절둔",
         "display_type": ["원거리","지원","전선 지원","누커"],
@@ -811,7 +811,7 @@
     },
     {
         "id": "lion", "title": "라이온", "subtitle": "Lion",
-        "pic": "/data/images/heroes/lion_full.png",
+        "pic": "data/images/heroes/lion_full.png",
         "hero_category": 3, "hero_type": "range,disable,nuke,lane,supp",
         "skill_type": "절집변번",
         "display_type": ["원거리","무력화","누커","전선 지원","지원"],
@@ -820,7 +820,7 @@
     },
     {
         "id": "witch_doctor", "title": "저주술사", "subtitle": "Witch Doctor",
-        "pic": "/data/images/heroes/witch_doctor_full.png",
+        "pic": "data/images/heroes/witch_doctor_full.png",
         "hero_category": 3, "hero_type": "range,supp,disable",
         "skill_type": "절힐집",
         "display_type": ["원거리","지원","무력화"],
@@ -829,7 +829,7 @@
     },
     {
         "id": "enigma", "title": "에니그마", "subtitle": "Enigma",
-        "pic": "/data/images/heroes/enigma_full.png",
+        "pic": "data/images/heroes/enigma_full.png",
         "hero_category": 3, "hero_type": "range,disable,init,jungle,push",
         "skill_type": "절집환",
         "display_type": ["원거리","무력화","전투 개시자","정글러","압박"],
@@ -838,7 +838,7 @@
     },
     {
         "id": "necrolyte", "title": "강령사제", "subtitle": "Necrophos",
-        "pic": "/data/images/heroes/necrolyte_full.png",
+        "pic": "data/images/heroes/necrolyte_full.png",
         "hero_category": 3, "hero_type": "range,supp,durable,carry",
         "skill_type": "절힐",
         "display_type": ["원거리","지원","생존력","캐리"],
@@ -847,7 +847,7 @@
     },
     {
         "id": "warlock", "title": "흑마법사", "subtitle": "Warlock",
-        "pic": "/data/images/heroes/warlock_full.png",
+        "pic": "data/images/heroes/warlock_full.png",
         "hero_category": 3, "hero_type": "range,init,supp,lane,disable",
         "skill_type": "절힐집환",
         "display_type": ["원거리","전투 개시자","지원","전선 지원","무력화"],
@@ -856,7 +856,7 @@
     },
     {
         "id": "queenofpain", "title": "고통의 여왕", "subtitle": "Queen of Pain",
-        "pic": "/data/images/heroes/queenofpain_full.png",
+        "pic": "data/images/heroes/queenofpain_full.png",
         "hero_category": 3, "hero_type": "range,nuke,escape,carry",
         "skill_type": "둔순",
         "display_type": ["원거리","누커","도주기","캐리"],
@@ -865,7 +865,7 @@
     },
     {
         "id": "death_prophet", "title": "죽음의 예언자", "subtitle": "Death Prophet",
-        "pic": "/data/images/heroes/death_prophet_full.png",
+        "pic": "data/images/heroes/death_prophet_full.png",
         "hero_category": 3, "hero_type": "range,push,nuke,durable",
         "skill_type": "침흡",
         "display_type": ["원거리","압박","누커","생존력"],
@@ -874,7 +874,7 @@
     },
     {
         "id": "pugna", "title": "퍼그나", "subtitle": "Pugna",
-        "pic": "/data/images/heroes/pugna_full.png",
+        "pic": "data/images/heroes/pugna_full.png",
         "hero_category": 3, "hero_type": "range,nuke,push,supp",
         "skill_type": "둔집환마번",
         "display_type": ["원거리","누커","압박","지원"],
@@ -883,7 +883,7 @@
     },
     {
         "id": "dazzle", "title": "대즐", "subtitle": "Dazzle",
-        "pic": "/data/images/heroes/dazzle_full.png",
+        "pic": "data/images/heroes/dazzle_full.png",
         "hero_category": 3, "hero_type": "range,supp,lane",
         "skill_type": "절둔힐무방",
         "display_type": ["원거리","지원","전선 지원"],
@@ -892,7 +892,7 @@
     },
     {
         "id": "leshrac", "title": "레슈락", "subtitle": "Leshrac",
-        "pic": "/data/images/heroes/leshrac_full.png",
+        "pic": "data/images/heroes/leshrac_full.png",
         "hero_category": 3, "hero_type": "range,nuke,push,disable,supp",
         "skill_type": "절",
         "display_type": ["원거리","누커","압박","무력화","지원"],
@@ -901,7 +901,7 @@
     },
     {
         "id": "dark_seer", "title": "어둠 현자", "subtitle": "Dark Seer",
-        "pic": "/data/images/heroes/dark_seer_full.png",
+        "pic": "data/images/heroes/dark_seer_full.png",
         "hero_category": 3, "hero_type": "range,init,nuke,escape",
         "skill_type": "환끌",
         "display_type": ["원거리","전투 개시자","누커","도주기"],
@@ -910,7 +910,7 @@
     },
     {
         "id": "batrider", "title": "박쥐기수", "subtitle": "Batrider",
-        "pic": "/data/images/heroes/batrider_full.png",
+        "pic": "data/images/heroes/batrider_full.png",
         "hero_category": 3, "hero_type": "range,init,disable,nuke,escape",
         "skill_type": "절밀둔끌",
         "display_type": ["원거리","전투 개시자","무력화","누커","도주기"],
@@ -919,7 +919,7 @@
     },
     {
         "id": "ancient_apparition", "title": "고대 영혼", "subtitle": "Ancient Apparition",
-        "pic": "/data/images/heroes/ancient_apparition_full.png",
+        "pic": "data/images/heroes/ancient_apparition_full.png",
         "hero_category": 3, "hero_type": "range,supp,disable,tank",
         "skill_type": "절밀둔",
         "display_type": ["원거리","지원","무력화"],
@@ -928,7 +928,7 @@
     },
     {
         "id": "invoker", "title": "원소술사", "subtitle": "Invoker",
-        "pic": "/data/images/heroes/invoker_full.png",
+        "pic": "data/images/heroes/invoker_full.png",
         "hero_category": 3, "hero_type": "range,carry,nuke,init,escape",
         "skill_type": "속절밀둔은환띄",
         "display_type": ["원거리","캐리","누커","전투 개시자","도주기"],
@@ -937,7 +937,7 @@
     },
     {
         "id": "obsidian_destroyer", "title": "외계 침략자", "subtitle": "Outworld Devourer",
-        "pic": "/data/images/heroes/obsidian_destroyer_full.png",
+        "pic": "data/images/heroes/obsidian_destroyer_full.png",
         "hero_category": 3, "hero_type": "range,carry",
         "skill_type": "무능",
         "display_type": ["원거리","캐리"],
@@ -946,7 +946,7 @@
     },
     {
         "id": "shadow_demon", "title": "그림자 악마", "subtitle": "Shadow Demon",
-        "pic": "/data/images/heroes/shadow_demon_full.png",
+        "pic": "data/images/heroes/shadow_demon_full.png",
         "hero_category": 3, "hero_type": "range,supp,disable,nuke",
         "skill_type": "둔환",
         "display_type": ["원거리","지원","무력화","누커"],
@@ -955,7 +955,7 @@
     },
     {
         "id": "visage", "title": "비사지", "subtitle": "Visage",
-        "pic": "/data/images/heroes/visage_full.png",
+        "pic": "data/images/heroes/visage_full.png",
         "hero_category": 3, "hero_type": "range,nuke,durable,disable",
         "skill_type": "절둔",
         "display_type": ["원거리","누커","생존력","무력화"],

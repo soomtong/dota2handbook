@@ -3,7 +3,7 @@
 // 'dota2handbook.services' is found in services.js
 // 'dota2handbook.controllers' is found in controllers.js
 angular.module('dota2handbook', ['ionic', 'dota2handbook.services', 'dota2handbook.controllers'])
-    .config(function($stateProvider, $urlRouterProvider) {
+    .config(function($stateProvider, $urlRouterProvider, $httpProvider) {
         $stateProvider
             .state('hero', {
                 url: "/hero",
@@ -27,6 +27,7 @@ angular.module('dota2handbook', ['ionic', 'dota2handbook.services', 'dota2handbo
             });
 
         $urlRouterProvider.otherwise("/hero");
+        $httpProvider.defaults.useXDomain = true;
     });
 
 //todo : 공통으로 사용되는 static 파일 (메뉴) 분리하기
