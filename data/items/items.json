@@ -1,11 +1,1082 @@
 [
     {
-        "id": "item1", "title": "아이템", "subtitle": "Earthshaker",
-        "pic": "data/images/heroes/earthshaker_full.png",
+        "id": "clarity", "title": "맑은 물약", "subtitle": "Clarity",
+        "pic": "data/images/items/clarity_lg.png",
         "item_category": 1, "item_type": "consumable,basic",
         "spec_type": "힘",
-        "display_type": ["근접","전투 개시자","무력화","지원","전선 지원"],
-        "stat_str": "22+2.5", "stat_agi": "12+1.5", "stat_int": "16+1.8",
-        "speed": "300", "armor": "2.68", "attack": "46-56", "range": "128", "sight": "18/8"
+        "display_type": ["소모품"], "price": "50", "additional": "100MP / 30s",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "tango", "title": "목담과", "subtitle": "Tango",
+        "pic": "data/images/items/tango_lg.png",
+        "item_category": 1, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "125", "additional": "115HP / 16s",
+        "desc": "나무의 기운을 흡수하여 서서히 체력을 회복합니다. 4회 사용할 수 있습니다."
+    },
+    {
+        "id": "flask", "title": "치유 물약", "subtitle": "Healing Salve",
+        "pic": "data/images/items/flask_lg.png",
+        "item_category": 1, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "400HP / 10s",
+        "desc": "대상 유닛에게 사용하여 지속해서 체력을 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "smoke_of_deceit", "title": "연막 물약", "subtitle": "Smoke of Deceit",
+        "pic": "data/images/items/smoke_of_deceit_lg.png",
+        "item_category": 1, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "100", "additional": "35s, 이속 15% 증가",
+        "desc": "사용자와 주변의 아군이 조종하는 유닛들은 보이지 않고 잠시동안 이동 속도가 향상됩니다. 미니맵에서도 보이지 않습니다. 적 포탑이나 영웅 근처로 1025 범위 안에 들어오면 다시 보입니다."
+    },
+    {
+        "id": "tpscroll", "title": "순간이동 주문서", "subtitle": "Town Portal Scroll",
+        "pic": "data/images/items/tpscroll_lg.png",
+        "item_category": 1, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "135", "additional": "",
+        "desc": "지정한 아군 건물로 순간이동합니다."
+    },
+    {
+        "id": "dust", "title": "현시의 가루", "subtitle": "Dust of Appearance",
+        "pic": "data/images/items/dust_lg.png",
+        "item_category": 1, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "180", "additional": "12s, 둔화 15%",
+        "desc": "인근 지역의 투명화된 영웅을 밝혀내며 둔화 상태에 빠뜨립니다."
+    },
+    {
+        "id": "courier", "title": "동물 짐꾼", "subtitle": "Animal Courier",
+        "pic": "data/images/items/courier_lg.png",
+        "item_category": 1, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "150", "additional": "",
+        "desc": "기지를 오가며 아이템을 전달하는 동물입니다."
+    },
+    {
+        "id": "flying_courier", "title": "비행 짐꾼", "subtitle": "Flying Courier",
+        "pic": "data/images/items/flying_courier_lg.png",
+        "item_category": 1, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "220", "additional": "",
+        "desc": "기지를 오가며 아이템을 전달하는 재빠른 비행 동물입니다. 동물 짐꾼이 필요합니다."
+    },
+    {
+        "id": "ward_observer", "title": "관찰 와드", "subtitle": "Tango",
+        "pic": "data/images/items/ward_observer_lg.png",
+        "item_category": 1, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "ward_sentry", "title": "감시 와드", "subtitle": "Tango",
+        "pic": "data/images/items/ward_sentry_lg.png",
+        "item_category": 1, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "bottle", "title": "물병", "subtitle": "Tango",
+        "pic": "data/images/items/bottle_lg.png",
+        "item_category": 1, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "branches", "title": "쇳가지", "subtitle": "Tango",
+        "pic": "data/images/items/branches_lg.png",
+        "item_category": 2, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "gauntlets", "title": "무력의 장갑", "subtitle": "Tango",
+        "pic": "data/images/items/gauntlets_lg.png",
+        "item_category": 2, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "slippers", "title": "민첩의 신발", "subtitle": "Tango",
+        "pic": "data/images/items/slippers_lg.png",
+        "item_category": 2, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "mantle", "title": "지능의 망토", "subtitle": "Tango",
+        "pic": "data/images/items/mantle_lg.png",
+        "item_category": 2, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "circlet", "title": "머리 장식", "subtitle": "Tango",
+        "pic": "data/images/items/circlet_lg.png",
+        "item_category": 2, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "belt_of_strength", "title": "힘의 허리띠", "subtitle": "Tango",
+        "pic": "data/images/items/belt_of_strength_lg.png",
+        "item_category": 2, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "boots_of_elves", "title": "엘프의 손목띠", "subtitle": "Tango",
+        "pic": "data/images/items/boots_of_elves_lg.png",
+        "item_category": 2, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "robe", "title": "법사의 가운", "subtitle": "Tango",
+        "pic": "data/images/items/robe_lg.png",
+        "item_category": 2, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "ogre_axe", "title": "오거 몽둥이", "subtitle": "Tango",
+        "pic": "data/images/items/ogre_axe_lg.png",
+        "item_category": 2, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "blade_of_alacrity", "title": "민첩의 날", "subtitle": "Tango",
+        "pic": "data/images/items/blade_of_alacrity_lg.png",
+        "item_category": 2, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "staff_of_wizardry", "title": "마술사의 지팡이", "subtitle": "Tango",
+        "pic": "data/images/items/staff_of_wizardry_lg.png",
+        "item_category": 2, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "ultimate_orb", "title": "궁극구", "subtitle": "Tango",
+        "pic": "data/images/items/ultimate_orb_lg.png",
+        "item_category": 2, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "ring_of_protection", "title": "수호의 반지", "subtitle": "Tango",
+        "pic": "data/images/items/ring_of_protection_lg.png",
+        "item_category": 3, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "quelling_blade", "title": "벌목 도끼", "subtitle": "Tango",
+        "pic": "data/images/items/quelling_blade_lg.png",
+        "item_category": 3, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "stout_shield", "title": "튼튼한 방패", "subtitle": "Tango",
+        "pic": "data/images/items/stout_shield_lg.png",
+        "item_category": 3, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "blades_of_attack", "title": "갈퀴발톱", "subtitle": "Tango",
+        "pic": "data/images/items/blades_of_attack_lg.png",
+        "item_category": 3, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "chainmail", "title": "쇠사슬 갑옷", "subtitle": "Tango",
+        "pic": "data/images/items/chainmail_lg.png",
+        "item_category": 3, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "helm_of_iron_will", "title": "굳은 의지의 투구", "subtitle": "Tango",
+        "pic": "data/images/items/helm_of_iron_will_lg.png",
+        "item_category": 3, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "broadsword", "title": "장검", "subtitle": "Tango",
+        "pic": "data/images/items/broadsword_lg.png",
+        "item_category": 3, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "quarterstaff", "title": "전투 지팡이", "subtitle": "Tango",
+        "pic": "data/images/items/quarterstaff_lg.png",
+        "item_category": 3, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "claymore", "title": "대검", "subtitle": "Tango",
+        "pic": "data/images/items/claymore_lg.png",
+        "item_category": 3, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "javelin", "title": "투창", "subtitle": "Tango",
+        "pic": "data/images/items/javelin_lg.png",
+        "item_category": 3, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "platemail", "title": "판금갑옷", "subtitle": "Tango",
+        "pic": "data/images/items/platemail_lg.png",
+        "item_category": 3, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "mithril_hammer", "title": "미스릴 망치", "subtitle": "Tango",
+        "pic": "data/images/items/mithril_hammer_lg.png",
+        "item_category": 3, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "magic_stick", "title": "마법 막대", "subtitle": "Tango",
+        "pic": "data/images/items/magic_stick_lg.png",
+        "item_category": 4, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "sobi_mask", "title": "현자의 가면", "subtitle": "Tango",
+        "pic": "data/images/items/sobi_mask_lg.png",
+        "item_category": 4, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "ring_of_regen", "title": "재생의 반지", "subtitle": "Tango",
+        "pic": "data/images/items/ring_of_regen_lg.png",
+        "item_category": 4, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "boots", "title": "속력의 장화", "subtitle": "Tango",
+        "pic": "data/images/items/boots_lg.png",
+        "item_category": 4, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "gloves", "title": "가속의 장갑", "subtitle": "Tango",
+        "pic": "data/images/items/gloves_lg.png",
+        "item_category": 4, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "cloak", "title": "망토", "subtitle": "Tango",
+        "pic": "data/images/items/cloak_lg.png",
+        "item_category": 4, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "gem", "title": "현시의 보석", "subtitle": "Tango",
+        "pic": "data/images/items/gem_lg.png",
+        "item_category": 4, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "lifesteal", "title": "섬뜩한 가면", "subtitle": "Tango",
+        "pic": "data/images/items/lifesteal_lg.png",
+        "item_category": 4, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "ghost", "title": "유령의 홀", "subtitle": "Tango",
+        "pic": "data/images/items/ghost_lg.png",
+        "item_category": 4, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "talisman_of_evasion", "title": "회피의 부적", "subtitle": "Tango",
+        "pic": "data/images/items/talisman_of_evasion_lg.png",
+        "item_category": 4, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "blink", "title": "점멸 단검", "subtitle": "Tango",
+        "pic": "data/images/items/blink_lg.png",
+        "item_category": 4, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "shadow_amulet", "title": "그림자 부적", "subtitle": "Tango",
+        "pic": "data/images/items/shadow_amulet_lg.png",
+        "item_category": 4, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "wraith_band", "title": "망령의 고리", "subtitle": "Tango",
+        "pic": "data/images/items/wraith_band_lg.png",
+        "item_category": 5, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "null_talisman", "title": "공허 부적", "subtitle": "Tango",
+        "pic": "data/images/items/null_talisman_lg.png",
+        "item_category": 5, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "magic_wand", "title": "마법 지팡이", "subtitle": "Tango",
+        "pic": "data/images/items/magic_wand_lg.png",
+        "item_category": 5, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "bracer", "title": "전투 팔찌", "subtitle": "Tango",
+        "pic": "data/images/items/bracer_lg.png",
+        "item_category": 5, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "poor_mans_shield", "title": "가난한 자의 방패", "subtitle": "Tango",
+        "pic": "data/images/items/poor_mans_shield_lg.png",
+        "item_category": 5, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "soul_ring", "title": "영혼의 반지", "subtitle": "Tango",
+        "pic": "data/images/items/soul_ring_lg.png",
+        "item_category": 5, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "phase_boots", "title": "위상변화 장화", "subtitle": "Tango",
+        "pic": "data/images/items/phase_boots_lg.png",
+        "item_category": 5, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "power_treads", "title": "능력의 장화", "subtitle": "Tango",
+        "pic": "data/images/items/power_treads_lg.png",
+        "item_category": 5, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "oblivion_staff", "title": "망각의 지팡이", "subtitle": "Tango",
+        "pic": "data/images/items/oblivion_staff_lg.png",
+        "item_category": 5, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "pers", "title": "인내의 반지", "subtitle": "Tango",
+        "pic": "data/images/items/pers_lg.png",
+        "item_category": 5, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "hand_of_midas", "title": "미다스의 손", "subtitle": "Tango",
+        "pic": "data/images/items/hand_of_midas_lg.png",
+        "item_category": 5, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "travel_boots", "title": "여행의 장화", "subtitle": "Tango",
+        "pic": "data/images/items/travel_boots_lg.png",
+        "item_category": 5, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "ring_of_basilius", "title": "바실리우스의 반지", "subtitle": "Tango",
+        "pic": "data/images/items/ring_of_basilius_lg.png",
+        "item_category": 6, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "headdress", "title": "머리보호구", "subtitle": "Tango",
+        "pic": "data/images/items/headdress_lg.png",
+        "item_category": 6, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "buckler", "title": "작은 방패", "subtitle": "Tango",
+        "pic": "data/images/items/buckler_lg.png",
+        "item_category": 6, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "urn_of_shadows", "title": "혼의 항아리", "subtitle": "Tango",
+        "pic": "data/images/items/urn_of_shadows_lg.png",
+        "item_category": 6, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "ring_of_aquila", "title": "아퀼라의 반지", "subtitle": "Tango",
+        "pic": "data/images/items/ring_of_aquila_lg.png",
+        "item_category": 6, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "tranquil_boots", "title": "평온의 장화", "subtitle": "Tango",
+        "pic": "data/images/items/tranquil_boots_lg.png",
+        "item_category": 6, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "medallion_of_courage", "title": "용기의 메달", "subtitle": "Tango",
+        "pic": "data/images/items/medallion_of_courage_lg.png",
+        "item_category": 6, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "arcane_boots", "title": "신비의 장화", "subtitle": "Tango",
+        "pic": "data/images/items/arcane_boots_lg.png",
+        "item_category": 6, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "ancient_janggo", "title": "지구력의 북", "subtitle": "Tango",
+        "pic": "data/images/items/ancient_janggo_lg.png",
+        "item_category": 6, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "vladmir", "title": "블라드미르의 공물", "subtitle": "Tango",
+        "pic": "data/images/items/vladmir_lg.png",
+        "item_category": 6, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "mekansm", "title": "메칸즘", "subtitle": "Tango",
+        "pic": "data/images/items/mekansm_lg.png",
+        "item_category": 6, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "pipe", "title": "통찰의 파이프", "subtitle": "Tango",
+        "pic": "data/images/items/pipe_lg.png",
+        "item_category": 6, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "force_staff", "title": "염동력 지팡이", "subtitle": "Tango",
+        "pic": "data/images/items/force_staff_lg.png",
+        "item_category": 7, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "necronomicon", "title": "네크로노미콘", "subtitle": "Tango",
+        "pic": "data/images/items/necronomicon_lg.png",
+        "item_category": 7, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "cyclone", "title": "율의 신성한 홀", "subtitle": "Tango",
+        "pic": "data/images/items/cyclone_lg.png",
+        "item_category": 7, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "dagon", "title": "다곤", "subtitle": "Tango",
+        "pic": "data/images/items/dagon_lg.png",
+        "item_category": 7, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "veil_of_discord", "title": "불화의 두건", "subtitle": "Tango",
+        "pic": "data/images/items/veil_of_discord_lg.png",
+        "item_category": 7, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "rod_of_atos", "title": "에이토스의 마법봉", "subtitle": "Tango",
+        "pic": "data/images/items/rod_of_atos_lg.png",
+        "item_category": 7, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "ultimate_scepter", "title": "아가님의 홀", "subtitle": "Tango",
+        "pic": "data/images/items/ultimate_scepter_lg.png",
+        "item_category": 7, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "orchid", "title": "증오의 꽃가지", "subtitle": "Tango",
+        "pic": "data/images/items/orchid_lg.png",
+        "item_category": 7, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "refresher", "title": "재생의 구슬", "subtitle": "Tango",
+        "pic": "data/images/items/refresher_lg.png",
+        "item_category": 7, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "sheepstick", "title": "바이스의 낫", "subtitle": "Tango",
+        "pic": "data/images/items/sheepstick_lg.png",
+        "item_category": 7, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "lesser_crit", "title": "수정검", "subtitle": "Tango",
+        "pic": "data/images/items/lesser_crit_lg.png",
+        "item_category": 8, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "armlet", "title": "모르디기안의 완갑", "subtitle": "Tango",
+        "pic": "data/images/items/armlet_lg.png",
+        "item_category": 8, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "basher", "title": "해골 파쇄기", "subtitle": "Tango",
+        "pic": "data/images/items/basher_lg.png",
+        "item_category": 8, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "invis_sword", "title": "어둠의 검", "subtitle": "Tango",
+        "pic": "data/images/items/invis_sword_lg.png",
+        "item_category": 8, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "bfury", "title": "전장격노", "subtitle": "Tango",
+        "pic": "data/images/items/bfury_lg.png",
+        "item_category": 8, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "ethereal_blade", "title": "혼령의 검", "subtitle": "Tango",
+        "pic": "data/images/items/ethereal_blade_lg.png",
+        "item_category": 8, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "radiance", "title": "신광검", "subtitle": "Tango",
+        "pic": "data/images/items/radiance_lg.png",
+        "item_category": 8, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "monkey_king_bar", "title": "여의봉", "subtitle": "Tango",
+        "pic": "data/images/items/monkey_king_bar_lg.png",
+        "item_category": 8, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "greater_crit", "title": "다이달로스", "subtitle": "Tango",
+        "pic": "data/images/items/greater_crit_lg.png",
+        "item_category": 8, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "butterfly", "title": "나비검", "subtitle": "Tango",
+        "pic": "data/images/items/butterfly_lg.png",
+        "item_category": 8, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "rapier", "title": "신의 양날검", "subtitle": "Tango",
+        "pic": "data/images/items/rapier_lg.png",
+        "item_category": 8, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "abyssal_blade", "title": "심연의 검", "subtitle": "Tango",
+        "pic": "data/images/items/abyssal_blade_lg.png",
+        "item_category": 8, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "hood_of_defiance", "title": "도전의 두건", "subtitle": "Tango",
+        "pic": "data/images/items/hood_of_defiance_lg.png",
+        "item_category": 9, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "blade_mail", "title": "칼날 갑옷", "subtitle": "Tango",
+        "pic": "data/images/items/blade_mail_lg.png",
+        "item_category": 9, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "vanguard", "title": "선봉 방패", "subtitle": "Tango",
+        "pic": "data/images/items/vanguard_lg.png",
+        "item_category": 9, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "soul_booster", "title": "영혼 강화석", "subtitle": "Tango",
+        "pic": "data/images/items/soul_booster_lg.png",
+        "item_category": 9, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "black_king_bar", "title": "칠흑왕의 지팡이", "subtitle": "Tango",
+        "pic": "data/images/items/black_king_bar_lg.png",
+        "item_category": 9, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "shivas_guard", "title": "시바의 은총", "subtitle": "Tango",
+        "pic": "data/images/items/shivas_guard_lg.png",
+        "item_category": 9, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "manta", "title": "만타 도끼", "subtitle": "Tango",
+        "pic": "data/images/items/manta_lg.png",
+        "item_category": 9, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "bloodstone", "title": "혈석", "subtitle": "Tango",
+        "pic": "data/images/items/bloodstone_lg.png",
+        "item_category": 9, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "sphere", "title": "린켄의 구슬", "subtitle": "Tango",
+        "pic": "data/images/items/sphere_lg.png",
+        "item_category": 9, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "assault", "title": "돌격 흉갑", "subtitle": "Tango",
+        "pic": "data/images/items/assault_lg.png",
+        "item_category": 9, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "heart", "title": "타라스크의 심장", "subtitle": "Tango",
+        "pic": "data/images/items/heart_lg.png",
+        "item_category": 9, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "helm_of_the_dominator", "title": "지배자의 투구", "subtitle": "Tango",
+        "pic": "data/images/items/helm_of_the_dominator_lg.png",
+        "item_category": 10, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "mask_of_madness", "title": "광기의 가면", "subtitle": "Tango",
+        "pic": "data/images/items/mask_of_madness_lg.png",
+        "item_category": 10, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "sange", "title": "산화", "subtitle": "Tango",
+        "pic": "data/images/items/sange_lg.png",
+        "item_category": 10, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "yasha", "title": "야차", "subtitle": "Tango",
+        "pic": "data/images/items/yasha_lg.png",
+        "item_category": 10, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "maelstrom", "title": "혼돈의 망치", "subtitle": "Tango",
+        "pic": "data/images/items/maelstrom_lg.png",
+        "item_category": 10, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "diffusal_blade", "title": "분산의 검", "subtitle": "Tango",
+        "pic": "data/images/items/diffusal_blade_lg.png",
+        "item_category": 10, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "desolator", "title": "심판도", "subtitle": "Tango",
+        "pic": "data/images/items/desolator_lg.png",
+        "item_category": 10, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "heavens_halberd", "title": "천상의 미늘창", "subtitle": "Tango",
+        "pic": "data/images/items/heavens_halberd_lg.png",
+        "item_category": 10, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "sange_and_yasha", "title": "산화와 야차", "subtitle": "Tango",
+        "pic": "data/images/items/sange_and_yasha_lg.png",
+        "item_category": 10, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "mjollnir", "title": "묠니르", "subtitle": "Tango",
+        "pic": "data/images/items/mjollnir_lg.png",
+        "item_category": 10, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "skadi", "title": "스카디의 눈", "subtitle": "Tango",
+        "pic": "data/images/items/skadi_lg.png",
+        "item_category": 10, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "satanic", "title": "사탄의 손아귀", "subtitle": "Tango",
+        "pic": "data/images/items/satanic_lg.png",
+        "item_category": 10, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "demon_edge", "title": "악마의 검", "subtitle": "Tango",
+        "pic": "data/images/items/demon_edge_lg.png",
+        "item_category": 11, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "eagle", "title": "독수리 뿔피리", "subtitle": "Tango",
+        "pic": "data/images/items/eagle_lg.png",
+        "item_category": 11, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "reaver", "title": "재앙의 도끼", "subtitle": "Tango",
+        "pic": "data/images/items/reaver_lg.png",
+        "item_category": 11, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "relic", "title": "성스러운 유물", "subtitle": "Tango",
+        "pic": "data/images/items/relic_lg.png",
+        "item_category": 11, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "hyperstone", "title": "극도석", "subtitle": "Tango",
+        "pic": "data/images/items/hyperstone_lg.png",
+        "item_category": 11, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "ring_of_health", "title": "체력 반지", "subtitle": "Tango",
+        "pic": "data/images/items/ring_of_health_lg.png",
+        "item_category": 11, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "void_stone", "title": "공허석", "subtitle": "Tango",
+        "pic": "data/images/items/void_stone_lg.png",
+        "item_category": 11, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "mystic_staff", "title": "신비의 지팡이", "subtitle": "Tango",
+        "pic": "data/images/items/mystic_staff_lg.png",
+        "item_category": 11, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "energy_booster", "title": "기운 강화석", "subtitle": "Tango",
+        "pic": "data/images/items/energy_booster_lg.png",
+        "item_category": 11, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "point_booster", "title": "이중 강화석", "subtitle": "Tango",
+        "pic": "data/images/items/point_booster_lg.png",
+        "item_category": 11, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "vitality_booster", "title": "활력 강화석", "subtitle": "Tango",
+        "pic": "data/images/items/vitality_booster_lg.png",
+        "item_category": 11, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "orb_of_venom", "title": "독사의 구슬", "subtitle": "Tango",
+        "pic": "data/images/items/orb_of_venom_lg.png",
+        "item_category": 11, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "aegis", "title": "불멸의 아이기스", "subtitle": "Tango",
+        "pic": "data/images/items/Aegis_of_the_Immortal_icon.png",
+        "item_category": 12, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "cheese", "title": "치즈", "subtitle": "Tango",
+        "pic": "data/images/items/Cheese_icon.png",
+        "item_category": 12, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "bottle_doubledamage", "title": "더블데미지 룬", "subtitle": "Tango",
+        "pic": "data/images/items/Bottle_doubledamage_icon.png",
+        "item_category": 12, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "bottle_haste", "title": "신속화 룬", "subtitle": "Tango",
+        "pic": "data/images/items/Bottle_haste_icon.png",
+        "item_category": 12, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "bottle_regeneration", "title": "재생화 룬", "subtitle": "Tango",
+        "pic": "data/images/items/Bottle_regeneration_icon.png",
+        "item_category": 12, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "bottle_invisibility", "title": "투명화 룬", "subtitle": "Tango",
+        "pic": "data/images/items/Bottle_invisibility_icon.png",
+        "item_category": 12, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
+    },
+    {
+        "id": "bottle_illusion", "title": "환영화 룬", "subtitle": "Tango",
+        "pic": "data/images/items/Bottle_illusion_icon.png",
+        "item_category": 12, "item_type": "consumable,basic",
+        "spec_type": "힘",
+        "display_type": ["소모품"], "price": "50", "additional": "",
+        "desc": "대상 유닛에게 사용하여 지속해서 마나를 회복시킵니다. 공격을 받으면 효과가 중단됩니다."
     }
 ]

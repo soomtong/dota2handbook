@@ -7,44 +7,150 @@
             <button class="button icon ion-navicon-round" ng-click="openRight()"></button>
         </div>
         <content has-header="true">
-            <div class="list hero-list">
-                <div class="item item-divider hero-str">
-                    기본 아이템
+            <div class="list item-list">
+                <div class="item item-divider item-consumable">
+                    소모품
                 </div>
-                <a ng-repeat="hero in item_basic | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{hero.id}}">
-                    <img ng-src="{{hero.pic}}"> <!--256*144 128*72-->
-                    <h2>{{hero.title}} <span class="subtitle">{{hero.subtitle}}</span></h2>
-                    <p class="hero-stat">
-                        <span class="hero-stat-str">{{hero.stat_str}}</span>
-                        <span class="hero-stat-agi">{{hero.stat_agi}}</span>
-                        <span class="hero-stat-int">{{hero.stat_int}}</span>
+                <a ng-repeat="item in item_consumable | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{hero.id}}">
+                    <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
+                    <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
+                    <p class="item-stat">
+                        <span class="item-price">{{item.price}}</span>
+                        <span class="item-additional" ng-show="{{item.additional}}">{{item.additional}}</span>
                     </p>
-                    <p class="hero-stat">
-                        <span class="hero-stat-attack">{{hero.attack}}</span>
-                        <span class="hero-stat-speed">{{hero.speed}}</span>
-                        <span class="hero-stat-armor">{{hero.armor}}</span>
-                        <span class="hero-stat-range">{{hero.range}}</span>
-                        <span class="hero-stat-sight">{{hero.sight}}</span>
-                    </p>
+                    <p class="item-stat">{{item.desc}}</p>
                 </a>
-                <div class="item item-divider hero-agi">
-                    고급 아이템
+                <div class="item item-divider item-attribute">
+                    능력치
                 </div>
-                <a ng-repeat="hero in item_basic | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/hero/{{hero.id}}">
-                    <img ng-src="{{hero.pic}}"> <!--256*144 128*72-->
-                    <h2>{{hero.title}} <span class="subtitle">{{hero.subtitle}}</span></h2>
-                    <p class="hero-stat">
-                        <span class="hero-stat-str">{{hero.stat_str}}</span>
-                        <span class="hero-stat-agi">{{hero.stat_agi}}</span>
-                        <span class="hero-stat-int">{{hero.stat_int}}</span>
+                <a ng-repeat="item in item_attribute | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{hero.id}}">
+                    <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
+                    <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
+                    <p class="item-stat">
+                        <span class="item-price">{{item.price}}</span>
+                        <span class="item-additional" ng-show="{{item.additional}}">{{item.additional}}</span>
                     </p>
-                    <p class="hero-stat">
-                        <span class="hero-stat-attack">{{hero.attack}}</span>
-                        <span class="hero-stat-speed">{{hero.speed}}</span>
-                        <span class="hero-stat-armor">{{hero.armor}}</span>
-                        <span class="hero-stat-range">{{hero.range}}</span>
-                        <span class="hero-stat-sight">{{hero.sight}}</span>
+                    <p class="item-stat">{{item.desc}}</p>
+                </a>
+                <div class="item item-divider item-armament">
+                    기본장비
+                </div>
+                <a ng-repeat="item in item_armament | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{hero.id}}">
+                    <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
+                    <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
+                    <p class="item-stat">
+                        <span class="item-price">{{item.price}}</span>
+                        <span class="item-additional" ng-show="{{item.additional}}">{{item.additional}}</span>
                     </p>
+                    <p class="item-stat">{{item.desc}}</p>
+                </a>
+                <div class="item item-divider item-secret">
+                    비밀상점
+                </div>
+                <a ng-repeat="item in item_secret | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{hero.id}}">
+                    <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
+                    <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
+                    <p class="item-stat">
+                        <span class="item-price">{{item.price}}</span>
+                        <span class="item-additional" ng-show="{{item.additional}}">{{item.additional}}</span>
+                    </p>
+                    <p class="item-stat">{{item.desc}}</p>
+                </a>
+                <div class="item item-divider item-arcane">
+                    마법장비
+                </div>
+                <a ng-repeat="item in item_arcane | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{hero.id}}">
+                    <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
+                    <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
+                    <p class="item-stat">
+                        <span class="item-price">{{item.price}}</span>
+                        <span class="item-additional" ng-show="{{item.additional}}">{{item.additional}}</span>
+                    </p>
+                    <p class="item-stat">{{item.desc}}</p>
+                </a>
+                <div class="item item-divider item-common">
+                    일반
+                </div>
+                <a ng-repeat="item in item_common | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{hero.id}}">
+                    <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
+                    <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
+                    <p class="item-stat">
+                        <span class="item-price">{{item.price}}</span>
+                        <span class="item-additional" ng-show="{{item.additional}}">{{item.additional}}</span>
+                    </p>
+                    <p class="item-stat">{{item.desc}}</p>
+                </a>
+                <div class="item item-divider item-support">
+                    보조
+                </div>
+                <a ng-repeat="item in item_support | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{hero.id}}">
+                    <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
+                    <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
+                    <p class="item-stat">
+                        <span class="item-price">{{item.price}}</span>
+                        <span class="item-additional" ng-show="{{item.additional}}">{{item.additional}}</span>
+                    </p>
+                    <p class="item-stat">{{item.desc}}</p>
+                </a>
+                <div class="item item-divider item-caster">
+                    마법
+                </div>
+                <a ng-repeat="item in item_caster | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{hero.id}}">
+                    <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
+                    <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
+                    <p class="item-stat">
+                        <span class="item-price">{{item.price}}</span>
+                        <span class="item-additional" ng-show="{{item.additional}}">{{item.additional}}</span>
+                    </p>
+                    <p class="item-stat">{{item.desc}}</p>
+                </a>
+                <div class="item item-divider item-weapon">
+                    무기
+                </div>
+                <a ng-repeat="item in item_weapon | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{hero.id}}">
+                    <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
+                    <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
+                    <p class="item-stat">
+                        <span class="item-price">{{item.price}}</span>
+                        <span class="item-additional" ng-show="{{item.additional}}">{{item.additional}}</span>
+                    </p>
+                    <p class="item-stat">{{item.desc}}</p>
+                </a>
+                <div class="item item-divider item-armor">
+                    방어구
+                </div>
+                <a ng-repeat="item in item_armor | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{hero.id}}">
+                    <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
+                    <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
+                    <p class="item-stat">
+                        <span class="item-price">{{item.price}}</span>
+                        <span class="item-additional" ng-show="{{item.additional}}">{{item.additional}}</span>
+                    </p>
+                    <p class="item-stat">{{item.desc}}</p>
+                </a>
+                <div class="item item-divider item-artifact">
+                    공예품
+                </div>
+                <a ng-repeat="item in item_artifact | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{hero.id}}">
+                    <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
+                    <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
+                    <p class="item-stat">
+                        <span class="item-price">{{item.price}}</span>
+                        <span class="item-additional" ng-show="{{item.additional}}">{{item.additional}}</span>
+                    </p>
+                    <p class="item-stat">{{item.desc}}</p>
+                </a>
+                <div class="item item-divider item-roshan">
+                    기타 (로샨 & 룬)
+                </div>
+                <a ng-repeat="item in item_etc | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{hero.id}}">
+                    <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
+                    <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
+                    <p class="item-stat">
+                        <span class="item-price">{{item.price}}</span>
+                        <span class="item-additional" ng-show="{{item.additional}}">{{item.additional}}</span>
+                    </p>
+                    <p class="item-stat">{{item.desc}}</p>
                 </a>
             </div>
         </content>
@@ -62,12 +168,12 @@
                         <input type="text" placeholder="검색어" ng-model="searchFilter.keyword">
                     </label>
                 </li>
-                <li class="item item-divider">공격 분류</li>
-                <checkbox class="item item-checkbox" ng-repeat="type in filters_att_type" ng-model="type.selected">{{type.text}}</checkbox>
-                <li class="item item-divider">역할 분류</li>
-                <checkbox class="item item-checkbox" ng-repeat="type in filters_role_type" ng-model="type.selected">{{type.text}}</checkbox>
-                <li class="item item-divider">스킬 분류</li>
-                <checkbox class="item item-checkbox" ng-repeat="type in filters_skill_type" ng-model="type.selected">{{type.text}}</checkbox>
+                <li class="item item-divider">등급 분류</li>
+                <checkbox class="item item-checkbox" ng-repeat="type in filters_grade_type" ng-model="type.selected">{{type.text}}</checkbox>
+                <li class="item item-divider">그룹 분류</li>
+                <checkbox class="item item-checkbox" ng-repeat="type in filters_group_type" ng-model="type.selected">{{type.text}}</checkbox>
+                <li class="item item-divider">특징 분류</li>
+                <checkbox class="item item-checkbox" ng-repeat="type in filters_spec_type" ng-model="type.selected">{{type.text}}</checkbox>
             </ul>
         </content>
     </side-menu>
