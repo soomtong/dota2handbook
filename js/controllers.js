@@ -9,7 +9,7 @@ angular.module('dota2handbook.controllers', [])
     })
     .controller('HeroDetailCtrl', function ($scope, $ionicLoading, $stateParams, Heroes) {
         $scope.openLeft = function() {
-            window.history.back();
+            window.location.href = "#/hero";
         };
         $scope.openRight = function() {
             $scope.sideMenuController.toggleRight();

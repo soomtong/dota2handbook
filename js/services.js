@@ -126,12 +126,42 @@ angular.module('dota2handbook.services', ['ngResource'])
             {id: "upgrade", text: "고급 아이템", selected: false},
             {id: "side", text: "사이드 상점", selected: false},
             {id: "stat", text: "기본 스텟", selected: false},
-            {id: "attack", text: "공격", selected: false},
+            {id: "damage", text: "피해량", selected: false},
             {id: "speed", text: "속도", selected: false},
             {id: "life", text: "생존", selected: false}
         ];
         var filter_spec_type = [
-            {id: "power", text: "힘", selected: false}
+            {id: "힘", text: "힘", selected: false},
+            {id: "민", text: "민첩", selected: false},
+            {id: "지", text: "지능", selected: false},
+            {id: "능", text: "모든 능력치", selected: false},
+            {id: "생", text: "생명력", selected: false},
+            {id: "마", text: "마나", selected: false},
+            {id: "피", text: "피해", selected: false},
+            {id: "흡", text: "생명력 흡수", selected: false},
+            {id: "감", text: "방어도 감소", selected: false},
+            {id: "돗", text: "지속 피해", selected: false},
+            {id: "변", text: "고유 공격 변형", selected: false},
+            {id: "증", text: "공격 속도 증가", selected: false},
+            {id: "이", text: "이동 속도 증가", selected: false},
+            {id: "격", text: "공격 속도 감소", selected: false},
+            {id: "동", text: "이동 속도 감소", selected: false},
+            {id: "방", text: "방어력", selected: false},
+            {id: "재", text: "생명력 재생", selected: false},
+            {id: "나", text: "마나 재생", selected: false},
+            {id: "회", text: "회피", selected: false},
+            {id: "어", text: "피해 방어", selected: false},
+            {id: "저", text: "마법 저항", selected: false},
+            {id: "은", text: "은신", selected: false},
+            {id: "탈", text: "탈출", selected: false},
+            {id: "복", text: "회복", selected: false},
+            {id: "강", text: "일시적 강화", selected: false},
+            {id: "력", text: "무력화", selected: false},
+            {id: "문", text: "주문 방어", selected: false},
+            {id: "품", text: "소모품", selected: false},
+            {id: "라", text: "오라", selected: false},
+            {id: "효", text: "지속 효과", selected: false},
+            {id: "술", text: "시전 기술", selected: false}
         ];
         var searchKeyword = '';
 
