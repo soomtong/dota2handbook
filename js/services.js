@@ -8,7 +8,13 @@ angular.module('dota2handbook.services', ['ngResource'])
             version: '1.0',
             compatible: '6.80',
             heroFilter: false,
-            itemFilter: false
+            itemFilter: false,
+            menu: [
+                { link: '/hero', title: '영웅' },
+                { link: '/item', title: '아이템' },
+                { link: '/mechanism', title: '메커니즘' },
+                { link: '/report', title: '리포트' }
+            ]
         };
     })
     .factory('Heroes', function ($resource) {

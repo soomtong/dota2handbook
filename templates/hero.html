@@ -96,10 +96,7 @@
         </header>
         <content has-header="true">
             <ul class="list">
-                <a class="item" href="#/hero">영웅</a>
-                <a class="item" href="#/item">아이템</a>
-                <a class="item" href="#/mechanic">메커니즘</a>
-                <a class="item" href="#/report">리포트</a>
+                <a class="item" ng-repeat="item in app.menu" ng-href="#{{item.link}}">{{item.title}}</a>
                 <li class="item item-divider">Peonybooks, co. ltd.</li>
                 <!--<li class="item ad-line">Specially Thanks to 정인호</li>-->
             </ul>

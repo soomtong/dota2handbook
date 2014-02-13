@@ -24,6 +24,11 @@ angular.module('dota2handbook', ['ionic', 'dota2handbook.services', 'dota2handbo
                 url: "/item/:itemId",
                 templateUrl: "templates/item.html",
                 controller: 'ItemDetailCtrl'
+            })
+            .state('mechanism', {
+                url: "/mechanism",
+                templateUrl: "templates/mechanism.html",
+                controller: 'MechanismCtrl'
             });
 
         $urlRouterProvider.otherwise("/hero");
