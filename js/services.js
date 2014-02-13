@@ -184,4 +184,14 @@ angular.module('dota2handbook.services', ['ngResource'])
             }
         };
     })
+    .factory('Mechanism', function ($resource) {
+        return $resource('data/mechanism/:mechanismId.json', {}, {
+            all: { method: 'GET', params: { mechanismId: 'list' }, isArray: true }
+        })
+    })
+    .factory('Report', function ($resource) {
+        return $resource('data/report/:reportId.json', {}, {
+            all: { method: 'GET', params: { reportId: 'list' }, isArray: true }
+        })
+    })
 ;

@@ -1,0 +1,55 @@
+<side-menus>
+
+<pane side-menu-content>
+    <div class="bar bar-header bar-energized">
+        <button class="button icon ion-search" ng-click="openLeft()"></button>
+        <h1 class="title">메커니즘 Mechanism</h1>
+        <button class="button icon ion-navicon-round" ng-click="openRight()"></button>
+    </div>
+    <content has-header="true">
+        <div class="list mechanism-list">
+            <div class="item item-divider">
+                도타 2 내부 작동 방식
+            </div>
+            <a ng-repeat="item in mechanism_1 | filter:searchFilter.keyword" class="item item-icon-left" href="#/mechanism/{{item.id}}">
+                <i class="icon ion-mic-a"></i>
+                <h2>{{item.title}}</h2>
+                <p class="item-stat">{{item.desc}}</p>
+            </a>
+        </div>
+    </content>
+</pane>
+
+<side-menu side="left">
+    <header class="bar bar-header bar-energized">
+        <h1 class="title">검색 필터</h1>
+    </header>
+    <content has-header="true">
+        <ul class="list">
+            <li class="">
+                <label class="item item-input">
+                    <i class="icon ion-search placeholder-icon"></i>&nbsp;
+                    <input type="text" placeholder="검색어" ng-model="searchFilter.keyword">
+                </label>
+            </li>
+        </ul>
+    </content>
+</side-menu>
+
+<side-menu side="right">
+    <header class="bar bar-header bar-energized">
+        <h1 class="title">도타 핸드북</h1>
+    </header>
+    <content has-header="true">
+        <div class="list">
+            <a class="item" ng-repeat="item in app.menu" ng-href="#{{item.link}}">{{item.title}}</a>
+            <li class="item item-divider">Peonybooks, co. ltd.</li>
+            <!--<li class="item ad-line">Specially Thanks to 정인호</li>-->
+        </div>
+    </content>
+    <footer class="bar bar-footer bar-energized">
+        <div class="title">도타2 핸드북 <span class="copyright badge badge-assertive">{{app.version}}</span> 콘텐츠 <span class="copyright badge badge-positive">{{app.compatible}}</span></div>
+    </footer>
+</side-menu>
+
+</side-menus>

@@ -1,10 +1,31 @@
 <side-menus>
-
     <pane side-menu-content>
         <div class="bar bar-header bar-energized">
-            <button class="button icon ion-search" ng-click="openLeft()"></button>
-            <h1 class="title">아이템 Item</h1>
+            <button class="button icon-left ion-chevron-left" ng-click="openLeft()"></button>
+            <h1 class="title">{{ item.title }}</h1>
             <button class="button icon ion-navicon-round" ng-click="openRight()"></button>
+        </div>
+        <content has-header="true">
+            <div class="hero-content">
+                {{ item.description }}
+            </div>
+            <div class="google">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- 도타2핸드북 -->
+                <ins class="adsbygoogle"
+                     style="display:inline-block;width:320px;height:50px"
+                     data-ad-client="ca-pub-1102159590964555"
+                     data-ad-slot="2780924992"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </content>
+    </pane>
+
+    <side-menu side="left">
+        <div class="bar bar-header bar-energized">
+            <h1 class="title">아이템 Item</h1>
         </div>
         <content has-header="true">
             <div class="list item-list">
@@ -15,11 +36,10 @@
                     <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
                     <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
                     <p class="item-stat">
-                        <span class="item-price">{{item.price}}</span>
+                        <span class="item-price" ng-show="{{item.price}}">{{item.price}}</span>
                         <span class="item-cooldown" ng-show="{{item.cooldown}}">{{item.cooldown}}</span>
-                        <span class="item-additional">{{item.additional}}</span>
                     </p>
-                    <p class="item-stat">{{item.desc}}</p>
+                    <p class="item-stat">{{item.additional}}</p>
                 </a>
                 <div class="item item-divider item-attribute">
                     능력치
@@ -28,11 +48,10 @@
                     <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
                     <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
                     <p class="item-stat">
-                        <span class="item-price">{{item.price}}</span>
+                        <span class="item-price" ng-show="{{item.price}}">{{item.price}}</span>
                         <span class="item-cooldown" ng-show="{{item.cooldown}}">{{item.cooldown}}</span>
-                        <span class="item-additional">{{item.additional}}</span>
                     </p>
-                    <p class="item-stat">{{item.desc}}</p>
+                    <p class="item-stat">{{item.additional}}</p>
                 </a>
                 <div class="item item-divider item-armament">
                     기본장비
@@ -41,11 +60,10 @@
                     <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
                     <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
                     <p class="item-stat">
-                        <span class="item-price">{{item.price}}</span>
+                        <span class="item-price" ng-show="{{item.price}}">{{item.price}}</span>
                         <span class="item-cooldown" ng-show="{{item.cooldown}}">{{item.cooldown}}</span>
-                        <span class="item-additional">{{item.additional}}</span>
                     </p>
-                    <p class="item-stat">{{item.desc}}</p>
+                    <p class="item-stat">{{item.additional}}</p>
                 </a>
                 <div class="item item-divider item-secret">
                     비밀상점
@@ -54,11 +72,10 @@
                     <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
                     <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
                     <p class="item-stat">
-                        <span class="item-price">{{item.price}}</span>
+                        <span class="item-price" ng-show="{{item.price}}">{{item.price}}</span>
                         <span class="item-cooldown" ng-show="{{item.cooldown}}">{{item.cooldown}}</span>
-                        <span class="item-additional">{{item.additional}}</span>
                     </p>
-                    <p class="item-stat">{{item.desc}}</p>
+                    <p class="item-stat">{{item.additional}}</p>
                 </a>
                 <div class="item item-divider item-arcane">
                     마법장비
@@ -67,11 +84,10 @@
                     <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
                     <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
                     <p class="item-stat">
-                        <span class="item-price">{{item.price}}</span>
+                        <span class="item-price" ng-show="{{item.price}}">{{item.price}}</span>
                         <span class="item-cooldown" ng-show="{{item.cooldown}}">{{item.cooldown}}</span>
-                        <span class="item-additional">{{item.additional}}</span>
                     </p>
-                    <p class="item-stat">{{item.desc}}</p>
+                    <p class="item-stat">{{item.additional}}</p>
                 </a>
                 <div class="item item-divider item-common">
                     일반
@@ -80,11 +96,10 @@
                     <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
                     <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
                     <p class="item-stat">
-                        <span class="item-price">{{item.price}}</span>
+                        <span class="item-price" ng-show="{{item.price}}">{{item.price}}</span>
                         <span class="item-cooldown" ng-show="{{item.cooldown}}">{{item.cooldown}}</span>
-                        <span class="item-additional">{{item.additional}}</span>
                     </p>
-                    <p class="item-stat">{{item.desc}}</p>
+                    <p class="item-stat">{{item.additional}}</p>
                 </a>
                 <div class="item item-divider item-support">
                     보조
@@ -93,11 +108,10 @@
                     <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
                     <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
                     <p class="item-stat">
-                        <span class="item-price">{{item.price}}</span>
+                        <span class="item-price" ng-show="{{item.price}}">{{item.price}}</span>
                         <span class="item-cooldown" ng-show="{{item.cooldown}}">{{item.cooldown}}</span>
-                        <span class="item-additional">{{item.additional}}</span>
                     </p>
-                    <p class="item-stat">{{item.desc}}</p>
+                    <p class="item-stat">{{item.additional}}</p>
                 </a>
                 <div class="item item-divider item-caster">
                     마법
@@ -106,11 +120,10 @@
                     <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
                     <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
                     <p class="item-stat">
-                        <span class="item-price">{{item.price}}</span>
+                        <span class="item-price" ng-show="{{item.price}}">{{item.price}}</span>
                         <span class="item-cooldown" ng-show="{{item.cooldown}}">{{item.cooldown}}</span>
-                        <span class="item-additional">{{item.additional}}</span>
                     </p>
-                    <p class="item-stat">{{item.desc}}</p>
+                    <p class="item-stat">{{item.additional}}</p>
                 </a>
                 <div class="item item-divider item-weapon">
                     무기
@@ -119,11 +132,10 @@
                     <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
                     <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
                     <p class="item-stat">
-                        <span class="item-price">{{item.price}}</span>
+                        <span class="item-price" ng-show="{{item.price}}">{{item.price}}</span>
                         <span class="item-cooldown" ng-show="{{item.cooldown}}">{{item.cooldown}}</span>
-                        <span class="item-additional">{{item.additional}}</span>
                     </p>
-                    <p class="item-stat">{{item.desc}}</p>
+                    <p class="item-stat">{{item.additional}}</p>
                 </a>
                 <div class="item item-divider item-armor">
                     방어구
@@ -132,11 +144,10 @@
                     <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
                     <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
                     <p class="item-stat">
-                        <span class="item-price">{{item.price}}</span>
+                        <span class="item-price" ng-show="{{item.price}}">{{item.price}}</span>
                         <span class="item-cooldown" ng-show="{{item.cooldown}}">{{item.cooldown}}</span>
-                        <span class="item-additional">{{item.additional}}</span>
                     </p>
-                    <p class="item-stat">{{item.desc}}</p>
+                    <p class="item-stat">{{item.additional}}</p>
                 </a>
                 <div class="item item-divider item-artifact">
                     공예품
@@ -145,11 +156,10 @@
                     <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
                     <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
                     <p class="item-stat">
-                        <span class="item-price">{{item.price}}</span>
+                        <span class="item-price" ng-show="{{item.price}}">{{item.price}}</span>
                         <span class="item-cooldown" ng-show="{{item.cooldown}}">{{item.cooldown}}</span>
-                        <span class="item-additional">{{item.additional}}</span>
                     </p>
-                    <p class="item-stat">{{item.desc}}</p>
+                    <p class="item-stat">{{item.additional}}</p>
                 </a>
                 <div class="item item-divider item-roshan">
                     기타 (로샨 & 룬)
@@ -158,35 +168,12 @@
                     <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
                     <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
                     <p class="item-stat">
-                        <span class="item-price">{{item.price}}</span>
+                        <span class="item-price" ng-show="{{item.price}}">{{item.price}}</span>
                         <span class="item-cooldown" ng-show="{{item.cooldown}}">{{item.cooldown}}</span>
-                        <span class="item-additional">{{item.additional}}</span>
                     </p>
-                    <p class="item-stat">{{item.desc}}</p>
+                    <p class="item-stat">{{item.additional}}</p>
                 </a>
             </div>
-        </content>
-    </pane>
-
-    <side-menu side="left">
-        <header class="bar bar-header bar-energized">
-            <h1 class="title">검색 필터</h1>
-        </header>
-        <content has-header="true">
-            <ul class="list">
-                <li class="">
-                    <label class="item item-input">
-                        <i class="icon ion-search placeholder-icon"></i>&nbsp;
-                        <input type="text" placeholder="검색어" ng-model="searchFilter.keyword">
-                    </label>
-                </li>
-                <li class="item item-divider">등급 분류</li>
-                <checkbox class="item item-checkbox" ng-repeat="type in filters_grade_type" ng-model="type.selected">{{type.text}}</checkbox>
-                <li class="item item-divider">그룹 분류</li>
-                <checkbox class="item item-checkbox" ng-repeat="type in filters_group_type" ng-model="type.selected">{{type.text}}</checkbox>
-                <li class="item item-divider">특징 분류</li>
-                <checkbox class="item item-checkbox" ng-repeat="type in filters_spec_type" ng-model="type.selected">{{type.text}}</checkbox>
-            </ul>
         </content>
     </side-menu>
 
@@ -195,18 +182,14 @@
             <h1 class="title">도타 핸드북</h1>
         </header>
         <content has-header="true">
-            <div class="list">
-                <a class="item" href="#/hero">영웅</a>
-                <a class="item" href="#/item">아이템</a>
-                <a class="item" href="#/mechanism">메커니즘</a>
-                <a class="item" href="#/report">리포트</a>
+            <ul class="list">
+                <a class="item" ng-repeat="item in app.menu" ng-href="#{{item.link}}">{{item.title}}</a>
                 <li class="item item-divider">Peonybooks, co. ltd.</li>
                 <!--<li class="item ad-line">Specially Thanks to 정인호</li>-->
-            </div>
+            </ul>
         </content>
         <footer class="bar bar-footer bar-energized">
             <div class="title">도타2 핸드북 <span class="copyright badge badge-assertive">{{app.version}}</span> 콘텐츠 <span class="copyright badge badge-positive">{{app.compatible}}</span></div>
         </footer>
     </side-menu>
-
 </side-menus>

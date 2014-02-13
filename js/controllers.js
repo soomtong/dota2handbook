@@ -7,7 +7,7 @@ angular.module('dota2handbook.controllers', [])
             $scope.sideMenuController.toggleRight();
         };
     })
-    .controller('HeroDetailCtrl', function ($scope, $ionicLoading, $stateParams, Heroes) {
+    .controller('HeroDetailCtrl', function ($scope, $stateParams, Heroes) {
         $scope.openLeft = function() {
             window.location.href = "#/hero";
         };
@@ -37,6 +37,64 @@ angular.module('dota2handbook.controllers', [])
 
         $scope.showLoading();
         $scope.item = Items.get({ itemId: $stateParams.itemId });
+        $scope.hideLoading();
+    })
+    .controller('MechanismCtrl', function ($scope, Mechanism) {
+        $scope.openLeft = function() {
+            $scope.sideMenuController.toggleLeft();
+        };
+        $scope.openRight = function() {
+            $scope.sideMenuController.toggleRight();
+        };
+
+        var mechanism = Mechanism.all();
+
+        mechanism['$promise']
+            .then(function (mechanismList) {
+                $scope.mechanism_1 = mechanismList.filter(function (item) {
+                    return item['category'] == 1;
+                });
+            });
+    })
+    .controller('MechanismDetailCtrl', function ($scope, $stateParams, Mechanism) {
+        $scope.openLeft = function() {
+            window.history.back();
+        };
+        $scope.openRight = function() {
+            $scope.sideMenuController.toggleRight();
+        };
+
+        $scope.showLoading();
+        $scope.mechanism = Mechanism.get({ mechanismId: $stateParams.mechanismId });
+        $scope.hideLoading();
+    })
+    .controller('ReportCtrl', function ($scope, Report) {
+        $scope.openLeft = function() {
+            $scope.sideMenuController.toggleLeft();
+        };
+        $scope.openRight = function() {
+            $scope.sideMenuController.toggleRight();
+        };
+
+        var report = Report.all();
+
+        report['$promise']
+            .then(function (reportList) {
+                $scope.report_1 = reportList.filter(function (item) {
+                    return item['category'] == 1;
+                });
+            });
+    })
+    .controller('ReportDetailCtrl', function ($scope, $stateParams, Report) {
+        $scope.openLeft = function() {
+            window.history.back();
+        };
+        $scope.openRight = function() {
+            $scope.sideMenuController.toggleRight();
+        };
+
+        $scope.showLoading();
+        $scope.report = Report.get({ reportId: $stateParams.reportId });
         $scope.hideLoading();
     })
     .controller('AppCtrl', function ($scope, $ionicLoading, Handbook, Heroes, HeroType, HeroFilters, Items, ItemType, ItemFilters) {

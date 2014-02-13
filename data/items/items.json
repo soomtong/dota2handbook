@@ -1028,7 +1028,7 @@
         "pic": "data/images/items/Aegis_of_the_Immortal_icon.png",
         "item_category": 12, "item_type": "roshan",
         "spec_type": "",
-        "display_type": ["소모품"], "price": "", "additional": "", "cooldown": "",
+        "display_type": ["소모품"], "price": "", "additional": "부활 / 5s", "cooldown": "",
         "desc": "이 아이템을 지닌 영웅이 사망하면 5초 후에 모든 체력과 마나가 채워진 상태로 부활합니다."
     },
     {
@@ -1036,7 +1036,7 @@
         "pic": "data/images/items/Cheese_icon.png",
         "item_category": 12, "item_type": "roshan",
         "spec_type": "",
-        "display_type": ["소모품"], "price": "", "additional": "", "cooldown": "",
+        "display_type": ["소모품"], "price": "", "additional": "2500HP, 1000MP", "cooldown": "",
         "desc": "사용 즉시 2500의 체력과 1000의 마나를 회복합니다."
     },
     {
@@ -1044,7 +1044,7 @@
         "pic": "data/images/items/Bottle_doubledamage_icon.png",
         "item_category": 12, "item_type": "rune",
         "spec_type": "",
-        "display_type": ["소모품"], "price": "", "additional": "", "cooldown": "",
+        "display_type": ["소모품"], "price": "", "additional": "2배 공격력 / 45s", "cooldown": "",
         "desc": "45초 동안 기본 공격력이 2배로 증가합니다."
     },
     {
@@ -1052,7 +1052,7 @@
         "pic": "data/images/items/Bottle_haste_icon.png",
         "item_category": 12, "item_type": "rune",
         "spec_type": "",
-        "display_type": ["소모품"], "price": "", "additional": "", "cooldown": "",
+        "display_type": ["소모품"], "price": "", "additional": "최대 이속 / 30s", "cooldown": "",
         "desc": "30초 동안 이동속도가 최대로 증가합니다."
     },
     {
@@ -1060,7 +1060,7 @@
         "pic": "data/images/items/Bottle_regeneration_icon.png",
         "item_category": 12, "item_type": "rune",
         "spec_type": "",
-        "display_type": ["소모품"], "price": "", "additional": "", "cooldown": "",
+        "display_type": ["소모품"], "price": "", "additional": "2개의 환영 / 75s", "cooldown": "",
         "desc": "75초 동안 유지되는 환영 2개를 소환합니다."
     },
     {
@@ -1068,7 +1068,7 @@
         "pic": "data/images/items/Bottle_invisibility_icon.png",
         "item_category": 12, "item_type": "rune",
         "spec_type": "",
-        "display_type": ["소모품"], "price": "", "additional": "", "cooldown": "",
+        "display_type": ["소모품"], "price": "", "additional": "투명화 / 45s", "cooldown": "",
         "desc": "45초 동안 투명화 상태가 됩니다."
     },
     {
@@ -1076,7 +1076,7 @@
         "pic": "data/images/items/Bottle_illusion_icon.png",
         "item_category": 12, "item_type": "rune",
         "spec_type": "",
-        "display_type": ["소모품"], "price": "", "additional": "", "cooldown": "",
+        "display_type": ["소모품"], "price": "", "additional": "최대 재생 / 30s", "cooldown": "",
         "desc": "30초 동안 생명력과 마력이 최대로 회복됩니다."
     }
 ]
