@@ -32,7 +32,7 @@
                 <div class="item item-divider item-consumable">
                     소모품
                 </div>
-                <a ng-repeat="item in item_consumable | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{hero.id}}">
+                <a ng-repeat="item in item_consumable | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{item.id}}">
                     <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
                     <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
                     <p class="item-stat">
@@ -44,7 +44,7 @@
                 <div class="item item-divider item-attribute">
                     능력치
                 </div>
-                <a ng-repeat="item in item_attribute | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{hero.id}}">
+                <a ng-repeat="item in item_attribute | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{item.id}}">
                     <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
                     <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
                     <p class="item-stat">
@@ -56,7 +56,7 @@
                 <div class="item item-divider item-armament">
                     기본장비
                 </div>
-                <a ng-repeat="item in item_armament | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{hero.id}}">
+                <a ng-repeat="item in item_armament | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{item.id}}">
                     <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
                     <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
                     <p class="item-stat">
@@ -68,7 +68,7 @@
                 <div class="item item-divider item-secret">
                     비밀상점
                 </div>
-                <a ng-repeat="item in item_secret | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{hero.id}}">
+                <a ng-repeat="item in item_secret | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{item.id}}">
                     <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
                     <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
                     <p class="item-stat">
@@ -80,7 +80,7 @@
                 <div class="item item-divider item-arcane">
                     마법장비
                 </div>
-                <a ng-repeat="item in item_arcane | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{hero.id}}">
+                <a ng-repeat="item in item_arcane | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{item.id}}">
                     <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
                     <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
                     <p class="item-stat">
@@ -92,7 +92,7 @@
                 <div class="item item-divider item-common">
                     일반
                 </div>
-                <a ng-repeat="item in item_common | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{hero.id}}">
+                <a ng-repeat="item in item_common | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{item.id}}">
                     <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
                     <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
                     <p class="item-stat">
@@ -104,7 +104,7 @@
                 <div class="item item-divider item-support">
                     보조
                 </div>
-                <a ng-repeat="item in item_support | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{hero.id}}">
+                <a ng-repeat="item in item_support | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{item.id}}">
                     <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
                     <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
                     <p class="item-stat">
@@ -116,7 +116,7 @@
                 <div class="item item-divider item-caster">
                     마법
                 </div>
-                <a ng-repeat="item in item_caster | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{hero.id}}">
+                <a ng-repeat="item in item_caster | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{item.id}}">
                     <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
                     <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
                     <p class="item-stat">
@@ -128,7 +128,7 @@
                 <div class="item item-divider item-weapon">
                     무기
                 </div>
-                <a ng-repeat="item in item_weapon | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{hero.id}}">
+                <a ng-repeat="item in item_weapon | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{item.id}}">
                     <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
                     <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
                     <p class="item-stat">
@@ -140,7 +140,7 @@
                 <div class="item item-divider item-armor">
                     방어구
                 </div>
-                <a ng-repeat="item in item_armor | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{hero.id}}">
+                <a ng-repeat="item in item_armor | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{item.id}}">
                     <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
                     <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
                     <p class="item-stat">
@@ -152,7 +152,7 @@
                 <div class="item item-divider item-artifact">
                     공예품
                 </div>
-                <a ng-repeat="item in item_artifact | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{hero.id}}">
+                <a ng-repeat="item in item_artifact | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{item.id}}">
                     <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
                     <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
                     <p class="item-stat">
@@ -164,7 +164,7 @@
                 <div class="item item-divider item-roshan">
                     기타 (로샨 & 룬)
                 </div>
-                <a ng-repeat="item in item_etc | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{hero.id}}">
+                <a ng-repeat="item in item_etc | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{item.id}}">
                     <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
                     <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
                     <p class="item-stat">

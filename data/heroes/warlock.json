@@ -1,1 +1,5 @@
-{ "id": "warlock", "title": "흑마법사 Warlock", "description": "흑마법사 Warlock" }
+{
+    "id": "warlock",
+    "title": "흑마법사 Warlock",
+    "description": "흑마법사 Warlock"
+}

@@ -24,7 +24,13 @@ void main () {
       heroName = hero['id'];
       heroTitle = hero['title'] + ' ' + hero['subtitle'];
       fileName = heroName + '.json';
-      content = '''{ "id": "${heroName}", "title": "${heroTitle}", "description": "${heroTitle}" }''';
+      content = '''
+{
+    "id": "${heroName}",
+    "title": "${heroTitle}",
+    "description": "${heroTitle}"
+}
+''';
 
       if (true || !new File(fileName).existsSync()) {
         new File(fileName).writeAsStringSync(content);

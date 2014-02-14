@@ -1,1 +1,5 @@
-{ "id": "razor", "title": "레이저 Razor", "description": "레이저 Razor" }
+{
+    "id": "razor",
+    "title": "레이저 Razor",
+    "description": "레이저 Razor"
+}

@@ -1,1 +1,5 @@
-{ "id": "sniper", "title": "저격수 Sniper", "description": "저격수 Sniper" }
+{
+    "id": "sniper",
+    "title": "저격수 Sniper",
+    "description": "저격수 Sniper"
+}
