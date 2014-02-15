@@ -228,7 +228,7 @@ angular.module('dota2handbook.controllers', [])
         $scope.report = Report.get({ reportId: $stateParams.reportId });
         $scope.hideLoading();
     })
-    .controller('AppCtrl', function ($scope, $ionicLoading, Handbook, HeroType, HeroFilters, ItemType, ItemFilters) {
+    .controller('AppCtrl', function ($scope, $ionicLoading, Handbook, HeroFilters, ItemFilters) {
         // loading indicator
         $scope.showLoading = function() {
             $scope.loading = $ionicLoading.show({
@@ -297,7 +297,8 @@ angular.module('dota2handbook.controllers', [])
                         return result;
                     });
 
-                attackResult = $scope.searchFilter.attackType.length == attackPattern.length;
+//                attackResult = $scope.searchFilter.attackType.length == attackPattern.length;
+                attackResult = !!attackPattern.length;
             }
             if ($scope.searchFilter.roleType.length) {
                 var rolePattern = $scope.searchFilter.roleType
@@ -308,6 +309,7 @@ angular.module('dota2handbook.controllers', [])
                     });
 
                 roleResult = $scope.searchFilter.roleType.length == rolePattern.length;
+//                roleResult = !!rolePattern.length;
             }
             if ($scope.searchFilter.skillType.length) {
                 var skillPattern = $scope.searchFilter.skillType
@@ -318,6 +320,7 @@ angular.module('dota2handbook.controllers', [])
                     });
 
                 skillResult = $scope.searchFilter.skillType.length == skillPattern.length;
+//                skillResult = !!skillPattern.length;
             }
 
             return attackResult && roleResult && skillResult;
@@ -353,12 +356,13 @@ angular.module('dota2handbook.controllers', [])
             if ($scope.searchFilter.gradeType.length) {
                 var gradePattern = $scope.searchFilter.gradeType
                     .map(function (type) {
-                    return item['item_type'].indexOf(type) > -1;
+                        return item['item_type'].indexOf(type) > -1;
                     }).filter(function (result) {
                         return result;
                     });
 
-                gradeResult = $scope.searchFilter.gradeType.length == gradePattern.length;
+//                gradeResult = $scope.searchFilter.gradeType.length == gradePattern.length;
+                gradeResult = !!gradePattern.length;
             }
             if ($scope.searchFilter.groupType.length) {
                 var groupPattern = $scope.searchFilter.groupType
@@ -368,7 +372,8 @@ angular.module('dota2handbook.controllers', [])
                         return result;
                     });
 
-                groupResult = $scope.searchFilter.groupType.length == groupPattern.length;
+//                groupResult = $scope.searchFilter.groupType.length == groupPattern.length;
+                groupResult = !!groupPattern.length;
             }
             if ($scope.searchFilter.specType.length) {
                 var specPattern = $scope.searchFilter.specType
@@ -378,7 +383,8 @@ angular.module('dota2handbook.controllers', [])
                         return result;
                     });
 
-                specResult = $scope.searchFilter.specType.length == specPattern.length;
+//                specResult = $scope.searchFilter.specType.length == specPattern.length;
+                specResult = !!specPattern.length;
             }
 
             return gradeResult && groupResult && specResult;
