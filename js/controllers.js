@@ -108,7 +108,8 @@ angular.module('dota2handbook.controllers', [])
     })
     .controller('ItemDetailCtrl', function ($scope, $stateParams, Items, ItemType) {
         $scope.openLeft = function() {
-            window.history.back();
+            //window.history.back();
+            window.location.href = "#/item";
         };
         $scope.openRight = function() {
             $scope.sideMenuController.toggleRight();
@@ -185,7 +186,7 @@ angular.module('dota2handbook.controllers', [])
     })
     .controller('MechanismDetailCtrl', function ($scope, $stateParams, Mechanism) {
         $scope.openLeft = function() {
-            window.history.back();
+            window.location.href = "#/mechanism";
         };
         $scope.openRight = function() {
             $scope.sideMenuController.toggleRight();
@@ -218,7 +219,7 @@ angular.module('dota2handbook.controllers', [])
     })
     .controller('ReportDetailCtrl', function ($scope, $stateParams, Report) {
         $scope.openLeft = function() {
-            window.history.back();
+            window.location.href = "#/report";
         };
         $scope.openRight = function() {
             $scope.sideMenuController.toggleRight();
