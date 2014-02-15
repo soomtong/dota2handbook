@@ -1,13 +1,33 @@
 angular.module('dota2handbook.controllers', [])
-    .controller('HeroListCtrl',function ($scope) {
+    .controller('HeroListCtrl',function ($scope, Heroes, HeroType) {
         $scope.openLeft = function() {
             $scope.sideMenuController.toggleLeft();
         };
         $scope.openRight = function() {
             $scope.sideMenuController.toggleRight();
         };
+
+        $scope.showLoading();
+
+        // load data
+        var heroes = Heroes.all();
+
+        heroes['$promise']
+            .then(function (heroList) {
+                $scope.heroes_strength = heroList.filter(function (item) {
+                    return item['hero_category'] == HeroType.strength;
+                });
+                $scope.heroes_agility = heroList.filter(function (item) {
+                    return item['hero_category'] == HeroType.agility;
+                });
+                $scope.heroes_intelligence = heroList.filter(function (item) {
+                    return item['hero_category'] == HeroType.intelligence;
+                });
+            }).then(function () {
+                $scope.hideLoading();
+            });
     })
-    .controller('HeroDetailCtrl', function ($scope, $stateParams, Heroes) {
+    .controller('HeroDetailCtrl', function ($scope, $stateParams, Heroes, HeroType) {
         $scope.openLeft = function() {
             window.location.href = "#/hero";
         };
@@ -17,17 +37,82 @@ angular.module('dota2handbook.controllers', [])
 
         $scope.showLoading();
         $scope.hero = Heroes.get({ heroId: $stateParams.heroId });
-        $scope.hideLoading();
+
+        // load data
+        var heroes = Heroes.all();
+
+        heroes['$promise']
+            .then(function (heroList) {
+                $scope.heroes_strength = heroList.filter(function (item) {
+                    return item['hero_category'] == HeroType.strength;
+                });
+                $scope.heroes_agility = heroList.filter(function (item) {
+                    return item['hero_category'] == HeroType.agility;
+                });
+                $scope.heroes_intelligence = heroList.filter(function (item) {
+                    return item['hero_category'] == HeroType.intelligence;
+                });
+            }).then(function () {
+                $scope.hideLoading();
+            });
     })
-    .controller('ItemListCtrl', function ($scope) {
+    .controller('ItemListCtrl', function ($scope, Items, ItemType) {
         $scope.openLeft = function() {
             $scope.sideMenuController.toggleLeft();
         };
         $scope.openRight = function() {
             $scope.sideMenuController.toggleRight();
         };
+
+        $scope.showLoading();
+
+        // load data
+        var items = Items.all();
+
+        items['$promise']
+            .then(function (ItemList) {
+                $scope.item_consumable = ItemList.filter(function (item) {
+                    return item['item_category'] == ItemType.consumable;
+                });
+                $scope.item_attribute = ItemList.filter(function (item) {
+                    return item['item_category'] == ItemType.attribute;
+                });
+                $scope.item_armament = ItemList.filter(function (item) {
+                    return item['item_category'] == ItemType.armament;
+                });
+                $scope.item_arcane = ItemList.filter(function (item) {
+                    return item['item_category'] == ItemType.arcane;
+                });
+                $scope.item_common = ItemList.filter(function (item) {
+                    return item['item_category'] == ItemType.common;
+                });
+                $scope.item_support = ItemList.filter(function (item) {
+                    return item['item_category'] == ItemType.support;
+                });
+                $scope.item_caster = ItemList.filter(function (item) {
+                    return item['item_category'] == ItemType.caster;
+                });
+                $scope.item_weapon = ItemList.filter(function (item) {
+                    return item['item_category'] == ItemType.weapon;
+                });
+                $scope.item_armor = ItemList.filter(function (item) {
+                    return item['item_category'] == ItemType.armor;
+                });
+                $scope.item_artifact = ItemList.filter(function (item) {
+                    return item['item_category'] == ItemType.artifact;
+                });
+                $scope.item_secret = ItemList.filter(function (item) {
+                    return item['item_category'] == ItemType.secret;
+                });
+                $scope.item_etc = ItemList.filter(function (item) {
+                    return item['item_category'] == ItemType.etc;
+                });
+            })
+            .then(function () {
+                $scope.hideLoading();
+            });
     })
-    .controller('ItemDetailCtrl', function ($scope, $stateParams, Items) {
+    .controller('ItemDetailCtrl', function ($scope, $stateParams, Items, ItemType) {
         $scope.openLeft = function() {
             window.history.back();
         };
@@ -37,7 +122,52 @@ angular.module('dota2handbook.controllers', [])
 
         $scope.showLoading();
         $scope.item = Items.get({ itemId: $stateParams.itemId });
-        $scope.hideLoading();
+
+        // load data
+        var items = Items.all();
+
+        items['$promise']
+            .then(function (ItemList) {
+                $scope.item_consumable = ItemList.filter(function (item) {
+                    return item['item_category'] == ItemType.consumable;
+                });
+                $scope.item_attribute = ItemList.filter(function (item) {
+                    return item['item_category'] == ItemType.attribute;
+                });
+                $scope.item_armament = ItemList.filter(function (item) {
+                    return item['item_category'] == ItemType.armament;
+                });
+                $scope.item_arcane = ItemList.filter(function (item) {
+                    return item['item_category'] == ItemType.arcane;
+                });
+                $scope.item_common = ItemList.filter(function (item) {
+                    return item['item_category'] == ItemType.common;
+                });
+                $scope.item_support = ItemList.filter(function (item) {
+                    return item['item_category'] == ItemType.support;
+                });
+                $scope.item_caster = ItemList.filter(function (item) {
+                    return item['item_category'] == ItemType.caster;
+                });
+                $scope.item_weapon = ItemList.filter(function (item) {
+                    return item['item_category'] == ItemType.weapon;
+                });
+                $scope.item_armor = ItemList.filter(function (item) {
+                    return item['item_category'] == ItemType.armor;
+                });
+                $scope.item_artifact = ItemList.filter(function (item) {
+                    return item['item_category'] == ItemType.artifact;
+                });
+                $scope.item_secret = ItemList.filter(function (item) {
+                    return item['item_category'] == ItemType.secret;
+                });
+                $scope.item_etc = ItemList.filter(function (item) {
+                    return item['item_category'] == ItemType.etc;
+                });
+            })
+            .then(function () {
+                $scope.hideLoading();
+            });
     })
     .controller('MechanismCtrl', function ($scope, Mechanism) {
         $scope.openLeft = function() {
@@ -103,7 +233,7 @@ angular.module('dota2handbook.controllers', [])
         $scope.report = Report.get({ reportId: $stateParams.reportId });
         $scope.hideLoading();
     })
-    .controller('AppCtrl', function ($scope, $ionicLoading, Handbook, Heroes, HeroType, HeroFilters, Items, ItemType, ItemFilters) {
+    .controller('AppCtrl', function ($scope, $ionicLoading, Handbook, HeroType, HeroFilters, ItemType, ItemFilters) {
         // loading indicator
         $scope.showLoading = function() {
             $scope.loading = $ionicLoading.show({
@@ -259,71 +389,4 @@ angular.module('dota2handbook.controllers', [])
             return gradeResult && groupResult && specResult;
         };
 
-        // load data
-        var heroes = Heroes.all();
-        var items = Items.all();
-
-        // display data
-        // return value has $promise object
-        heroes['$promise']
-            .then(function (heroList) {
-                $scope.heroes_strength = heroList.filter(function (item) {
-                    return item['hero_category'] == HeroType.strength;
-                });
-                $scope.heroes_agility = heroList.filter(function (item) {
-                    return item['hero_category'] == HeroType.agility;
-                });
-                $scope.heroes_intelligence = heroList.filter(function (item) {
-                    return item['hero_category'] == HeroType.intelligence;
-                });
-            }).then(function () {
-                console.log('hero', new Date());
-                $scope.hideLoading();
-            });
-
-        items['$promise']
-            .then(function (ItemList) {
-                $scope.item_consumable = ItemList.filter(function (item) {
-                    return item['item_category'] == ItemType.consumable;
-                });
-                $scope.item_attribute = ItemList.filter(function (item) {
-                    return item['item_category'] == ItemType.attribute;
-                });
-                $scope.item_armament = ItemList.filter(function (item) {
-                    return item['item_category'] == ItemType.armament;
-                });
-                $scope.item_arcane = ItemList.filter(function (item) {
-                    return item['item_category'] == ItemType.arcane;
-                });
-                $scope.item_common = ItemList.filter(function (item) {
-                    return item['item_category'] == ItemType.common;
-                });
-                $scope.item_support = ItemList.filter(function (item) {
-                    return item['item_category'] == ItemType.support;
-                });
-                $scope.item_caster = ItemList.filter(function (item) {
-                    return item['item_category'] == ItemType.caster;
-                });
-                $scope.item_weapon = ItemList.filter(function (item) {
-                    return item['item_category'] == ItemType.weapon;
-                });
-                $scope.item_armor = ItemList.filter(function (item) {
-                    return item['item_category'] == ItemType.armor;
-                });
-                $scope.item_artifact = ItemList.filter(function (item) {
-                    return item['item_category'] == ItemType.artifact;
-                });
-                $scope.item_secret = ItemList.filter(function (item) {
-                    return item['item_category'] == ItemType.secret;
-                });
-                $scope.item_etc = ItemList.filter(function (item) {
-                    return item['item_category'] == ItemType.etc;
-                });
-            })
-            .then(function () {
-                console.log('item', new Date());
-                $scope.hideLoading();
-            });
     });
-
-/* common function */
