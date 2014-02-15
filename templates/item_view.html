@@ -1,14 +1,12 @@
 <side-menus>
-    <pane side-menu-content>
+    <pane side-menu-content bindonce="item">
         <div class="bar bar-header bar-energized">
             <button class="button icon-left ion-chevron-left" ng-click="openLeft()"></button>
-            <h1 class="title">{{ item.title }}</h1>
+            <h1 class="title" bo-text="item.title"></h1>
             <button class="button icon ion-navicon-round" ng-click="openRight()"></button>
         </div>
         <content has-header="true">
-            <div class="hero-content">
-                {{ item.description }}
-            </div>
+            <div class="view-content" bo-text="item.description"></div>
             <div class="google">
                 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 <!-- 도타2핸드북 -->
@@ -32,146 +30,158 @@
                 <div class="item item-divider item-consumable">
                     소모품
                 </div>
-                <a ng-repeat="item in item_consumable | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{item.id}}">
-                    <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
-                    <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
+                <a ng-repeat="item in item_consumable | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left"
+                   bo-href="'#/item/' + item.id" bindonce="item">
+                    <img bo-src="item.pic"> <!--85*64-->
+                    <h2 bo-html="item.title + ' <span class=\'subtitle\'>' + item.subtitle + '</span>'"></h2>
                     <p class="item-stat">
-                        <span class="item-price" ng-show="{{item.price}}">{{item.price}}</span>
-                        <span class="item-cooldown" ng-show="{{item.cooldown}}">{{item.cooldown}}</span>
+                        <span class="item-price" bo-text="item.price"></span>
+                        <span class="item-cooldown" bo-show="item.cooldown" bo-text="item.cooldown"></span>
                     </p>
-                    <p class="item-stat">{{item.additional}}</p>
+                    <p class="item-stat" bo-text="item.additional"></p>
                 </a>
                 <div class="item item-divider item-attribute">
                     능력치
                 </div>
-                <a ng-repeat="item in item_attribute | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{item.id}}">
-                    <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
-                    <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
+                <a ng-repeat="item in item_attribute | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left"
+                   bo-href="'#/item/' + item.id" bindonce="item">
+                    <img bo-src="item.pic"> <!--85*64-->
+                    <h2 bo-html="item.title + ' <span class=\'subtitle\'>' + item.subtitle + '</span>'"></h2>
                     <p class="item-stat">
-                        <span class="item-price" ng-show="{{item.price}}">{{item.price}}</span>
-                        <span class="item-cooldown" ng-show="{{item.cooldown}}">{{item.cooldown}}</span>
+                        <span class="item-price" bo-text="item.price"></span>
+                        <span class="item-cooldown" bo-show="item.cooldown" bo-text="item.cooldown"></span>
                     </p>
-                    <p class="item-stat">{{item.additional}}</p>
+                    <p class="item-stat" bo-text="item.additional"></p>
                 </a>
                 <div class="item item-divider item-armament">
                     기본장비
                 </div>
-                <a ng-repeat="item in item_armament | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{item.id}}">
-                    <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
-                    <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
+                <a ng-repeat="item in item_armament | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left"
+                   bo-href="'#/item/' + item.id" bindonce="item">
+                    <img bo-src="item.pic"> <!--85*64-->
+                    <h2 bo-html="item.title + ' <span class=\'subtitle\'>' + item.subtitle + '</span>'"></h2>
                     <p class="item-stat">
-                        <span class="item-price" ng-show="{{item.price}}">{{item.price}}</span>
-                        <span class="item-cooldown" ng-show="{{item.cooldown}}">{{item.cooldown}}</span>
+                        <span class="item-price" bo-text="item.price"></span>
+                        <span class="item-cooldown" bo-show="item.cooldown" bo-text="item.cooldown"></span>
                     </p>
-                    <p class="item-stat">{{item.additional}}</p>
+                    <p class="item-stat" bo-text="item.additional"></p>
                 </a>
                 <div class="item item-divider item-secret">
                     비밀상점
                 </div>
-                <a ng-repeat="item in item_secret | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{item.id}}">
-                    <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
-                    <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
+                <a ng-repeat="item in item_secret | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left"
+                   bo-href="'#/item/' + item.id" bindonce="item">
+                    <img bo-src="item.pic"> <!--85*64-->
+                    <h2 bo-html="item.title + ' <span class=\'subtitle\'>' + item.subtitle + '</span>'"></h2>
                     <p class="item-stat">
-                        <span class="item-price" ng-show="{{item.price}}">{{item.price}}</span>
-                        <span class="item-cooldown" ng-show="{{item.cooldown}}">{{item.cooldown}}</span>
+                        <span class="item-price" bo-text="item.price"></span>
+                        <span class="item-cooldown" bo-show="item.cooldown" bo-text="item.cooldown"></span>
                     </p>
-                    <p class="item-stat">{{item.additional}}</p>
+                    <p class="item-stat" bo-text="item.additional"></p>
                 </a>
                 <div class="item item-divider item-arcane">
                     마법장비
                 </div>
-                <a ng-repeat="item in item_arcane | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{item.id}}">
-                    <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
-                    <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
+                <a ng-repeat="item in item_arcane | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left"
+                   bo-href="'#/item/' + item.id" bindonce="item">
+                    <img bo-src="item.pic"> <!--85*64-->
+                    <h2 bo-html="item.title + ' <span class=\'subtitle\'>' + item.subtitle + '</span>'"></h2>
                     <p class="item-stat">
-                        <span class="item-price" ng-show="{{item.price}}">{{item.price}}</span>
-                        <span class="item-cooldown" ng-show="{{item.cooldown}}">{{item.cooldown}}</span>
+                        <span class="item-price" bo-text="item.price"></span>
+                        <span class="item-cooldown" bo-show="item.cooldown" bo-text="item.cooldown"></span>
                     </p>
-                    <p class="item-stat">{{item.additional}}</p>
+                    <p class="item-stat" bo-text="item.additional"></p>
                 </a>
                 <div class="item item-divider item-common">
                     일반
                 </div>
-                <a ng-repeat="item in item_common | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{item.id}}">
-                    <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
-                    <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
+                <a ng-repeat="item in item_common | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left"
+                   bo-href="'#/item/' + item.id" bindonce="item">
+                    <img bo-src="item.pic"> <!--85*64-->
+                    <h2 bo-html="item.title + ' <span class=\'subtitle\'>' + item.subtitle + '</span>'"></h2>
                     <p class="item-stat">
-                        <span class="item-price" ng-show="{{item.price}}">{{item.price}}</span>
-                        <span class="item-cooldown" ng-show="{{item.cooldown}}">{{item.cooldown}}</span>
+                        <span class="item-price" bo-text="item.price"></span>
+                        <span class="item-cooldown" bo-show="item.cooldown" bo-text="item.cooldown"></span>
                     </p>
-                    <p class="item-stat">{{item.additional}}</p>
+                    <p class="item-stat" bo-text="item.additional"></p>
                 </a>
                 <div class="item item-divider item-support">
                     보조
                 </div>
-                <a ng-repeat="item in item_support | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{item.id}}">
-                    <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
-                    <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
+                <a ng-repeat="item in item_support | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left"
+                   bo-href="'#/item/' + item.id" bindonce="item">
+                    <img bo-src="item.pic"> <!--85*64-->
+                    <h2 bo-html="item.title + ' <span class=\'subtitle\'>' + item.subtitle + '</span>'"></h2>
                     <p class="item-stat">
-                        <span class="item-price" ng-show="{{item.price}}">{{item.price}}</span>
-                        <span class="item-cooldown" ng-show="{{item.cooldown}}">{{item.cooldown}}</span>
+                        <span class="item-price" bo-text="item.price"></span>
+                        <span class="item-cooldown" bo-show="item.cooldown" bo-text="item.cooldown"></span>
                     </p>
-                    <p class="item-stat">{{item.additional}}</p>
+                    <p class="item-stat" bo-text="item.additional"></p>
                 </a>
                 <div class="item item-divider item-caster">
                     마법
                 </div>
-                <a ng-repeat="item in item_caster | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{item.id}}">
-                    <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
-                    <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
+                <a ng-repeat="item in item_caster | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left"
+                   bo-href="'#/item/' + item.id" bindonce="item">
+                    <img bo-src="item.pic"> <!--85*64-->
+                    <h2 bo-html="item.title + ' <span class=\'subtitle\'>' + item.subtitle + '</span>'"></h2>
                     <p class="item-stat">
-                        <span class="item-price" ng-show="{{item.price}}">{{item.price}}</span>
-                        <span class="item-cooldown" ng-show="{{item.cooldown}}">{{item.cooldown}}</span>
+                        <span class="item-price" bo-text="item.price"></span>
+                        <span class="item-cooldown" bo-show="item.cooldown" bo-text="item.cooldown"></span>
                     </p>
-                    <p class="item-stat">{{item.additional}}</p>
+                    <p class="item-stat" bo-text="item.additional"></p>
                 </a>
                 <div class="item item-divider item-weapon">
                     무기
                 </div>
-                <a ng-repeat="item in item_weapon | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{item.id}}">
-                    <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
-                    <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
+                <a ng-repeat="item in item_weapon | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left"
+                   bo-href="'#/item/' + item.id" bindonce="item">
+                    <img bo-src="item.pic"> <!--85*64-->
+                    <h2 bo-html="item.title + ' <span class=\'subtitle\'>' + item.subtitle + '</span>'"></h2>
                     <p class="item-stat">
-                        <span class="item-price" ng-show="{{item.price}}">{{item.price}}</span>
-                        <span class="item-cooldown" ng-show="{{item.cooldown}}">{{item.cooldown}}</span>
+                        <span class="item-price" bo-text="item.price"></span>
+                        <span class="item-cooldown" bo-show="item.cooldown" bo-text="item.cooldown"></span>
                     </p>
-                    <p class="item-stat">{{item.additional}}</p>
+                    <p class="item-stat" bo-text="item.additional"></p>
                 </a>
                 <div class="item item-divider item-armor">
                     방어구
                 </div>
-                <a ng-repeat="item in item_armor | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{item.id}}">
-                    <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
-                    <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
+                <a ng-repeat="item in item_armor | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left"
+                   bo-href="'#/item/' + item.id" bindonce="item">
+                    <img bo-src="item.pic"> <!--85*64-->
+                    <h2 bo-html="item.title + ' <span class=\'subtitle\'>' + item.subtitle + '</span>'"></h2>
                     <p class="item-stat">
-                        <span class="item-price" ng-show="{{item.price}}">{{item.price}}</span>
-                        <span class="item-cooldown" ng-show="{{item.cooldown}}">{{item.cooldown}}</span>
+                        <span class="item-price" bo-text="item.price"></span>
+                        <span class="item-cooldown" bo-show="item.cooldown" bo-text="item.cooldown"></span>
                     </p>
-                    <p class="item-stat">{{item.additional}}</p>
+                    <p class="item-stat" bo-text="item.additional"></p>
                 </a>
                 <div class="item item-divider item-artifact">
                     공예품
                 </div>
-                <a ng-repeat="item in item_artifact | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{item.id}}">
-                    <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
-                    <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
+                <a ng-repeat="item in item_artifact | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left"
+                   bo-href="'#/item/' + item.id" bindonce="item">
+                    <img bo-src="item.pic"> <!--85*64-->
+                    <h2 bo-html="item.title + ' <span class=\'subtitle\'>' + item.subtitle + '</span>'"></h2>
                     <p class="item-stat">
-                        <span class="item-price" ng-show="{{item.price}}">{{item.price}}</span>
-                        <span class="item-cooldown" ng-show="{{item.cooldown}}">{{item.cooldown}}</span>
+                        <span class="item-price" bo-text="item.price"></span>
+                        <span class="item-cooldown" bo-show="item.cooldown" bo-text="item.cooldown"></span>
                     </p>
-                    <p class="item-stat">{{item.additional}}</p>
+                    <p class="item-stat" bo-text="item.additional"></p>
                 </a>
                 <div class="item item-divider item-roshan">
                     기타 (로샨 & 룬)
                 </div>
-                <a ng-repeat="item in item_etc | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/item/{{item.id}}">
-                    <img ng-src="{{item.pic}}"> <!--256*144 128*72-->
-                    <h2>{{item.title}} <span class="subtitle">{{item.subtitle}}</span></h2>
+                <a ng-repeat="item in item_etc | filter:itemTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left"
+                   bo-href="'#/item/' + item.id" bindonce="item">
+                    <img bo-src="item.pic"> <!--85*64-->
+                    <h2 bo-html="item.title + ' <span class=\'subtitle\'>' + item.subtitle + '</span>'"></h2>
                     <p class="item-stat">
-                        <span class="item-price" ng-show="{{item.price}}">{{item.price}}</span>
-                        <span class="item-cooldown" ng-show="{{item.cooldown}}">{{item.cooldown}}</span>
+                        <span class="item-price" bo-text="item.price"></span>
+                        <span class="item-cooldown" bo-show="item.cooldown" bo-text="item.cooldown"></span>
                     </p>
-                    <p class="item-stat">{{item.additional}}</p>
+                    <p class="item-stat" bo-text="item.additional"></p>
                 </a>
             </div>
         </content>
@@ -179,17 +189,16 @@
 
     <side-menu side="right">
         <header class="bar bar-header bar-energized">
-            <h1 class="title">도타 핸드북</h1>
+            <h1 class="title" bindonce="app" bo-text="app.appTitle"></h1>
         </header>
         <content has-header="true">
-            <ul class="list">
-                <a class="item" ng-repeat="item in app.menu" ng-href="#{{item.link}}">{{item.title}}</a>
-                <li class="item item-divider">Peonybooks, co. ltd.</li>
-                <!--<li class="item ad-line">Specially Thanks to 정인호</li>-->
+            <ul class="list" bindonce="app">
+                <a class="item" ng-repeat="item in app.menu" bo-href="'#' + item.link" bo-text="item.title"></a>
+                <li class="item item-divider" bo-text="app.copyright"></li>
             </ul>
         </content>
         <footer class="bar bar-footer bar-energized">
-            <div class="title">도타2 핸드북 <span class="copyright badge badge-assertive">{{app.version}}</span> 콘텐츠 <span class="copyright badge badge-positive">{{app.compatible}}</span></div>
+            <div class="title" bindonce="app"><span bo-text="app.appTitle"></span> <span class="copyright badge badge-assertive" bo-text="app.version"></span> 콘텐츠 <span class="copyright badge badge-positive" bo-text="app.compatible"></span></div>
         </footer>
     </side-menu>
 </side-menus>

@@ -1,14 +1,12 @@
 <side-menus>
-    <pane side-menu-content>
+    <pane side-menu-content bindonce="hero">
         <div class="bar bar-header bar-energized">
             <button class="button icon-left ion-chevron-left" ng-click="openLeft()"></button>
-            <h1 class="title">{{ hero.title }}</h1>
+            <h1 class="title" bo-text="hero.title"></h1>
             <button class="button icon ion-navicon-round" ng-click="openRight()"></button>
         </div>
         <content has-header="true">
-            <div class="hero-content">
-                {{ hero.description }}
-            </div>
+            <div class="view-content" bo-text="hero.description"></div>
             <div class="google">
                 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 <!-- 도타2핸드북 -->
@@ -32,58 +30,61 @@
                 <div class="item item-divider hero-str">
                     힘 영웅(Strength)
                 </div>
-                <a ng-repeat="hero in heros_strength | filter:heroTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/hero/{{hero.id}}">
-                    <img ng-src="{{hero.pic}}"> <!--256*144 128*72-->
-                    <h2>{{hero.title}} <span class="subtitle">{{hero.subtitle}}</span></h2>
+                <a ng-repeat="hero in heroes_strength | filter:heroTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left"
+                   bo-href="'#/hero/' + hero.id" bindonce="hero">
+                    <img bo-src="hero.pic"> <!--256*144 128*72-->
+                    <h2 bo-html="hero.title + ' <span class=\'subtitle\'>' + hero.subtitle + '</span>'"></h2>
                     <p class="hero-stat">
-                        <span class="hero-stat-str">{{hero.stat_str}}</span>
-                        <span class="hero-stat-agi">{{hero.stat_agi}}</span>
-                        <span class="hero-stat-int">{{hero.stat_int}}</span>
+                        <span class="hero-stat-str" bo-text="hero.stat_str"></span>
+                        <span class="hero-stat-agi" bo-text="hero.stat_agi"></span>
+                        <span class="hero-stat-int" bo-text="hero.stat_int"></span>
                     </p>
                     <p class="hero-stat">
-                        <span class="hero-stat-attack">{{hero.attack}}</span>
-                        <span class="hero-stat-speed">{{hero.speed}}</span>
-                        <span class="hero-stat-armor">{{hero.armor}}</span>
-                        <span class="hero-stat-range">{{hero.range}}</span>
-                        <span class="hero-stat-sight">{{hero.sight}}</span>
+                        <span class="hero-stat-attack" bo-text="hero.attack"></span>
+                        <span class="hero-stat-speed" bo-text="hero.speed"></span>
+                        <span class="hero-stat-armor" bo-text="hero.armor"></span>
+                        <span class="hero-stat-range" bo-text="hero.range"></span>
+                        <span class="hero-stat-sight" bo-text="hero.sight"></span>
                     </p>
                 </a>
                 <div class="item item-divider hero-agi">
                     민첩 영웅(Agility)
                 </div>
-                <a ng-repeat="hero in heros_agility | filter:heroTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/hero/{{hero.id}}">
-                    <img ng-src="{{hero.pic}}"> <!--256*144 128*72-->
-                    <h2>{{hero.title}} <span class="subtitle">{{hero.subtitle}}</span></h2>
+                <a ng-repeat="hero in heroes_agility | filter:heroTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left"
+                   bo-href="'#/hero/' + hero.id" bindonce="hero">
+                    <img bo-src="hero.pic"> <!--256*144 128*72-->
+                    <h2 bo-html="hero.title + ' <span class=\'subtitle\'>' + hero.subtitle + '</span>'"></h2>
                     <p class="hero-stat">
-                        <span class="hero-stat-str">{{hero.stat_str}}</span>
-                        <span class="hero-stat-agi">{{hero.stat_agi}}</span>
-                        <span class="hero-stat-int">{{hero.stat_int}}</span>
+                        <span class="hero-stat-str" bo-text="hero.stat_str"></span>
+                        <span class="hero-stat-agi" bo-text="hero.stat_agi"></span>
+                        <span class="hero-stat-int" bo-text="hero.stat_int"></span>
                     </p>
                     <p class="hero-stat">
-                        <span class="hero-stat-attack">{{hero.attack}}</span>
-                        <span class="hero-stat-speed">{{hero.speed}}</span>
-                        <span class="hero-stat-armor">{{hero.armor}}</span>
-                        <span class="hero-stat-range">{{hero.range}}</span>
-                        <span class="hero-stat-sight">{{hero.sight}}</span>
+                        <span class="hero-stat-attack" bo-text="hero.attack"></span>
+                        <span class="hero-stat-speed" bo-text="hero.speed"></span>
+                        <span class="hero-stat-armor" bo-text="hero.armor"></span>
+                        <span class="hero-stat-range" bo-text="hero.range"></span>
+                        <span class="hero-stat-sight" bo-text="hero.sight"></span>
                     </p>
                 </a>
                 <div class="item item-divider hero-int">
                     지능 영웅(Intelligence)
                 </div>
-                <a ng-repeat="hero in heros_intelligence | filter:heroTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left" href="#/hero/{{hero.id}}">
-                    <img ng-src="{{hero.pic}}"> <!--256*144 128*72-->
-                    <h2>{{hero.title}} <span class="subtitle">{{hero.subtitle}}</span></h2>
+                <a ng-repeat="hero in heroes_intelligence | filter:heroTypeQuery | filter:searchFilter.keyword" class="item item-thumbnail-left"
+                   bo-href="'#/hero/' + hero.id" bindonce="hero">
+                    <img bo-src="hero.pic"> <!--256*144 128*72-->
+                    <h2 bo-html="hero.title + ' <span class=\'subtitle\'>' + hero.subtitle + '</span>'"></h2>
                     <p class="hero-stat">
-                        <span class="hero-stat-str">{{hero.stat_str}}</span>
-                        <span class="hero-stat-agi">{{hero.stat_agi}}</span>
-                        <span class="hero-stat-int">{{hero.stat_int}}</span>
+                        <span class="hero-stat-str" bo-text="hero.stat_str"></span>
+                        <span class="hero-stat-agi" bo-text="hero.stat_agi"></span>
+                        <span class="hero-stat-int" bo-text="hero.stat_int"></span>
                     </p>
                     <p class="hero-stat">
-                        <span class="hero-stat-attack">{{hero.attack}}</span>
-                        <span class="hero-stat-speed">{{hero.speed}}</span>
-                        <span class="hero-stat-armor">{{hero.armor}}</span>
-                        <span class="hero-stat-range">{{hero.range}}</span>
-                        <span class="hero-stat-sight">{{hero.sight}}</span>
+                        <span class="hero-stat-attack" bo-text="hero.attack"></span>
+                        <span class="hero-stat-speed" bo-text="hero.speed"></span>
+                        <span class="hero-stat-armor" bo-text="hero.armor"></span>
+                        <span class="hero-stat-range" bo-text="hero.range"></span>
+                        <span class="hero-stat-sight" bo-text="hero.sight"></span>
                     </p>
                 </a>
             </div>
@@ -92,17 +93,16 @@
 
     <side-menu side="right">
         <header class="bar bar-header bar-energized">
-            <h1 class="title">도타 핸드북</h1>
+            <h1 class="title" bindonce="app" bo-text="app.appTitle"></h1>
         </header>
         <content has-header="true">
-            <ul class="list">
-                <a class="item" ng-repeat="item in app.menu" ng-href="#{{item.link}}">{{item.title}}</a>
-                <li class="item item-divider">Peonybooks, co. ltd.</li>
-                <!--<li class="item ad-line">Specially Thanks to 정인호</li>-->
+            <ul class="list" bindonce="app">
+                <a class="item" ng-repeat="item in app.menu" bo-href="'#' + item.link" bo-text="item.title"></a>
+                <li class="item item-divider" bo-text="app.copyright"></li>
             </ul>
         </content>
         <footer class="bar bar-footer bar-energized">
-            <div class="title">도타2 핸드북 <span class="copyright badge badge-assertive">{{app.version}}</span> 콘텐츠 <span class="copyright badge badge-positive">{{app.compatible}}</span></div>
+            <div class="title" bindonce="app"><span bo-text="app.appTitle"></span> <span class="copyright badge badge-assertive" bo-text="app.version"></span> 콘텐츠 <span class="copyright badge badge-positive" bo-text="app.compatible"></span></div>
         </footer>
     </side-menu>
 </side-menus>

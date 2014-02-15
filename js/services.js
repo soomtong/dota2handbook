@@ -14,7 +14,9 @@ angular.module('dota2handbook.services', ['ngResource'])
                 { link: '/item', title: '아이템' },
                 { link: '/mechanism', title: '메커니즘' },
                 { link: '/report', title: '리포트' }
-            ]
+            ],
+            appTitle: "도타2 핸드북",
+            copyright: "Peonybooks, co. ltd."
         };
     })
     .factory('Heroes', function ($resource) {

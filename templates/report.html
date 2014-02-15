@@ -9,12 +9,31 @@
         <content has-header="true">
             <div class="list report-list">
                 <div class="item item-divider">
+                    NSL 시즌 3
+                </div>
+                <a ng-repeat="report in report_3 | filter:searchFilter.keyword" class="item item-icon-left"
+                   bo-href="'#/report/' + report.id" bindonce="report">
+                    <i class="icon ion-mic-a"></i>
+                    <h2 bo-text="report.title"></h2>
+                    <p class="item-stat" bo-text="report.desc"></p>
+                </a>
+                <div class="item item-divider">
+                    NSL 시즌 2
+                </div>
+                <a ng-repeat="report in report_2 | filter:searchFilter.keyword" class="item item-icon-left"
+                   bo-href="'#/report/' + report.id" bindonce="report">
+                    <i class="icon ion-mic-a"></i>
+                    <h2 bo-text="report.title"></h2>
+                    <p class="item-stat" bo-text="report.desc"></p>
+                </a>
+                <div class="item item-divider">
                     NSL 시즌 1
                 </div>
-                <a ng-repeat="item in report_1 | filter:searchFilter.keyword" class="item item-icon-left" href="#/report/{{item.id}}">
+                <a ng-repeat="report in report_1 | filter:searchFilter.keyword" class="item item-icon-left"
+                   bo-href="'#/report/' + report.id" bindonce="report">
                     <i class="icon ion-mic-a"></i>
-                    <h2>{{item.title}}</h2>
-                    <p class="item-stat">{{item.desc}}</p>
+                    <h2 bo-text="report.title"></h2>
+                    <p class="item-stat" bo-text="report.desc"></p>
                 </a>
             </div>
         </content>
@@ -38,17 +57,16 @@
 
     <side-menu side="right">
         <header class="bar bar-header bar-energized">
-            <h1 class="title">도타 핸드북</h1>
+            <h1 class="title" bindonce="app" bo-text="app.appTitle"></h1>
         </header>
         <content has-header="true">
-            <div class="list">
-                <a class="item" ng-repeat="item in app.menu" ng-href="#{{item.link}}">{{item.title}}</a>
-                <li class="item item-divider">Peonybooks, co. ltd.</li>
-                <!--<li class="item ad-line">Specially Thanks to 정인호</li>-->
-            </div>
+            <ul class="list" bindonce="app">
+                <a class="item" ng-repeat="item in app.menu" bo-href="'#' + item.link" bo-text="item.title"></a>
+                <li class="item item-divider" bo-text="app.copyright"></li>
+            </ul>
         </content>
         <footer class="bar bar-footer bar-energized">
-            <div class="title">도타2 핸드북 <span class="copyright badge badge-assertive">{{app.version}}</span> 콘텐츠 <span class="copyright badge badge-positive">{{app.compatible}}</span></div>
+            <div class="title" bindonce="app"><span bo-text="app.appTitle"></span> <span class="copyright badge badge-assertive" bo-text="app.version"></span> 콘텐츠 <span class="copyright badge badge-positive" bo-text="app.compatible"></span></div>
         </footer>
     </side-menu>
 

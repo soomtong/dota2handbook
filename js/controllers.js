@@ -54,6 +54,9 @@ angular.module('dota2handbook.controllers', [])
                 $scope.mechanism_1 = mechanismList.filter(function (item) {
                     return item['category'] == 1;
                 });
+                $scope.mechanism_2 = mechanismList.filter(function (item) {
+                    return item['category'] == 2;
+                });
             });
     })
     .controller('MechanismDetailCtrl', function ($scope, $stateParams, Mechanism) {
@@ -82,6 +85,9 @@ angular.module('dota2handbook.controllers', [])
             .then(function (reportList) {
                 $scope.report_1 = reportList.filter(function (item) {
                     return item['category'] == 1;
+                });
+                $scope.report_2 = reportList.filter(function (item) {
+                    return item['category'] == 2;
                 });
             });
     })
@@ -261,13 +267,13 @@ angular.module('dota2handbook.controllers', [])
         // return value has $promise object
         heroes['$promise']
             .then(function (heroList) {
-                $scope.heros_strength = heroList.filter(function (item) {
+                $scope.heroes_strength = heroList.filter(function (item) {
                     return item['hero_category'] == HeroType.strength;
                 });
-                $scope.heros_agility = heroList.filter(function (item) {
+                $scope.heroes_agility = heroList.filter(function (item) {
                     return item['hero_category'] == HeroType.agility;
                 });
-                $scope.heros_intelligence = heroList.filter(function (item) {
+                $scope.heroes_intelligence = heroList.filter(function (item) {
                     return item['hero_category'] == HeroType.intelligence;
                 });
             }).then(function () {
