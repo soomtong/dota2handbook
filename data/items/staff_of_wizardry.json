@@ -1,5 +1,27 @@
 {
     "id": "staff_of_wizardry",
     "title": "마술사의 지팡이 Staff of Wizardry",
-    "description": "지능 +10"
+    "desc": "지능 +10",
+    "img": "data/images/items/staff_of_wizardry_lg.png",
+    "cost": "1000",
+    "story": "가장 나이가 많은 마법사들이 물려준 마법의 힘을 지닌 지팡이입니다.",
+    "info": "",
+    "table": [
+        ["지능", "+10"]
+    ],
+    "note": [
+    ],
+    "ability": "",
+    "affect": "",
+    "type": "",
+    "recipe": [
+    ],
+    "upgrade": [
+        ["ultimate_scepter", "data/images/items/ultimate_scepter_lg.png"],
+        ["dagon", "data/images/items/dagon_lg.png"],
+        ["cyclone", "data/images/items/cyclone_lg.png"],
+        ["force_staff", "data/images/items/force_staff_lg.png"],
+        ["necronomicon", "data/images/items/necronomicon_lg.png"],
+        ["rod_of_atos", "data/images/items/rod_of_atos_lg.png"]
+    ]
 }

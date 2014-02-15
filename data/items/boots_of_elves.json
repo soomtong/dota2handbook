@@ -1,5 +1,23 @@
 {
     "id": "boots_of_elves",
     "title": "엘프의 손목띠 Band of Elvenskin",
-    "description": "민첩 +6"
+    "desc": "민첩 +6",
+    "img": "data/images/items/boots_of_elves_lg.png",
+    "cost": "450",
+    "story": "가벼운 재질과 뛰어난 신축성 때문에 애용되는 직물입니다.",
+    "info": "",
+    "table": [
+        ["민첩", "+6"]
+    ],
+    "note": [
+    ],
+    "ability": "",
+    "affect": "",
+    "type": "",
+    "recipe": [
+    ],
+    "upgrade": [
+        ["power_treads", "data/images/items/power_treads_lg.png"],
+        ["yasha", "data/images/items/yasha_lg.png"]
+    ]
 }

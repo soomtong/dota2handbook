@@ -1,5 +1,26 @@
 {
     "id": "mekansm",
     "title": "메칸즘 Mekansm",
-    "description": "모든 능력치 +5, 방어력 +5, 체력 재생 4회복 - 체력을 250만큼 회복하고 주변 지역에 +2의 방어력을 부여합니다. 메칸즘 오라 - 주변 지역에 보너스 체력 재생 효과를 부여합니다."
+    "desc": "모든 능력치 +5, 방어력 +5, 체력 재생 4",
+    "img": "data/images/items/mekansm_lg.png",
+    "cost": "2300",
+    "story": "회복 - 체력을 250만큼 회복하고 주변 지역에 +2의 방어력을 부여합니다. 메칸즘 오라 - 주변 지역에 보너스 체력 재생 효과를 부여합니다.",
+    "info": "회복 - 체력을 250만큼 회복하고 주변 지역에 +2의 방어력을 부여합니다. 메칸즘 오라 - 주변 지역에 보너스 체력 재생 효과를 부여합니다.",
+    "table": [
+        ["마나", "4"],
+        ["쿨다운", "4"]
+    ],
+    "note": [
+        "100MP / 30s",
+        "공격을 받으면 마나 재생이 중단된다.",
+        "1초당 33마나 재생"
+    ],
+    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
+    "affect": "아군",
+    "type": "마법 또는 일반   ",
+    "recipe": [
+        ["clarity", "data/images/items/clarity_lg.png" , 2],
+        ["bfury", "data/images/items/bfury_lg.png" ],
+        ["blink", "data/images/items/blink_lg.png"]
+    ]
 }

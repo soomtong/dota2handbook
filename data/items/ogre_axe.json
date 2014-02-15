@@ -1,5 +1,25 @@
 {
     "id": "ogre_axe",
     "title": "오거 몽둥이 Ogre Club",
-    "description": "힘 +10"
+    "desc": "힘 +10",
+    "img": "data/images/items/ogre_axe_lg.png",
+    "cost": "1000",
+    "story": "들고만 있어도 강력한 힘이 느껴집니다.",
+    "info": "",
+    "table": [
+        ["힘", "+10"]
+    ],
+    "note": [
+        "짐꾼이 들고 있으면 190 체력이 증가합니다."
+    ],
+    "ability": "",
+    "affect": "",
+    "type": "",
+    "recipe": [
+    ],
+    "upgrade": [
+        ["ultimate_scepter", "data/images/items/ultimate_scepter_lg.png"],
+        ["black_king_bar", "data/images/items/black_king_bar_lg.png"],
+        ["sange", "data/images/items/sange_lg.png"]
+    ]
 }

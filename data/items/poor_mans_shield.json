@@ -1,5 +1,26 @@
 {
     "id": "poor_mans_shield",
     "title": "가난한 자의 방패 Poor Man's Shield",
-    "description": "민첩 +6, 근접 방어 20, 원거리 방어 10, 방어 확률 60%피해 방어 - 자신의 영웅 속성에 따라 물리 피해를 막아냅니다."
+    "desc": "민첩 +6, 근접 방어 20, 원거리 방어 10, 방어 확률 60%",
+    "img": "data/images/items/poor_mans_shield_lg.png",
+    "cost": "550",
+    "story": "피해 방어 - 자신의 영웅 속성에 따라 물리 피해를 막아냅니다.",
+    "info": "피해 방어 - 자신의 영웅 속성에 따라 물리 피해를 막아냅니다.",
+    "table": [
+        ["마나", "4"],
+        ["쿨다운", "4"]
+    ],
+    "note": [
+        "100MP / 30s",
+        "공격을 받으면 마나 재생이 중단된다.",
+        "1초당 33마나 재생"
+    ],
+    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
+    "affect": "아군",
+    "type": "마법 또는 일반   ",
+    "recipe": [
+        ["clarity", "data/images/items/clarity_lg.png" , 2],
+        ["bfury", "data/images/items/bfury_lg.png" ],
+        ["blink", "data/images/items/blink_lg.png"]
+    ]
 }

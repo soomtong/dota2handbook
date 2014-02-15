@@ -1,5 +1,26 @@
 {
     "id": "robe",
     "title": "법사의 가운 Robe of the Magi",
-    "description": "지능 +6"
+    "desc": "지능 +6",
+    "img": "data/images/items/robe_lg.png",
+    "cost": "450",
+    "story": "이 로브는 착용자의 영혼을 타락시키고 지혜를 제공합니다.",
+    "info": "",
+    "table": [
+        ["지능", "+6"]
+    ],
+    "note": [
+    ],
+    "ability": "",
+    "affect": "",
+    "type": "",
+    "recipe": [
+    ],
+    "upgrade": [
+        ["ancient_janggo", "data/images/items/ancient_janggo_lg.png"],
+        ["blade_mail", "data/images/items/blade_mail_lg.png"],
+        ["diffusal_blade", "data/images/items/diffusal_blade_lg.png"],
+        ["oblivion_staff", "data/images/items/oblivion_staff_lg.png"],
+        ["power_treads", "data/images/items/power_treads_lg.png"]
+    ]
 }

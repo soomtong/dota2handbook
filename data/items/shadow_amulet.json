@@ -1,5 +1,26 @@
 {
     "id": "shadow_amulet",
     "title": "그림자 부적 Shadow Amulet",
-    "description": "공격 속도 +30사라지기 - 1.5초에 걸쳐 투명화됩니다. 움직이면 모습이 드러납니다."
+    "desc": "공격 속도 +30",
+    "img": "data/images/items/shadow_amulet_lg.png",
+    "cost": "1600",
+    "story": "사라지기 - 1.5초에 걸쳐 투명화됩니다. 움직이면 모습이 드러납니다.",
+    "info": "사라지기 - 1.5초에 걸쳐 투명화됩니다. 움직이면 모습이 드러납니다.",
+    "table": [
+        ["마나", "4"],
+        ["쿨다운", "4"]
+    ],
+    "note": [
+        "100MP / 30s",
+        "공격을 받으면 마나 재생이 중단된다.",
+        "1초당 33마나 재생"
+    ],
+    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
+    "affect": "아군",
+    "type": "마법 또는 일반   ",
+    "recipe": [
+        ["clarity", "data/images/items/clarity_lg.png" , 2],
+        ["bfury", "data/images/items/bfury_lg.png" ],
+        ["blink", "data/images/items/blink_lg.png"]
+    ]
 }

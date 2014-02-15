@@ -1,5 +1,26 @@
 {
     "id": "urn_of_shadows",
     "title": "혼의 항아리 Urn of Shadows",
-    "description": "마나 재생 +50%, 힘 +6, 400HP / 8s1400의 범위 내에서 적 영웅이 죽을 때마다 에너지를 충전합니다. 영혼 해방 - 아군 유닛의 체력을 서서히 회복시키면서 적 유닛에게 피해를 줍니다."
+    "desc": "마나 재생 +50%, 힘 +6, 400HP / 8s",
+    "img": "data/images/items/urn_of_shadows_lg.png",
+    "cost": "875",
+    "story": "1400의 범위 내에서 적 영웅이 죽을 때마다 에너지를 충전합니다. 영혼 해방 - 아군 유닛의 체력을 서서히 회복시키면서 적 유닛에게 피해를 줍니다.",
+    "info": "1400의 범위 내에서 적 영웅이 죽을 때마다 에너지를 충전합니다. 영혼 해방 - 아군 유닛의 체력을 서서히 회복시키면서 적 유닛에게 피해를 줍니다.",
+    "table": [
+        ["마나", "4"],
+        ["쿨다운", "4"]
+    ],
+    "note": [
+        "100MP / 30s",
+        "공격을 받으면 마나 재생이 중단된다.",
+        "1초당 33마나 재생"
+    ],
+    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
+    "affect": "아군",
+    "type": "마법 또는 일반   ",
+    "recipe": [
+        ["clarity", "data/images/items/clarity_lg.png" , 2],
+        ["bfury", "data/images/items/bfury_lg.png" ],
+        ["blink", "data/images/items/blink_lg.png"]
+    ]
 }

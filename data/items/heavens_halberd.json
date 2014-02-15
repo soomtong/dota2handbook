@@ -1,5 +1,26 @@
 {
     "id": "heavens_halberd",
     "title": "천상의 미늘창 Heaven's Halberd",
-    "description": "피해 +25, 힘 +20, 회피 +25%, 부상 확률 15%, 둔화 20%대상을 4.5 초 동안 무장 해제시킵니다. 근접 대상에게는 3.0초 동안 지속됩니다. 경상 - 공격 시 일정 확률로 4.0초 동안 이동 둔화 효과를 겁니다."
+    "desc": "피해 +25, 힘 +20, 회피 +25%, 부상 확률 15%, 둔화 20%",
+    "img": "data/images/items/heavens_halberd_lg.png",
+    "cost": "3850",
+    "story": "대상을 4.5 초 동안 무장 해제시킵니다. 근접 대상에게는 3.0초 동안 지속됩니다. 경상 - 공격 시 일정 확률로 4.0초 동안 이동 둔화 효과를 겁니다.",
+    "info": "대상을 4.5 초 동안 무장 해제시킵니다. 근접 대상에게는 3.0초 동안 지속됩니다. 경상 - 공격 시 일정 확률로 4.0초 동안 이동 둔화 효과를 겁니다.",
+    "table": [
+        ["마나", "4"],
+        ["쿨다운", "4"]
+    ],
+    "note": [
+        "100MP / 30s",
+        "공격을 받으면 마나 재생이 중단된다.",
+        "1초당 33마나 재생"
+    ],
+    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
+    "affect": "아군",
+    "type": "마법 또는 일반   ",
+    "recipe": [
+        ["clarity", "data/images/items/clarity_lg.png" , 2],
+        ["bfury", "data/images/items/bfury_lg.png" ],
+        ["blink", "data/images/items/blink_lg.png"]
+    ]
 }

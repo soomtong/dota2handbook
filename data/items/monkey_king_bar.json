@@ -1,5 +1,26 @@
 {
     "id": "monkey_king_bar",
     "title": "여의봉 Monkey King Bar",
-    "description": "피해 +88, 공격 속도 +15, 소형 강타 확률 35%, 소형 강타 피해 100소형 강타 - 공격 시 일정 확률로 잠시 적을 기절시키고 보너스 피해를 줍니다. 정밀 타격 - 자신의 공격이 빗나가지 않습니다."
+    "desc": "피해 +88, 공격 속도 +15, 소형 강타 확률 35%, 소형 강타 피해 100",
+    "img": "data/images/items/monkey_king_bar_lg.png",
+    "cost": "5400",
+    "story": "소형 강타 - 공격 시 일정 확률로 잠시 적을 기절시키고 보너스 피해를 줍니다. 정밀 타격 - 자신의 공격이 빗나가지 않습니다.",
+    "info": "소형 강타 - 공격 시 일정 확률로 잠시 적을 기절시키고 보너스 피해를 줍니다. 정밀 타격 - 자신의 공격이 빗나가지 않습니다.",
+    "table": [
+        ["마나", "4"],
+        ["쿨다운", "4"]
+    ],
+    "note": [
+        "100MP / 30s",
+        "공격을 받으면 마나 재생이 중단된다.",
+        "1초당 33마나 재생"
+    ],
+    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
+    "affect": "아군",
+    "type": "마법 또는 일반   ",
+    "recipe": [
+        ["clarity", "data/images/items/clarity_lg.png" , 2],
+        ["bfury", "data/images/items/bfury_lg.png" ],
+        ["blink", "data/images/items/blink_lg.png"]
+    ]
 }

@@ -1,5 +1,23 @@
 {
     "id": "ring_of_protection",
     "title": "수호의 반지 Ring of Protection",
-    "description": "방어력 +2"
+    "desc": "방어력 +2",
+    "img": "data/images/items/ring_of_protection_lg.png",
+    "cost": "175",
+    "story": "착용자를 보호하는 반짝거리는 반지입니다.",
+    "info": "",
+    "table": [
+        ["방어력", "+2"]
+    ],
+    "note": [
+    ],
+    "ability": "",
+    "affect": "",
+    "type": "",
+    "recipe": [
+    ],
+    "upgrade": [
+        ["ring_of_basilius", "data/images/items/ring_of_basilius_lg.png"],
+        ["tranquil_boots", "data/images/items/tranquil_boots_lg.png"]
+    ]
 }

@@ -1,5 +1,26 @@
 {
     "id": "hand_of_midas",
     "title": "미다스의 손 Hand of Midas",
-    "description": "공격 속도 +30금 변환 - 영웅이 아닌 대상을 처치하고 190 골드와 2.5배의 경험치를 획득합니다."
+    "desc": "공격 속도 +30",
+    "img": "data/images/items/hand_of_midas_lg.png",
+    "cost": "2050",
+    "story": "금 변환 - 영웅이 아닌 대상을 처치하고 190 골드와 2.5배의 경험치를 획득합니다.",
+    "info": "금 변환 - 영웅이 아닌 대상을 처치하고 190 골드와 2.5배의 경험치를 획득합니다.",
+    "table": [
+        ["마나", "4"],
+        ["쿨다운", "4"]
+    ],
+    "note": [
+        "100MP / 30s",
+        "공격을 받으면 마나 재생이 중단된다.",
+        "1초당 33마나 재생"
+    ],
+    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
+    "affect": "아군",
+    "type": "마법 또는 일반   ",
+    "recipe": [
+        ["clarity", "data/images/items/clarity_lg.png" , 2],
+        ["bfury", "data/images/items/bfury_lg.png" ],
+        ["blink", "data/images/items/blink_lg.png"]
+    ]
 }

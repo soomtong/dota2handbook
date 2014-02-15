@@ -1,5 +1,36 @@
 {
     "id": "bottle",
     "title": "물병 Bottle",
-    "description": "135HP + 70MP / 3s재생 - 체력과 마나를 지속해서 회복합니다. 공격을 받으면 효과가 사라집니다. 빈 병은 마을의 분수에서 다시 채울 수 있습니다."
+    "desc": "135HP + 70MP / 3s",
+    "img": "data/images/items/bottle_lg.png",
+    "cost": "650",
+    "story": "몇 세기를 전해져 내려온 오래된 병입니다. 내용물을 담으면 마법이 주입됩니다.",
+    "info": "사용: 재생 - 체력과 마나를 지속해서 회복합니다. 공격을 받으면 효과가 사라집니다. 빈 병은 마을의 분수에서 다시 채울 수 있습니다. 룬을 담은 후 나중에 사용할 수도 있습니다. 담아둔 룬은 2분 후에 사용됩니다. 빈 병을 들고있는 동안 짐꾼은 이동속도가 30% 감소합니다.",
+    "table": [
+        ["회복될 체력", "135"],
+        ["회복될 마나", "70"],
+        ["지속시간", "3초"],
+        ["쿨다운", "0.5"]
+    ],
+    "note": [
+        "물병은 아군 영웅과 공유할 수 있습니다.",
+        "20 이상의 데미지를 입었을 경우 효과가 중단됩니다.",
+        "우물 근처에서 물병을 가득 채울 수 있습니다.",
+        "짐꾼을 활용해 물병을 채울 수 있습니다.",
+        "빈병을 담고 있는 짐꾼은 이동 속도가 30% 느려집니다.",
+        "물병에 룬을 담고 있을 경우 물병을 내려 놓을 수 없습니다.",
+        "담겨진 룬은 Ctrl + 클릭(또는 단축키)를 사용하여 아군 영웅에게 사용할 수 있습니다."
+    ],
+    "ability": "",
+    "affect": "자신",
+    "type": "",
+    "recipe": [
+    ],
+    "upgrade": [
+        ["bottle_doubledamage", "data/images/items/Bottle_doubledamage_icon.png"],
+        ["bottle_haste", "data/images/items/Bottle_haste_icon.png"],
+        ["bottle_regeneration", "data/images/items/Bottle_regeneration_icon.png"],
+        ["bottle_invisibility", "data/images/items/Bottle_invisibility_icon.png"],
+        ["bottle_illusion", "data/images/items/Bottle_illusion_icon.png"]
+    ]
 }

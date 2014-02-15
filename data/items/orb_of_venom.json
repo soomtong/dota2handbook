@@ -1,5 +1,26 @@
 {
     "id": "orb_of_venom",
     "title": "독사의 구슬 Orb of Venom",
-    "description": "근접 둔화 12%, 원거리 둔화 4%, 지속 시간 4, 독 피해량 3독 공격 - 대상에게 독을 주입하여 지속해서 피해를 주고 대상을 둔화시킵니다."
+    "desc": "근접 둔화 12%, 원거리 둔화 4%, 지속 시간 4, 독 피해량 3",
+    "img": "data/images/items/orb_of_venom_lg.png",
+    "cost": "275",
+    "story": "독 공격 - 대상에게 독을 주입하여 지속해서 피해를 주고 대상을 둔화시킵니다.",
+    "info": "독 공격 - 대상에게 독을 주입하여 지속해서 피해를 주고 대상을 둔화시킵니다.",
+    "table": [
+        ["마나", "4"],
+        ["쿨다운", "4"]
+    ],
+    "note": [
+        "100MP / 30s",
+        "공격을 받으면 마나 재생이 중단된다.",
+        "1초당 33마나 재생"
+    ],
+    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
+    "affect": "아군",
+    "type": "마법 또는 일반   ",
+    "recipe": [
+        ["clarity", "data/images/items/clarity_lg.png" , 2],
+        ["bfury", "data/images/items/bfury_lg.png" ],
+        ["blink", "data/images/items/blink_lg.png"]
+    ]
 }

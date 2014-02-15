@@ -1,5 +1,26 @@
 {
     "id": "necronomicon",
     "title": "네크로노미콘 Necronomicon",
-    "description": "지능 +15/21/24 힘 +8/12/16악마 소환 - 자신을 위해 싸우는 네크로노미콘 전사와 네크로노미콘 궁수를 소환합니다. 40초 동안 지속됩니다."
+    "desc": "지능 +15/21/24 힘 +8/12/16",
+    "img": "data/images/items/necronomicon_lg.png",
+    "cost": "2700",
+    "story": "악마 소환 - 자신을 위해 싸우는 네크로노미콘 전사와 네크로노미콘 궁수를 소환합니다. 40초 동안 지속됩니다.",
+    "info": "악마 소환 - 자신을 위해 싸우는 네크로노미콘 전사와 네크로노미콘 궁수를 소환합니다. 40초 동안 지속됩니다.",
+    "table": [
+        ["마나", "4"],
+        ["쿨다운", "4"]
+    ],
+    "note": [
+        "100MP / 30s",
+        "공격을 받으면 마나 재생이 중단된다.",
+        "1초당 33마나 재생"
+    ],
+    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
+    "affect": "아군",
+    "type": "마법 또는 일반   ",
+    "recipe": [
+        ["clarity", "data/images/items/clarity_lg.png" , 2],
+        ["bfury", "data/images/items/bfury_lg.png" ],
+        ["blink", "data/images/items/blink_lg.png"]
+    ]
 }

@@ -1,5 +1,26 @@
 {
     "id": "buckler",
     "title": "작은 방패 Buckler",
-    "description": "방어력 +5, 모든 능력치 +2보너스 방어력 - 주변 아군 유닛이 +2의 보너스 방어력을 얻습니다."
+    "desc": "방어력 +5, 모든 능력치 +2",
+    "img": "data/images/items/buckler_lg.png",
+    "cost": "800",
+    "story": "보너스 방어력 - 주변 아군 유닛이 +2의 보너스 방어력을 얻습니다.",
+    "info": "보너스 방어력 - 주변 아군 유닛이 +2의 보너스 방어력을 얻습니다.",
+    "table": [
+        ["마나", "4"],
+        ["쿨다운", "4"]
+    ],
+    "note": [
+        "100MP / 30s",
+        "공격을 받으면 마나 재생이 중단된다.",
+        "1초당 33마나 재생"
+    ],
+    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
+    "affect": "아군",
+    "type": "마법 또는 일반   ",
+    "recipe": [
+        ["clarity", "data/images/items/clarity_lg.png" , 2],
+        ["bfury", "data/images/items/bfury_lg.png" ],
+        ["blink", "data/images/items/blink_lg.png"]
+    ]
 }

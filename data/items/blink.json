@@ -1,5 +1,26 @@
 {
     "id": "blink",
     "title": "점멸 단검 Blink Dagger",
-    "description": "점멸 - 최대 1200의 범위 내에서 지정 위치로 순간이동합니다. 피해를 받으면 점멸 단검을 3초 동안 사용할 수 없습니다."
+    "desc": "",
+    "img": "data/images/items/blink_lg.png",
+    "cost": "2150",
+    "story": "점멸 - 최대 1200의 범위 내에서 지정 위치로 순간이동합니다. 피해를 받으면 점멸 단검을 3초 동안 사용할 수 없습니다.",
+    "info": "점멸 - 최대 1200의 범위 내에서 지정 위치로 순간이동합니다. 피해를 받으면 점멸 단검을 3초 동안 사용할 수 없습니다.",
+    "table": [
+        ["마나", "4"],
+        ["쿨다운", "4"]
+    ],
+    "note": [
+        "100MP / 30s",
+        "공격을 받으면 마나 재생이 중단된다.",
+        "1초당 33마나 재생"
+    ],
+    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
+    "affect": "아군",
+    "type": "마법 또는 일반   ",
+    "recipe": [
+        ["clarity", "data/images/items/clarity_lg.png" , 2],
+        ["bfury", "data/images/items/bfury_lg.png" ],
+        ["blink", "data/images/items/blink_lg.png"]
+    ]
 }

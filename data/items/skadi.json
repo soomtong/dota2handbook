@@ -1,5 +1,26 @@
 {
     "id": "skadi",
     "title": "스카디의 눈 Eye of Skadi",
-    "description": "모든 능력치 +25, 체력 +250, 마나 +250, 이동 둔화 35%, 공격 둔화 35%냉기 공격 - 공격 시 대상의 이동 속도와 공격 속도를 둔화시킵니다."
+    "desc": "모든 능력치 +25, 체력 +250, 마나 +250, 이동 둔화 35%, 공격 둔화 35%",
+    "img": "data/images/items/skadi_lg.png",
+    "cost": "5675",
+    "story": "냉기 공격 - 공격 시 대상의 이동 속도와 공격 속도를 둔화시킵니다.",
+    "info": "냉기 공격 - 공격 시 대상의 이동 속도와 공격 속도를 둔화시킵니다.",
+    "table": [
+        ["마나", "4"],
+        ["쿨다운", "4"]
+    ],
+    "note": [
+        "100MP / 30s",
+        "공격을 받으면 마나 재생이 중단된다.",
+        "1초당 33마나 재생"
+    ],
+    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
+    "affect": "아군",
+    "type": "마법 또는 일반   ",
+    "recipe": [
+        ["clarity", "data/images/items/clarity_lg.png" , 2],
+        ["bfury", "data/images/items/bfury_lg.png" ],
+        ["blink", "data/images/items/blink_lg.png"]
+    ]
 }

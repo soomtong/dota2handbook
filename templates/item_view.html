@@ -1,12 +1,42 @@
 <side-menus>
-    <pane side-menu-content bindonce="item">
-        <div class="bar bar-header bar-energized">
+    <pane side-menu-content>
+        <div class="bar bar-header bar-energized" bindonce="item">
             <button class="button icon-left ion-chevron-left" ng-click="openLeft()"></button>
             <h1 class="title" bo-text="item.title"></h1>
             <button class="button icon ion-navicon-round" ng-click="openRight()"></button>
         </div>
         <content has-header="true" overflow-scroll="true">
-            <div class="view-content" bo-text="item.description"></div>
+            <div class="view-content" bindonce="item">
+                <img bo-show="item.img" bo-src="item.img"/>
+
+                <p class="story" bo-text="item.story"></p>
+                <p class="cost" bo-show="item.cost"><span class="gold" bo-text="item.cost"></span> <span class="desc" bo-show="item.desc" bo-text="item.desc"></span></p>
+                <p class="info" bo-show="item.info" bo-html="item.info"></p>
+                <div class="data-box" bo-show="item.table">
+                    <dl ng-repeat="data in item.table" bo-show="data">
+                        <dt bo-text="data[0]"></dt>
+                        <dd bo-text="data[1]"></dd>
+                    </dl>
+                </div>
+                <ul bo-show="item.note">
+                    <li ng-repeat="note in item.note" bo-text="note"></li>
+                </ul>
+                <p class="more ability" bo-show="item.ability" bo-text="item.ability"></p>
+                <p class="more affect" bo-show="item.affect" bo-text="item.affect"></p>
+                <p class="more type" bo-show="item.type" bo-text="item.type"></p>
+                <div class="recipe" bo-show="item.recipe">
+                    <h4>조합법</h4>
+                    <a ng-repeat="combine in item.recipe" bo-href="'#/item/' + combine[0]">
+                        <img bo-src="combine[1]"/><span class="multi" bo-show="{{ combine[2] > 1 }}" bo-text="combine[2]"></span>
+                    </a>
+                </div>
+                <div class="recipe" bo-show="item.upgrade">
+                    <h4>상위 아이템</h4>
+                    <a ng-repeat="tear in item.upgrade" bo-href="'#/item/' + tear[0]">
+                        <img bo-src="tear[1]"/>
+                    </a>
+                </div>
+            </div>
             <div class="google">
                 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 <!-- 도타2핸드북 -->

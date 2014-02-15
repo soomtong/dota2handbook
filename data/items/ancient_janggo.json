@@ -1,5 +1,26 @@
 {
     "id": "ancient_janggo",
     "title": "지구력의 북 Drum of Endurance",
-    "description": "모든 능력치 +9, 피해 +3, 공격 속도 오라 5, 이동 속도 오라 5%인내 - 인근 아군들에게 +10의 공격 속도가 추가되고 +10% 만큼의 이동 속도가 증가합니다. 신속의 오라 - 주변 아군들의 공격 속도 및 이동 속도가 상승합니다."
+    "desc": "모든 능력치 +9, 피해 +3, 공격 속도 오라 5, 이동 속도 오라 5%",
+    "img": "data/images/items/ancient_janggo_lg.png",
+    "cost": "1875",
+    "story": "인내 - 인근 아군들에게 +10의 공격 속도가 추가되고 +10% 만큼의 이동 속도가 증가합니다. 신속의 오라 - 주변 아군들의 공격 속도 및 이동 속도가 상승합니다.",
+    "info": "인내 - 인근 아군들에게 +10의 공격 속도가 추가되고 +10% 만큼의 이동 속도가 증가합니다. 신속의 오라 - 주변 아군들의 공격 속도 및 이동 속도가 상승합니다.",
+    "table": [
+        ["마나", "4"],
+        ["쿨다운", "4"]
+    ],
+    "note": [
+        "100MP / 30s",
+        "공격을 받으면 마나 재생이 중단된다.",
+        "1초당 33마나 재생"
+    ],
+    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
+    "affect": "아군",
+    "type": "마법 또는 일반   ",
+    "recipe": [
+        ["clarity", "data/images/items/clarity_lg.png" , 2],
+        ["bfury", "data/images/items/bfury_lg.png" ],
+        ["blink", "data/images/items/blink_lg.png"]
+    ]
 }

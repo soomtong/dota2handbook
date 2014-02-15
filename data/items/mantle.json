@@ -1,5 +1,22 @@
 {
     "id": "mantle",
     "title": "지능의 망토 Mantle of Intelligence",
-    "description": "지능 +3"
+    "desc": "지능 +3",
+    "img": "data/images/items/mantle_lg.png",
+    "cost": "150",
+    "story": "여왕들이 대대로 입어오던 아름다운 사파이어빛 덮개입니다.",
+    "info": "",
+    "table": [
+        ["지능", "+3"]
+    ],
+    "note": [
+    ],
+    "ability": "",
+    "affect": "",
+    "type": "",
+    "recipe": [
+    ],
+    "upgrade": [
+        ["null_talisman", "data/images/items/null_talisman_lg.png"]
+    ]
 }

@@ -1,5 +1,26 @@
 {
     "id": "bottle_illusion",
     "title": "환영화 룬 Rune of Illusion",
-    "description": "최대 재생 / 30s30초 동안 생명력과 마력이 최대로 회복됩니다."
+    "desc": "최대 재생 / 30s",
+    "img": "data/images/items/Bottle_illusion_icon.png",
+    "cost": "",
+    "story": "30초 동안 생명력과 마력이 최대로 회복됩니다.",
+    "info": "30초 동안 생명력과 마력이 최대로 회복됩니다.",
+    "table": [
+        ["마나", "4"],
+        ["쿨다운", "4"]
+    ],
+    "note": [
+        "100MP / 30s",
+        "공격을 받으면 마나 재생이 중단된다.",
+        "1초당 33마나 재생"
+    ],
+    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
+    "affect": "아군",
+    "type": "마법 또는 일반   ",
+    "recipe": [
+        ["clarity", "data/images/items/clarity_lg.png" , 2],
+        ["bfury", "data/images/items/bfury_lg.png" ],
+        ["blink", "data/images/items/blink_lg.png"]
+    ]
 }

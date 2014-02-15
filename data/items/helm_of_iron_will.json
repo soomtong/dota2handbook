@@ -1,5 +1,26 @@
 {
     "id": "helm_of_iron_will",
     "title": "굳은 의지의 투구 Helm of Iron Will",
-    "description": "방어력 +5, 체력 재생 +3"
+    "desc": "방어력 +5, 체력 재생 +3",
+    "img": "data/images/items/helm_of_iron_will_lg.png",
+    "cost": "950",
+    "story": "",
+    "info": "",
+    "table": [
+        ["마나", "4"],
+        ["쿨다운", "4"]
+    ],
+    "note": [
+        "100MP / 30s",
+        "공격을 받으면 마나 재생이 중단된다.",
+        "1초당 33마나 재생"
+    ],
+    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
+    "affect": "아군",
+    "type": "마법 또는 일반   ",
+    "recipe": [
+        ["clarity", "data/images/items/clarity_lg.png" , 2],
+        ["bfury", "data/images/items/bfury_lg.png" ],
+        ["blink", "data/images/items/blink_lg.png"]
+    ]
 }

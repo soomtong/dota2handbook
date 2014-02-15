@@ -1,5 +1,24 @@
 {
     "id": "blade_of_alacrity",
     "title": "민첩의 날 Blade of Alacrity",
-    "description": "민첩 +10"
+    "desc": "민첩 +10",
+    "img": "data/images/items/blade_of_alacrity_lg.png",
+    "cost": "1000",
+    "story": "시간의 마법이 주입된 장검입니다.",
+    "info": "",
+    "table": [
+        ["민첩", "+10"]
+    ],
+    "note": [
+    ],
+    "ability": "",
+    "affect": "",
+    "type": "",
+    "recipe": [
+    ],
+    "upgrade": [
+        ["ultimate_scepter", "data/images/items/ultimate_scepter_lg.png"],
+        ["diffusal_blade", "data/images/items/diffusal_blade_lg.png"],
+        ["yasha", "data/images/items/yasha_lg.png"]
+    ]
 }

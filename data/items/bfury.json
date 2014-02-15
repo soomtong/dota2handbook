@@ -1,5 +1,26 @@
 {
     "id": "bfury",
     "title": "전장격노 Battle Fury",
-    "description": "피해 +65, 체력 재생 +6, 마나 재생 +150%, 가르기 피해량 35%가르기 - 목표 주변 250 범위에 공격력의 일정 비율만큼 피해를 줍니다. 원거리 영웅에게는 효과가 적용되지 않습니다."
+    "desc": "피해 +65, 체력 재생 +6, 마나 재생 +150%, 가르기 피해량 35%",
+    "img": "data/images/items/bfury_lg.png",
+    "cost": "4350",
+    "story": "가르기 - 목표 주변 250 범위에 공격력의 일정 비율만큼 피해를 줍니다. 원거리 영웅에게는 효과가 적용되지 않습니다.",
+    "info": "가르기 - 목표 주변 250 범위에 공격력의 일정 비율만큼 피해를 줍니다. 원거리 영웅에게는 효과가 적용되지 않습니다.",
+    "table": [
+        ["마나", "4"],
+        ["쿨다운", "4"]
+    ],
+    "note": [
+        "100MP / 30s",
+        "공격을 받으면 마나 재생이 중단된다.",
+        "1초당 33마나 재생"
+    ],
+    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
+    "affect": "아군",
+    "type": "마법 또는 일반   ",
+    "recipe": [
+        ["clarity", "data/images/items/clarity_lg.png" , 2],
+        ["bfury", "data/images/items/bfury_lg.png" ],
+        ["blink", "data/images/items/blink_lg.png"]
+    ]
 }

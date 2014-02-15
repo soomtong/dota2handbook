@@ -1,5 +1,27 @@
 {
     "id": "branches",
     "title": "쇳가지 Iron Branch",
-    "description": "모든 능력치 +1 "
+    "desc": "모든 능력치 +1 ",
+    "img": "data/images/items/branches_lg.png",
+    "cost": "50",
+    "story": "보기에는 평범한 나뭇가지이지만, 이 아이템을 소지한 자는 강철처럼 강인해집니다.",
+    "info": "",
+    "table": [
+        ["힘", "+1"],
+        ["민첩", "+1"],
+        ["지능", "+1"]
+    ],
+    "note": [
+        "가격대비 높은 효율을 가지고 있습니다."
+    ],
+    "ability": "",
+    "affect": "",
+    "type": "",
+    "recipe": [
+    ],
+    "upgrade": [
+        ["headdress", "data/images/items/headdress_lg.png"],
+        ["magic_wand", "data/images/items/magic_wand_lg.png"],
+        ["buckler", "data/images/items/buckler_lg.png"]
+    ]
 }

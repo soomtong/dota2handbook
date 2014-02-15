@@ -1,5 +1,26 @@
 {
     "id": "sange_and_yasha",
     "title": "산화와 야차 Sange and Yasha",
-    "description": "피해 +16, 힘 +16, 민첩 +16, 공격 속도 +16, 이동 속도 +16%, 부상 확률 16%, 둔화 32%중상 - 공격 시 일정 확률로 5.0초 동안 적을 이동 둔화 상태에 빠뜨립니다."
+    "desc": "피해 +16, 힘 +16, 민첩 +16, 공격 속도 +16, 이동 속도 +16%, 부상 확률 16%, 둔화 32%",
+    "img": "data/images/items/sange_and_yasha_lg.png",
+    "cost": "4100",
+    "story": "중상 - 공격 시 일정 확률로 5.0초 동안 적을 이동 둔화 상태에 빠뜨립니다.",
+    "info": "중상 - 공격 시 일정 확률로 5.0초 동안 적을 이동 둔화 상태에 빠뜨립니다.",
+    "table": [
+        ["마나", "4"],
+        ["쿨다운", "4"]
+    ],
+    "note": [
+        "100MP / 30s",
+        "공격을 받으면 마나 재생이 중단된다.",
+        "1초당 33마나 재생"
+    ],
+    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
+    "affect": "아군",
+    "type": "마법 또는 일반   ",
+    "recipe": [
+        ["clarity", "data/images/items/clarity_lg.png" , 2],
+        ["bfury", "data/images/items/bfury_lg.png" ],
+        ["blink", "data/images/items/blink_lg.png"]
+    ]
 }

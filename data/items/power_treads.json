@@ -1,5 +1,26 @@
 {
     "id": "power_treads",
     "title": "능력의 장화 Power Treads",
-    "description": "이동 속도 +50, 선택 능력치 +8, 공격 속도 +30능력치 변경 - 힘, 민첩 그리고 지능 중 선택된 능력치를 제공합니다."
+    "desc": "이동 속도 +50, 선택 능력치 +8, 공격 속도 +30",
+    "img": "data/images/items/power_treads_lg.png",
+    "cost": "1400",
+    "story": "능력치 변경 - 힘, 민첩 그리고 지능 중 선택된 능력치를 제공합니다.",
+    "info": "능력치 변경 - 힘, 민첩 그리고 지능 중 선택된 능력치를 제공합니다.",
+    "table": [
+        ["마나", "4"],
+        ["쿨다운", "4"]
+    ],
+    "note": [
+        "100MP / 30s",
+        "공격을 받으면 마나 재생이 중단된다.",
+        "1초당 33마나 재생"
+    ],
+    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
+    "affect": "아군",
+    "type": "마법 또는 일반   ",
+    "recipe": [
+        ["clarity", "data/images/items/clarity_lg.png" , 2],
+        ["bfury", "data/images/items/bfury_lg.png" ],
+        ["blink", "data/images/items/blink_lg.png"]
+    ]
 }

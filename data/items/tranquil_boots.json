@@ -1,5 +1,26 @@
 {
     "id": "tranquil_boots",
     "title": "평온의 장화 Tranquil Boots",
-    "description": "이동 속도 +90, 방어력 +4, 체력 재생 +12불능 - 공격을 하거나 공격을 받으면 13초 동안 체력 재생 효과를 잃고 이동 속도가 30 감소합니다."
+    "desc": "이동 속도 +90, 방어력 +4, 체력 재생 +12",
+    "img": "data/images/items/tranquil_boots_lg.png",
+    "cost": "975",
+    "story": "불능 - 공격을 하거나 공격을 받으면 13초 동안 체력 재생 효과를 잃고 이동 속도가 30 감소합니다.",
+    "info": "불능 - 공격을 하거나 공격을 받으면 13초 동안 체력 재생 효과를 잃고 이동 속도가 30 감소합니다.",
+    "table": [
+        ["마나", "4"],
+        ["쿨다운", "4"]
+    ],
+    "note": [
+        "100MP / 30s",
+        "공격을 받으면 마나 재생이 중단된다.",
+        "1초당 33마나 재생"
+    ],
+    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
+    "affect": "아군",
+    "type": "마법 또는 일반   ",
+    "recipe": [
+        ["clarity", "data/images/items/clarity_lg.png" , 2],
+        ["bfury", "data/images/items/bfury_lg.png" ],
+        ["blink", "data/images/items/blink_lg.png"]
+    ]
 }

@@ -1,5 +1,26 @@
 {
     "id": "ultimate_scepter",
     "title": "아가님의 홀 Aghanim's Scepter",
-    "description": "모든 능력치 +10, 체력 +200, 마나 +150궁극기 향상 - 특정 영웅의 궁극기를 향상시킵니다."
+    "desc": "모든 능력치 +10, 체력 +200, 마나 +150",
+    "img": "data/images/items/ultimate_scepter_lg.png",
+    "cost": "4200",
+    "story": "궁극기 향상 - 특정 영웅의 궁극기를 향상시킵니다.",
+    "info": "궁극기 향상 - 특정 영웅의 궁극기를 향상시킵니다.",
+    "table": [
+        ["마나", "4"],
+        ["쿨다운", "4"]
+    ],
+    "note": [
+        "100MP / 30s",
+        "공격을 받으면 마나 재생이 중단된다.",
+        "1초당 33마나 재생"
+    ],
+    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
+    "affect": "아군",
+    "type": "마법 또는 일반   ",
+    "recipe": [
+        ["clarity", "data/images/items/clarity_lg.png" , 2],
+        ["bfury", "data/images/items/bfury_lg.png" ],
+        ["blink", "data/images/items/blink_lg.png"]
+    ]
 }

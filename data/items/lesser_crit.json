@@ -1,5 +1,26 @@
 {
     "id": "lesser_crit",
     "title": "수정검 Crystalys",
-    "description": "피해 +30, 치명타 확률 20%, 치명타 피해량 175%치명타 - 공격 시 일정 확률로 치명타를 줍니다."
+    "desc": "피해 +30, 치명타 확률 20%, 치명타 피해량 175%",
+    "img": "data/images/items/lesser_crit_lg.png",
+    "cost": "2150",
+    "story": "치명타 - 공격 시 일정 확률로 치명타를 줍니다.",
+    "info": "치명타 - 공격 시 일정 확률로 치명타를 줍니다.",
+    "table": [
+        ["마나", "4"],
+        ["쿨다운", "4"]
+    ],
+    "note": [
+        "100MP / 30s",
+        "공격을 받으면 마나 재생이 중단된다.",
+        "1초당 33마나 재생"
+    ],
+    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
+    "affect": "아군",
+    "type": "마법 또는 일반   ",
+    "recipe": [
+        ["clarity", "data/images/items/clarity_lg.png" , 2],
+        ["bfury", "data/images/items/bfury_lg.png" ],
+        ["blink", "data/images/items/blink_lg.png"]
+    ]
 }

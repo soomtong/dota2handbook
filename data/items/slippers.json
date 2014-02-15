@@ -1,5 +1,23 @@
 {
     "id": "slippers",
     "title": "민첩의 신발 Slippers of Agility",
-    "description": "민첩 +3"
+    "desc": "민첩 +3",
+    "img": "data/images/items/slippers_lg.png",
+    "cost": "150",
+    "story": "거미 가죽으로 만들어진 가벼운 장화입니다. 따끔거리는 느낌이 있습니다.",
+    "info": "",
+    "table": [
+        ["민첩", "+3"]
+    ],
+    "note": [
+    ],
+    "ability": "",
+    "affect": "",
+    "type": "",
+    "recipe": [
+    ],
+    "upgrade": [
+        ["poor_mans_shield", "data/images/items/poor_mans_shield_lg.png"],
+        ["wraith_band", "data/images/items/wraith_band_lg.png"]
+    ]
 }

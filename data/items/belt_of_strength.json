@@ -1,5 +1,25 @@
 {
     "id": "belt_of_strength",
     "title": "힘의 허리띠 Belt of Strength",
-    "description": "힘 +6"
+    "desc": "힘 +6",
+    "img": "data/images/items/belt_of_strength_lg.png",
+    "cost": "450",
+    "story": "활력을 증강시키는 귀중한 장신구.",
+    "info": "",
+    "table": [
+        ["힘", "+6"]
+    ],
+    "note": [
+    ],
+    "ability": "",
+    "affect": "",
+    "type": "",
+    "recipe": [
+    ],
+    "upgrade": [
+        ["basher", "data/images/items/basher_lg.png"],
+        ["necronomicon", "data/images/items/necronomicon_lg.png"],
+        ["power_treads", "data/images/items/power_treads_lg.png"],
+        ["sange", "data/images/items/sange_lg.png"]
+    ]
 }

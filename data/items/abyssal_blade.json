@@ -1,5 +1,26 @@
 {
     "id": "abyssal_blade",
     "title": "심연의 검 Abyssal Blade",
-    "description": "피해 +100, 힘 +10, 근접 확률 25%, 원거리 확률 10%지정한 적군 유닛을 2.0 초 동안 기절시킵니다. 마법 면역을 무시합니다. 강타 - 일정 확률로 1.4초 동안 기절시킵니다."
+    "desc": "피해 +100, 힘 +10, 근접 확률 25%, 원거리 확률 10%",
+    "img": "data/images/items/abyssal_blade_lg.png",
+    "cost": "6750",
+    "story": "지정한 적군 유닛을 2.0 초 동안 기절시킵니다. 마법 면역을 무시합니다. 강타 - 일정 확률로 1.4초 동안 기절시킵니다.",
+    "info": "지정한 적군 유닛을 2.0 초 동안 기절시킵니다. 마법 면역을 무시합니다. 강타 - 일정 확률로 1.4초 동안 기절시킵니다.",
+    "table": [
+        ["마나", "4"],
+        ["쿨다운", "4"]
+    ],
+    "note": [
+        "100MP / 30s",
+        "공격을 받으면 마나 재생이 중단된다.",
+        "1초당 33마나 재생"
+    ],
+    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
+    "affect": "아군",
+    "type": "마법 또는 일반   ",
+    "recipe": [
+        ["clarity", "data/images/items/clarity_lg.png" , 2],
+        ["bfury", "data/images/items/bfury_lg.png" ],
+        ["blink", "data/images/items/blink_lg.png"]
+    ]
 }

@@ -1,5 +1,26 @@
 {
     "id": "rod_of_atos",
     "title": "에이토스의 마법봉 Rod of Atos",
-    "description": "지능 +25, 체력 +350, 마비 둔화 60% / 4s마비 - 대상에게 이동 둔화 효과를 겁니다."
+    "desc": "지능 +25, 체력 +350, 마비 둔화 60% / 4s",
+    "img": "data/images/items/rod_of_atos_lg.png",
+    "cost": "3100",
+    "story": "마비 - 대상에게 이동 둔화 효과를 겁니다.",
+    "info": "마비 - 대상에게 이동 둔화 효과를 겁니다.",
+    "table": [
+        ["마나", "4"],
+        ["쿨다운", "4"]
+    ],
+    "note": [
+        "100MP / 30s",
+        "공격을 받으면 마나 재생이 중단된다.",
+        "1초당 33마나 재생"
+    ],
+    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
+    "affect": "아군",
+    "type": "마법 또는 일반   ",
+    "recipe": [
+        ["clarity", "data/images/items/clarity_lg.png" , 2],
+        ["bfury", "data/images/items/bfury_lg.png" ],
+        ["blink", "data/images/items/blink_lg.png"]
+    ]
 }

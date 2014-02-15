@@ -222,3 +222,107 @@
   padding-left: 0.5em;
   color: #187c93;
 }
+.view-content {
+  padding: 1em 1.2em;
+  text-align: justify;
+}
+.view-content .data-box {
+  clear: both;
+  border: 1px solid #c0c0c0;
+  margin: 8px auto;
+  padding: 4px 0;
+}
+.view-content dl {
+  margin: 0;
+  padding: 0;
+}
+.view-content dt {
+  float: left;
+  clear: left;
+  width: 41%;
+  text-align: right;
+  font-weight: bold;
+  color: #126b0c;
+  padding: 0;
+}
+.view-content dd {
+  margin: 4px 0 4px 44%;
+  padding: 0;
+}
+.view-content ul {
+  border: 1px solid #c0c0c0;
+  padding: 8px 16px;
+  margin: 16px auto;
+}
+.view-content li {
+  color: #666;
+  font-size: 16px;
+  list-style: circle;
+  padding: 2px 0;
+  margin-left: 1em;
+}
+.view-content p {
+  font-size: 16px;
+  line-height: 1.4;
+  padding: 0 0 4px 0;
+  margin-bottom: 2px;
+}
+.view-content img {
+  float: left;
+  padding: 4px 0;
+  margin: 0 12px 4px 0;
+}
+.view-content .story {
+  color: #444444;
+}
+.view-content .gold {
+  padding-left: 2em;
+  background: url('../data/images/heropedia/gold.png') no-repeat;
+}
+.view-content .desc {
+  background: url('../data/images/heropedia/icon_button_search.png') no-repeat;
+  padding-left: 1.2em;
+  margin-left: 0.5em;
+  color: #145dd7;
+}
+.view-content .more {
+  margin-bottom: 12px;
+  border-bottom: 1px solid #c0c0c0;
+}
+.view-content .ability:before {
+  color: #999999;
+  content: "사용 구분 : ";
+}
+.view-content .affect:before {
+  color: #999999;
+  content: "적용 대상 : ";
+}
+.view-content .type:before {
+  color: #999999;
+  content: "적용 효과 : ";
+}
+.view-content .recipe {
+  clear: both;
+}
+.view-content .recipe a {
+  float: left;
+  margin-right: 1em;
+  text-decoration: none;
+  font-style: normal;
+  color: #444444;
+  vertical-align: bottom;
+  margin-bottom: 1em;
+}
+.view-content .recipe img {
+  padding: 0;
+  margin: 0;
+}
+.view-content .recipe .multi {
+  vertical-align: bottom;
+  text-decoration: none;
+  font-style: normal;
+  padding-left: 0.5em;
+}
+.view-content .recipe .multi:before {
+  content: " X ";
+}

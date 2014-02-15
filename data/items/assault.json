@@ -1,5 +1,26 @@
 {
     "id": "assault",
     "title": "돌격 흉갑 Assault Cuirass",
-    "description": "공격 속도 +35, 방어력 +10, 공격 속도 오라 20, 방어력 오라 5(적 방어력 감소 5)돌격 오라 - 효과 범위 내에서 아군의 공격 속도와 방어력을 상승시키고 적의 방어력을 감소시킵니다."
+    "desc": "공격 속도 +35, 방어력 +10, 공격 속도 오라 20, 방어력 오라 5(적 방어력 감소 5)",
+    "img": "data/images/items/assault_lg.png",
+    "cost": "5250",
+    "story": "돌격 오라 - 효과 범위 내에서 아군의 공격 속도와 방어력을 상승시키고 적의 방어력을 감소시킵니다.",
+    "info": "돌격 오라 - 효과 범위 내에서 아군의 공격 속도와 방어력을 상승시키고 적의 방어력을 감소시킵니다.",
+    "table": [
+        ["마나", "4"],
+        ["쿨다운", "4"]
+    ],
+    "note": [
+        "100MP / 30s",
+        "공격을 받으면 마나 재생이 중단된다.",
+        "1초당 33마나 재생"
+    ],
+    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
+    "affect": "아군",
+    "type": "마법 또는 일반   ",
+    "recipe": [
+        ["clarity", "data/images/items/clarity_lg.png" , 2],
+        ["bfury", "data/images/items/bfury_lg.png" ],
+        ["blink", "data/images/items/blink_lg.png"]
+    ]
 }
