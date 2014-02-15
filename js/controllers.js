@@ -7,8 +7,6 @@ angular.module('dota2handbook.controllers', [])
             $scope.sideMenuController.toggleRight();
         };
 
-        $scope.showLoading();
-
         // load data
         var heroes = Heroes.all();
 
@@ -23,7 +21,7 @@ angular.module('dota2handbook.controllers', [])
                 $scope.heroes_intelligence = heroList.filter(function (item) {
                     return item['hero_category'] == HeroType.intelligence;
                 });
-            }).then(function () {
+
                 $scope.hideLoading();
             });
     })
@@ -35,7 +33,6 @@ angular.module('dota2handbook.controllers', [])
             $scope.sideMenuController.toggleRight();
         };
 
-        $scope.showLoading();
         $scope.hero = Heroes.get({ heroId: $stateParams.heroId });
 
         // load data
@@ -52,7 +49,7 @@ angular.module('dota2handbook.controllers', [])
                 $scope.heroes_intelligence = heroList.filter(function (item) {
                     return item['hero_category'] == HeroType.intelligence;
                 });
-            }).then(function () {
+
                 $scope.hideLoading();
             });
     })
@@ -63,8 +60,6 @@ angular.module('dota2handbook.controllers', [])
         $scope.openRight = function() {
             $scope.sideMenuController.toggleRight();
         };
-
-        $scope.showLoading();
 
         // load data
         var items = Items.all();
@@ -107,8 +102,7 @@ angular.module('dota2handbook.controllers', [])
                 $scope.item_etc = ItemList.filter(function (item) {
                     return item['item_category'] == ItemType.etc;
                 });
-            })
-            .then(function () {
+
                 $scope.hideLoading();
             });
     })
@@ -120,7 +114,6 @@ angular.module('dota2handbook.controllers', [])
             $scope.sideMenuController.toggleRight();
         };
 
-        $scope.showLoading();
         $scope.item = Items.get({ itemId: $stateParams.itemId });
 
         // load data
@@ -164,8 +157,7 @@ angular.module('dota2handbook.controllers', [])
                 $scope.item_etc = ItemList.filter(function (item) {
                     return item['item_category'] == ItemType.etc;
                 });
-            })
-            .then(function () {
+
                 $scope.hideLoading();
             });
     })
@@ -187,6 +179,8 @@ angular.module('dota2handbook.controllers', [])
                 $scope.mechanism_2 = mechanismList.filter(function (item) {
                     return item['category'] == 2;
                 });
+
+                $scope.hideLoading();
             });
     })
     .controller('MechanismDetailCtrl', function ($scope, $stateParams, Mechanism) {
@@ -197,7 +191,6 @@ angular.module('dota2handbook.controllers', [])
             $scope.sideMenuController.toggleRight();
         };
 
-        $scope.showLoading();
         $scope.mechanism = Mechanism.get({ mechanismId: $stateParams.mechanismId });
         $scope.hideLoading();
     })
@@ -219,6 +212,8 @@ angular.module('dota2handbook.controllers', [])
                 $scope.report_2 = reportList.filter(function (item) {
                     return item['category'] == 2;
                 });
+
+                $scope.hideLoading();
             });
     })
     .controller('ReportDetailCtrl', function ($scope, $stateParams, Report) {
@@ -229,7 +224,6 @@ angular.module('dota2handbook.controllers', [])
             $scope.sideMenuController.toggleRight();
         };
 
-        $scope.showLoading();
         $scope.report = Report.get({ reportId: $stateParams.reportId });
         $scope.hideLoading();
     })
