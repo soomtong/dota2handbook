@@ -239,15 +239,33 @@
 .view-content dt {
   float: left;
   clear: left;
-  width: 41%;
+  width: 6em;
   text-align: right;
   font-weight: bold;
   color: #126b0c;
   padding: 0;
 }
 .view-content dd {
-  margin: 4px 0 4px 44%;
+  margin: 4px 0 4px 7em;
   padding: 0;
+}
+.view-content .span1 dt {
+  width: 9em;
+}
+.view-content .span1 dd {
+  margin-left: 10em;
+}
+.view-content .span2 dt {
+  width: 12em;
+}
+.view-content .span2 dd {
+  margin-left: 13em;
+}
+.view-content .span3 dt {
+  width: 15em;
+}
+.view-content .span3 dd {
+  margin-left: 16em;
 }
 .view-content ul {
   border: 1px solid #c0c0c0;

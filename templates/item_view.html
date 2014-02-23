@@ -13,7 +13,7 @@
                 <p class="cost" bo-show="item.cost"><span class="gold" bo-text="item.cost"></span> <span class="desc" bo-show="item.desc" bo-text="item.desc"></span></p>
                 <p class="info" bo-show="item.info" bo-html="item.info"></p>
                 <div class="data-box" bo-show="item.table">
-                    <dl ng-repeat="data in item.table" bo-show="data">
+                    <dl bo-class="item.tableSpan" ng-repeat="data in item.table" bo-show="data">
                         <dt bo-text="data[0]"></dt>
                         <dd bo-text="data[1]"></dd>
                     </dl>
