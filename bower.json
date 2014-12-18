@@ -1,0 +1,25 @@
+{
+  "name": "dota2handbook",
+  "version": "0.1.0",
+  "homepage": "https://github.com/soomtong/dota2handbook",
+  "authors": [
+    "soomtong <soomtong@gmail.com>"
+  ],
+  "description": "Dota 2 Handbook for Unusual Players",
+  "main": "index.html",
+  "keywords": [
+    "dota"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    ".",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ionic": "1.0"
+  }
+}

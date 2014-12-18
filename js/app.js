@@ -2,7 +2,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'dota2handbook.services' is found in services.js
 // 'dota2handbook.controllers' is found in controllers.js
-angular.module('dota2handbook', ['ionic', 'pasvaz.bindonce', 'dota2handbook.services', 'dota2handbook.controllers'])
+angular.module('dota2handbook', ['ionic', 'dota2handbook.services', 'dota2handbook.controllers'])
     .config(function($stateProvider, $urlRouterProvider, $httpProvider, $sceProvider) {
         $stateProvider
             .state('hero', {
