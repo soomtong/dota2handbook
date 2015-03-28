@@ -1,19 +1,10 @@
 <selector>
     <div class="selector">
-        <ul class="forms-inline-list right">
-            <li class="{opts.name == 'item' ? 'hide': ''}">
-                <input type="radio" name="panel-selector" id="panel-item">
-                <label for="panel-item">아이템</label>
-            </li>
-            <li class="{opts.name == 'hero' ? 'hide': ''}">
-                <input type="radio" name="panel-selector" id="panel-hero">
-                <label for="panel-hero">영웅</label>
-            </li>
-            <li class="{opts.name == 'article' ? 'hide': ''}">
-                <input type="radio" name="panel-selector" id="panel-article">
-                <label for="panel-article">문서</label>
-            </li>
-        </ul>
+        <div class="forms-inline-list right">
+            <button class="btn btn-smaller btn-outline btn-round" show={{ opts.name != 'item'}}>아이템</button>
+            <button class="btn btn-smaller btn-outline btn-round" show={{ opts.name != 'hero'}}>영웅</button>
+            <button class="btn btn-smaller btn-outline btn-round" show={{ opts.name != 'article'}}>문서</button>
+        </div>
     </div>
     <script>
         var selected = this.opts.name;

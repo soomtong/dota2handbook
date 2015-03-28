@@ -1,68 +1,30 @@
 <items>
-    <div class="choice">
-        <ul class="forms-inline-list">
-            <li>
-                <input type="checkbox" name="checkbox-1" id="checkbox-1">
-                <label for="checkbox-1">힘</label>
-            </li>
-            <li>
-                <input type="checkbox" name="checkbox-2" id="checkbox-2">
-                <label for="checkbox-2">민첩</label>
-            </li>
-            <li>
-                <input type="checkbox" name="checkbox-3" id="checkbox-3">
-                <label for="checkbox-3">지능</label>
-            </li>
-            <li>
-                <input type="checkbox" name="checkbox-4" id="checkbox-4">
-                <label for="checkbox-4">모든능력치</label>
-            </li>
-            <li>
-                <input type="checkbox" name="checkbox-5" id="checkbox-5">
-                <label for="checkbox-5">체력</label>
-            </li>
-            <li>
-                <input type="checkbox" name="checkbox-6" id="checkbox-6">
-                <label for="checkbox-6">마나</label>
-            </li>
-            <br/>
-            <li>
-                <input type="checkbox" name="item-shop-side" id="item-shop-side">
-                <label for="item-shop-side">사이드 상점</label>
-            </li>
-            <li>
-                <input type="checkbox" name="item-shop-secret" id="item-shop-secret">
-                <label for="item-shop-secret">비밀 상점</label>
-            </li>
-        </ul>
-    </div>
-    <div class="order">
-        <ul class="forms-inline-list">
-            <li>
-                <input type="radio" name="item_list_order" id="radio-item-name1">
-                <label for="radio-item-name1">한글 이름</label>
-            </li>
-            <li>
-                <input type="radio" name="item_list_order" id="radio-item-name2">
-                <label for="radio-item-name2">영문 이름</label>
-            </li>
-            <li>
-                <input type="radio" name="item_list_order" id="radio-item-type1">
-                <label for="radio-item-type1">가격</label>
-            </li>
-        </ul>
-    </div>
+    <item-selector></item-selector>
 
     <div class="nav nav-stats list">
         <ul>
-            <li each={ items } id="{ id }">
-                <img src="{ pic }" alt="{ subtitle }"/>
-                { title } <small class="subtitle">{ subtitle }</small>
-                <b class="badge badge-small badge-black">{ Item.showType(item_category) }</b>
+            <li each="{{ dataList }}" id="{{ id }}">
+                <img src="{{ pic }}" alt="{{ subtitle }}"/>
+                {{ title }} <small class="subtitle">{{ subtitle }}</small>
+                <b class="badge badge-small badge-black">{{ Item.showType(item_category) }}</b>
             </li>
         </ul>
     </div>
     <script>
-        this.items = $.makeArray(this.opts);
+    var self = this;
+    self.dataList = $.makeArray(opts);
+
+    function itemOrderByTitle() {
+        return true;
+    }
+
+    function itemOrderBySubtitle() {
+        return true;
+    }
+
+    this.on('mount update unmount', function (eventName) {
+        console.log(eventName);
+    });
+
     </script>
 </items>

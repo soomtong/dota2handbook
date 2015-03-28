@@ -13,10 +13,10 @@
     </div>
     <div class="nav nav-stats list">
         <ul>
-            <li each={ items } id="{ id }">
-                <img src="{ pic }" alt="{ subtitle }" if={ pic } />
-                { title }
-                <b class="badge badge-small badge-white">{  Article.showType(article_category) }</b>
+            <li each={{ items }} id="{{ id }}">
+                <img src="{{ pic }}" alt="{{ subtitle }}" if={{ pic }} />
+                {{ title }}
+                <b class="badge badge-small badge-white">{{  Article.showType(article_category) }}</b>
             </li>
         </ul>
     </div>

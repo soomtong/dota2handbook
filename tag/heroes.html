@@ -62,10 +62,10 @@
 
     <div class="nav nav-stats list">
         <ul>
-            <li each={ heroes } id="{ id }">
-                <img src="{ pic }" alt="{ subtitle }"/>
-                { title } <small class="subtitle">{ subtitle }</small>
-                <b class="badge badge-small { Hero.showTypeColor(hero_category) }">{ Hero.showType(hero_category) }</b>
+            <li each={{ heroes }} id="{{ id }}">
+                <img src="{{ pic }}" alt="{{ subtitle }}"/>
+                {{ title }} <small class="subtitle">{{ subtitle }}</small>
+                <b class="badge badge-small {{ Hero.showTypeColor(hero_category) }}">{{ Hero.showType(hero_category) }}</b>
             </li>
         </ul>
     </div>

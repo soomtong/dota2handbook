@@ -1,8 +1,11 @@
+//var itemData, heroData, articleData;
+
 // load data entry
-$.getJSON('data/article/articles.json', function (data) {
+$.getJSON('data/items/items.json', function (data) {
     var dataList = _.sortBy(data, "title");
 
-    riot.mount('articles', dataList);
+    riot.mount('item-selector');
+    riot.mount('items', dataList);
 });
 
 $.getJSON('data/heroes/heroes.json', function (data) {
@@ -11,11 +14,14 @@ $.getJSON('data/heroes/heroes.json', function (data) {
     riot.mount('heroes', dataList);
 });
 
-$.getJSON('data/items/items.json', function (data) {
+$.getJSON('data/article/articles.json', function (data) {
     var dataList = _.sortBy(data, "title");
 
-    riot.mount('items', dataList);
+    riot.mount('articles', dataList);
 });
 
 // set page selector
 riot.mount('selector');
+
+// set global
+riot.settings.brackets = '{{ }}';

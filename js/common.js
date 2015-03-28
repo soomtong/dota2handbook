@@ -98,3 +98,8 @@ var Article = {
         }
     }
 };
+
+var setFilter = function (e) {
+    console.log(e);
+    return true;
+};

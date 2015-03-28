@@ -17,6 +17,24 @@
     <div class="unit-33 items" id="items">
         <selector name="item"></selector>
         <h1>아이템</h1>
+
+        <div class="order">
+            <ul class="forms-inline-list">
+                <li>
+                    <input type="radio" name="item_list_order" id="radio-item-name1" onclick="{{ itemOrderByTitle }}">
+                    <label for="radio-item-name1">한글 이름</label>
+                </li>
+                <li>
+                    <input type="radio" name="item_list_order" id="radio-item-name2" onclick="{{ itemOrderBySubtitle }}">
+                    <label for="radio-item-name2">영문 이름</label>
+                </li>
+                <li>
+                    <input type="radio" name="item_list_order" id="radio-item-type1">
+                    <label for="radio-item-type1">가격</label>
+                </li>
+            </ul>
+        </div>
+
         <items></items>
     </div>
 
@@ -39,6 +57,7 @@
 <script src="components/lodash/lodash.min.js"></script>
 <!-- run script -->
 <script src="tag/items.html" type="riot/tag"></script>
+<script src="tag/item_selector.html" type="riot/tag"></script>
 <script src="tag/heroes.html" type="riot/tag"></script>
 <script src="tag/articles.html" type="riot/tag"></script>
 <script src="tag/selector.html" type="riot/tag"></script>
