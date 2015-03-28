@@ -630,7 +630,7 @@
         "speed": "315", "armor": "7.08", "attack": "48-54", "range": "128", "sight": "18/8"
     },
     {
-        "id": "crystal_maiden", "title": "수정의 여인", "subtitle": "Crystal Maiden - CM",
+        "id": "crystal_maiden", "title": "수정의 여인", "subtitle": "Crystal Maiden",
         "pic": "data/images/heroes/crystal_maiden_full.png",
         "hero_category": 3, "hero_type": "range,supp,disable,nuke,lane",
         "skill_type": "속둔집",
@@ -702,7 +702,7 @@
         "speed": "305", "armor": "3.82", "attack": "49-55", "range": "500", "sight": "18/8"
     },
     {
-        "id": "furion", "title": "자연의 예언자", "subtitle": "Nature's Prophet - Furion",
+        "id": "furion", "title": "자연의 예언자", "subtitle": "Nature's Prophet",
         "pic": "data/images/heroes/furion_full.png",
         "hero_category": 3, "hero_type": "range,jungle,push,carry,escape",
         "skill_type": "가환순",

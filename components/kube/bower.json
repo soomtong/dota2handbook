@@ -1,0 +1,24 @@
+{
+  "name": "kube",
+  "version": "4.0.3",
+  "authors": [
+    "imperavi"
+  ],
+  "description": "Kube CSS-Framework",
+  "keywords": [
+    "less",
+    "css",
+    "kube"
+  ],
+  "homepage": "https://github.com/soomtong/kube",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
+
