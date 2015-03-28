@@ -1,5 +1,4 @@
-riot.mount('selector');
-
+// load data entry
 $.getJSON('data/article/articles.json', function (data) {
     var dataList = _.sortBy(data, "title");
 
@@ -18,3 +17,5 @@ $.getJSON('data/items/items.json', function (data) {
     riot.mount('items', dataList);
 });
 
+// set page selector
+riot.mount('selector');
