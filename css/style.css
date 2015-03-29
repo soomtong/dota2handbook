@@ -57,7 +57,8 @@ form {
   margin-right: 0.8em;
 }
 @media (max-width: 1000px) {
-  .list .subtitle {
+  .item-list .subtitle,
+  .hero-list .subtitle {
     display: none;
   }
 }
