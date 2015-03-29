@@ -15,13 +15,13 @@ var Hero = {
     showTypeColor: function (id) {
         switch (id) {
             case 1:
-                return "badge-red";
+                return "badge badge-small badge-red";
                 break;
             case 2:
-                return "badge-green";
+                return "badge badge-small badge-green";
                 break;
             case 3:
-                return "badge-blue";
+                return "badge badge-small badge-blue";
                 break;
         }
     }

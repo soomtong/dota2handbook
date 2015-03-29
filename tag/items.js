@@ -1,4 +1,4 @@
-var OrderSelector = React.createClass({
+var ItemOrderSelector = React.createClass({
     getInitialState: function () {
         return {
             selectedOrder: this.props.selectedOrder || 'grade'
@@ -142,8 +142,6 @@ var ItemPanel = React.createClass({
 
             this.setState({ viewList: newList });
         } else {
-            console.log("reset");
-
             this.setState({ viewList: viewList });
         }
 
@@ -187,10 +185,10 @@ var ItemPanel = React.createClass({
     },
     render: function () {
         return (
-            <div className="unit-33 items" id="items">
+            <div className="item-wrap">
                 <PanelSelector panel="item"/>
-                <h1>아이템 <small className="badge badge-black">{ this.state.viewList.length }</small></h1>
-                <OrderSelector onOrderSubmit={ this.handleChange }/>
+                <h1>{ itemData.title } <small className="badge badge-black">{ this.state.viewList.length }</small></h1>
+                <ItemOrderSelector onOrderSubmit={ this.handleChange }/>
                 <ItemFilter onFilterSubmit={ this.handleChange }/>
                 <Items viewList={ this.state.viewList }/>
             </div>
@@ -230,4 +228,4 @@ var itemData = {
     filterList: []
 };
 
-React.render(<ItemPanel/>, document.getElementById('wrap'));
+React.render(<ItemPanel/>, document.getElementById('items_holder'));

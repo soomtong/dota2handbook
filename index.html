@@ -13,21 +13,10 @@
 
 </head>
 <body>
-<div class="units-row units-split end" id="wrap">
-    <div class="unit-33 items" id="items"></div>
-    <!--
-    <div class="unit-33 heroes" id="heroes">
-        <selector name="hero"></selector>
-        <h1>영웅</h1>
-        <heroes></heroes>
-    </div>
-
-    <div class="unit-33 articles" id="articles">
-        <selector name="article"></selector>
-        <h1>문서</h1>
-        <articles></articles>
-    </div>
-    -->
+<div class="units-row units-split end">
+    <div class="unit-33 items" id="items_holder"></div>
+    <div class="unit-33 heroes" id="heroes_holder"></div>
+    <div class="unit-33 articles" id="articles_holder"></div>
 </div>
 <!-- load library -->
 <script src="components/jquery/dist/jquery.min.js"></script>
@@ -41,8 +30,7 @@
 <!-- bind tag -->
 <script src="tag/selector.js" type="text/jsx"></script>
 <script src="tag/items.js" type="text/jsx"></script>
-<!--<script src="tag/item_selector.js" type="text/jsx"></script>-->
-<!--<script src="tag/heroes.js" type="text/jsx"></script>-->
+<script src="tag/heroes.js" type="text/jsx"></script>
 <!--<script src="tag/articles.js" type="text/jsx"></script>-->
 </body>
 </html>

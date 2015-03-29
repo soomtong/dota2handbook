@@ -1,11 +1,13 @@
 form {
   margin-bottom: 0;
 }
-.items {
+.items,
+.heroes {
   padding: 1em;
   background: #d3e3fb;
 }
-.items .forms-inline-list {
+.items .forms-inline-list,
+.heroes .forms-inline-list {
   margin-bottom: 0.4em;
 }
 .heroes {
@@ -16,16 +18,22 @@ form {
   padding: 1em;
   background: #f8d5d8;
 }
-.item-list img {
+.item-list img,
+.hero-list img {
   height: 32px;
 }
-.item-list li {
+.item-list li,
+.hero-list li {
   padding: 0.3em 0;
 }
-.item-list .item-name {
+.item-list .item-name,
+.hero-list .item-name,
+.item-list .hero-name,
+.hero-list .hero-name {
   margin: 5px;
 }
-.item-list .subtitle {
+.item-list .subtitle,
+.hero-list .subtitle {
   background: rgba(0, 0, 0, 0.25);
   color: rgba(255, 255, 255, 0.85);
   white-space: nowrap;
