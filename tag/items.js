@@ -5,26 +5,25 @@ var OrderSelector = React.createClass({
         };
     },
     handleChange: function (event) {
-        this.setState({ selectedOrder: event.target.value });
-        this.props.onOrderSubmit(event.target.value);
+        this.state.selectedOrder = event.target.value
+        this.props.onOrderSubmit({ order: event.target.value });
     },
     render: function () {
-        var selector = this.state.selectedOrder;
+        var self = this;
+        var selector = self.state.selectedOrder;
 
         return (
             <div className="order">
                 <ul className="forms-inline-list">
-                    <form onChange={ this.handleChange } >
                     <li className="label label-outline">정렬</li>
                     {itemData.order.map(function (item) {
                         return (
                             <li key={ item.id }>
-                                <label><input type="radio" name="item_list_order" defaultChecked={item.id == selector } value={ item.id }/>
+                                <label><input type="radio" name="item_list_order" defaultChecked={item.id == selector } onClick={ self.handleChange } value={ item.id }/>
                                 { item.title }</label>
                             </li>
                         );
                     })}
-                    </form>
                 </ul>
             </div>
         );
@@ -51,7 +50,7 @@ var ItemFilter = React.createClass({
             });
         }
 
-        this.props.onFilterSubmit(itemData.filterList.join(','));
+        this.props.onFilterSubmit({ filter: itemData.filterList.join(',') });
     },
     render: function () {
         var filter = this.state.selectedFilter;
@@ -115,16 +114,6 @@ var ItemPanel = React.createClass({
         }.bind(this));
     },
     handleChangeOrder: function (order) {
-/*
-        var viewList = _.clone(this.state.viewList);
-
-        var newList = setOrderAndFilter({ order: this.state.order, filter: this.state.filter }, viewList, itemData);
-
-        var viewList = setOrderAndFilter({ order: this.state.order, filter: this.state.filter }, viewList, itemData);
-
-        this.setState({ viewList: _.sortBy(viewList, itemData.orderTable[order]) });
-*/
-
         var viewList = _.clone(this.state.dataList);
         var newList = _.sortBy(viewList, itemData.orderTable[order]);
 
@@ -161,13 +150,47 @@ var ItemPanel = React.createClass({
         this.state.filter = filter;
         console.log(this.state.order, this.state.filter);
     },
+    handleChange: function (condition) {
+        this.state.order = condition.order || this.state.order;
+        this.state.filter = condition.filter;
+
+        // arrange by order
+        var viewList = _.clone(this.state.dataList);
+        var orderList = _.sortBy(viewList, itemData.orderTable[this.state.order]);
+
+        this.setState({ viewList: orderList });
+
+        // arrange by filter
+        var newList = [];
+
+        var arr = this.state.filter.split(',');
+        var token = _.map(arr, function (i) {
+            return itemData.filterTable[i];
+        });
+
+        if (arr.length && arr[0]) {
+            for (var i = 0; i < orderList.length; i++) {
+                for (var j = 0; j < token.length; j++) {
+                    if (orderList[i].spec_type.indexOf(token[j]) > -1) {
+                        newList.push(orderList[i]);
+
+                        break;
+                    }
+                }
+            }
+
+            this.setState({ viewList: newList });
+        } else {
+            this.setState({ viewList: orderList });
+        }
+    },
     render: function () {
         return (
             <div className="unit-33 items" id="items">
                 <PanelSelector panel="item"/>
                 <h1>아이템</h1>
-                <OrderSelector onOrderSubmit={ this.handleChangeOrder }/>
-                <ItemFilter onFilterSubmit={ this.handleChangeFilter }/>
+                <OrderSelector onOrderSubmit={ this.handleChange }/>
+                <ItemFilter onFilterSubmit={ this.handleChange }/>
                 <Items viewList={ this.state.viewList }/>
             </div>
         );
@@ -183,10 +206,10 @@ var itemData = {
         {id: 'price', title: '가격'}
     ],
     orderTable: {
-        'grade': 'id',
-        'name_kor': 'title',
-        'name_eng': 'subtitle',
-        'price': 'price'
+        grade: 'id',
+        name_kor: 'title',
+        name_eng: 'subtitle',
+        price: 'price'
     },
     filter: [
         {id: 'stat1', title: '힘'},
@@ -199,20 +222,11 @@ var itemData = {
         {id: 'shop2', title: '비밀상점'}
     ],
     filterTable: {
-        'stat1': '힘',
-        'stat2': '민',
-        'stat3': '지'
+        stat1: '힘',
+        stat2: '민',
+        stat3: '지'
     },
     filterList: []
 };
-
-var setOrderAndFilter = function (condition, dataList) {
-    var sortedList = _.sortBy(dataList, itemData.orderTable[condition.order]);
-
-    //var filteredList =
-
-    return sortedList;
-};
-
 
 React.render(<ItemPanel/>, document.getElementById('wrap'));
