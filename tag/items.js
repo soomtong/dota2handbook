@@ -5,14 +5,12 @@ var OrderSelector = React.createClass({
         };
     },
     handleChange: function (event) {
-        console.log(event.target.value, 'order selector');
-        event.preventDefault();
-
         this.setState({ selectedOrder: event.target.value });
         this.props.onOrderSubmit({id: event.target.value});
     },
     render: function () {
         var selector = this.state.selectedOrder;
+
         return (
             <div className="order">
                 <ul className="forms-inline-list">
@@ -21,7 +19,7 @@ var OrderSelector = React.createClass({
                     {itemData.order.map(function (item) {
                         return (
                             <li key={ item.id }>
-                                <label><input type="radio" name="item_list_order" checked={item.id == selector } value={ item.id }/>
+                                <label><input type="radio" name="item_list_order" defaultChecked={item.id == selector } value={ item.id }/>
                                 { item.title }</label>
                             </li>
                         );
@@ -36,8 +34,24 @@ var OrderSelector = React.createClass({
 var ItemFilter = React.createClass({
     getInitialState: function () {
         return {
-            selectedFilter: this.props.selectedFilter || ['stat1']
+            selectedFilter: this.props.selectedFilter || ''
         };
+    },
+    handleChange: function (event) {
+        var selected = event.target.value;
+        var str = itemData.filterList.join(',');
+
+        if (str.indexOf(selected) < 0) {
+            // add item
+            itemData.filterList.push(selected);
+        } else {
+            // remove item
+            itemData.filterList = _.remove(itemData.filterList, function (item) {
+                return item != selected;
+            });
+        }
+
+        this.props.onFilterSubmit(itemData.filterList.join(','));
     },
     render: function () {
         var filter = this.state.selectedFilter;
@@ -45,16 +59,17 @@ var ItemFilter = React.createClass({
         return (
             <div className="choice">
                 <ul className="forms-inline-list">
+                    <form onChange={ this.handleChange } >
                     <li className="label label-outline">필터</li>
                     {itemData.filter.map(function (item) {
-                        //console.log(filter, item.id);
                         return (
                             <li key={ item.id }>
-                                <label><input type="checkbox" name="item_list_filter" checked={ filter.indexOf(item.id) > -1 } value={ item.id }/>
+                                <label><input type="checkbox" name="item_list_filter" defaultChecked={ filter.indexOf(item.id) > -1 } value={ item.id }/>
                                 { item.title }</label>
                             </li>
                         );
                     })}
+                    </form>
                 </ul>
             </div>
         );
@@ -85,29 +100,67 @@ var Items = React.createClass({
 var ItemPanel = React.createClass({
     getInitialState : function(){
         return {
+            order: { id: 'grade' },
+            filter: '',
+            list: [],
             dataList: []
         };
     },
     componentDidMount: function () {
         $.getJSON('data/items/items.json', function (data) {
             if (this.isMounted()) {
-                console.log('mount');
+                this.setState({ list: data });
                 this.setState({ dataList: data });
             }
         }.bind(this));
     },
-    handleChange: function (order) {
-        console.log(order);
+    handleChangeOrder: function (order) {
         var dataList = _.clone(this.state.dataList);
-        console.log(dataList[1].title);
-        var orderTable = {
-            'grade': 'id',
-            'name_kor': 'title',
-            'name_eng': 'subtitle',
-            'price': 'price'
+        this.setState({ dataList: _.sortBy(dataList, itemData.orderTable[order.id]) });
+
+/*
+        this.setState({ order: order });
+
+        var dataList = _.clone(this.state.list);
+
+        var dataList = setOrderAndFilter({ order: this.state.order, filter: this.state.filter }, dataList, itemData);
+
+        this.setState({ dataList: dataList });
+*/
+    },
+    handleChangeFilter: function (filter) {
+        this.setState({ filter: filter });
+
+        var dataList = _.clone(this.state.list), newList = [];
+        var arr = filter.split(',');
+        var token = _.map(arr, function (i) {
+            return itemData.filterTable[i];
+        });
+
+        if (arr.length && arr[0]) {
+            for (var i = 0; i < dataList.length; i++) {
+                var result = false;
+
+                for (var j = 0; j < token.length; j++) {
+                    if (dataList[i].spec_type.indexOf(token[j]) > -1) {
+                        result = true;
+
+                        //console.log(dataList[i].spec_type, token[j]);
+                        //console.log(dataList[i].spec_type.indexOf(token[j]) > -1);
+
+                        if (result) newList.push(dataList[i]);
+
+                        continue;
+                    }
+                }
+            }
+
+            this.setState({ dataList: newList });
+        } else {
+            console.log("reset");
+
+            this.setState({ dataList: dataList });
         }
-        this.setState({ dataList: _.sortBy(dataList, orderTable[order.id]) })
-        console.log(dataList[1].title);
 
     },
     render: function () {
@@ -115,8 +168,8 @@ var ItemPanel = React.createClass({
             <div className="unit-33 items" id="items">
                 <PanelSelector panel="item"/>
                 <h1>아이템</h1>
-                <OrderSelector onOrderSubmit={ this.handleChange }/>
-                <ItemFilter filter="stat1,stat2"/>
+                <OrderSelector onOrderSubmit={ this.handleChangeOrder }/>
+                <ItemFilter onFilterSubmit={ this.handleChangeFilter }/>
                 <Items dataList={ this.state.dataList }/>
             </div>
         );
@@ -131,6 +184,12 @@ var itemData = {
         {id: 'name_eng', title: '영문'},
         {id: 'price', title: '가격'}
     ],
+    orderTable: {
+        'grade': 'id',
+        'name_kor': 'title',
+        'name_eng': 'subtitle',
+        'price': 'price'
+    },
     filter: [
         {id: 'stat1', title: '힘'},
         {id: 'stat2', title: '민첩'},
@@ -140,7 +199,13 @@ var itemData = {
         {id: 'stat6', title: '마나'},
         {id: 'shop1', title: '사이드상점'},
         {id: 'shop2', title: '비밀상점'}
-    ]
+    ],
+    filterTable: {
+        'stat1': '힘',
+        'stat2': '민',
+        'stat3': '지',
+    },
+    filterList: []
 };
 
 React.render(<ItemPanel/>, document.getElementById('wrap'));

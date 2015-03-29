@@ -99,7 +99,10 @@ var Article = {
     }
 };
 
-var setFilter = function (e) {
-    console.log(e);
-    return true;
+var setOrderAndFilter = function (condition, list, itemData) {
+    var sortedList = _.sortBy(list, itemData.orderTable[condition.order.id]);
+
+    //var filteredList =
+
+    return sortedList;
 };
