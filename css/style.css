@@ -1,6 +1,12 @@
+form {
+  margin-bottom: 0;
+}
 .items {
   padding: 1em;
   background: #d3e3fb;
+}
+.items .forms-inline-list {
+  margin-bottom: 0.4em;
 }
 .heroes {
   padding: 1em;
@@ -14,15 +20,12 @@
   height: 32px;
 }
 .item-list li {
-  margin: 2px;
+  padding: 0.3em 0;
 }
 .item-list .item-name {
   margin: 5px;
 }
-.hide {
-  display: none !important;
-}
-.list .subtitle {
+.item-list .subtitle {
   background: rgba(0, 0, 0, 0.25);
   color: rgba(255, 255, 255, 0.85);
   white-space: nowrap;
@@ -30,6 +33,9 @@
   display: inline-block;
   line-height: 1;
   border-radius: 2px;
+}
+.hide {
+  display: none !important;
 }
 .selector button.btn-smaller {
   padding-left: 1.5em;

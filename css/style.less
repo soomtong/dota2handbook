@@ -1,9 +1,16 @@
 @import "../components/kube/less/mixins.less";
 @import "../components/kube/less/variables.less";
 
+form {
+  margin-bottom: 0;
+}
+
 .items {
   padding: 1em;
-  background: @color-blue-pastel
+  background: @color-blue-pastel;
+  .forms-inline-list {
+    margin-bottom: 0.4em;
+  }
 }
 
 .heroes {
@@ -21,18 +28,11 @@
     height: 32px;
   }
   li {
-    margin: 2px;
+    padding: 0.3em 0;
   }
   .item-name {
     margin: 5px;
   }
-}
-
-.hide {
-  display: none !important;
-}
-
-.list {
   .subtitle {
     background: rgba(0, 0, 0, 0.25);
     color: rgba(255, 255, 255, 0.85);
@@ -42,6 +42,10 @@
     line-height: 1;
     border-radius: 2px;
   }
+}
+
+.hide {
+  display: none !important;
 }
 
 .selector {
