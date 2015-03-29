@@ -5,7 +5,7 @@ var OrderSelector = React.createClass({
         };
     },
     handleChange: function (event) {
-        this.state.selectedOrder = event.target.value
+        this.state.selectedOrder = event.target.value;
         this.props.onOrderSubmit({ order: event.target.value });
     },
     render: function () {
@@ -152,7 +152,9 @@ var ItemPanel = React.createClass({
     },
     handleChange: function (condition) {
         this.state.order = condition.order || this.state.order;
-        this.state.filter = condition.filter;
+
+        // filter condition
+        if (Object.keys(condition).indexOf('filter') > -1) this.state.filter = condition.filter;
 
         // arrange by order
         var viewList = _.clone(this.state.dataList);
@@ -163,7 +165,7 @@ var ItemPanel = React.createClass({
         // arrange by filter
         var newList = [];
 
-        var arr = this.state.filter.split(',');
+        var arr = this.state.filter ? this.state.filter.split(',') : [];
         var token = _.map(arr, function (i) {
             return itemData.filterTable[i];
         });
@@ -171,14 +173,13 @@ var ItemPanel = React.createClass({
         if (arr.length && arr[0]) {
             for (var i = 0; i < orderList.length; i++) {
                 for (var j = 0; j < token.length; j++) {
-                    if (orderList[i].spec_type.indexOf(token[j]) > -1) {
+                    if (orderList[i]['spec_type'].indexOf(token[j]) > -1) {
                         newList.push(orderList[i]);
 
                         break;
                     }
                 }
             }
-
             this.setState({ viewList: newList });
         } else {
             this.setState({ viewList: orderList });
@@ -188,7 +189,7 @@ var ItemPanel = React.createClass({
         return (
             <div className="unit-33 items" id="items">
                 <PanelSelector panel="item"/>
-                <h1>아이템</h1>
+                <h1>아이템 <small className="badge badge-black">{ this.state.viewList.length }</small></h1>
                 <OrderSelector onOrderSubmit={ this.handleChange }/>
                 <ItemFilter onFilterSubmit={ this.handleChange }/>
                 <Items viewList={ this.state.viewList }/>
