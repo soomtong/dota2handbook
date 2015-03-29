@@ -10,11 +10,14 @@
   padding: 1em;
   background: #f8d5d8;
 }
-.list img {
+.item-list img {
   height: 32px;
 }
-.list li {
+.item-list li {
   margin: 2px;
+}
+.item-list .item-name {
+  margin: 5px;
 }
 .hide {
   display: none !important;
