@@ -6,7 +6,7 @@ var OrderSelector = React.createClass({
     },
     handleChange: function (event) {
         this.setState({ selectedOrder: event.target.value });
-        this.props.onOrderSubmit({id: event.target.value});
+        this.props.onOrderSubmit(event.target.value);
     },
     render: function () {
         var selector = this.state.selectedOrder;
@@ -100,7 +100,7 @@ var Items = React.createClass({
 var ItemPanel = React.createClass({
     getInitialState : function(){
         return {
-            order: { id: 'grade' },
+            order: 'grade',
             filter: '',
             list: [],
             dataList: []
@@ -115,22 +115,26 @@ var ItemPanel = React.createClass({
         }.bind(this));
     },
     handleChangeOrder: function (order) {
-        var dataList = _.clone(this.state.dataList);
-        this.setState({ dataList: _.sortBy(dataList, itemData.orderTable[order.id]) });
-
 /*
-        this.setState({ order: order });
+        var dataList = _.clone(this.state.dataList);
 
-        var dataList = _.clone(this.state.list);
+        var newList = setOrderAndFilter({ order: this.state.order, filter: this.state.filter }, dataList, itemData);
 
         var dataList = setOrderAndFilter({ order: this.state.order, filter: this.state.filter }, dataList, itemData);
 
-        this.setState({ dataList: dataList });
+        this.setState({ dataList: _.sortBy(dataList, itemData.orderTable[order]) });
 */
+
+        var dataList = _.clone(this.state.list);
+        var newList = _.sortBy(dataList, itemData.orderTable[order]);
+
+        this.setState({ dataList: newList });
+        this.setState({ order: order });
+
+
+        console.log(this.state.order, this.state.filter);
     },
     handleChangeFilter: function (filter) {
-        this.setState({ filter: filter });
-
         var dataList = _.clone(this.state.list), newList = [];
         var arr = filter.split(',');
         var token = _.map(arr, function (i) {
@@ -162,6 +166,9 @@ var ItemPanel = React.createClass({
             this.setState({ dataList: dataList });
         }
 
+        this.setState({ filter: filter });
+
+        console.log(this.state.order, this.state.filter);
     },
     render: function () {
         return (
@@ -203,9 +210,18 @@ var itemData = {
     filterTable: {
         'stat1': '힘',
         'stat2': '민',
-        'stat3': '지',
+        'stat3': '지'
     },
     filterList: []
 };
+
+var setOrderAndFilter = function (condition, list) {
+    var sortedList = _.sortBy(list, itemData.orderTable[condition.order]);
+
+    //var filteredList =
+
+    return sortedList;
+};
+
 
 React.render(<ItemPanel/>, document.getElementById('wrap'));
