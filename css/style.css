@@ -36,6 +36,12 @@
   padding-right: 1.5em;
   margin: 0 2px;
 }
+.order li.label {
+  margin-right: 0.8em;
+}
+.choice li.label {
+  margin-right: 0.8em;
+}
 @media (max-width: 1000px) {
   .list .subtitle {
     display: none;

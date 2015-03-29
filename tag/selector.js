@@ -11,13 +11,11 @@ var PanelSelector = React.createClass({
         return (
             <div className="selector">
                 <div className="forms-inline-list right">
-                    {
-                        panel.map(function (i) {
-                            if (i.id != selector) {
-                                return <button className="btn btn-smaller btn-outline btn-round" key={ i.id }>{ i.title }</button>
-                            }
-                        })
-                    }
+                    {panel.map(function (i) {
+                        if (i.id != selector) {
+                            return <button className="btn btn-smaller btn-outline btn-round" key={ i.id }>{ i.title }</button>
+                        }
+                    })}
                 </div>
             </div>
         );
