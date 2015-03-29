@@ -81,7 +81,7 @@ var Items = React.createClass({
         return (
             <div className="nav nav-stats item-list">
                 <ul>
-                {this.props.dataList.map(function (item) {
+                {this.props.viewList.map(function (item) {
                     return (
                         <li key={ item.id }>
                             <img src={ item.pic } alt={ item.subtitle }/>
@@ -102,68 +102,60 @@ var ItemPanel = React.createClass({
         return {
             order: 'grade',
             filter: '',
-            list: [],
-            dataList: []
+            dataList: [],
+            viewList: []
         };
     },
     componentDidMount: function () {
         $.getJSON('data/items/items.json', function (data) {
             if (this.isMounted()) {
-                this.setState({ list: data });
                 this.setState({ dataList: data });
+                this.setState({ viewList: data });
             }
         }.bind(this));
     },
     handleChangeOrder: function (order) {
 /*
-        var dataList = _.clone(this.state.dataList);
+        var viewList = _.clone(this.state.viewList);
 
-        var newList = setOrderAndFilter({ order: this.state.order, filter: this.state.filter }, dataList, itemData);
+        var newList = setOrderAndFilter({ order: this.state.order, filter: this.state.filter }, viewList, itemData);
 
-        var dataList = setOrderAndFilter({ order: this.state.order, filter: this.state.filter }, dataList, itemData);
+        var viewList = setOrderAndFilter({ order: this.state.order, filter: this.state.filter }, viewList, itemData);
 
-        this.setState({ dataList: _.sortBy(dataList, itemData.orderTable[order]) });
+        this.setState({ viewList: _.sortBy(viewList, itemData.orderTable[order]) });
 */
 
-        var dataList = _.clone(this.state.list);
-        var newList = _.sortBy(dataList, itemData.orderTable[order]);
+        var viewList = _.clone(this.state.dataList);
+        var newList = _.sortBy(viewList, itemData.orderTable[order]);
 
-        this.setState({ dataList: newList });
+        this.setState({ viewList: newList });
         this.setState({ order: order });
-
 
         console.log(this.state.order, this.state.filter);
     },
     handleChangeFilter: function (filter) {
-        var dataList = _.clone(this.state.list), newList = [];
+        var viewList = _.clone(this.state.dataList), newList = [];
         var arr = filter.split(',');
         var token = _.map(arr, function (i) {
             return itemData.filterTable[i];
         });
 
         if (arr.length && arr[0]) {
-            for (var i = 0; i < dataList.length; i++) {
-                var result = false;
-
+            for (var i = 0; i < viewList.length; i++) {
                 for (var j = 0; j < token.length; j++) {
-                    if (dataList[i].spec_type.indexOf(token[j]) > -1) {
-                        result = true;
+                    if (viewList[i].spec_type.indexOf(token[j]) > -1) {
+                        newList.push(viewList[i]);
 
-                        //console.log(dataList[i].spec_type, token[j]);
-                        //console.log(dataList[i].spec_type.indexOf(token[j]) > -1);
-
-                        if (result) newList.push(dataList[i]);
-
-                        continue;
+                        break;
                     }
                 }
             }
 
-            this.setState({ dataList: newList });
+            this.setState({ viewList: newList });
         } else {
             console.log("reset");
 
-            this.setState({ dataList: dataList });
+            this.setState({ viewList: viewList });
         }
 
         this.setState({ filter: filter });
@@ -177,7 +169,7 @@ var ItemPanel = React.createClass({
                 <h1>아이템</h1>
                 <OrderSelector onOrderSubmit={ this.handleChangeOrder }/>
                 <ItemFilter onFilterSubmit={ this.handleChangeFilter }/>
-                <Items dataList={ this.state.dataList }/>
+                <Items viewList={ this.state.viewList }/>
             </div>
         );
     }
@@ -215,8 +207,8 @@ var itemData = {
     filterList: []
 };
 
-var setOrderAndFilter = function (condition, list) {
-    var sortedList = _.sortBy(list, itemData.orderTable[condition.order]);
+var setOrderAndFilter = function (condition, dataList) {
+    var sortedList = _.sortBy(dataList, itemData.orderTable[condition.order]);
 
     //var filteredList =
 
