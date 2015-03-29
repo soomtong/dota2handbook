@@ -129,8 +129,8 @@ var ItemPanel = React.createClass({
         var newList = _.sortBy(viewList, itemData.orderTable[order]);
 
         this.setState({ viewList: newList });
-        this.setState({ order: order });
 
+        this.state.order = order;
         console.log(this.state.order, this.state.filter);
     },
     handleChangeFilter: function (filter) {
@@ -158,8 +158,7 @@ var ItemPanel = React.createClass({
             this.setState({ viewList: viewList });
         }
 
-        this.setState({ filter: filter });
-
+        this.state.filter = filter;
         console.log(this.state.order, this.state.filter);
     },
     render: function () {
