@@ -14,10 +14,8 @@ function setPanel() {
         Panel['article'].css('display', 'none');
 
         $('#wrap').find('.main-panel').css('height', '');
-    }
 
-    if (Panel['item'].css('display') == 'none' && Panel['hero'].css('display') == 'none' && Panel['article'].css('display') == 'none') {
-        Panel['article'].show();
+        Panel[window.PanelNow].show();
     }
 }
 
@@ -27,6 +25,8 @@ function swapPanel(before, after, to) {
     var count = (Panel['item'].css('display') == 'none' ? 1 : 0)
         + (Panel['hero'].css('display') == 'none' ? 1 : 0)
         + (Panel['article'].css('display') == 'none' ? 1 : 0);
+
+    window.PanelNow = after;
 
     if (count < 1) {
         switch (index) {
