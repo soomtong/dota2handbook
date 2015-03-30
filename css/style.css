@@ -103,3 +103,6 @@ form {
     display: none;
   }
 }
+.debug {
+  border: 2px solid red;
+}
