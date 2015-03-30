@@ -75,23 +75,62 @@ var ArticleFilter = React.createClass({
     }
 });
 
-var Articles = React.createClass({
+var ArticleList = React.createClass({
     render: function () {
         return (
             <div className="nav nav-stats article-list">
                 <ul>
                 {this.props.viewList.map(function (article) {
                     return (
-                        <li key={ article.id }>
-                            <img src={ article.pic } alt={ article.subtitle }/>
-                            <b className="title">{ article.title }</b>
-                            <small className="subtitle">{ article.subtitle }</small>
-                            <b className="badge badge-small badge-white">{ Article.showType(article.article_category) }</b>
-                        </li>
+                        <Articles key={ article.id } data={ article } />
                     );
                 })}
                 </ul>
             </div>
+        );
+    }
+});
+
+var Articles = React.createClass({
+    getInitialState: function () {
+        return {
+            detail: null
+        };
+    },
+    toggleDetail: function (e) {
+        var $el = $(e.target).parent();
+        var id = $el.attr('id').slice(4);
+
+        if (this.state.detail) {
+            this.setState({detail: null});
+            $el.remove('div.detail-data');
+            $el.removeClass('active');
+        } else {
+            if (id) {
+                $.getJSON('data/articles/' + id + '.json', function (data) {
+                    if (this.isMounted()) {
+                        this.setState({detail: data});
+                    }
+                }.bind(this));
+                $el.addClass('active');
+            }
+        }
+    },
+    render: function () {
+        var article = this.props.data;
+        var detail, child;
+        if (this.state.detail) {
+            child = React.addons.createFragment(this.state.detail);
+            detail = <div className="tools-alert detail-data">{ child }</div>
+        }
+        return (
+            <li id={ article.id }>
+                <img src={ article.pic } alt={ article.subtitle } onClick={ this.toggleDetail }/>
+                <b className="title" onClick={ this.toggleDetail }>{ article.title }</b>
+                <small className="subtitle" onClick={ this.toggleDetail }>{ article.subtitle }</small>
+                <b className="badge badge-small badge-white">{ Article.showType(article.article_category) }</b>
+            { detail }
+            </li>
         );
     }
 });
@@ -153,7 +192,7 @@ var ArticlePanel = React.createClass({
                 <h1>{ articleData.title } <small className="badge badge-black">{ this.state.viewList.length }</small></h1>
                 <ArticleOrderSelector onOrderSubmit={ this.handleChange }/>
                 <ArticleFilter onFilterSubmit={ this.handleChange }/>
-                <Articles viewList={ this.state.viewList }/>
+                <ArticleList viewList={ this.state.viewList }/>
             </div>
         );
     }

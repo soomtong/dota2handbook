@@ -59,7 +59,11 @@ form {
   display: none !important;
 }
 .detail-data {
+  color: #0f0f0f;
   margin: 0.5em 0;
+}
+.detail-data span {
+  color: #0f0f0f;
 }
 .selector button.btn-smaller {
   padding-left: 1.5em;

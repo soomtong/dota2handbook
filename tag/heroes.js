@@ -75,23 +75,62 @@ var HeroFilter = React.createClass({
     }
 });
 
-var Heroes = React.createClass({
+var HeroList = React.createClass({
     render: function () {
         return (
             <div className="nav nav-stats hero-list">
                 <ul>
                 {this.props.viewList.map(function (hero) {
                     return (
-                        <li key={ hero.id }>
-                            <img src={ hero.pic } alt={ hero.subtitle }/>
-                            <b className="title">{ hero.title }</b>
-                            <small className="subtitle">{ hero.subtitle }</small>
-                            <b className={ Hero.showTypeColor(hero.hero_category) }>{ Hero.showType(hero.hero_category) }</b>
-                        </li>
+                        <Heroes key={ hero.id } data={ hero } />
                     );
                 })}
                 </ul>
             </div>
+        );
+    }
+});
+
+var Heroes = React.createClass({
+    getInitialState: function () {
+        return {
+            detail: null
+        };
+    },
+    toggleDetail: function (e) {
+        var $el = $(e.target).parent();
+        var id = $el.attr('id').slice(4);
+
+        if (this.state.detail) {
+            this.setState({detail: null});
+            $el.remove('div.detail-data');
+            $el.removeClass('active');
+        } else {
+            if (id) {
+                $.getJSON('data/heroes/' + id + '.json', function (data) {
+                    if (this.isMounted()) {
+                        this.setState({detail: data});
+                    }
+                }.bind(this));
+                $el.addClass('active');
+            }
+        }
+    },
+    render: function () {
+        var hero = this.props.data;
+        var detail, child;
+        if (this.state.detail) {
+            child = React.addons.createFragment(this.state.detail);
+            detail = <div className="tools-alert detail-data">{ child }</div>
+        }
+        return (
+            <li id={ hero.id }>
+                <img src={ hero.pic } alt={ hero.subtitle } onClick={ this.toggleDetail }/>
+                <b className="title" onClick={ this.toggleDetail }>{ hero.title }</b>
+                <small className="subtitle" onClick={ this.toggleDetail }>{ hero.subtitle }</small>
+                <b className={ Hero.showTypeColor(hero.hero_category) }>{ Item.showType(hero.item_category) }</b>
+            { detail }
+            </li>
         );
     }
 });
@@ -153,7 +192,7 @@ var HeroPanel = React.createClass({
                 <h1>{ heroData.title } <small className="badge badge-black">{ this.state.viewList.length }</small></h1>
                 <HeroOrderSelector onOrderSubmit={ this.handleChange }/>
                 <HeroFilter onFilterSubmit={ this.handleChange }/>
-                <Heroes viewList={ this.state.viewList }/>
+                <HeroList viewList={ this.state.viewList }/>
             </div>
         );
     }
