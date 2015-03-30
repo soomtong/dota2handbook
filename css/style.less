@@ -9,11 +9,16 @@ form {
   top: 20px;
 }
 
-.item, .hero, .article {
+.main-panel {
   padding: 1em;
   .forms-inline-list {
     margin-bottom: 0.5em;
   }
+  overflow-y:scroll;
+}
+
+.main-panel::-webkit-scrollbar {
+  display: none;
 }
 
 .item {

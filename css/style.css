@@ -4,15 +4,15 @@ form {
 .nav-stats .badge {
   top: 20px;
 }
-.item,
-.hero,
-.article {
+.main-panel {
   padding: 1em;
+  overflow-y: scroll;
 }
-.item .forms-inline-list,
-.hero .forms-inline-list,
-.article .forms-inline-list {
+.main-panel .forms-inline-list {
   margin-bottom: 0.5em;
+}
+.main-panel::-webkit-scrollbar {
+  display: none;
 }
 .item {
   background: #d3e3fb;

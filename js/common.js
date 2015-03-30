@@ -1,5 +1,8 @@
 function setPanel() {
     var width = $(window).width();
+    var height = $(window).height();
+
+    $('#wrap').find('.main-panel').css('height', height + 'px');
 
     if (width > 767) {
         Panel['item'].css('display', 'block');
