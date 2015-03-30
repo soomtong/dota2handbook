@@ -72,7 +72,7 @@ form {
 .choice li.label {
   margin-right: 0.8em;
 }
-@media (min-width: 767px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .item-list .subtitle,
   .hero-list .subtitle {
     display: none;
@@ -95,7 +95,7 @@ form {
     display: none;
   }
 }
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
   .main-panel {
     overflow-y: scroll;
   }

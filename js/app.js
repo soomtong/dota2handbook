@@ -8,7 +8,7 @@ $(document).ready(function () {
 
     setPanel();
     $(window).resize(function() {
-        $('#wrap').toggleClass();
+        $('#wrap').toggleClass('debug');
         setPanel();
     });
 });
