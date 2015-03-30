@@ -128,7 +128,7 @@ var Heroes = React.createClass({
                 <img src={ hero.pic } alt={ hero.subtitle } onClick={ this.toggleDetail }/>
                 <b className="title" onClick={ this.toggleDetail }>{ hero.title }</b>
                 <small className="subtitle" onClick={ this.toggleDetail }>{ hero.subtitle }</small>
-                <b className={ Hero.showTypeColor(hero.hero_category) }>{ Item.showType(hero.item_category) }</b>
+                <b className={ Hero.showTypeColor(hero.hero_category) }>{ Hero.showType(hero.hero_category) }</b>
             { detail }
             </li>
         );
@@ -188,7 +188,7 @@ var HeroPanel = React.createClass({
     render: function () {
         return (
             <div className="hero-wrap">
-                <PanelSelector panel="hero"/>
+                <PanelSelector panel="hero_selector"/>
                 <h1>{ heroData.title } <small className="badge badge-black">{ this.state.viewList.length }</small></h1>
                 <HeroOrderSelector onOrderSubmit={ this.handleChange }/>
                 <HeroFilter onFilterSubmit={ this.handleChange }/>
@@ -234,6 +234,6 @@ var heroData = {
     filterList: []
 };
 
-React.render(<HeroPanel/>, document.getElementById('heroes_holder'));
+React.render(<HeroPanel/>, document.getElementById('hero_panel'));
 
 // 체증, 민증, 지증

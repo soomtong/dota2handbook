@@ -4,23 +4,23 @@ form {
 .nav-stats .badge {
   top: 20px;
 }
-.items,
-.heroes,
-.articles {
+.item,
+.hero,
+.article {
   padding: 1em;
 }
-.items .forms-inline-list,
-.heroes .forms-inline-list,
-.articles .forms-inline-list {
+.item .forms-inline-list,
+.hero .forms-inline-list,
+.article .forms-inline-list {
   margin-bottom: 0.5em;
 }
-.items {
+.item {
   background: #d3e3fb;
 }
-.heroes {
+.hero {
   background: #d5ecd9;
 }
-.articles {
+.article {
   background: #f8d5d8;
 }
 .item-list img,
@@ -79,6 +79,20 @@ form {
 @media (max-width: 1000px) {
   .item-list .subtitle,
   .hero-list .subtitle {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .selector {
+    float: right;
+  }
+  #item_panel {
+    display: none;
+  }
+  #hero_panel {
+    display: none;
+  }
+  #article_panel {
     display: none;
   }
 }

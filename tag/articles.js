@@ -188,7 +188,7 @@ var ArticlePanel = React.createClass({
     render: function () {
         return (
             <div className="article-wrap">
-                <PanelSelector panel="article"/>
+                <PanelSelector panel="article_selector"/>
                 <h1>{ articleData.title } <small className="badge badge-black">{ this.state.viewList.length }</small></h1>
                 <ArticleOrderSelector onOrderSubmit={ this.handleChange }/>
                 <ArticleFilter onFilterSubmit={ this.handleChange }/>
@@ -222,5 +222,5 @@ var articleData = {
     filterList: []
 };
 
-React.render(<ArticlePanel/>, document.getElementById('articles_holder'));
+React.render(<ArticlePanel/>, document.getElementById('article_panel'));
 

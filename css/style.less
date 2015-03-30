@@ -9,22 +9,22 @@ form {
   top: 20px;
 }
 
-.items, .heroes, .articles {
+.item, .hero, .article {
   padding: 1em;
   .forms-inline-list {
     margin-bottom: 0.5em;
   }
 }
 
-.items {
+.item {
   background: @color-blue-pastel;
 }
 
-.heroes {
+.hero {
   background: @color-green-pastel;
 }
 
-.articles {
+.article {
   background: @color-red-pastel;
 }
 
@@ -92,5 +92,20 @@ form {
     .subtitle {
       display: none;
     }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .selector {
+    float: right;
+  }
+  #item_panel {
+    display: none;
+  }
+  #hero_panel {
+    display: none;
+  }
+  #article_panel {
+    display: none;
   }
 }

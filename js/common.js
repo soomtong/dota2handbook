@@ -1,4 +1,53 @@
-var Hero = {
+function setPanel() {
+    var width = $(window).width();
+
+    if (width > 767) {
+        Panel['item'].css('display', 'block');
+        Panel['hero'].css('display', 'block');
+        Panel['article'].css('display', 'block');
+    } else {
+        Panel['item'].css('display', 'none');
+        Panel['hero'].css('display', 'none');
+        Panel['article'].css('display', 'none');
+    }
+
+    if (Panel['item'].css('display') == 'none' && Panel['hero'].css('display') == 'none' && Panel['article'].css('display') == 'none') {
+        Panel['article'].show();
+    }
+}
+
+function swapPanel(before, after, to) {
+    var $wrap = $('#wrap');
+    var index = $wrap.find("div.main-panel").index(Panel[before]);
+    var count = (Panel['item'].css('display') == 'none' ? 1 : 0)
+        + (Panel['hero'].css('display') == 'none' ? 1 : 0)
+        + (Panel['article'].css('display') == 'none' ? 1 : 0);
+
+    if (count < 1) {
+        switch (index) {
+            case 0:
+                $wrap.prepend(Panel[after]);
+                break;
+            case 1:
+                if (to < 0) {
+                    $wrap.prepend(Panel[after]);
+                    $wrap.prepend(Panel[before]);
+                } else {
+                    $wrap.append(Panel[after]);
+                    $wrap.append(Panel[before]);
+                }
+                break;
+            case 2:
+                $wrap.append(Panel[after]);
+                break;
+        }
+    } else {
+        Panel[before].hide();
+        Panel[after].show();
+    }
+}
+
+Hero = {
     showType: function (id) {
         switch (id) {
             case 1:
@@ -27,7 +76,7 @@ var Hero = {
     }
 };
 
-var Item = {
+Item = {
     showType: function (id) {
         switch (id) {
             case 1:
@@ -83,7 +132,7 @@ var Item = {
     }
 };
 
-var Article = {
+Article = {
     showType: function (id) {
         switch (id) {
             case 1:
