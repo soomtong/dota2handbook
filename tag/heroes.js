@@ -84,7 +84,7 @@ var Heroes = React.createClass({
                     return (
                         <li key={ hero.id }>
                             <img src={ hero.pic } alt={ hero.subtitle }/>
-                            <b className="hero-name">{ hero.title }</b>
+                            <b className="title">{ hero.title }</b>
                             <small className="subtitle">{ hero.subtitle }</small>
                             <b className={ Hero.showTypeColor(hero.hero_category) }>{ Hero.showType(hero.hero_category) }</b>
                         </li>

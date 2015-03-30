@@ -97,18 +97,22 @@ var Items = React.createClass({
             detail: null
         };
     },
-    handleClick: function (e) {
+    toggleDetail: function (e) {
+        var $el = $(e.target).parent();
+        var id = $el.attr('id').slice(4);
+
         if (this.state.detail) {
             this.setState({ detail: null });
-            $('div.detail-data').hide();
+            $el.remove('div.detail-data');
+            $el.removeClass('active');
         } else {
-            var id = $(e.target).attr('id').slice(4);
             if (id) {
                 $.getJSON('data/items/' + id + '.json', function (data) {
                     if (this.isMounted()) {
                         this.setState({ detail: data });
                     }
                 }.bind(this));
+                $el.addClass('active');
             }
         }
     },
@@ -120,10 +124,10 @@ var Items = React.createClass({
             detail = <div className="tools-alert detail-data">{ child }</div>
         }
         return (
-            <li id={ item.id } onClick={ this.handleClick }>
-                <img src={ item.pic } alt={ item.subtitle }/>
-                <b className="item-name">{ item.title }</b>
-                <small className="subtitle">{ item.subtitle }</small>
+            <li id={ item.id }>
+                <img src={ item.pic } alt={ item.subtitle } onClick={ this.toggleDetail }/>
+                <b className="title" onClick={ this.toggleDetail }>{ item.title }</b>
+                <small className="subtitle" onClick={ this.toggleDetail }>{ item.subtitle }</small>
                 <b className="badge badge-small badge-black">{ Item.showType(item.item_category) }</b>
             { detail }
             </li>

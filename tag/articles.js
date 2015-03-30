@@ -84,7 +84,7 @@ var Articles = React.createClass({
                     return (
                         <li key={ article.id }>
                             <img src={ article.pic } alt={ article.subtitle }/>
-                            <b className="article-name">{ article.title }</b>
+                            <b className="title">{ article.title }</b>
                             <small className="subtitle">{ article.subtitle }</small>
                             <b className="badge badge-small badge-white">{ Article.showType(article.article_category) }</b>
                         </li>

@@ -33,16 +33,16 @@ form {
 .article-list li {
   padding: 0.3em 0;
 }
-.item-list .item-name,
-.hero-list .item-name,
-.article-list .item-name,
-.item-list .hero-name,
-.hero-list .hero-name,
-.article-list .hero-name,
-.item-list .article-name,
-.hero-list .article-name,
-.article-list .article-name {
+.item-list li.active .title,
+.hero-list li.active .title,
+.article-list li.active .title {
+  text-decoration: underline;
+}
+.item-list .title,
+.hero-list .title,
+.article-list .title {
   margin: 5px;
+  cursor: pointer;
 }
 .item-list .subtitle,
 .hero-list .subtitle,
@@ -57,6 +57,9 @@ form {
 }
 .hide {
   display: none !important;
+}
+.detail-data {
+  margin: 0.5em 0;
 }
 .selector button.btn-smaller {
   padding-left: 1.5em;

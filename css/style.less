@@ -35,8 +35,14 @@ form {
   li {
     padding: 0.3em 0;
   }
-  .item-name, .hero-name, .article-name {
+  li.active {
+    .title {
+      text-decoration: underline;
+    }
+  }
+  .title {
     margin: 5px;
+    cursor: pointer;
   }
   .subtitle {
     background: rgba(0, 0, 0, 0.25);
@@ -54,7 +60,7 @@ form {
 }
 
 .detail-data {
-
+  margin: 0.5em 0;
 }
 
 .selector {
