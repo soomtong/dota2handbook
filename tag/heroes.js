@@ -101,52 +101,16 @@ var HeroPanel = React.createClass({
         return {
             order: 'common',
             filter: '',
-            dataList: [],
             viewList: []
         };
     },
     componentDidMount: function () {
         $.getJSON('data/heroes/heroes.json', function (data) {
             if (this.isMounted()) {
-                this.setState({ dataList: data });
+                heroData.dataList = data;
                 this.setState({ viewList: data });
             }
         }.bind(this));
-    },
-    handleChangeOrder: function (order) {
-        var viewList = _.clone(this.state.dataList);
-        var newList = _.sortBy(viewList, heroData.orderTable[order]);
-
-        this.setState({ viewList: newList });
-
-        this.state.order = order;
-        console.log(this.state.order, this.state.filter);
-    },
-    handleChangeFilter: function (filter) {
-        var viewList = _.clone(this.state.dataList), newList = [];
-        var arr = filter.split(',');
-        var token = _.map(arr, function (i) {
-            return heroData.filterTable[i];
-        });
-
-        if (arr.length && arr[0]) {
-            for (var i = 0; i < viewList.length; i++) {
-                for (var j = 0; j < token.length; j++) {
-                    if (viewList[i]['skill_type'].indexOf(token[j]) > -1) {
-                        newList.push(viewList[i]);
-
-                        break;
-                    }
-                }
-            }
-
-            this.setState({ viewList: newList });
-        } else {
-            this.setState({ viewList: viewList });
-        }
-
-        this.state.filter = filter;
-        console.log(this.state.order, this.state.filter);
     },
     handleChange: function (condition) {
         this.state.order = condition.order || this.state.order;
@@ -155,8 +119,7 @@ var HeroPanel = React.createClass({
         if (Object.keys(condition).indexOf('filter') > -1) this.state.filter = condition.filter;
 
         // arrange by order
-        var viewList = _.clone(this.state.dataList);
-        var orderList = _.sortBy(viewList, heroData.orderTable[this.state.order]);
+        var orderList = _.sortBy(heroData.dataList, heroData.orderTable[this.state.order]);
 
         this.setState({ viewList: orderList });
 
@@ -198,6 +161,7 @@ var HeroPanel = React.createClass({
 
 var heroData = {
     title: '영웅',
+    dataList: [],
     order: [
         {id: 'common', title: '기본'},
         {id: 'name_kor', title: '한글'},

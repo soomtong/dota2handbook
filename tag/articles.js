@@ -101,7 +101,6 @@ var ArticlePanel = React.createClass({
         return {
             order: 'common',
             filter: '',
-            dataList: [],
             viewList: []
         };
     },
@@ -120,8 +119,7 @@ var ArticlePanel = React.createClass({
         if (Object.keys(condition).indexOf('filter') > -1) this.state.filter = condition.filter;
 
         // arrange by order
-        var viewList = _.clone(this.state.dataList);
-        var orderList = _.sortBy(viewList, articleData.orderTable[this.state.order]);
+        var orderList = _.sortBy(articleData.dataList, articleData.orderTable[this.state.order]);
 
         this.setState({ viewList: orderList });
 
@@ -163,6 +161,7 @@ var ArticlePanel = React.createClass({
 
 var articleData = {
     title: '문서​',
+    dataList: [],
     order: [
         {id: 'common', title: '기본'},
         {id: 'type', title: '종류'}
