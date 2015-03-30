@@ -1,6 +1,9 @@
 form {
   margin-bottom: 0;
 }
+.nav-stats .badge {
+  top: 20px;
+}
 .items,
 .heroes,
 .articles {

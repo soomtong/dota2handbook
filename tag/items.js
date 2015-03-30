@@ -75,28 +75,58 @@ var ItemFilter = React.createClass({
     }
 });
 
-var Items = React.createClass({
-    handleClick: function (e) {
-        console.log(e.target);
-        console.log(this);
-    },
+var ItemList = React.createClass({
     render: function () {
-        var self = this;
         return (
             <div className="nav nav-stats item-list">
                 <ul>
                 {this.props.viewList.map(function (item) {
                     return (
-                        <li key={ item.id } onClick={ self.handleClick }>
-                            <img src={ item.pic } alt={ item.subtitle }/>
-                            <b className="item-name">{ item.title }</b>
-                            <small className="subtitle">{ item.subtitle }</small>
-                            <b className="badge badge-small badge-black">{ Item.showType(item.item_category) }</b>
-                        </li>
+                        <Items key={ item.id } data={ item } />
                     );
                 })}
                 </ul>
             </div>
+        );
+    }
+});
+
+var Items = React.createClass({
+    getInitialState : function(){
+        return {
+            detail: null
+        };
+    },
+    handleClick: function (e) {
+        if (this.state.detail) {
+            this.setState({ detail: null });
+            $('div.detail-data').hide();
+        } else {
+            var id = $(e.target).attr('id').slice(4);
+            if (id) {
+                $.getJSON('data/items/' + id + '.json', function (data) {
+                    if (this.isMounted()) {
+                        this.setState({ detail: data });
+                    }
+                }.bind(this));
+            }
+        }
+    },
+    render: function () {
+        var item = this.props.data;
+        var detail, child;
+        if (this.state.detail) {
+            child = React.addons.createFragment(this.state.detail);
+            detail = <div className="tools-alert detail-data">{ child }</div>
+        }
+        return (
+            <li id={ item.id } onClick={ this.handleClick }>
+                <img src={ item.pic } alt={ item.subtitle }/>
+                <b className="item-name">{ item.title }</b>
+                <small className="subtitle">{ item.subtitle }</small>
+                <b className="badge badge-small badge-black">{ Item.showType(item.item_category) }</b>
+            { detail }
+            </li>
         );
     }
 });
@@ -158,7 +188,7 @@ var ItemPanel = React.createClass({
                 <h1>{ itemData.title } <small className="badge badge-black">{ this.state.viewList.length }</small></h1>
                 <ItemOrderSelector onOrderSubmit={ this.handleChange }/>
                 <ItemFilter onFilterSubmit={ this.handleChange }/>
-                <Items viewList={ this.state.viewList }/>
+                <ItemList viewList={ this.state.viewList }/>
             </div>
         );
     }
