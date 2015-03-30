@@ -222,11 +222,11 @@ var heroData = {
         {id: 'skill5', title: '둔화'}
     ],
     filterTable: {
-        stat1: '명',
-        stat2: '박',
-        stat3: '절',
-        stat4: '밀',
-        stat5: '둔'
+        skill1: '명',
+        skill2: '박',
+        skill3: '절',
+        skill4: '밀',
+        skill5: '둔'
     },
     filterList: []
 };

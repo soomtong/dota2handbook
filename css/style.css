@@ -2,38 +2,48 @@ form {
   margin-bottom: 0;
 }
 .items,
-.heroes {
+.heroes,
+.articles {
   padding: 1em;
-  background: #d3e3fb;
 }
 .items .forms-inline-list,
-.heroes .forms-inline-list {
-  margin-bottom: 0.4em;
+.heroes .forms-inline-list,
+.articles .forms-inline-list {
+  margin-bottom: 0.5em;
+}
+.items {
+  background: #d3e3fb;
 }
 .heroes {
-  padding: 1em;
   background: #d5ecd9;
 }
 .articles {
-  padding: 1em;
   background: #f8d5d8;
 }
 .item-list img,
-.hero-list img {
+.hero-list img,
+.article-list img {
   height: 32px;
 }
 .item-list li,
-.hero-list li {
+.hero-list li,
+.article-list li {
   padding: 0.3em 0;
 }
 .item-list .item-name,
 .hero-list .item-name,
+.article-list .item-name,
 .item-list .hero-name,
-.hero-list .hero-name {
+.hero-list .hero-name,
+.article-list .hero-name,
+.item-list .article-name,
+.hero-list .article-name,
+.article-list .article-name {
   margin: 5px;
 }
 .item-list .subtitle,
-.hero-list .subtitle {
+.hero-list .subtitle,
+.article-list .subtitle {
   background: rgba(0, 0, 0, 0.25);
   color: rgba(255, 255, 255, 0.85);
   white-space: nowrap;

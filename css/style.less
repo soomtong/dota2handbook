@@ -5,32 +5,33 @@ form {
   margin-bottom: 0;
 }
 
-.items, .heroes {
+.items, .heroes, .articles {
   padding: 1em;
-  background: @color-blue-pastel;
   .forms-inline-list {
-    margin-bottom: 0.4em;
+    margin-bottom: 0.5em;
   }
 }
 
+.items {
+  background: @color-blue-pastel;
+}
+
 .heroes {
-  padding: 1em;
   background: @color-green-pastel;
 }
 
 .articles {
-  padding: 1em;
   background: @color-red-pastel;
 }
 
-.item-list, .hero-list {
+.item-list, .hero-list, .article-list {
   img {
     height: 32px;
   }
   li {
     padding: 0.3em 0;
   }
-  .item-name, .hero-name {
+  .item-name, .hero-name, .article-name {
     margin: 5px;
   }
   .subtitle {

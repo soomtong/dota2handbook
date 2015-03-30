@@ -87,7 +87,7 @@ var Article = {
     showType: function (id) {
         switch (id) {
             case 1:
-                return "매커니즘";
+                return "메커니즘";
                 break;
             case 2:
                 return "이벤트";
