@@ -3,5 +3,15 @@
     "id": "100_mechanism_1", "title": "막타와 디나이", "subtitle": "Last hit & deny",
     "pic": "data/images/items/branches_lg.png",
     "article_category": 1, "article_type": "메"
+  },
+  {
+    "id": "101_lip_1", "title": "입도타 시즌 1", "subtitle": "Symphony of skill",
+    "pic": "data/images/items/branches_lg.png",
+    "article_category": 3, "article_type": "드"
+  },
+  {
+    "id": "102_nsl1_1", "title": "NSL 시즌 1", "subtitle": "KDL",
+    "pic": "data/images/items/branches_lg.png",
+    "article_category": 2, "article_type": "방"
   }
 ]

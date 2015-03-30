@@ -144,10 +144,10 @@ Article = {
                 return "메커니즘";
                 break;
             case 2:
-                return "이벤트";
+                return "리그";
                 break;
             case 3:
-                return "커뮤니티";
+                return "가이드";
                 break;
         }
     }

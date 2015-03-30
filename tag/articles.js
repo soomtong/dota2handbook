@@ -16,11 +16,11 @@ var ArticleOrderSelector = React.createClass({
             <div className="order">
                 <ul className="forms-inline-list">
                     <li className="label label-outline">정렬</li>
-                    {articleData.order.map(function (item) {
+                    {articleData.order.map(function (article) {
                         return (
-                            <li key={ item.id }>
-                                <label><input type="radio" name="article_list_order" defaultChecked={item.id == selector } onClick={ self.handleChange } value={ item.id }/>
-                                { item.title }</label>
+                            <li key={ article.id }>
+                                <label><input type="radio" name="article_list_order" defaultChecked={article.id == selector } onClick={ self.handleChange } value={ article.id }/>
+                                { article.title }</label>
                             </li>
                         );
                     })}
@@ -45,8 +45,8 @@ var ArticleFilter = React.createClass({
             articleData.filterList.push(selected);
         } else {
             // remove item
-            articleData.filterList = _.remove(articleData.filterList, function (item) {
-                return item != selected;
+            articleData.filterList = _.remove(articleData.filterList, function (article) {
+                return article != selected;
             });
         }
 
@@ -60,11 +60,11 @@ var ArticleFilter = React.createClass({
                 <ul className="forms-inline-list">
                     <form onChange={ this.handleChange } >
                         <li className="label label-outline">필터</li>
-                    {articleData.filter.map(function (item) {
+                    {articleData.filter.map(function (article) {
                         return (
-                            <li key={ item.id }>
-                                <label><input type="checkbox" name="article_list_filter" defaultChecked={ filter.indexOf(item.id) > -1 } value={ item.id }/>
-                                { item.title }</label>
+                            <li key={ article.id }>
+                                <label><input type="checkbox" name="article_list_filter" defaultChecked={ filter.indexOf(article.id) > -1 } value={ article.id }/>
+                                { article.title }</label>
                             </li>
                         );
                     })}
@@ -146,7 +146,7 @@ var ArticlePanel = React.createClass({
     componentDidMount: function () {
         $.getJSON('data/articles/articles.json', function (data) {
             if (this.isMounted()) {
-                this.setState({ dataList: data });
+                articleData.dataList = data;
                 this.setState({ viewList: data });
             }
         }.bind(this));
@@ -207,11 +207,11 @@ var articleData = {
     ],
     orderTable: {
         common: 'id',
-        type: 'type'
+        type: 'article_category'
     },
     filter: [
         {id: 'type1', title: '메커니즘'},
-        {id: 'type2', title: '방송/대회'},
+        {id: 'type2', title: '리그'},
         {id: 'type3', title: '가이드'}
     ],
     filterTable: {
