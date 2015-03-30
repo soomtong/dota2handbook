@@ -6,13 +6,9 @@ form {
 }
 .main-panel {
   padding: 1em;
-  overflow-y: scroll;
 }
 .main-panel .forms-inline-list {
   margin-bottom: 0.5em;
-}
-.main-panel::-webkit-scrollbar {
-  display: none;
 }
 .item {
   background: #d3e3fb;
@@ -76,7 +72,7 @@ form {
 .choice li.label {
   margin-right: 0.8em;
 }
-@media (max-width: 1000px) {
+@media (min-width: 767px) and (max-width: 1023px) {
   .item-list .subtitle,
   .hero-list .subtitle {
     display: none;
@@ -86,6 +82,9 @@ form {
   .selector {
     float: right;
   }
+  .main-panel {
+    margin-bottom: 0 !important;
+  }
   #item_panel {
     display: none;
   }
@@ -93,6 +92,14 @@ form {
     display: none;
   }
   #article_panel {
+    display: none;
+  }
+}
+@media only screen and (min-width: 767px) {
+  .main-panel {
+    overflow-y: scroll;
+  }
+  .main-panel::-webkit-scrollbar {
     display: none;
   }
 }

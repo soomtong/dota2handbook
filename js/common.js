@@ -2,16 +2,18 @@ function setPanel() {
     var width = $(window).width();
     var height = $(window).height();
 
-    $('#wrap').find('.main-panel').css('height', height + 'px');
-
     if (width > 767) {
         Panel['item'].css('display', 'block');
         Panel['hero'].css('display', 'block');
         Panel['article'].css('display', 'block');
+
+        $('#wrap').find('.main-panel').css('height', height + 'px');
     } else {
         Panel['item'].css('display', 'none');
         Panel['hero'].css('display', 'none');
         Panel['article'].css('display', 'none');
+
+        $('#wrap').find('.main-panel').css('height', '');
     }
 
     if (Panel['item'].css('display') == 'none' && Panel['hero'].css('display') == 'none' && Panel['article'].css('display') == 'none') {
