@@ -16,4 +16,11 @@ $(document).ready(function () {
         //$('#wrap').toggleClass('debug2');
         //Panel.setPanel();
     });
+
+    $(document).ajaxStart(function() {
+        $.progress.show();
+    });
+    $(document).ajaxStop(function() {
+        $.progress.hide();
+    });
 });

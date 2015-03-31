@@ -24,8 +24,8 @@ Simple DOTA 2 Guide Web Application
 - [x] toggle detail view
 - [ ] random background image, transparent panel with color
 - [x] individual scroll for tri column mode
-- [ ] adjust font size with multi device
-- [ ] fix touch area for multi device
+- [x] adjust font size with multi device
+- [x] fix touch area for multi device
 - [ ] global spin notification in ajax load a data
 - [ ] trim and resize images
 - [ ] update data with markdown

@@ -1,6 +1,11 @@
 @import "../components/kube/less/mixins.less";
 @import "../components/kube/less/variables.less";
 
+body {
+  background: url(http://cdn.dota2.com/apps/570/icons/econ/loading_screens/blackdeath_large.dadec67fcec32c9f310aac8e70db7aa1553fca2a.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
 form {
   margin-bottom: 0;
 }
@@ -17,16 +22,20 @@ form {
   }
 }
 
+@bg-saturation: 50%;
+@bg-brighten: 90%;
+@bg-opacity: 75%;
+
 .item {
-  background: @color-blue-pastel;
+  background: hsla(215, @bg-saturation, @bg-brighten, @bg-opacity);
 }
 
 .hero {
-  background: @color-green-pastel;
+  background: hsla(130, @bg-saturation, @bg-brighten, @bg-opacity);
 }
 
 .article {
-  background: @color-red-pastel;
+  background: hsla(354, @bg-saturation, @bg-brighten, @bg-opacity);
 }
 
 .item-list, .hero-list, .article-list {
@@ -42,6 +51,7 @@ form {
     }
   }
   .title {
+    font-size: 1.1em;
     margin: 5px;
     cursor: pointer;
   }
@@ -93,7 +103,7 @@ form {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .item-list, .hero-list {
+  .item-list, .hero-list, .article-list {
     .subtitle {
       display: none;
     }
