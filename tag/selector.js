@@ -10,7 +10,6 @@ var PanelSelector = React.createClass({
         var index = $(e.target).attr('rel');
 
         Panel.swapPanel(before, after, index);
-        console.log(Panel);
     },
     render: function() {
         var selector = this.props.panel;

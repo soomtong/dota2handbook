@@ -37,6 +37,9 @@ var ArticleFilter = React.createClass({
         };
     },
     handleChange: function (event) {
+        event.stopPropagation();
+        event.preventDefault();
+
         var selected = event.target.value;
         var str = articleData.filterList.join(',');
 
@@ -53,22 +56,21 @@ var ArticleFilter = React.createClass({
         this.props.onFilterSubmit({ filter: articleData.filterList.join(',') });
     },
     render: function () {
+        var self = this;
         var filter = this.state.selectedFilter;
 
         return (
             <div className="choice">
                 <ul className="forms-inline-list">
-                    <form onChange={ this.handleChange } >
-                        <li className="label label-outline">필터</li>
+                    <li className="label label-outline">필터</li>
                     {articleData.filter.map(function (article) {
                         return (
                             <li key={ article.id }>
-                                <label><input type="checkbox" name="article_list_filter" defaultChecked={ filter.indexOf(article.id) > -1 } value={ article.id }/>
+                                <label><input type="checkbox" name="article_list_filter" defaultChecked={ filter.indexOf(article.id) > -1 } onClick={ self.handleChange } value={ article.id }/>
                                 { article.title }</label>
                             </li>
                         );
                     })}
-                    </form>
                 </ul>
             </div>
         );
