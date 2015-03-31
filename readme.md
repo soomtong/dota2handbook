@@ -16,14 +16,14 @@ Simple DOTA 2 Guide Web Application
 
 ### Used library in this project
 
-- react library for view component
-- kube library for css
-- jquery, lodash for common util
-- cordova, gulp for mobile package and build project
+- React library for view component
+- Kube library for css
+- jQuery, Lodash for common util
+- Cordova, Gulp for mobile package and build project
 
 ### Why this suite
 
-no need to (router, model mapper), just really need a `view` manipulation solution
+no need to (router, model mapper), just really need a `View` manipulation solution
 
 - need fast feedback in low performance mobile
 - nice integrated with Webstorm IDE
@@ -40,6 +40,7 @@ no need to (router, model mapper), just really need a `view` manipulation soluti
 
 - [x] apply React framework
 - [x] load data at bootstrap, load detail data at event bind
+- [x] responsive design, bind resize event to rearrange layout
 - [x] tri-column mode and one vertical mode with selector
 - [x] data list with sort and multi filter combination
 - [ ] instant search list in each panel

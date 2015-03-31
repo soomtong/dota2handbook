@@ -1,32 +1,32 @@
 [
   {
     "id": "100_mechanism_1", "title": "막타와 디나이", "subtitle": "Last hit & deny",
-    "pic": "data/images/items/branches_lg.png",
+    "pic": "data/images/items/quelling_blade_lg.png",
     "article_category": 1, "article_type": "메"
   },
   {
     "id": "101_lip_dota", "title": "입도타 리스트", "subtitle": "Symphony of skill",
-    "pic": "data/images/items/branches_lg.png",
+    "pic": "data/images/items/courier_lg.png",
     "article_category": 3, "article_type": "드"
   },
   {
     "id": "102_nsl_1", "title": "NSL 시즌 1", "subtitle": "KDL",
-    "pic": "data/images/heropedia/gold.png",
+    "pic": "data/images/items/talisman_of_evasion_lg.png",
     "article_category": 2, "article_type": "방"
   },
   {
-    "id": "105_nsl_1", "title": "NSL 시즌 1", "subtitle": "KDL",
-    "pic": "data/images/heropedia/gold.png",
+    "id": "103_nsl_2", "title": "NSL 시즌 2", "subtitle": "KDL",
+    "pic": "data/images/items/poor_mans_shield_lg.png",
     "article_category": 2, "article_type": "방"
   },
   {
-    "id": "103_nsl_1", "title": "NSL 시즌 1", "subtitle": "KDL",
-    "pic": "data/images/heropedia/gold.png",
+    "id": "104_kdl_1", "title": "KDL 시즌 1", "subtitle": "KDL",
+    "pic": "data/images/items/bracer_lg.png",
     "article_category": 2, "article_type": "방"
   },
   {
-    "id": "104_nsl_1", "title": "NSL 시즌 1", "subtitle": "KDL",
-    "pic": "data/images/heropedia/gold.png",
+    "id": "105_kdl_2", "title": "KDL 시즌 2", "subtitle": "KDL",
+    "pic": "data/images/items/phase_boots_lg.png",
     "article_category": 2, "article_type": "방"
   }
 ]
