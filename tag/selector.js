@@ -9,7 +9,8 @@ var PanelSelector = React.createClass({
         var after = $(e.target).attr('id').split('_')[0];
         var index = $(e.target).attr('rel');
 
-        swapPanel(before, after, index);
+        Panel.swapPanel(before, after, index);
+        console.log(Panel);
     },
     render: function() {
         var selector = this.props.panel;

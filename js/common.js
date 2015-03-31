@@ -1,56 +1,60 @@
-function setPanel() {
-    var width = $(window).width();
-    var height = $(window).height();
+var Panel, Hero, Item, Article;
 
-    if (width > 767) {
-        Panel['item'].css('display', 'block');
-        Panel['hero'].css('display', 'block');
-        Panel['article'].css('display', 'block');
+Panel = {
+    now: 'article',
+    setPanel: function () {
+        var width = $(window).width();
+        var height = $(window).height();
 
-        $('#wrap').find('.main-panel').css('height', height + 'px');
-    } else {
-        Panel['item'].css('display', 'none');
-        Panel['hero'].css('display', 'none');
-        Panel['article'].css('display', 'none');
+        if (width > 767) {
+            Panel['item'].css('display', 'block');
+            Panel['hero'].css('display', 'block');
+            Panel['article'].css('display', 'block');
 
-        $('#wrap').find('.main-panel').css('height', '');
+            $('#wrap').find('.main-panel').css('height', height + 'px');
+        } else {
+            Panel['item'].css('display', 'none');
+            Panel['hero'].css('display', 'none');
+            Panel['article'].css('display', 'none');
 
-        Panel[window.PanelNow].show();
-    }
-}
+            $('#wrap').find('.main-panel').css('height', '');
 
-function swapPanel(before, after, to) {
-    var $wrap = $('#wrap');
-    var index = $wrap.find("div.main-panel").index(Panel[before]);
-    var count = (Panel['item'].css('display') == 'none' ? 1 : 0)
-        + (Panel['hero'].css('display') == 'none' ? 1 : 0)
-        + (Panel['article'].css('display') == 'none' ? 1 : 0);
-
-    window.PanelNow = after;
-
-    if (count < 1) {
-        switch (index) {
-            case 0:
-                $wrap.prepend(Panel[after]);
-                break;
-            case 1:
-                if (to < 0) {
-                    $wrap.prepend(Panel[after]);
-                    $wrap.prepend(Panel[before]);
-                } else {
-                    $wrap.append(Panel[after]);
-                    $wrap.append(Panel[before]);
-                }
-                break;
-            case 2:
-                $wrap.append(Panel[after]);
-                break;
+            Panel[Panel.now].show();
         }
-    } else {
-        Panel[before].hide();
-        Panel[after].show();
+    },
+    swapPanel: function (before, after, to) {
+        var $wrap = $('#wrap');
+        var index = $wrap.find("div.main-panel").index(Panel[before]);
+        var count = (Panel['item'].css('display') == 'none' ? 1 : 0)
+            + (Panel['hero'].css('display') == 'none' ? 1 : 0)
+            + (Panel['article'].css('display') == 'none' ? 1 : 0);
+
+        Panel.now = after;
+
+        if (count < 1) {
+            switch (index) {
+                case 0:
+                    $wrap.prepend(Panel[after]);
+                    break;
+                case 1:
+                    if (to < 0) {
+                        $wrap.prepend(Panel[after]);
+                        $wrap.prepend(Panel[before]);
+                    } else {
+                        $wrap.append(Panel[after]);
+                        $wrap.append(Panel[before]);
+                    }
+                    break;
+                case 2:
+                    $wrap.append(Panel[after]);
+                    break;
+            }
+        } else {
+            Panel[before].hide();
+            Panel[after].show();
+        }
     }
-}
+};
 
 Hero = {
     showType: function (id) {
