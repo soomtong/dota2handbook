@@ -37,9 +37,6 @@ var ArticleFilter = React.createClass({
         };
     },
     handleChange: function (event) {
-        event.stopPropagation();
-        event.preventDefault();
-
         var selected = event.target.value;
         var str = articleData.filterList.join(',');
 
