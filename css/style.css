@@ -27,7 +27,7 @@ form {
 .item-list li,
 .hero-list li,
 .article-list li {
-  padding: 0.3em 0;
+  padding: 0.4em 0;
 }
 .item-list li.active .title,
 .hero-list li.active .title,
@@ -51,8 +51,8 @@ form {
   line-height: 1;
   border-radius: 2px;
 }
-.hide {
-  display: none !important;
+.instant-search {
+  margin-bottom: 1em;
 }
 .detail-data {
   color: #0f0f0f;
@@ -71,6 +71,9 @@ form {
 }
 .choice li.label {
   margin-right: 0.8em;
+}
+.hide {
+  display: none !important;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .item-list .subtitle,

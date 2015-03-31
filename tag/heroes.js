@@ -191,6 +191,7 @@ var HeroPanel = React.createClass({
                 <h1>{ heroData.title } <small className="badge badge-black">{ this.state.viewList.length }</small></h1>
                 <HeroOrderSelector onOrderSubmit={ this.handleChange }/>
                 <HeroFilter onFilterSubmit={ this.handleChange }/>
+                <input type="text" name="search" placeholder="Search" className="input-success width-100 instant-search"/>
                 <HeroList viewList={ this.state.viewList }/>
             </div>
         );

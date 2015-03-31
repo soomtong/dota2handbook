@@ -194,6 +194,7 @@ var ArticlePanel = React.createClass({
                 <h1>{ articleData.title } <small className="badge badge-black">{ this.state.viewList.length }</small></h1>
                 <ArticleOrderSelector onOrderSubmit={ this.handleChange }/>
                 <ArticleFilter onFilterSubmit={ this.handleChange }/>
+                <input type="text" name="search" placeholder="Search" className="input-success width-100 instant-search"/>
                 <ArticleList viewList={ this.state.viewList }/>
             </div>
         );
