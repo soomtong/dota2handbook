@@ -21,7 +21,7 @@ var PanelSelector = React.createClass({
                 <div className="forms-inline-list right">
                     {panelData.map(function (panel) {
                         if (panel.id != selector) {
-                            return <button className="btn btn-smaller btn-outline btn-round" key={ panel.id } id={ panel.id } rel={ index.pop() } onClick={ self.swapPanel }>{ panel.title }</button>;
+                            return <button className={ Panel.showTypeColor(panel.id) } key={ panel.id } id={ panel.id } rel={ index.pop() } onClick={ self.swapPanel }>{ panel.title }</button>;
                         }
                     })}
                 </div>

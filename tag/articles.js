@@ -59,7 +59,7 @@ var ArticleFilter = React.createClass({
         return (
             <div className="choice">
                 <ul className="forms-inline-list">
-                    <li className="label label-outline">필터</li>
+                    <li className="label label-outline">선택</li>
                     {articleData.filter.map(function (article) {
                         return (
                             <li key={ article.id }>

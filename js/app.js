@@ -7,6 +7,8 @@ $(document).ready(function () {
 
     Panel.setPanel();
 
+    $('body').css('background-image', 'url(data/images/background/' + Panel.backgroundImage[_.random(0, Panel.backgroundImage.length - 1)] + ')');
+
     $(window).on('resize', function() {
         //$('#wrap').toggleClass('debug1');
         Panel.setPanel();

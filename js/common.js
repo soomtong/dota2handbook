@@ -2,6 +2,23 @@ var Panel, Hero, Item, Article;
 
 Panel = {
     now: 'article',
+    backgroundImage: [
+        'Blueheart_Maiden_Loading_Screen_4x3.jpg',
+        'Chains_of_the_Black_Death_Loading_Screen_4x3.jpg',
+        'Crack_Shot_Loading_Screen_4x3.jpg',
+        'Fiend_Summoner_Loading_Screen_4x3.jpg',
+        'Fiery_Slayer_Loading_Screen_4x3.jpg',
+        'Flying_Arrow_Loading_Screen_4x3.jpg',
+        'Hidden_Mysteries_Loading_Screen_4x3.jpg',
+        'Keen_Machine_Loading_Screen_4x3.jpg',
+        'Soul_Devourer_Loading_Screen_4x3.jpg',
+        'Sweet_Toxin_Loading_Screen_4x3.jpg',
+        'Swine_Sappers_4x3.jpg',
+        'Teacher_of_the_Flame_4x3.jpg',
+        'Traxex_the_Drow_Range_4x3.jpg',
+        'Unbroken_Stallion_4x3.jpg',
+        'Volatile_Firmament_4x3.jpg'
+    ],
     setPanel: function () {
         var width = $(window).width();
         var height = $(window).height();
@@ -52,6 +69,19 @@ Panel = {
         } else {
             Panel[before].hide();
             Panel[after].show();
+        }
+    },
+    showTypeColor: function (id) {
+        switch (id) {
+            case 'item_selector':
+                return "btn btn-smaller btn-outline btn-round badge-custom-item";
+                break;
+            case 'hero_selector':
+                return "btn btn-smaller btn-outline btn-round badge-custom-hero";
+                break;
+            case 'article_selector':
+                return "btn btn-smaller btn-outline btn-round badge-custom-article";
+                break;
         }
     }
 };

@@ -1,5 +1,5 @@
 body {
-  background: url(http://cdn.dota2.com/apps/570/icons/econ/loading_screens/blackdeath_large.dadec67fcec32c9f310aac8e70db7aa1553fca2a.png) no-repeat center center fixed;
+  background: no-repeat center center fixed;
   background-size: cover;
 }
 form {
@@ -15,13 +15,37 @@ form {
   margin-bottom: 0.5em;
 }
 .item {
-  background: rgba(217, 227, 242, 0.75);
+  background: rgba(219, 228, 240, 0.6);
+}
+.item h1 {
+  text-shadow: 1px 1px 0 #404040;
+}
+.item h1 small {
+  background-color: #335d99;
+  text-shadow: 0 0 0;
+  font-weight: normal;
 }
 .hero {
-  background: rgba(217, 242, 221, 0.75);
+  background: rgba(219, 240, 223, 0.6);
+}
+.hero h1 {
+  text-shadow: 1px 1px 0 #404040;
+}
+.hero h1 small {
+  background-color: #267333;
+  text-shadow: 0 0 0;
+  font-weight: normal;
 }
 .article {
-  background: rgba(242, 217, 219, 0.75);
+  background: rgba(240, 219, 221, 0.6);
+}
+.article h1 {
+  text-shadow: 1px 1px 0 #404040;
+}
+.article h1 small {
+  background-color: #73262e;
+  text-shadow: 0 0 0;
+  font-weight: normal;
 }
 .item-list img,
 .hero-list img,
@@ -32,6 +56,7 @@ form {
 .hero-list li,
 .article-list li {
   padding: 0.4em 0;
+  border-bottom: 1px solid rgba(16, 16, 16, 0.1);
 }
 .item-list li.active .title,
 .hero-list li.active .title,
@@ -48,8 +73,8 @@ form {
 .item-list .subtitle,
 .hero-list .subtitle,
 .article-list .subtitle {
-  background: rgba(0, 0, 0, 0.25);
-  color: rgba(255, 255, 255, 0.85);
+  background: rgba(64, 64, 64, 0.5);
+  color: rgba(255, 255, 255, 0.9);
   white-space: nowrap;
   padding: 3px 5px 3px 5px;
   display: inline-block;
@@ -67,8 +92,8 @@ form {
   color: #0f0f0f;
 }
 .selector button.btn-smaller {
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
   margin: 0 2px;
 }
 .order li.label {
@@ -76,6 +101,21 @@ form {
 }
 .choice li.label {
   margin-right: 0.8em;
+}
+.badge-custom-item {
+  color: #ffffff;
+  background-color: #4d77b3;
+  border-color: #2e476b;
+}
+.badge-custom-hero {
+  color: #ffffff;
+  background-color: #4db35e;
+  border-color: #2e6b38;
+}
+.badge-custom-article {
+  color: #ffffff;
+  background-color: #b34d57;
+  border-color: #6b2e34;
 }
 .badge-custom-consume {
   color: #ffffff;

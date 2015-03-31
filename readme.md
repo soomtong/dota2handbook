@@ -5,33 +5,55 @@ Simple DOTA 2 Guide Web Application
 
 - heroes guide
 - items guide
-- and common article with tips
+- and technical article with tips
 
-### how to build app
+### How to build app
 
-- ready nodejs with npm
-- add cordova
-- add android platform
+- ready Node with npm, bower
+- add Cordova
+- add Android platform
 - build
+
+### Used library in this project
+
+- react library for view component
+- kube library for css
+- jquery, lodash for common util
+- cordova, gulp for mobile package and build project
+
+### Why this suite
+
+no need to (router, model mapper), just really need a `view` manipulation solution
+
+- need fast feedback in low performance mobile
+- nice integrated with Webstorm IDE
+- clean code and easy maintenance
+
+#### list that i used before
+
+- angular: two way bind performance (i'm a `noob` at this time, and still now on)
+- knockout: bad event bind to other components
+- riot: very rare reference, less documentation, how to figure out redraw code in global event
+
 
 ## Todo
 
-- [x] apply react from ionic (tried angular, riot, knockout)
-- [x] tri column mode and one vertical mode with selector
-- [x] save previous panel for window resize event
-- [x] data list with sort and multi filter combination
+- [x] apply React framework
 - [x] load data at bootstrap, load detail data at event bind
+- [x] tri-column mode and one vertical mode with selector
+- [x] data list with sort and multi filter combination
+- [ ] instant search list in each panel
 - [x] toggle detail view
-- [ ] random background image, transparent panel with color
-- [x] individual scroll for tri column mode
+- [x] save previous panel for window resize event
+- [x] random background image, transparent panel with color
+- [x] individual scroll for tri-column mode
 - [x] adjust font size with multi device
 - [x] fix touch area for multi device
-- [ ] global spin notification in ajax load a data
+- [x] global notification in ajax load a data
 - [ ] trim and resize images
 - [ ] update data with markdown
 - [ ] bind markdown renderer in detail view
 - [ ] add gulp script with source management
-- [ ] add gulp script with push gh-pages with git (Hexo)
-- [ ] add gulp script for package with cordova
-- [ ] upload google playstore
-- [ ] search feature in panel
+- [ ] add gulp script with push gh-pages with git (like Hexo)
+- [ ] add gulp script for package with Cordova
+- [ ] upload Google PlayStore

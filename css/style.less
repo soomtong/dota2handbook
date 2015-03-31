@@ -1,8 +1,5 @@
-@import "../components/kube/less/mixins.less";
-@import "../components/kube/less/variables.less";
-
 body {
-  background: url(http://cdn.dota2.com/apps/570/icons/econ/loading_screens/blackdeath_large.dadec67fcec32c9f310aac8e70db7aa1553fca2a.png) no-repeat center center fixed;
+  background: no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -16,26 +13,52 @@ form {
 
 .main-panel {
   padding: 1em;
-
   .forms-inline-list {
     margin-bottom: 0.5em;
   }
 }
 
-@bg-saturation: 50%;
+@bg-saturation: 40%;
 @bg-brighten: 90%;
-@bg-opacity: 75%;
+@bg-opacity: 60%;
+@item-color: 215;
+@hero-color: 130;
+@article-color: 354;
 
 .item {
-  background: hsla(215, @bg-saturation, @bg-brighten, @bg-opacity);
+  background: hsla(@item-color, @bg-saturation, @bg-brighten, @bg-opacity);
+  h1 {
+    text-shadow: 1px 1px 0 #404040;
+    small {
+      background-color: hsl(@item-color, 0.5, 0.4);
+      text-shadow: 0 0 0;
+      font-weight: normal;
+    }
+  }
 }
 
 .hero {
-  background: hsla(130, @bg-saturation, @bg-brighten, @bg-opacity);
+  background: hsla(@hero-color, @bg-saturation, @bg-brighten, @bg-opacity);
+  h1 {
+    text-shadow: 1px 1px 0 #404040;
+    small {
+      background-color: hsl(@hero-color, 0.5, 0.3);
+      text-shadow: 0 0 0;
+      font-weight: normal;
+    }
+  }
 }
 
 .article {
-  background: hsla(354, @bg-saturation, @bg-brighten, @bg-opacity);
+  background: hsla(@article-color, @bg-saturation, @bg-brighten, @bg-opacity);
+  h1 {
+    text-shadow: 1px 1px 0 #404040;
+    small {
+      background-color: hsl(@article-color, 0.5, 0.3);
+      text-shadow: 0 0 0;
+      font-weight: normal;
+    }
+  }
 }
 
 .item-list, .hero-list, .article-list {
@@ -44,6 +67,7 @@ form {
   }
   li {
     padding: 0.4em 0;
+    border-bottom: 1px solid rgba(16, 16, 16, 0.1);
   }
   li.active {
     .title {
@@ -56,8 +80,8 @@ form {
     cursor: pointer;
   }
   .subtitle {
-    background: rgba(0, 0, 0, 0.25);
-    color: rgba(255, 255, 255, 0.85);
+    background: rgba(64, 64, 64, 0.5);
+    color: rgba(255, 255, 255, 0.9);
     white-space: nowrap;
     padding: 3px 5px 3px 5px;
     display: inline-block;
@@ -80,8 +104,8 @@ form {
 
 .selector {
   button.btn-smaller {
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
     margin: 0 2px;
   }
 }
@@ -96,6 +120,24 @@ form {
   li.label {
     margin-right: 0.8em;
   }
+}
+
+.badge-custom-item {
+  color: #ffffff;
+  background-color: hsl(@item-color, @bg-saturation, 0.5);
+  border-color: hsl(@item-color, @bg-saturation, 0.3);
+}
+
+.badge-custom-hero {
+  color: #ffffff;
+  background-color: hsl(@hero-color, @bg-saturation, 0.5);
+  border-color: hsl(@hero-color, @bg-saturation, 0.3);
+}
+
+.badge-custom-article {
+  color: #ffffff;
+  background-color: hsl(@article-color, @bg-saturation, 0.5);
+  border-color: hsl(@article-color, @bg-saturation, 0.3);
 }
 
 .badge-custom-consume {
