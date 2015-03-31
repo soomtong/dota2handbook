@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Dota2Handbook",
+  "version": "0.1.0",
+  "icons": {
+    "128": "data/images/dota2_logo.png"
+  },
+  "permissions": [],
+  "app": {
+    "background": {
+      "scripts": ["js/background.js"]
+    }
+  },
+  "minimum_chrome_version": "28"
+}

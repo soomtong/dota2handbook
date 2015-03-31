@@ -54,6 +54,7 @@ no need to (router, model mapper), just really need a `View` manipulation soluti
 - [ ] trim and resize images
 - [ ] update data with markdown
 - [ ] bind markdown renderer in detail view
+- [ ] enable for chrome app
 - [ ] add gulp script with source management
 - [ ] add gulp script with push gh-pages with git (like Hexo)
 - [ ] add gulp script for package with Cordova
