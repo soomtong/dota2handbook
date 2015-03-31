@@ -8,9 +8,11 @@ var ItemOrderSelector = React.createClass({
         this.state.selectedOrder = event.target.value;
         this.props.onOrderSubmit({ order: event.target.value });
     },
+    componentDidMount: function() {
+        $('#item_panel').find('div.order ul').on('click', 'li > label', this.handleChange);
+    },
     render: function () {
-        var self = this;
-        var selector = self.state.selectedOrder;
+        var selector = this.state.selectedOrder;
 
         return (
             <div className="order">
@@ -19,7 +21,7 @@ var ItemOrderSelector = React.createClass({
                     {itemData.order.map(function (item) {
                         return (
                             <li key={ item.id }>
-                                <label><input type="radio" name="item_list_order" defaultChecked={item.id == selector } onClick={ self.handleChange } value={ item.id }/>
+                                <label><input type="radio" name="item_list_order" defaultChecked={item.id == selector } value={ item.id }/>
                                 { item.title }</label>
                             </li>
                         );
@@ -38,22 +40,27 @@ var ItemFilter = React.createClass({
     },
     handleChange: function (event) {
         var selected = event.target.value;
-        var str = itemData.filterList.join(',');
 
-        if (str.indexOf(selected) < 0) {
-            // add item
-            itemData.filterList.push(selected);
-        } else {
-            // remove item
-            itemData.filterList = _.remove(itemData.filterList, function (item) {
-                return item != selected;
-            });
+        if (selected) {
+            var str = itemData.filterList.join(',');
+
+            if (str.indexOf(selected) < 0) {
+                // add item
+                itemData.filterList.push(selected);
+            } else {
+                // remove item
+                itemData.filterList = _.remove(itemData.filterList, function (item) {
+                    return item != selected;
+                });
+            }
+
+            this.props.onFilterSubmit({ filter: itemData.filterList.join(',') });
         }
-
-        this.props.onFilterSubmit({ filter: itemData.filterList.join(',') });
+    },
+    componentDidMount: function() {
+        $('#item_panel').find('div.choice ul').on('click', 'li > label', this.handleChange);
     },
     render: function () {
-        var self = this;
         var filter = this.state.selectedFilter;
 
         return (
@@ -63,7 +70,7 @@ var ItemFilter = React.createClass({
                     {itemData.filter.map(function (item) {
                         return (
                             <li key={ item.id }>
-                                <label><input type="checkbox" name="item_list_filter" defaultChecked={ filter.indexOf(item.id) > -1 } onClick={ self.handleChange } value={ item.id }/>
+                                <label><input type="checkbox" name="item_list_filter" defaultChecked={ filter.indexOf(item.id) > -1 } value={ item.id }/>
                                 { item.title }</label>
                             </li>
                         );
@@ -99,6 +106,7 @@ var Items = React.createClass({
     toggleDetail: function (e) {
         var $el = $(e.target).parent();
         var id = $el.attr('id').slice(4);
+        console.log('bind event : item list', id);
 
         if (this.state.detail) {
             this.setState({ detail: null });

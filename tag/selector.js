@@ -11,9 +11,11 @@ var PanelSelector = React.createClass({
 
         Panel.swapPanel(before, after, index);
     },
+    componentDidMount: function() {
+        $('#wrap').find('.main-panel').on('click', '.selector button', this.swapPanel);
+    },
     render: function() {
         var selector = this.props.panel;
-        var self = this;
         var index = [1, -1];    // for swap direction
 
         return (
@@ -21,7 +23,7 @@ var PanelSelector = React.createClass({
                 <div className="forms-inline-list right">
                     {panelData.map(function (panel) {
                         if (panel.id != selector) {
-                            return <button className={ Panel.showTypeColor(panel.id) } key={ panel.id } id={ panel.id } rel={ index.pop() } onClick={ self.swapPanel }>{ panel.title }</button>;
+                            return <button className={ Panel.showTypeColor(panel.id) } key={ panel.id } id={ panel.id } rel={ index.pop() }>{ panel.title }</button>;
                         }
                     })}
                 </div>

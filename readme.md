@@ -45,6 +45,8 @@ no need to (router, model mapper), just really need a `View` manipulation soluti
 - [x] data list with sort and multi filter combination
 - [ ] instant search list in each panel
 - [x] toggle detail view
+- [x] delegate event bind for react pattern
+- [ ] solve doubled fired event
 - [x] save previous panel for window resize event
 - [x] random background image, transparent panel with color
 - [x] individual scroll for tri-column mode

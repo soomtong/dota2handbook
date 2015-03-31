@@ -8,9 +8,11 @@ var HeroOrderSelector = React.createClass({
         this.state.selectedOrder = event.target.value;
         this.props.onOrderSubmit({ order: event.target.value });
     },
+    componentDidMount: function() {
+        $('#hero_panel').find('div.order ul').on('click', 'li > label', this.handleChange);
+    },
     render: function () {
-        var self = this;
-        var selector = self.state.selectedOrder;
+        var selector = this.state.selectedOrder;
 
         return (
             <div className="order">
@@ -19,7 +21,7 @@ var HeroOrderSelector = React.createClass({
                     {heroData.order.map(function (item) {
                         return (
                             <li key={ item.id }>
-                                <label><input type="radio" name="hero_list_order" defaultChecked={item.id == selector } onClick={ self.handleChange } value={ item.id }/>
+                                <label><input type="radio" name="hero_list_order" defaultChecked={item.id == selector } value={ item.id }/>
                                 { item.title }</label>
                             </li>
                         );
@@ -38,22 +40,27 @@ var HeroFilter = React.createClass({
     },
     handleChange: function (event) {
         var selected = event.target.value;
-        var str = heroData.filterList.join(',');
 
-        if (str.indexOf(selected) < 0) {
-            // add item
-            heroData.filterList.push(selected);
-        } else {
-            // remove item
-            heroData.filterList = _.remove(heroData.filterList, function (item) {
-                return item != selected;
-            });
+        if (selected) {
+            var str = heroData.filterList.join(',');
+
+            if (str.indexOf(selected) < 0) {
+                // add item
+                heroData.filterList.push(selected);
+            } else {
+                // remove item
+                heroData.filterList = _.remove(heroData.filterList, function (item) {
+                    return item != selected;
+                });
+            }
+
+            this.props.onFilterSubmit({ filter: heroData.filterList.join(',') });
         }
-
-        this.props.onFilterSubmit({ filter: heroData.filterList.join(',') });
+    },
+    componentDidMount: function() {
+        $('#hero_panel').find('div.choice ul').on('click', 'li > label', this.handleChange);
     },
     render: function () {
-        var self = this;
         var filter = this.state.selectedFilter;
 
         return (
@@ -63,7 +70,7 @@ var HeroFilter = React.createClass({
                     {heroData.filter.map(function (item) {
                         return (
                             <li key={ item.id }>
-                                <label><input type="checkbox" name="hero_list_filter" defaultChecked={ filter.indexOf(item.id) > -1 } onClick={ self.handleChange } value={ item.id }/>
+                                <label><input type="checkbox" name="hero_list_filter" defaultChecked={ filter.indexOf(item.id) > -1 } value={ item.id }/>
                                 { item.title }</label>
                             </li>
                         );
