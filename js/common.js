@@ -89,16 +89,16 @@ Item = {
     showType: function (id) {
         switch (id) {
             case 1:
-                return "소모품";
+                return "소모";
                 break;
             case 2:
-                return "능력치";
+                return "능력";
                 break;
             case 3:
                 return "장비";
                 break;
             case 4:
-                return "마법장비";
+                return "마력";
                 break;
             case 5:
                 return "일반";
@@ -107,19 +107,19 @@ Item = {
                 return "보조";
                 break;
             case 7:
-                return "마법사";
+                return "마법";
                 break;
             case 8:
                 return "무기";
                 break;
             case 9:
-                return "방어구";
+                return "방어";
                 break;
             case 10:
-                return "계승물";
+                return "계승";
                 break;
             case 11:
-                return "비밀상점";
+                return "비밀";
                 break;
             case 12:
                 return "룬";
@@ -129,13 +129,40 @@ Item = {
     showTypeColor: function (id) {
         switch (id) {
             case 1:
-                return "badge-red";
+                return "badge badge-small badge-custom-consume";
                 break;
             case 2:
-                return "badge-green";
+                return "badge badge-small badge-custom-attribute";
                 break;
             case 3:
-                return "badge-blue";
+                return "badge badge-small badge-custom-armament";
+                break;
+            case 4:
+                return "badge badge-small badge-custom-arcane";
+                break;
+            case 5:
+                return "badge badge-small badge-custom-common";
+                break;
+            case 6:
+                return "badge badge-small badge-custom-support";
+                break;
+            case 7:
+                return "badge badge-small badge-custom-caster";
+                break;
+            case 8:
+                return "badge badge-small badge-custom-weapon";
+                break;
+            case 9:
+                return "badge badge-small badge-custom-armor";
+                break;
+            case 10:
+                return "badge badge-small badge-custom-artifact";
+                break;
+            case 11:
+                return "badge badge-small badge-custom-secret";
+                break;
+            case 12:
+                return "badge badge-small badge-custom-rune";
                 break;
         }
     }

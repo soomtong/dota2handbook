@@ -127,7 +127,7 @@ var Items = React.createClass({
                 <img src={ item.pic } alt={ item.subtitle } onClick={ this.toggleDetail }/>
                 <b className="title" onClick={ this.toggleDetail }>{ item.title }</b>
                 <small className="subtitle" onClick={ this.toggleDetail }>{ item.subtitle }</small>
-                <b className="badge badge-small badge-black">{ Item.showType(item.item_category) }</b>
+                <b className={ Item.showTypeColor(item.item_category) }>{ Item.showType(item.item_category) }</b>
             { detail }
             </li>
         );

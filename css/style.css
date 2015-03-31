@@ -77,6 +77,54 @@ form {
 .choice li.label {
   margin-right: 0.8em;
 }
+.badge-custom-consume {
+  color: #ffffff;
+  background-color: #535152;
+}
+.badge-custom-attribute {
+  color: #000000;
+  background-color: #efefef;
+}
+.badge-custom-armament {
+  color: #000000;
+  background-color: #b8beb8;
+}
+.badge-custom-arcane {
+  color: #000000;
+  background-color: #8f918f;
+}
+.badge-custom-common {
+  color: #ffffff;
+  background-color: #55831c;
+}
+.badge-custom-support {
+  color: #000000;
+  background-color: #1694f4;
+}
+.badge-custom-caster {
+  color: #ffffff;
+  background-color: #0d69ac;
+}
+.badge-custom-weapon {
+  color: #000000;
+  background-color: #b032df;
+}
+.badge-custom-armor {
+  color: #ffffff;
+  background-color: #731877;
+}
+.badge-custom-artifact {
+  color: #000000;
+  background-color: #c97528;
+}
+.badge-custom-secret {
+  color: #ffffff;
+  background-color: #8c3705;
+}
+.badge-custom-rune {
+  color: #ffffff;
+  background-color: #937644;
+}
 .hide {
   display: none !important;
 }
