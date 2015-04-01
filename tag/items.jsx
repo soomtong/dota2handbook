@@ -45,10 +45,8 @@ var ItemFilter = React.createClass({
             var str = itemData.filterList.join(',');
 
             if (str.indexOf(selected) < 0) {
-                // add item
                 itemData.filterList.push(selected);
             } else {
-                // remove item
                 itemData.filterList = _.remove(itemData.filterList, function (item) {
                     return item != selected;
                 });
@@ -58,7 +56,7 @@ var ItemFilter = React.createClass({
         }
     },
     componentDidMount: function() {
-        $('#item_panel').find('div.choice ul').on('click', 'li > label', this.handleChange);
+        $('#item_panel').find('div.choice ul').on('click', 'li > label > input', this.handleChange);
     },
     render: function () {
         var filter = this.state.selectedFilter;
@@ -104,13 +102,14 @@ var Items = React.createClass({
         };
     },
     toggleDetail: function (e) {
-        var $el = $(e.target).parent();
+        var $el = $(e.target);
         var id = $el.attr('id').slice(4);
-        console.log('bind event : item list', id);
 
         if (this.state.detail) {
             this.setState({ detail: null });
+
             $el.remove('div.detail-data');
+
             $el.removeClass('active');
         } else {
             if (id) {
@@ -119,8 +118,16 @@ var Items = React.createClass({
                         this.setState({ detail: data });
                     }
                 }.bind(this));
+
                 $el.addClass('active');
             }
+        }
+    },
+    componentDidMount: function() {
+        if (this.props.data && this.props.data.id) {
+            var id = '#' + this.props.data.id;
+
+            $(id).on('click', this.toggleDetail);
         }
     },
     render: function () {
@@ -132,9 +139,9 @@ var Items = React.createClass({
         }
         return (
             <li id={ item.id }>
-                <img src={ item.pic } alt={ item.subtitle } onClick={ this.toggleDetail }/>
-                <b className="title" onClick={ this.toggleDetail }>{ item.title }</b>
-                <small className="subtitle" onClick={ this.toggleDetail }>{ item.subtitle }</small>
+                <img src={ item.pic } alt={ item.subtitle } />
+                <b className="title">{ item.title }</b>
+                <small className="subtitle">{ item.subtitle }</small>
                 <b className={ Item.showTypeColor(item.item_category) }>{ Item.showType(item.item_category) }</b>
             { detail }
             </li>

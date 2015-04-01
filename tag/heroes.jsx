@@ -45,10 +45,8 @@ var HeroFilter = React.createClass({
             var str = heroData.filterList.join(',');
 
             if (str.indexOf(selected) < 0) {
-                // add item
                 heroData.filterList.push(selected);
             } else {
-                // remove item
                 heroData.filterList = _.remove(heroData.filterList, function (item) {
                     return item != selected;
                 });
@@ -58,7 +56,7 @@ var HeroFilter = React.createClass({
         }
     },
     componentDidMount: function() {
-        $('#hero_panel').find('div.choice ul').on('click', 'li > label', this.handleChange);
+        $('#hero_panel').find('div.choice ul').on('click', 'li > label > input', this.handleChange);
     },
     render: function () {
         var filter = this.state.selectedFilter;
@@ -104,22 +102,32 @@ var Heroes = React.createClass({
         };
     },
     toggleDetail: function (e) {
-        var $el = $(e.target).parent();
+        var $el = $(e.target);
         var id = $el.attr('id').slice(4);
 
         if (this.state.detail) {
-            this.setState({detail: null});
+            this.setState({ detail: null });
+
             $el.remove('div.detail-data');
+
             $el.removeClass('active');
         } else {
             if (id) {
                 $.getJSON('data/heroes/' + id + '.json', function (data) {
                     if (this.isMounted()) {
-                        this.setState({detail: data});
+                        this.setState({ detail: data });
                     }
                 }.bind(this));
+
                 $el.addClass('active');
             }
+        }
+    },
+    componentDidMount: function() {
+        if (this.props.data && this.props.data.id) {
+            var id = '#' + this.props.data.id;
+
+            $(id).on('click', this.toggleDetail);
         }
     },
     render: function () {
@@ -131,9 +139,9 @@ var Heroes = React.createClass({
         }
         return (
             <li id={ hero.id }>
-                <img src={ hero.pic } alt={ hero.subtitle } onClick={ this.toggleDetail }/>
-                <b className="title" onClick={ this.toggleDetail }>{ hero.title }</b>
-                <small className="subtitle" onClick={ this.toggleDetail }>{ hero.subtitle }</small>
+                <img src={ hero.pic } alt={ hero.subtitle }/>
+                <b className="title">{ hero.title }</b>
+                <small className="subtitle">{ hero.subtitle }</small>
                 <b className={ Hero.showTypeColor(hero.hero_category) }>{ Hero.showType(hero.hero_category) }</b>
             { detail }
             </li>

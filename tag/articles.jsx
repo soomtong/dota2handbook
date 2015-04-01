@@ -45,10 +45,8 @@ var ArticleFilter = React.createClass({
             var str = articleData.filterList.join(',');
 
             if (str.indexOf(selected) < 0) {
-                // add item
                 articleData.filterList.push(selected);
             } else {
-                // remove item
                 articleData.filterList = _.remove(articleData.filterList, function (article) {
                     return article != selected;
                 });
@@ -58,7 +56,7 @@ var ArticleFilter = React.createClass({
         }
     },
     componentDidMount: function() {
-        $('#article_panel').find('div.choice ul').on('click', 'li > label', this.handleChange);
+        $('#article_panel').find('div.choice ul').on('click', 'li > label > input', this.handleChange);
     },
     render: function () {
         var filter = this.state.selectedFilter;
@@ -104,22 +102,32 @@ var Articles = React.createClass({
         };
     },
     toggleDetail: function (e) {
-        var $el = $(e.target).parent();
+        var $el = $(e.target);
         var id = $el.attr('id').slice(4);
 
         if (this.state.detail) {
-            this.setState({detail: null});
+            this.setState({ detail: null });
+
             $el.remove('div.detail-data');
+
             $el.removeClass('active');
         } else {
             if (id) {
                 $.getJSON('data/articles/' + id + '.json', function (data) {
                     if (this.isMounted()) {
-                        this.setState({detail: data});
+                        this.setState({ detail: data });
                     }
                 }.bind(this));
+
                 $el.addClass('active');
             }
+        }
+    },
+    componentDidMount: function() {
+        if (this.props.data && this.props.data.id) {
+            var id = '#' + this.props.data.id;
+
+            $(id).on('click', this.toggleDetail);
         }
     },
     render: function () {
@@ -131,9 +139,9 @@ var Articles = React.createClass({
         }
         return (
             <li id={ article.id }>
-                <img src={ article.pic } alt={ article.subtitle } onClick={ this.toggleDetail }/>
-                <b className="title" onClick={ this.toggleDetail }>{ article.title }</b>
-                <small className="subtitle" onClick={ this.toggleDetail }>{ article.subtitle }</small>
+                <img src={ article.pic } alt={ article.subtitle }/>
+                <b className="title">{ article.title }</b>
+                <small className="subtitle">{ article.subtitle }</small>
                 <b className="badge badge-small badge-white">{ Article.showType(article.article_category) }</b>
             { detail }
             </li>
