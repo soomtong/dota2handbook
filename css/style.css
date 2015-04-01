@@ -9,6 +9,12 @@ form {
   top: 20px;
 }
 .main-panel {
+  overflow-y: scroll;
+}
+.main-panel::-webkit-scrollbar {
+  display: none;
+}
+.main-panel {
   padding: 1em;
 }
 .main-panel .forms-inline-list {
