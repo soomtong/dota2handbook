@@ -34,7 +34,11 @@ Panel = {
             Panel['hero'].css('display', 'none');
             Panel['article'].css('display', 'none');
 
-            $('#wrap').find('.main-panel').css('height', '');
+            if (height > Panel['item'].height() || height > Panel['hero'].height() || height > Panel['hero'].height()) {
+                $('#wrap').find('.main-panel').css('height', height + 'px');
+            } else {
+                $('#wrap').find('.main-panel').css('height', '');
+            }
 
             Panel[Panel.now].show();
         }
