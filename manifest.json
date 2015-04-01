@@ -14,9 +14,5 @@
       "scripts": ["js/background.js"]
     }
   },
-  "sandbox": {
-    "pages": ["index.html"]
-  },
-  "content_security_policy": "script-src 'self' data: chrome-extension-resource: 'unsafe-inline';default-src 'self';connect-src *;style-src 'self' data: chrome-extension-resource: 'unsafe-inline';img-src 'self' data: chrome-extension-resource:;font-src 'self' data: chrome-extension-resource:;media-src *;",
   "minimum_chrome_version": "28"
 }
