@@ -372,7 +372,7 @@
         "id": "142_phantom_lancer", "title": "환영 창기사", "subtitle": "Phantom Lancer",
         "pic": "data/images/heroes/phantom_lancer_full.png",
         "hero_category": 2, "hero_type": "melee,carry,escape,push,hard",
-        "skill_type": "둔은환",
+        "skill_type": "둔은돌환",
         "display_type": ["근접","캐리","도주기","압박"],
         "stat_str": "18+1.7", "stat_agi": "23+4.2", "stat_int": "21+2.0",
         "speed": "290", "armor": "3.22", "attack": "45-67", "range": "128", "sight": "18/8"

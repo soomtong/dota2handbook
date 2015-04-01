@@ -227,7 +227,10 @@ var heroData = {
         {id: 'name_eng', title: '영문'},
         {id: 'speed', title: '이동속도​'},
         {id: 'armor', title: '방어도​'},
-        {id: 'range', title: '사거리​'}
+        {id: 'range', title: '사거리​'},
+        {id: 'pow_inc', title: '힘 증가'},
+        {id: 'agi_inc', title: '민 증가'},
+        {id: 'int_inc', title: '지 증가'}
     ],
     orderTable: {
         common: 'id',
@@ -235,25 +238,68 @@ var heroData = {
         name_eng: 'subtitle',
         speed: 'speed',
         armor: 'armor',
-        range: 'range'
+        range: 'range',
+        pow_inc: 'pow_inc',
+        agi_inc: 'agi_inc',
+        int_inc: 'int_inc'
     },
     filter: [
         {id: 'skill1', title: '실명'},
         {id: 'skill2', title: '속박'},
         {id: 'skill3', title: '기절'},
         {id: 'skill4', title: '밀어내기'},
-        {id: 'skill5', title: '둔화'}
+        {id: 'skill5', title: '둔화'},
+        {id: 'skill6', title: '은신'},
+        {id: 'skill7', title: '가두기'},
+        {id: 'skill8', title: '돌진'},
+        {id: 'skill9', title: '침묵'},
+        {id: 'skill10', title: '치유'},
+        {id: 'skill11', title: '집중기술'},
+        {id: 'skill12', title: '도발'},
+        {id: 'skill13', title: '소환'},
+        {id: 'skill14', title: '띄우기'},
+        {id: 'skill15', title: '무적'},
+        {id: 'skill16', title: '변이'},
+        {id: 'skill17', title: '순간이동'},
+        {id: 'skill18', title: '방어감소'},
+        {id: 'skill19', title: '저항약화'},
+        {id: 'skill20', title: '마나번'},
+        {id: 'skill21', title: '능력변화'},
+        {id: 'skill22', title: '끌어오기'},
+        {id: 'skill23', title: '흡혈'},
+        {id: 'skill24', title: '치명타'},
+        {id: 'skill25', title: '피해반사'}
     ],
     filterTable: {
-        skill1: '명',
-        skill2: '박',
+        skill1: '실',
+        skill2: '속',
         skill3: '절',
         skill4: '밀',
-        skill5: '둔'
+        skill5: '둔',
+        skill6: '은',
+        skill7: '가',
+        skill8: '돌',
+        skill9: '침',
+        skill10: '힐',
+        skill11: '집',
+        skill12: '발',
+        skill13: '환',
+        skill14: '띄',
+        skill15: '무',
+        skill16: '변',
+        skill17: '순',
+        skill18: '방',
+        skill19: '마',
+        skill20: '번',
+        skill21: '능',
+        skill22: '끌',
+        skill23: '흡',
+        skill24: '치',
+        skill25: '반'
     },
     filterList: []
 };
 
 React.render(React.createElement(HeroPanel, null), document.getElementById('hero_panel'));
 
-// 체증, 민증, 지증
+// 기술단, 겨울비룡, 예지자
