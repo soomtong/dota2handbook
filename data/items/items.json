@@ -31,7 +31,7 @@
         "id": "105_tpscroll", "title": "순간이동 주문서", "subtitle": "Town Portal Scroll",
         "pic": "data/images/items/tpscroll_lg.png",
         "item_category": 1, "item_type": "consumable,basic,side",
-        "spec_type": "품", "price": 135, "additional": "","cooldown": "65",
+        "spec_type": "품사", "price": 135, "additional": "","cooldown": "65",
         "desc": "순간이동 - 지정한 아군 건물로 순간이동합니다."
     },
     {
@@ -94,7 +94,7 @@
         "id": "114_slippers", "title": "민첩의 신발", "subtitle": "Slippers of Agility",
         "pic": "data/images/items/slippers_lg.png",
         "item_category": 2, "item_type": "attribute,basic,side,stat",
-        "spec_type": "민", "price": 150, "additional": "민첩 +3",
+        "spec_type": "민사", "price": 150, "additional": "민첩 +3",
         "desc": ""
     },
     {
@@ -115,21 +115,21 @@
         "id": "117_belt_of_strength", "title": "힘의 허리띠", "subtitle": "Belt of Strength",
         "pic": "data/images/items/belt_of_strength_lg.png",
         "item_category": 2, "item_type": "attribute,basic,side,stat",
-        "spec_type": "힘", "price": 450, "additional": "힘 +6",
+        "spec_type": "힘사", "price": 450, "additional": "힘 +6",
         "desc": ""
     },
     {
         "id": "118_boots_of_elves", "title": "엘프의 손목띠", "subtitle": "Band of Elvenskin",
         "pic": "data/images/items/boots_of_elves_lg.png",
         "item_category": 2, "item_type": "attribute,basic,side,stat",
-        "spec_type": "민", "price": 450, "additional": "민첩 +6",
+        "spec_type": "민사", "price": 450, "additional": "민첩 +6",
         "desc": ""
     },
     {
         "id": "119_robe", "title": "법사의 가운", "subtitle": "Robe of the Magi",
         "pic": "data/images/items/robe_lg.png",
         "item_category": 2, "item_type": "attribute,basic,side,stat",
-        "spec_type": "지", "price": 450, "additional": "지능 +6",
+        "spec_type": "지사", "price": 450, "additional": "지능 +6",
         "desc": ""
     },
     {
@@ -157,7 +157,7 @@
         "id": "123_ultimate_orb", "title": "궁극구", "subtitle": "Ultimate Orb",
         "pic": "data/images/items/ultimate_orb_lg.png",
         "item_category": 2, "item_type": "attribute,basic,stat",
-        "spec_type": "능", "price": 2100, "additional": "모든 능력치 +10",
+        "spec_type": "능사", "price": 2100, "additional": "모든 능력치 +10",
         "desc": ""
     },
     {
@@ -171,49 +171,49 @@
         "id": "125_quelling_blade", "title": "벌목 도끼", "subtitle": "Quelling Blade",
         "pic": "data/images/items/quelling_blade_lg.png",
         "item_category": 3, "item_type": "armament,basic,side",
-        "spec_type": "효술", "price": 225, "additional": "근접 피해량 +32%, 원거리 피해량 +12%", "cooldown": "5",
+        "spec_type": "효술사", "price": 225, "additional": "근접 피해량 +32%, 원거리 피해량 +12%", "cooldown": "5",
         "desc": "부수기 - 지정한 나무를 베어 넘기거나 와드에 100의 피해를 줍니다. 진압 - 영웅의 종류에 따라 비영웅 유닛에게 보너스 피해를 줍니다."
     },
     {
         "id": "126_stout_shield", "title": "튼튼한 방패", "subtitle": "Stout Shield",
         "pic": "data/images/items/stout_shield_lg.png",
         "item_category": 3, "item_type": "armament,basic,side",
-        "spec_type": "어효", "price": 250, "additional": "근접 방어 20, 원거리 방어 10, 방어 확률 60%",
+        "spec_type": "어효사", "price": 250, "additional": "근접 방어 20, 원거리 방어 10, 방어 확률 60%",
         "desc": "피해 방어 - 영웅의 종류에 따라 일정 확률로 피해를 방어합니다."
     },
     {
         "id": "127_blades_of_attack", "title": "갈퀴발톱", "subtitle": "Blades of Attack",
         "pic": "data/images/items/blades_of_attack_lg.png",
         "item_category": 3, "item_type": "armament,basic,side,damage",
-        "spec_type": "피", "price": 450, "additional": "피해 +9",
+        "spec_type": "피사", "price": 450, "additional": "피해 +9",
         "desc": ""
     },
     {
         "id": "128_chainmail", "title": "쇠사슬 갑옷", "subtitle": "Chainmail",
         "pic": "data/images/items/chainmail_lg.png",
         "item_category": 3, "item_type": "armament,basic,side,life",
-        "spec_type": "방", "price": 550, "additional": "방어력 +5",
+        "spec_type": "방사", "price": 550, "additional": "방어력 +5",
         "desc": ""
     },
     {
         "id": "129_helm_of_iron_will", "title": "굳은 의지의 투구", "subtitle": "Helm of Iron Will",
         "pic": "data/images/items/helm_of_iron_will_lg.png",
         "item_category": 3, "item_type": "armament,basic,life",
-        "spec_type": "방재", "price": 950, "additional": "방어력 +5, 체력 재생 +3",
+        "spec_type": "방재사", "price": 950, "additional": "방어력 +5, 체력 재생 +3",
         "desc": ""
     },
     {
         "id": "130_broadsword", "title": "장검", "subtitle": "Broadsword",
         "pic": "data/images/items/broadsword_lg.png",
         "item_category": 3, "item_type": "armament,basic,damage",
-        "spec_type": "피", "price": 1200, "additional": "피해 +18",
+        "spec_type": "피사", "price": 1200, "additional": "피해 +18",
         "desc": ""
     },
     {
         "id": "131_quarterstaff", "title": "전투 지팡이", "subtitle": "Quarterstaff",
         "pic": "data/images/items/quarterstaff_lg.png",
         "item_category": 3, "item_type": "armament,basic,side,damage,speed",
-        "spec_type": "피증", "price": 900, "additional": "피해 +10, 공격 속도 +10",
+        "spec_type": "피증사", "price": 900, "additional": "피해 +10, 공격 속도 +10",
         "desc": ""
     },
     {
@@ -248,42 +248,42 @@
         "id": "136_magic_stick", "title": "마법 막대", "subtitle": "Magic Stick",
         "pic": "data/images/items/magic_stick_lg.png",
         "item_category": 4, "item_type": "arcane,basic,side",
-        "spec_type": "복술", "price": 200, "additional": "15HP * 충전 횟수", "cooldown": "13",
+        "spec_type": "복술사", "price": 200, "additional": "15HP * 충전 횟수", "cooldown": "13",
         "desc": "에너지 충전 - 주변에서 적이 기술을 사용한 만큼 에너지를 충전합니다. 아이템을 사용하면 저장된 충전 횟수에 따라 체력과 마나를 회복합니다."
     },
     {
         "id": "137_sobi_mask", "title": "현자의 가면", "subtitle": "Sage's Mask",
         "pic": "data/images/items/sobi_mask_lg.png",
         "item_category": 4, "item_type": "arcane,basic,side",
-        "spec_type": "나", "price": 325, "additional": "마나 재생 +50%", "cooldown": "",
+        "spec_type": "나사", "price": 325, "additional": "마나 재생 +50%", "cooldown": "",
         "desc": ""
     },
     {
         "id": "138_ring_of_regen", "title": "재생의 반지", "subtitle": "Ring of Regen",
         "pic": "data/images/items/ring_of_regen_lg.png",
         "item_category": 4, "item_type": "arcane,basic,side",
-        "spec_type": "재", "price": 350, "additional": "채력 재생 +2", "cooldown": "",
+        "spec_type": "재사", "price": 350, "additional": "채력 재생 +2", "cooldown": "",
         "desc": ""
     },
     {
         "id": "139_boots", "title": "속력의 장화", "subtitle": "Boots of Speed",
         "pic": "data/images/items/boots_lg.png",
         "item_category": 4, "item_type": "arcane,basic,side,speed",
-        "spec_type": "이", "price": 450, "additional": "이동 속도 +50", "cooldown": "",
+        "spec_type": "이사", "price": 450, "additional": "이동 속도 +50", "cooldown": "",
         "desc": "장화의 이동 속도 증가 효과는 서로 중첩되지 않습니다."
     },
     {
         "id": "140_gloves", "title": "가속의 장갑", "subtitle": "Gloves of Haste",
         "pic": "data/images/items/gloves_lg.png",
         "item_category": 4, "item_type": "arcane,basic,side,speed",
-        "spec_type": "증", "price": 500, "additional": "공격 속도 +15", "cooldown": "",
+        "spec_type": "증사", "price": 500, "additional": "공격 속도 +15", "cooldown": "",
         "desc": ""
     },
     {
         "id": "141_cloak", "title": "망토", "subtitle": "Cloak",
         "pic": "data/images/items/cloak_lg.png",
         "item_category": 4, "item_type": "arcane,basic,side",
-        "spec_type": "저", "price": 550, "additional": "주문 저항 +15%", "cooldown": "",
+        "spec_type": "저사", "price": 550, "additional": "주문 저항 +15%", "cooldown": "",
         "desc": "주문 저항 아이템의 효과는 서로 중첩되지 않습니다."
     },
     {
@@ -297,7 +297,7 @@
         "id": "143_lifesteal", "title": "섬뜩한 가면", "subtitle": "Morbid Mask",
         "pic": "data/images/items/lifesteal_lg.png",
         "item_category": 4, "item_type": "arcane,basic,side",
-        "spec_type": "흡변효", "price": 900, "additional": "흡혈 15%", "cooldown": "",
+        "spec_type": "흡변효사", "price": 900, "additional": "흡혈 15%", "cooldown": "",
         "desc": "흡혈 - 공격에 흡혈을 부여합니다."
     },
     {
@@ -318,7 +318,7 @@
         "id": "146_blink", "title": "점멸 단검", "subtitle": "Blink Dagger",
         "pic": "data/images/items/blink_lg.png",
         "item_category": 4, "item_type": "arcane,basic,side",
-        "spec_type": "탈술", "price": 2150, "additional": "", "cooldown": "12",
+        "spec_type": "탈술사", "price": 2150, "additional": "", "cooldown": "12",
         "desc": "점멸 - 최대 1200의 범위 내에서 지정 위치로 순간이동합니다. 피해를 받으면 점멸 단검을 3초 동안 사용할 수 없습니다."
     },
     {
@@ -451,7 +451,7 @@
         "id": "165_tranquil_boots", "title": "평온의 장화", "subtitle": "Tranquil Boots",
         "pic": "data/images/items/tranquil_boots_lg.png",
         "item_category": 6, "item_type": "support,upgrade,speed,life",
-        "spec_type": "증방재복효술", "price": 975, "additional": "이동 속도 +90, 방어력 +4, 체력 재생 +12", "cooldown": "13",
+        "spec_type": "이방재복효술", "price": 975, "additional": "이동 속도 +90, 방어력 +4, 체력 재생 +12", "cooldown": "13",
         "desc": "불능 - 공격을 하거나 공격을 받으면 13초 동안 체력 재생 효과를 잃고 이동 속도가 30 감소합니다."
     },
     {
@@ -511,6 +511,20 @@
         "desc": "악마 소환 - 자신을 위해 싸우는 네크로노미콘 전사와 네크로노미콘 궁수를 소환합니다. 40초 동안 지속됩니다."
     },
     {
+        "id": "173_necronomicon2", "title": "네크로노미콘 2", "subtitle": "Necronomicon 2",
+        "pic": "data/images/items/necronomicon2_lg.png",
+        "item_category": 7, "item_type": "caster,upgrade,stat",
+        "spec_type": "힘지술", "price": 2700, "additional": "지능 +15/21/24 힘 +8/12/16", "cooldown": "95",
+        "desc": "악마 소환 - 자신을 위해 싸우는 네크로노미콘 전사와 네크로노미콘 궁수를 소환합니다. 40초 동안 지속됩니다."
+    },
+    {
+        "id": "173_necronomicon3", "title": "네크로노미콘 3", "subtitle": "Necronomicon 3",
+        "pic": "data/images/items/necronomicon3_lg.png",
+        "item_category": 7, "item_type": "caster,upgrade,stat",
+        "spec_type": "힘지술", "price": 2700, "additional": "지능 +15/21/24 힘 +8/12/16", "cooldown": "95",
+        "desc": "악마 소환 - 자신을 위해 싸우는 네크로노미콘 전사와 네크로노미콘 궁수를 소환합니다. 40초 동안 지속됩니다."
+    },
+    {
         "id": "174_cyclone", "title": "율의 신성한 홀", "subtitle": "Eul's Scepter of Divinity",
         "pic": "data/images/items/cyclone_lg.png",
         "item_category": 7, "item_type": "caster,upgrade,stat,speed",
@@ -520,6 +534,34 @@
     {
         "id": "175_dagon", "title": "다곤", "subtitle": "Dagon",
         "pic": "data/images/items/dagon_lg.png",
+        "item_category": 7, "item_type": "caster,upgrade,stat,damage",
+        "spec_type": "지능피술", "price": 2800, "additional": "지능 +13/15/17/19/21, 모든 능력치 +3, 피해 +9, 폭발 피해량 400/500/600/700/800", "cooldown": "35",
+        "desc": "에너지 폭발 - 폭발을 일으켜 지정한 적 유닛에게 피해를 줍니다."
+    },
+    {
+        "id": "175_dagon2", "title": "다곤 2", "subtitle": "Dagon 2",
+        "pic": "data/images/items/dagon2_lg.png",
+        "item_category": 7, "item_type": "caster,upgrade,stat,damage",
+        "spec_type": "지능피술", "price": 2800, "additional": "지능 +13/15/17/19/21, 모든 능력치 +3, 피해 +9, 폭발 피해량 400/500/600/700/800", "cooldown": "35",
+        "desc": "에너지 폭발 - 폭발을 일으켜 지정한 적 유닛에게 피해를 줍니다."
+    },
+    {
+        "id": "175_dagon3", "title": "다곤 3", "subtitle": "Dagon 3",
+        "pic": "data/images/items/dagon3_lg.png",
+        "item_category": 7, "item_type": "caster,upgrade,stat,damage",
+        "spec_type": "지능피술", "price": 2800, "additional": "지능 +13/15/17/19/21, 모든 능력치 +3, 피해 +9, 폭발 피해량 400/500/600/700/800", "cooldown": "35",
+        "desc": "에너지 폭발 - 폭발을 일으켜 지정한 적 유닛에게 피해를 줍니다."
+    },
+    {
+        "id": "175_dagon4", "title": "다곤 4", "subtitle": "Dagon 4",
+        "pic": "data/images/items/dagon4_lg.png",
+        "item_category": 7, "item_type": "caster,upgrade,stat,damage",
+        "spec_type": "지능피술", "price": 2800, "additional": "지능 +13/15/17/19/21, 모든 능력치 +3, 피해 +9, 폭발 피해량 400/500/600/700/800", "cooldown": "35",
+        "desc": "에너지 폭발 - 폭발을 일으켜 지정한 적 유닛에게 피해를 줍니다."
+    },
+    {
+        "id": "175_dagon5", "title": "다곤 5", "subtitle": "Dagon 5",
+        "pic": "data/images/items/dagon5_lg.png",
         "item_category": 7, "item_type": "caster,upgrade,stat,damage",
         "spec_type": "지능피술", "price": 2800, "additional": "지능 +13/15/17/19/21, 모든 능력치 +3, 피해 +9, 폭발 피해량 400/500/600/700/800", "cooldown": "35",
         "desc": "에너지 폭발 - 폭발을 일으켜 지정한 적 유닛에게 피해를 줍니다."
@@ -591,7 +633,7 @@
         "id": "185_invis_sword", "title": "어둠의 검", "subtitle": "Shadow Blade",
         "pic": "data/images/items/invis_sword_lg.png",
         "item_category": 8, "item_type": "weapon,upgrade,damage,speed",
-        "spec_type": "증은강술", "price": 3000, "additional": "피해 +22, 공격 속도 +30", "cooldown": "28",
+        "spec_type": "피증은강술", "price": 3000, "additional": "피해 +22, 공격 속도 +30", "cooldown": "28",
         "desc": "그림자 보행 - 몸이 투명해집니다. 지속시간이 다하거나 주문을 시전하면 투명화가 풀립니다. 그림자 보행 중에는 이동 속도가 20% 증가하며 유닛을 통과하여 움직일 수 있습니다. 투명화 상태에서 공격을 하면 그 공격에 150의 보너스 피해가 더해집니다 . 12초 동안 지속됩니다."
     },
     {
@@ -770,10 +812,17 @@
         "desc": "정화 - 대상의 강화 효과를 제거하고 둔화시키며 대상이 소환수일 경우 피해를 줍니다. 피드백 - 상대의 마나를 20/36만큼 소진시키고 같은 양의 물리 피해를 줍니다. 강화 가능"
     },
     {
+        "id": "210_diffusal_blade2", "title": "분산의 검 2", "subtitle": "Diffusal Blade 2",
+        "pic": "data/images/items/diffusal_blade2_lg.png",
+        "item_category": 10, "item_type": "artifact,upgrade,stat",
+        "spec_type": "민지변효술", "price": 3300, "additional": "민첩 +25/30, 지능 +6/10", "cooldown": "8",
+        "desc": "정화 - 대상의 강화 효과를 제거하고 둔화시키며 대상이 소환수일 경우 피해를 줍니다. 피드백 - 상대의 마나를 20/36만큼 소진시키고 같은 양의 물리 피해를 줍니다. 강화 가능"
+    },
+    {
         "id": "211_desolator", "title": "심판도", "subtitle": "Desolator",
         "pic": "data/images/items/desolator_lg.png",
         "item_category": 10, "item_type": "artifact,upgrade,damage",
-        "spec_type": "감변효", "price": 4100, "additional": "피해 +60", "cooldown": "",
+        "spec_type": "피감변효", "price": 4100, "additional": "피해 +60", "cooldown": "",
         "desc": "부패 - 공격 시 15초 동안 대상의 방어력을 감소시킵니다."
     },
     {
@@ -815,84 +864,84 @@
         "id": "217_demon_edge", "title": "악마의 검", "subtitle": "Demon Edge",
         "pic": "data/images/items/demon_edge_lg.png",
         "item_category": 11, "item_type": "secret,damage",
-        "spec_type": "피", "price": 2400, "additional": "피해 +46", "cooldown": "",
+        "spec_type": "피비", "price": 2400, "additional": "피해 +46", "cooldown": "",
         "desc": ""
     },
     {
         "id": "218_eagle", "title": "독수리 뿔피리", "subtitle": "Eaglesong",
         "pic": "data/images/items/eagle_lg.png",
         "item_category": 11, "item_type": "secret,stat",
-        "spec_type": "민", "price": 3300, "additional": "민첩 +25", "cooldown": "",
+        "spec_type": "민비", "price": 3300, "additional": "민첩 +25", "cooldown": "",
         "desc": ""
     },
     {
         "id": "219_reaver", "title": "재앙의 도끼", "subtitle": "Reaver",
         "pic": "data/images/items/reaver_lg.png",
         "item_category": 11, "item_type": "secret,stat",
-        "spec_type": "힘", "price": 3200, "additional": "힘 +25", "cooldown": "",
+        "spec_type": "힘비", "price": 3200, "additional": "힘 +25", "cooldown": "",
         "desc": ""
     },
     {
         "id": "220_relic", "title": "성스러운 유물", "subtitle": "Sacred Relic",
         "pic": "data/images/items/relic_lg.png",
         "item_category": 11, "item_type": "secret,damage",
-        "spec_type": "피", "price": 3800, "additional": "피해 +60", "cooldown": "",
+        "spec_type": "피비", "price": 3800, "additional": "피해 +60", "cooldown": "",
         "desc": ""
     },
     {
         "id": "221_hyperstone", "title": "극도석", "subtitle": "Hyperstone",
         "pic": "data/images/items/hyperstone_lg.png",
         "item_category": 11, "item_type": "secret,speed",
-        "spec_type": "증", "price": 2000, "additional": "공격 속도 +55", "cooldown": "",
+        "spec_type": "증비", "price": 2000, "additional": "공격 속도 +55", "cooldown": "",
         "desc": ""
     },
     {
         "id": "222_ring_of_health", "title": "체력 반지", "subtitle": "Ring of Health",
         "pic": "data/images/items/ring_of_health_lg.png",
         "item_category": 11, "item_type": "secret,side",
-        "spec_type": "", "price": 875, "additional": "체력 재생 +5", "cooldown": "",
+        "spec_type": "재사비", "price": 875, "additional": "체력 재생 +5", "cooldown": "",
         "desc": ""
     },
     {
         "id": "223_void_stone", "title": "공허석", "subtitle": "Void Stone",
         "pic": "data/images/items/void_stone_lg.png",
         "item_category": 11, "item_type": "secret",
-        "spec_type": "나", "price": 875, "additional": "마나 재생 +100%", "cooldown": "",
+        "spec_type": "나비", "price": 875, "additional": "마나 재생 +100%", "cooldown": "",
         "desc": ""
     },
     {
         "id": "224_mystic_staff", "title": "신비의 지팡이", "subtitle": "Mystic Staff",
         "pic": "data/images/items/mystic_staff_lg.png",
         "item_category": 11, "item_type": "secret,stat",
-        "spec_type": "지", "price": 2700, "additional": "지능 +25", "cooldown": "",
+        "spec_type": "지비", "price": 2700, "additional": "지능 +25", "cooldown": "",
         "desc": ""
     },
     {
         "id": "225_energy_booster", "title": "기운 강화석", "subtitle": "Energy Booster",
         "pic": "data/images/items/energy_booster_lg.png",
         "item_category": 11, "item_type": "secret,side,stat",
-        "spec_type": "마", "price": 1000, "additional": "마나 +250", "cooldown": "",
+        "spec_type": "마사비", "price": 1000, "additional": "마나 +250", "cooldown": "",
         "desc": ""
     },
     {
         "id": "226_point_booster", "title": "이중 강화석", "subtitle": "Point Booster",
         "pic": "data/images/items/point_booster_lg.png",
         "item_category": 11, "item_type": "secret,stat",
-        "spec_type": "생마", "price": 1200, "additional": "마나 +150, 체력 +200", "cooldown": "",
+        "spec_type": "생마비", "price": 1200, "additional": "마나 +150, 체력 +200", "cooldown": "",
         "desc": ""
     },
     {
         "id": "227_vitality_booster", "title": "활력 강화석", "subtitle": "Vitality Booster",
         "pic": "data/images/items/vitality_booster_lg.png",
         "item_category": 11, "item_type": "secret,stat",
-        "spec_type": "생", "price": 1100, "additional": "체력 +250", "cooldown": "",
+        "spec_type": "생비", "price": 1100, "additional": "체력 +250", "cooldown": "",
         "desc": ""
     },
     {
         "id": "228_orb_of_venom", "title": "독사의 구슬", "subtitle": "Orb of Venom",
         "pic": "data/images/items/orb_of_venom_lg.png",
         "item_category": 11, "item_type": "secret,side",
-        "spec_type": "돗변동효", "price": 275, "additional": "근접 둔화 12%, 원거리 둔화 4%, 지속 시간 4, 독 피해량 3", "cooldown": "",
+        "spec_type": "돗변동효사비", "price": 275, "additional": "근접 둔화 12%, 원거리 둔화 4%, 지속 시간 4, 독 피해량 3", "cooldown": "",
         "desc": "독 공격 - 대상에게 독을 주입하여 지속해서 피해를 주고 대상을 둔화시킵니다."
     },
     {
