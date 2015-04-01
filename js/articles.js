@@ -102,8 +102,13 @@ var Articles = React.createClass({displayName: "Articles",
         };
     },
     toggleDetail: function (e) {
-        var $el = $(e.target);
-        var id = $el.attr('id').slice(4);
+        var $el = $(e.target), id;
+
+        if ($el.attr('id')) {
+            id = $el.attr('id').slice(4);
+        } else {
+            id = $el.parent().attr('id').slice(4);
+        }
 
         if (this.state.detail) {
             this.setState({ detail: null });
