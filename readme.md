@@ -46,18 +46,19 @@ no need to (router, model mapper), just really need a `View` manipulation soluti
 - [ ] instant search list in each panel
 - [x] toggle detail view
 - [x] delegate event bind for react pattern
-- [ ] solve doubled fired event
+- [x] solve double fired event
 - [x] save previous panel for window resize event
 - [x] random background image, transparent panel with color
 - [x] individual scroll for tri-column mode
 - [x] adjust font size with multi device
 - [x] fix touch area for multi device
 - [x] global notification in ajax load a data
+- [ ] use window.localStorage or chrome.storage.local
 - [ ] trim and resize images
 - [ ] update data with markdown
 - [ ] bind markdown renderer in detail view
-- [ ] resolve CORS for web app
-- [ ] enable for chrome app
+- [ ] concern CORS for web app
+- [x] enable for chrome app
 - [ ] add gulp script with source management
 - [ ] add gulp script with push gh-pages with git (like Hexo)
 - [ ] add gulp script for package with Cordova
