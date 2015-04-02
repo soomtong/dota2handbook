@@ -26,9 +26,9 @@ Panel = {
         if (!img) img = Panel.backgroundImage[_.random(0, Panel.backgroundImage.length - 1)];
 
         // hack?, just works
-        $.get('data/images/background/' + img, function (data) {
+        $.get('data/images/background/' + img).done(function (data) {
             $('#wrap').css('background-image', 'url(data/images/background/' + img + ')');
-        });
+        }).fail();
 
         setTimeout(function () {
             Panel.setBackground();
