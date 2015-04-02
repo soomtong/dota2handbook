@@ -12,7 +12,8 @@ var PanelSelector = React.createClass({
         Panel.swapPanel(before, after, index);
     },
     componentDidMount: function() {
-        $('#wrap').find('.main-panel').on('click', '.selector button', this.swapPanel);
+        var id = ['#', this.state.panel.split('_')[0], '_panel'].join('');
+        $(id).on('click', '.selector button', this.swapPanel);
     },
     render: function() {
         var selector = this.props.panel;
