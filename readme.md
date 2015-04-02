@@ -42,6 +42,8 @@ no need to (router, model mapper), just really need a `View` manipulation soluti
 - [x] load data at bootstrap, load detail data at event bind
 - [x] responsive design, bind resize event to rearrange layout
 - [x] tri-column mode and one vertical mode with selector
+- [x] panel swapping in tri-column mode
+- [x] assemble React component for each data list
 - [x] data list with sort and multi filter combination
 - [ ] instant search list in each panel
 - [x] toggle detail view
@@ -53,12 +55,12 @@ no need to (router, model mapper), just really need a `View` manipulation soluti
 - [x] adjust font size with multi device
 - [x] fix touch area for multi device
 - [x] global notification in ajax load a data
-- [ ] use window.localStorage or chrome.storage.local
+- [ ] use window.localStorage or chrome.storage.local for previous panel mode
 - [ ] trim and resize images
 - [ ] update data with markdown
 - [ ] bind markdown renderer in detail view
-- [ ] concern CORS for web app
-- [x] enable for chrome app
+- [ ] resolve CORS for web app
+- [ ] enable for chrome app
 - [ ] add gulp script with source management
 - [ ] add gulp script with push gh-pages with git (like Hexo)
 - [ ] add gulp script for package with Cordova
