@@ -2,7 +2,7 @@ var Panel, Hero, Item, Article;
 
 Panel = {
     now: 'article',
-    interval: 5000,
+    interval: 1000,
     backgroundImage: [
         'Blueheart_Maiden_Loading_Screen_4x3.jpg',
         'Chains_of_the_Black_Death_Loading_Screen_4x3.jpg',
@@ -25,7 +25,10 @@ Panel = {
 
         if (!img) img = Panel.backgroundImage[_.random(0, Panel.backgroundImage.length - 1)];
 
-        $('#wrap').css('background-image', 'url(data/images/background/' + img + ')');
+        // hack?, just works
+        $.get('data/images/background/' + img, function (data) {
+            $('#wrap').css('background-image', 'url(data/images/background/' + img + ')');
+        });
 
         setTimeout(function () {
             Panel.setBackground();
