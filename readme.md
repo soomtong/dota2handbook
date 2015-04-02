@@ -48,13 +48,13 @@ no need to (router, model mapper), just really need a `View` manipulation soluti
 - [ ] instant search list in each panel
 - [x] toggle detail view
 - [x] delegate event bind for react pattern
-- [x] solve double fired event
-- [x] save previous panel for window resize event
+- [x] solve multiple fired event not expected
 - [x] random background image, transparent panel with color
 - [x] individual scroll for tri-column mode
 - [x] adjust font size with multi device
 - [x] fix touch area for multi device
 - [x] global notification in ajax load a data
+- [x] save previous panel for window resize event
 - [ ] use window.localStorage or chrome.storage.local for previous panel mode
 - [ ] trim and resize images
 - [ ] update data with markdown

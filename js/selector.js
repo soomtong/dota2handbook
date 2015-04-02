@@ -10,9 +10,18 @@ var PanelSelector = React.createClass({displayName: "PanelSelector",
         var index = $(e.target).attr('rel');
 
         Panel.swapPanel(before, after, index);
+
+        // re queue panel selector order
+        var id = this.state.panel;
+        var temp = _.remove(panelData, function (panel) {
+            return panel.id == id;
+        });
+
+        panelData.push({ id: temp[0].id, title: temp[0].title });
     },
     componentDidMount: function() {
-        $('#wrap').find('.main-panel').on('click', '.selector button', this.swapPanel);
+        var id = ['#', this.state.panel.split('_')[0], '_panel'].join('');
+        $(id).on('click', '.selector button', this.swapPanel);
     },
     render: function() {
         var selector = this.props.panel;
