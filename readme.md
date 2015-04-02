@@ -50,6 +50,7 @@ no need to (router, model mapper), just really need a `View` manipulation soluti
 - [x] delegate event bind for react pattern
 - [x] solve multiple fired event not expected
 - [x] random background image, transparent panel with color
+- [ ] advanced background image changer with pre-loader
 - [x] individual scroll for tri-column mode
 - [x] adjust font size with multi device
 - [x] fix touch area for multi device

@@ -2,6 +2,7 @@ var Panel, Hero, Item, Article;
 
 Panel = {
     now: 'article',
+    interval: 5000,
     backgroundImage: [
         'Blueheart_Maiden_Loading_Screen_4x3.jpg',
         'Chains_of_the_Black_Death_Loading_Screen_4x3.jpg',
@@ -19,6 +20,19 @@ Panel = {
         'Unbroken_Stallion_4x3.jpg',
         'Volatile_Firmament_4x3.jpg'
     ],
+    setBackground: function (img) {
+        var factor = 1.2;
+
+        if (!img) img = Panel.backgroundImage[_.random(0, Panel.backgroundImage.length - 1)];
+
+        $('#wrap').css('background-image', 'url(data/images/background/' + img + ')');
+
+        setTimeout(function () {
+            Panel.setBackground();
+        }, Panel.interval);
+
+        Panel.interval = parseInt(Panel.interval * factor);
+    },
     setPanel: function () {
         var width = $(window).width();
         var height = $(window).height();
