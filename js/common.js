@@ -1,8 +1,7 @@
 var Panel, Hero, Item, Article;
 
 Panel = {
-    now: 'article',
-    interval: 1000,
+    interval: 1000 * 30,
     backgroundImage: [
         'Blueheart_Maiden_Loading_Screen_4x3.jpg',
         'Chains_of_the_Black_Death_Loading_Screen_4x3.jpg',
@@ -20,15 +19,32 @@ Panel = {
         'Unbroken_Stallion_4x3.jpg',
         'Volatile_Firmament_4x3.jpg'
     ],
-    setBackground: function (img) {
+    getNow: function () {
+        return Panel.now || 'article';
+    },
+    setNow: function (now) {
+        Panel.now = now || 'article';
+
+        if (chrome && chrome.storage && chrome.storage.local) {
+            chrome.storage.local.set({ panelNow: Panel.now });
+        } else {
+            if (window && window.localStorage) {
+                window.localStorage.setItem('panelNow', Panel.now);
+            }
+        }
+    },
+    setBackground: function (force) {
         var factor = 1.2;
+        var focus = window.document.hasFocus();
 
-        if (!img) img = Panel.backgroundImage[_.random(0, Panel.backgroundImage.length - 1)];
+        if (force || focus) {
+            var img = Panel.backgroundImage[_.random(0, Panel.backgroundImage.length - 1)];
 
-        // hack?, just works
-        $.get('data/images/background/' + img).done(function (data) {
-            $('#wrap').css('background-image', 'url(data/images/background/' + img + ')');
-        }).fail();
+            // hack?, just works
+            $.get('data/images/background/' + img).done(function (data) {
+                $('#wrap').css('background-image', 'url(data/images/background/' + img + ')');
+            }).fail();
+        }
 
         setTimeout(function () {
             Panel.setBackground();
@@ -57,7 +73,7 @@ Panel = {
                 $('#wrap').find('.main-panel').css('height', '');
             }
 
-            Panel[Panel.now].show();
+            Panel[Panel.getNow()].show();
         }
     },
     swapPanel: function (before, after, to) {
@@ -67,7 +83,7 @@ Panel = {
             + (Panel['hero'].css('display') == 'none' ? 1 : 0)
             + (Panel['article'].css('display') == 'none' ? 1 : 0);
 
-        Panel.now = after;
+        Panel.setNow(after);
 
         if (count < 1) {
             switch (index) {
