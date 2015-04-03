@@ -65,4 +65,5 @@ no need to (router, model mapper), just really need a `View` manipulation soluti
 - [ ] add gulp script with source management
 - [ ] add gulp script with push gh-pages with git (like Hexo)
 - [ ] add gulp script for package with Cordova
+- [ ] upload Chrome WebStore
 - [ ] upload Google PlayStore

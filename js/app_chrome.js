@@ -1,6 +1,6 @@
 function saveNowState(now) {
-    if (window && window.localStorage) {
-        window.localStorage.setItem('panelNow', now);
+    if (chrome && chrome.storage && chrome.storage.local) {
+        chrome.storage.local.set({ panelNow: now });
     }
 }
 
@@ -13,16 +13,12 @@ $(document).ready(function () {
 
     Panel.setBackground(true);
 
-    if (window && window.localStorage) {
-        Panel.setNow(window.localStorage.getItem('panelNow'));
-        Panel.setPanel();
+    if (chrome && chrome.storage && chrome.storage.local) {
+        chrome.storage.local.get(['panelNow'], function (data) {
+            Panel.setNow(data.panelNow);
+            Panel.setPanel();
+        });
     }
-    //if (chrome && chrome.storage && chrome.storage.local) {
-    //    chrome.storage.local.get(['panelNow'], function (data) {
-    //        Panel.setNow(data.panelNow);
-    //        Panel.setPanel();
-    //    });
-    //}
 
     $(window).on('resize', function() {
         //$('#wrap').toggleClass('debug1');
