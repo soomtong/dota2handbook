@@ -25,13 +25,13 @@ Panel = {
     setNow: function (now) {
         Panel.now = now || 'article';
 
-        if (chrome && chrome.storage && chrome.storage.local) {
-            chrome.storage.local.set({ panelNow: Panel.now });
-        } else {
-            if (window && window.localStorage) {
-                window.localStorage.setItem('panelNow', Panel.now);
-            }
+        if (window && window.localStorage) {
+            window.localStorage.setItem('panelNow', Panel.now);
         }
+        //if (chrome && chrome.storage && chrome.storage.local) {
+        //    chrome.storage.local.set({ panelNow: Panel.now });
+        //}
+
     },
     setBackground: function (force) {
         var factor = 1.2;

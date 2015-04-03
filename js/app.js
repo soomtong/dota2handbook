@@ -7,17 +7,16 @@ $(document).ready(function () {
 
     Panel.setBackground(true);
 
-    if (chrome && chrome.storage && chrome.storage.local) {
-        chrome.storage.local.get(['panelNow'], function (data) {
-            Panel.setNow(data.panelNow);
-            Panel.setPanel();
-        });
-    } else {
-        if (window && window.localStorage) {
-            Panel.setNow(window.localStorage.getItem('panelNow'));
-            Panel.setPanel();
-        }
+    if (window && window.localStorage) {
+        Panel.setNow(window.localStorage.getItem('panelNow'));
+        Panel.setPanel();
     }
+    //if (chrome && chrome.storage && chrome.storage.local) {
+    //    chrome.storage.local.get(['panelNow'], function (data) {
+    //        Panel.setNow(data.panelNow);
+    //        Panel.setPanel();
+    //    });
+    //}
 
     $(window).on('resize', function() {
         //$('#wrap').toggleClass('debug1');
