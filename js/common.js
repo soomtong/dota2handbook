@@ -23,8 +23,9 @@ Panel = {
         return Panel.now || 'article';
     },
     setNow: function (now) {
-        Panel.now = now || 'article';
+        if (now != 'item' && now != 'hero' && now != 'article') now = 'article';
 
+        Panel.now = now;
         saveNowState(now);
     },
     setBackground: function (force) {
