@@ -3,18 +3,27 @@ body {
   background: #999999 no-repeat fixed center center;
   background-size: cover;
 }
-form {
-  margin-bottom: 0;
+.forms-inline-list {
+  margin-bottom: 0.5em;
 }
 .nav-stats .badge {
   top: 20px;
 }
-.main-panel {
-  overflow: auto;
-  padding: 1em;
+.hide {
+  display: none !important;
 }
-.main-panel .forms-inline-list {
-  margin-bottom: 0.5em;
+.debug1 {
+  border: 4px solid red;
+}
+.debug2 {
+  border: 4px solid blue;
+}
+.main-panel::-webkit-scrollbar {
+  display: none;
+}
+.main-panel {
+  overflow-y: scroll;
+  padding: 1em;
 }
 .item {
   background: rgba(219, 228, 240, 0.6);
@@ -49,6 +58,20 @@ form {
   text-shadow: 0 0 0;
   font-weight: normal;
 }
+.selector button.btn-smaller {
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+  margin: 0 2px;
+}
+.order li.label {
+  margin-right: 0.8em;
+}
+.choice li.label {
+  margin-right: 0.8em;
+}
+.instant-search {
+  margin-bottom: 0.6em;
+}
 .item-list img,
 .hero-list img,
 .article-list img {
@@ -82,27 +105,6 @@ form {
   display: inline-block;
   line-height: 1;
   border-radius: 2px;
-}
-.instant-search {
-  margin-bottom: 0.6em;
-}
-.detail-data {
-  color: #0f0f0f;
-  margin: 0.5em 0;
-}
-.detail-data span {
-  color: #0f0f0f;
-}
-.selector button.btn-smaller {
-  padding-left: 1.2em;
-  padding-right: 1.2em;
-  margin: 0 2px;
-}
-.order li.label {
-  margin-right: 0.8em;
-}
-.choice li.label {
-  margin-right: 0.8em;
 }
 .badge-custom-item {
   color: #ffffff;
@@ -167,13 +169,20 @@ form {
   color: #ffffff;
   background-color: #937644;
 }
-.hide {
-  display: none !important;
+.detail-data {
+  color: #0f0f0f;
+  margin: 0.5em 0;
+}
+.detail-data span {
+  color: #0f0f0f;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .item-list .subtitle,
   .hero-list .subtitle,
   .article-list .subtitle {
+    display: none;
+  }
+  .selector {
     display: none;
   }
 }
@@ -196,15 +205,6 @@ form {
 }
 @media only screen and (min-width: 768px) {
   .main-panel {
-    overflow-y: scroll;
+    width: 33.333% !important;
   }
-  .main-panel::-webkit-scrollbar {
-    display: none;
-  }
-}
-.debug1 {
-  border: 4px solid red;
-}
-.debug2 {
-  border: 4px solid blue;
 }

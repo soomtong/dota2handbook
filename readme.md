@@ -57,6 +57,7 @@ no need to (router, model mapper), just really need a `View` manipulation soluti
 - [x] global notification in ajax load a data
 - [x] save previous panel for window resize event
 - [x] use window.localStorage or chrome.storage.local for previous panel mode
+- [ ] wait to fix chrome app bug (no scroll enable in one panel mode, bypassed restrict window size)
 - [ ] trim and resize images
 - [ ] update data with markdown
 - [ ] bind markdown renderer in detail view

@@ -23,7 +23,8 @@ Panel = {
         return Panel.now || 'article';
     },
     setNow: function (now) {
-        if (now != 'item' && now != 'hero' && now != 'article') now = 'article';
+        if (now == 'item' || now == 'hero' || now == 'article') {
+        } else now = 'article';
 
         Panel.now = now;
         saveNowState(now);
