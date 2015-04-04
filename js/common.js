@@ -36,7 +36,7 @@ Panel = {
 
             // hack?, just works
             $.get('data/images/background/' + img).done(function (data) {
-                $('#wrap').css('background-image', 'url(data/images/background/' + img + ')');
+                $('body').css('background-image', 'url(data/images/background/' + img + ')');
             }).fail();
         }
 
@@ -47,25 +47,22 @@ Panel = {
         Panel.interval = parseInt(Panel.interval * factor);
     },
     setPanel: function () {
+        var $wrap = $('#wrap');
         var width = $(window).width();
         var height = $(window).height();
+
+        $wrap.find('.main-panel').css('min-height', height + 'px');
 
         if (width > 767) {
             Panel['item'].css('display', 'block');
             Panel['hero'].css('display', 'block');
             Panel['article'].css('display', 'block');
 
-            $('#wrap').find('.main-panel').css('height', height + 'px');
+            $wrap.find('.main-panel').css('height', height + 'px');
         } else {
             Panel['item'].css('display', 'none');
             Panel['hero'].css('display', 'none');
             Panel['article'].css('display', 'none');
-
-            if (height > Panel['item'].height() || height > Panel['hero'].height() || height > Panel['hero'].height()) {
-                $('#wrap').find('.main-panel').css('height', height + 'px');
-            } else {
-                $('#wrap').find('.main-panel').css('height', '');
-            }
 
             Panel[Panel.getNow()].show();
         }
@@ -76,6 +73,9 @@ Panel = {
         var count = (Panel['item'].css('display') == 'none' ? 1 : 0)
             + (Panel['hero'].css('display') == 'none' ? 1 : 0)
             + (Panel['article'].css('display') == 'none' ? 1 : 0);
+
+        var height = $(window).height();
+        $wrap.find('.main-panel').css('min-height', height + 'px');
 
         Panel.setNow(after);
 

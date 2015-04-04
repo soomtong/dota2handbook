@@ -1,4 +1,4 @@
-#wrap {
+body {
   transition: background-image 1s ease-in-out;
   background: #999999 no-repeat fixed center center;
   background-size: cover;
@@ -10,12 +10,7 @@ form {
   top: 20px;
 }
 .main-panel {
-  overflow-y: scroll;
-}
-.main-panel::-webkit-scrollbar {
-  display: none;
-}
-.main-panel {
+  overflow: auto;
   padding: 1em;
 }
 .main-panel .forms-inline-list {
@@ -196,6 +191,14 @@ form {
     display: none;
   }
   #article_panel {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main-panel {
+    overflow-y: scroll;
+  }
+  .main-panel::-webkit-scrollbar {
     display: none;
   }
 }
