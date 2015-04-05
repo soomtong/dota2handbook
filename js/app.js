@@ -11,16 +11,16 @@ $(document).ready(function () {
     Panel['hero'] = $('#hero_panel');
     Panel['article'] = $('#article_panel');
 
-    Panel.setBackground(true);
+    Panel.replaceBackground(true);
 
     if (window && window.localStorage) {
         Panel.setNow(window.localStorage.getItem('panelNow'));
-        Panel.setPanel();
+        Panel.viewPanel();
     }
 
     $(window).on('resize', function() {
         //$('#wrap').toggleClass('debug1');
-        Panel.setPanel();
+        Panel.viewPanel();
     });
 
     $(window).one('orientationchange', function () {

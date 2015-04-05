@@ -11,18 +11,18 @@ $(document).ready(function () {
     Panel['hero'] = $('#hero_panel');
     Panel['article'] = $('#article_panel');
 
-    Panel.setBackground(true);
+    Panel.replaceBackground(true);
 
     if (chrome && chrome.storage && chrome.storage.local) {
         chrome.storage.local.get(['panelNow'], function (data) {
             Panel.setNow(data.panelNow);
-            Panel.setPanel();
+            Panel.viewPanel();
         });
     }
 
     $(window).on('resize', function() {
         //$('#wrap').toggleClass('debug1');
-        Panel.setPanel();
+        Panel.viewPanel();
     });
 
     $(window).one('orientationchange', function () {

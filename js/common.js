@@ -29,7 +29,7 @@ Panel = {
         Panel.now = now;
         saveNowState(now);
     },
-    setBackground: function (force) {
+    replaceBackground: function (force) {
         var factor = 1.2;
         var focus = window.document.hasFocus();
 
@@ -43,24 +43,21 @@ Panel = {
         }
 
         setTimeout(function () {
-            Panel.setBackground();
+            Panel.replaceBackground();
         }, Panel.interval);
 
         Panel.interval = parseInt(Panel.interval * factor);
     },
-    setPanel: function () {
+    viewPanel: function () {
         var $wrap = $('#wrap');
         var width = $(window).width();
         var height = $(window).height();
-
-        $wrap.find('.main-panel').css('min-height', height + 'px');
 
         if (width > 767) {
             Panel['item'].css('display', 'block');
             Panel['hero'].css('display', 'block');
             Panel['article'].css('display', 'block');
 
-            $wrap.find('.main-panel').css('height', height + 'px');
         } else {
             Panel['item'].css('display', 'none');
             Panel['hero'].css('display', 'none');
@@ -68,6 +65,9 @@ Panel = {
 
             Panel[Panel.getNow()].show();
         }
+
+        $wrap.find('.main-panel').css('min-height', height + 'px');
+        $wrap.find('.main-panel').css('height', height + 'px');
     },
     swapPanel: function (before, after, to) {
         var $wrap = $('#wrap');
