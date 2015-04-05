@@ -58,6 +58,7 @@ Panel = {
             Panel['hero'].css('display', 'block');
             Panel['article'].css('display', 'block');
 
+            $wrap.find('.main-panel').css('height', height + 'px');
         } else {
             Panel['item'].css('display', 'none');
             Panel['hero'].css('display', 'none');
@@ -67,7 +68,6 @@ Panel = {
         }
 
         $wrap.find('.main-panel').css('min-height', height + 'px');
-        $wrap.find('.main-panel').css('height', height + 'px');
     },
     swapPanel: function (before, after, to) {
         var $wrap = $('#wrap');
