@@ -1,0 +1,23 @@
+{
+    "id": "bottle_bounty",
+    "title": "현상금 룬 Rune of Bounty",
+    "desc": "50 EXP, 50 GOLD",
+    "img": "data/images/items/Bottle_bounty_icon.png",
+    "cost": "-",
+    "story": "",
+    "info": "50의 경험치와 50의 불안전 골드를 얻습니다.",
+    "table": [
+        ["경험치", "50"],
+        ["골드", "50"]
+    ],
+    "note": [
+        "매치 시작시 생성되는 최초 현상금 룬은 100의 경험치와 100의 골드를 제공합니다."
+    ],
+    "ability": "",
+    "affect": "",
+    "type": "",
+    "recipe": [
+        ["bottle", "data/images/items/bottle_lg.png"]
+    ],
+    "upgrade": []
+}

@@ -1,26 +1,25 @@
 {
     "id": "chainmail",
-    "title": "쇠사슬 갑옷 Chainmail",
+    "title": "사슬 갑옷 Chainmail",
     "desc": "방어력 +5",
     "img": "data/images/items/chainmail_lg.png",
     "cost": "550",
-    "story": "",
+    "story": "쇠사슬로 촘촘히 엮어낸 갑옷입니다.",
     "info": "",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["방어력", "+5"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "ability": "",
+    "affect": "",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png" , 2],
-        ["bfury", "data/images/items/bfury_lg.png" ],
-        ["blink", "data/images/items/blink_lg.png"]
+    ],
+    "upgrade": [
+        ["buckler_lg", "data/images/items/buckler_lg.png"],
+        ["medallion_of_courage_lg", "data/images/items/medallion_of_courage_lg.png"],
+        ["blade_mail", "data/images/items/blade_mail_lg.png"],
+        ["assault", "data/images/items/assault_lg.png"]
     ]
 }

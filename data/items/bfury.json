@@ -4,23 +4,28 @@
     "desc": "피해 +65, 체력 재생 +6, 마나 재생 +150%, 가르기 피해량 35%",
     "img": "data/images/items/bfury_lg.png",
     "cost": "4350",
-    "story": "가르기 - 목표 주변 250 범위에 공격력의 일정 비율만큼 피해를 줍니다. 원거리 영웅에게는 효과가 적용되지 않습니다.",
-    "info": "가르기 - 목표 주변 250 범위에 공격력의 일정 비율만큼 피해를 줍니다. 원거리 영웅에게는 효과가 적용되지 않습니다.",
+    "story": "이 막강한 도끼를 다루는 자는 적을 풀 베듯이 쓰러뜨릴 수 있습니다.",
+    "info": "가르기(Cleave) - 목표 주변 250 범위에 공격력의 일정 비율만큼 피해를 줍니다. 원거리 영웅에게는 효과가 적용되지 않습니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["피해", "+65"],
+        ["체력 재생", "+6"],
+        ["마나 재생", "+150%"],
+        ["가르기: 범위", "250"],
+        ["가르기: 피해", "35%"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "착용한 영웅의 정면에서만 가르기 효과가 발생합니다.",
+        "가르기 효과는 중첩됩니다. 여러 개의 전장격노를 사용할 수 있습니다.",
+        "가르기 효과는 와드나 건물 또는 아군 유닛에는 적용되지 않습니다.",
+        "원거리 영웅은 가르기 효과를 사용할 수 없습니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "ability": "패시브",
+    "affect": "적군",
+    "type": "물리 피해",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png" , 2],
-        ["bfury", "data/images/items/bfury_lg.png" ],
-        ["blink", "data/images/items/blink_lg.png"]
-    ]
+        ["broadsword", "data/images/items/broadsword_lg.png"],
+        ["claymore", "data/images/items/claymore_lg.png"],
+        ["pers", "data/images/items/pers_lg.png"]
+    ],
+    "upgrade": []
 }

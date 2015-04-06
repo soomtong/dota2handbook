@@ -162,7 +162,7 @@
         "spec_type": "피사", "price": 450 
     },
     {
-        "id": "128_chainmail", "title": "쇠사슬 갑옷", "subtitle": "Chainmail",
+        "id": "128_chainmail", "title": "사슬 갑옷", "subtitle": "Chainmail",
         "pic": "data/images/items/chainmail_lg.png",
         "item_category": 3, "item_type": "armament,basic,side,life",
         "spec_type": "방사", "price": 550 
@@ -842,6 +842,12 @@
     {
         "id": "505_bottle_illusion", "title": "환영화 룬", "subtitle": "Rune of Illusion",
         "pic": "data/images/items/Bottle_illusion_icon.png",
+        "item_category": 12, "item_type": "rune",
+        "spec_type": "", "price": 0 
+    },
+    {
+        "id": "506_bottle_bounty", "title": "현상금 룬", "subtitle": "Rune of Bounty",
+        "pic": "data/images/items/Bottle_bounty_icon.png",
         "item_category": 12, "item_type": "rune",
         "spec_type": "", "price": 0 
     },

@@ -3,24 +3,20 @@
     "title": "더블데미지 룬 Rune of Double Damage",
     "desc": "2배 공격력 / 45s",
     "img": "data/images/items/Bottle_doubledamage_icon.png",
-    "cost": "",
-    "story": "45초 동안 기본 공격력이 2배로 증가합니다.",
+    "cost": "-",
+    "story": "",
     "info": "45초 동안 기본 공격력이 2배로 증가합니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["지속시간", "45초"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "오직 기본 능력치에 기반을 둔 공격력이 100% 증가합니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "ability": "",
+    "affect": "",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png" , 2],
-        ["bfury", "data/images/items/bfury_lg.png" ],
-        ["blink", "data/images/items/blink_lg.png"]
-    ]
+        ["bottle", "data/images/items/bottle_lg.png"]
+    ],
+    "upgrade": []
 }

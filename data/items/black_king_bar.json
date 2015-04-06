@@ -4,23 +4,25 @@
     "desc": "힘 +10, 피해 +24, 지속 시간 10/9/8/7/6/5/4",
     "img": "data/images/items/black_king_bar_lg.png",
     "cost": "3975",
-    "story": "화신 - 마법 면역 효과를 부여합니다. 사용 시마다 지속시간과 쿨다운이 줄어듭니다. 일부 궁극기는 칠흑왕의 지팡이 효과를 무시할 수 있습니다.",
+    "story": "거인들의 힘이 주입된 강력한 지팡이입니다.",
     "info": "화신 - 마법 면역 효과를 부여합니다. 사용 시마다 지속시간과 쿨다운이 줄어듭니다. 일부 궁극기는 칠흑왕의 지팡이 효과를 무시할 수 있습니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["힘", "+10"],
+        ["피해", "+24"],
+        ["화신: 지속시간", "10/9/8/7/6/5초"],
+        ["화신: 쿨다운", "80/75/70/65/60/55초"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "화신의 지속시간과 쿨다운은 착용 영웅에게 귀속됩니다. 아이템을 다시 구매해도 초기화되지 않습니다.",
+        "기술 시전시 시전자의 집중 기술을 중단합니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "ability": "",
+    "affect": "자신",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png" , 2],
-        ["bfury", "data/images/items/bfury_lg.png" ],
-        ["blink", "data/images/items/blink_lg.png"]
-    ]
+        ["ogre_axe", "data/images/items/ogre_axe_lg.png"],
+        ["mithril_hammer", "data/images/items/mithril_hammer_lg.png"],
+        ["recipe", "data/images/items/recipe_lg.png"]
+    ],
+    "upgrade": []
 }

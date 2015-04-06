@@ -196,7 +196,7 @@ var Items = React.createClass({
         }
         return (
             <li id={ item.id }>
-                <img src={ item.pic } alt={ item.subtitle } />
+                <img src={ item.pic } alt={ item.subtitle }/>
                 <b className="title">{ item.title }</b>
                 <small className="subtitle">{ item.subtitle }</small>
                 <b className={ Item.showTypeColor(item.item_category) }>{ Item.showType(item.item_category) }</b>

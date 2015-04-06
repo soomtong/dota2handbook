@@ -9,16 +9,14 @@
     "table": [
         ["민첩", "+10"]
     ],
-    "note": [
-    ],
+    "note": [],
     "ability": "",
     "affect": "",
     "type": "",
-    "recipe": [
-    ],
+    "recipe": [],
     "upgrade": [
-        ["ultimate_scepter", "data/images/items/ultimate_scepter_lg.png"],
+        ["yasha", "data/images/items/yasha_lg.png"],
         ["diffusal_blade", "data/images/items/diffusal_blade_lg.png"],
-        ["yasha", "data/images/items/yasha_lg.png"]
+        ["ultimate_scepter", "data/images/items/ultimate_scepter_lg.png"]
     ]
 }

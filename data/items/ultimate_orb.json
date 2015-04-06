@@ -11,17 +11,16 @@
         ["민첩", "+10"],
         ["지능", "+10"]
     ],
-    "note": [
-    ],
+    "note": [],
     "ability": "",
     "affect": "",
     "type": "",
-    "recipe": [
-    ],
+    "recipe": [],
     "upgrade": [
         ["skadi", "data/images/items/skadi_lg.png"],
         ["sphere", "data/images/items/sphere_lg.png"],
         ["sheepstick", "data/images/items/sheepstick_lg.png"],
         ["manta", "data/images/items/manta_lg.png"]
-    ]
+    ],
+    "upgrade": []
 }

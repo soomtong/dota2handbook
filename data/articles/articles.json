@@ -5,6 +5,11 @@
     "article_category": 1, "article_type": "메"
   },
   {
+    "id": "100_mechanism_2", "title": "마법 면역", "subtitle": "Spell Immunity",
+    "pic": "data/images/items/quelling_blade_lg.png",
+    "article_category": 1, "article_type": "메"
+  },
+  {
     "id": "101_lip_dota", "title": "입도타 리스트", "subtitle": "Symphony of skill",
     "pic": "data/images/items/courier_lg.png",
     "article_category": 3, "article_type": "드"

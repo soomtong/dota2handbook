@@ -9,15 +9,14 @@
     "table": [
         ["방어력", "+2"]
     ],
-    "note": [
-    ],
+    "note": [],
     "ability": "",
     "affect": "",
     "type": "",
-    "recipe": [
-    ],
+    "recipe": [],
     "upgrade": [
         ["ring_of_basilius", "data/images/items/ring_of_basilius_lg.png"],
         ["tranquil_boots", "data/images/items/tranquil_boots_lg.png"]
-    ]
+    ],
+    "upgrade": []
 }

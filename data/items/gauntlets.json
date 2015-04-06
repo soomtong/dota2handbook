@@ -9,15 +9,14 @@
     "table": [
         ["힘", "+3"]
     ],
-    "note": [
-    ],
+    "note": [],
     "ability": "",
     "affect": "",
     "type": "",
-    "recipe": [
-    ],
+    "recipe": [],
     "upgrade": [
         ["bracer", "data/images/items/bracer_lg.png"],
         ["urn_of_shadows", "data/images/items/urn_of_shadows_lg.png"]
-    ]
+    ],
+    "upgrade": []
 }

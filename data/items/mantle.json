@@ -9,14 +9,13 @@
     "table": [
         ["지능", "+3"]
     ],
-    "note": [
-    ],
+    "note": [],
     "ability": "",
     "affect": "",
     "type": "",
-    "recipe": [
-    ],
+    "recipe": [],
     "upgrade": [
         ["null_talisman", "data/images/items/null_talisman_lg.png"]
-    ]
+    ],
+    "upgrade": []
 }

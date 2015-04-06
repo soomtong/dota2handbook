@@ -4,23 +4,25 @@
     "desc": "힘 +6, 민첩 +3, 지능 +3, 피해 +3",
     "img": "data/images/items/bracer_lg.png",
     "cost": "525",
-    "story": "",
+    "story": "방어력을 키우고 생존력을 강화하는 데 자주 쓰이는 팔찌입니다.",
     "info": "",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["힘", "+6"],
+        ["민첩", "+3"],
+        ["지능", "+3"],
+        ["피해", "+3"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "ability": "",
+    "affect": "",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png" , 2],
-        ["bfury", "data/images/items/bfury_lg.png" ],
-        ["blink", "data/images/items/blink_lg.png"]
+        ["gauntlets", "data/images/items/gauntlets_lg.png"],
+        ["circlet", "data/images/items/circlet_lg.png"],
+        ["recipe", "data/images/items/recipe_lg.png"]
+    ],
+    "upgrade": [
+        ["ancient_janggo", "data/images/items/ancient_janggo_lg.png"]
     ]
 }

@@ -4,23 +4,29 @@
     "desc": "방어력 +5, 모든 능력치 +2",
     "img": "data/images/items/buckler_lg.png",
     "cost": "800",
-    "story": "보너스 방어력 - 주변 아군 유닛이 +2의 보너스 방어력을 얻습니다.",
-    "info": "보너스 방어력 - 주변 아군 유닛이 +2의 보너스 방어력을 얻습니다.",
+    "story": "옛 영웅의 힘을 부여하는 강력한 방패입니다. 전투에서 부대 전체를 보호할 수 있습니다.",
+    "info": "보너스 방어력(Armor Bonus) - 주변 아군 유닛이 +2의 보너스 방어력을 얻습니다. 영웅에게는 25초 동안, 일반 유닛에게는 30초 동안 효과가 유지됩니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["방어력", "+5"],
+        ["모든 능력치", "+2"],
+        ["보너스 방어력: 효과 범위", "750"],
+        ["보너스 방어력: 쿨다운", "25초"],
+        ["보너스 방어력: 시전 필요 마나", "10"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "메칸즘이나 핏빛 수호의 보너스 방어력과 중복되지 않습니다.",
+        "기술 시전시 시전자의 집중 기술을 중단합니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
+    "ability": "",
     "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png" , 2],
-        ["bfury", "data/images/items/bfury_lg.png" ],
-        ["blink", "data/images/items/blink_lg.png"]
+        ["branches", "data/images/items/branches_lg.png"],
+        ["chainmail", "data/images/items/chainmail_lg.png"],
+        ["recipe", "data/images/items/recipe_lg.png"]
+    ],
+    "upgrade": [
+        ["mekansm", "data/images/items/mekansm_lg.png"],
+        ["crimson_guard", "data/images/items/crimson_guard_lg.png"]
     ]
 }

@@ -11,8 +11,7 @@
         ["민첩", "+2"],
         ["지능", "+2"]
     ],
-    "note": [
-    ],
+    "note": [],
     "ability": "",
     "affect": "",
     "type": "",
@@ -20,5 +19,6 @@
         ["bracer", "data/images/items/bracer_lg.png"],
         ["null_talisman", "data/images/items/null_talisman_lg.png"],
         ["wraith_band", "data/images/items/wraith_band_lg.png"]
-    ]
+    ],
+    "upgrade": []
 }

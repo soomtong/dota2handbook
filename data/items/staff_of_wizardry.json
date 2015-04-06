@@ -9,13 +9,11 @@
     "table": [
         ["지능", "+10"]
     ],
-    "note": [
-    ],
+    "note": [],
     "ability": "",
     "affect": "",
     "type": "",
-    "recipe": [
-    ],
+    "recipe": [],
     "upgrade": [
         ["ultimate_scepter", "data/images/items/ultimate_scepter_lg.png"],
         ["dagon", "data/images/items/dagon_lg.png"],
@@ -23,5 +21,6 @@
         ["force_staff", "data/images/items/force_staff_lg.png"],
         ["necronomicon", "data/images/items/necronomicon_lg.png"],
         ["rod_of_atos", "data/images/items/rod_of_atos_lg.png"]
-    ]
+    ],
+    "upgrade": []
 }

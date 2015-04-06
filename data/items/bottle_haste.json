@@ -3,24 +3,21 @@
     "title": "신속화 룬 Rune of Haste",
     "desc": "최대 이속 / 30s",
     "img": "data/images/items/Bottle_haste_icon.png",
-    "cost": "",
-    "story": "30초 동안 이동속도가 최대로 증가합니다.",
+    "cost": "-",
+    "story": "",
     "info": "30초 동안 이동속도가 최대로 증가합니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["이동속도", "522"],
+        ["지속시간", "30초"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "모든 이동속도 감소 효과를 무시합니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "ability": "",
+    "affect": "",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png" , 2],
-        ["bfury", "data/images/items/bfury_lg.png" ],
-        ["blink", "data/images/items/blink_lg.png"]
-    ]
+        ["bottle", "data/images/items/bottle_lg.png"]
+    ],
+    "upgrade": []
 }

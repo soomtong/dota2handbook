@@ -17,6 +17,6 @@
     "ability": "지정된 유닛(더블 클릭시 자신에게 적용)",
     "affect": "아군",
     "type": "",
-    "recipe": [
-    ]
+    "recipe": [],
+    "upgrade": []
 }

@@ -9,17 +9,15 @@
     "table": [
         ["힘", "+6"]
     ],
-    "note": [
-    ],
+    "note": [],
     "ability": "",
     "affect": "",
     "type": "",
-    "recipe": [
-    ],
+    "recipe": [],
     "upgrade": [
-        ["basher", "data/images/items/basher_lg.png"],
-        ["necronomicon", "data/images/items/necronomicon_lg.png"],
         ["power_treads", "data/images/items/power_treads_lg.png"],
-        ["sange", "data/images/items/sange_lg.png"]
+        ["sange", "data/images/items/sange_lg.png"],
+        ["necronomicon", "data/images/items/necronomicon_lg.png"],
+        ["basher", "data/images/items/basher_lg.png"]
     ]
 }

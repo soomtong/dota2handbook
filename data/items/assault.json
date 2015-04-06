@@ -4,23 +4,29 @@
     "desc": "공격 속도 +35, 방어력 +10, 공격 속도 오라 20, 방어력 오라 5(적 방어력 감소 5)",
     "img": "data/images/items/assault_lg.png",
     "cost": "5250",
-    "story": "돌격 오라 - 효과 범위 내에서 아군의 공격 속도와 방어력을 상승시키고 적의 방어력을 감소시킵니다.",
-    "info": "돌격 오라 - 효과 범위 내에서 아군의 공격 속도와 방어력을 상승시키고 적의 방어력을 감소시킵니다.",
+    "story": "황천의 틈에서 벼려진 이 섬뜩한 갑옷을 착용하면 방어력과 공격 속도가 증가합니다.",
+    "info": "돌격 오라(Assault Aura) - 효과 범위 내에서 아군의 공격 속도와 방어력을 상승시키고 적의 방어력을 감소시킵니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["공격속도", "+35"],
+        ["방어력", "+10"],
+        ["돌격 오라: 범위", "900"],
+        ["돌격 오라: 공격속도", "+20"],
+        ["돌격 오라: 아군 방어력", "+5"],
+        ["돌격 오라: 적군 방어력", "-5"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "돌격 오라의 효과는 다른 이동속도 증가 효과나 방어력 증가/감소 효과와 함께 사용가능합니다.",
+        "돌격 오라의 효과는 서로 중첩되지 않습니다.",
+        "돌격 오라는 무적 상태의 아군과 적군에도 영향을 줍니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "ability": "오라",
+    "affect": "영웅",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png" , 2],
-        ["bfury", "data/images/items/bfury_lg.png" ],
-        ["blink", "data/images/items/blink_lg.png"]
-    ]
+        ["chainmail", "data/images/items/chainmail_lg.png"],
+        ["platemail", "data/images/items/platemail_lg.png"],
+        ["hyperstone", "data/images/items/hyperstone_lg.png"],
+        ["recipe", "data/images/items/recipe_lg.png"]
+    ],
+    "upgrade": []
 }

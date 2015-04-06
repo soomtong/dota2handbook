@@ -3,24 +3,22 @@
     "title": "투명화 룬 Rune of Invisibility",
     "desc": "투명화 / 45s",
     "img": "data/images/items/Bottle_invisibility_icon.png",
-    "cost": "",
-    "story": "45초 동안 투명화 상태가 됩니다.",
+    "cost": "-",
+    "story": "",
     "info": "45초 동안 투명화 상태가 됩니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["지속시간", "45초"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "투명화 되기까지 2초의 시간이 소요됩니다.",
+        "투명화 되기까지 2초 이내의 시간동안 공격이나 능력 사용 아이템 사용이 가능합니다.",
+        "공격을 하거나 능력을 사용하거나 아이템을 사용하면 투명화가 해제됩니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "ability": "",
+    "affect": "",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png" , 2],
-        ["bfury", "data/images/items/bfury_lg.png" ],
-        ["blink", "data/images/items/blink_lg.png"]
-    ]
+        ["bottle", "data/images/items/bottle_lg.png"]
+    ],
+    "upgrade": []
 }

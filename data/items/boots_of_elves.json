@@ -9,13 +9,11 @@
     "table": [
         ["민첩", "+6"]
     ],
-    "note": [
-    ],
+    "note": [],
     "ability": "",
     "affect": "",
     "type": "",
-    "recipe": [
-    ],
+    "recipe": [],
     "upgrade": [
         ["power_treads", "data/images/items/power_treads_lg.png"],
         ["yasha", "data/images/items/yasha_lg.png"]

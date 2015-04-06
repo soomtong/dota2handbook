@@ -22,8 +22,9 @@
     "affect": "아군",
     "type": "마법 또는 일반   ",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png" , 2],
-        ["bfury", "data/images/items/bfury_lg.png" ],
+        ["clarity", "data/images/items/clarity_lg.png"],
+        ["bfury", "data/images/items/bfury_lg.png"],
         ["blink", "data/images/items/blink_lg.png"]
-    ]
+    ],
+    "upgrade": []
 }

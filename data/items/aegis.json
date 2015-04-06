@@ -3,24 +3,22 @@
     "title": "불멸의 아이기스 Aegis of the Immortal",
     "desc": "부활 / 5s",
     "img": "data/images/items/Aegis_of_the_Immortal_icon.png",
-    "cost": "",
-    "story": "이 아이템을 지닌 영웅이 사망하면 5초 후에 모든 체력과 마나가 채워진 상태로 부활합니다.",
+    "cost": "-",
+    "story": "불멸자, 그는 죽음을 극복하는 무언가를 가지고 있다고 전해진다.",
     "info": "이 아이템을 지닌 영웅이 사망하면 5초 후에 모든 체력과 마나가 채워진 상태로 부활합니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["효과 지속시간", "5분"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "'이지스'라고 발음합니다.",
+        "죽은 후 부활까지 대기 시간 동안 0.1초당 2%의 체력과 마나를 회복하는 구조입니다.",
+        "'망령제왕'이 지니고 있을 경우 부활 스킬이 먼저 사용됩니다.",
+        "스킬과 아이템의 쿨다운을 초기화하지 않습니다.",
+        "'로샨'은 죽은 후 8분~11분 사이에 부활합니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
-    "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png" , 2],
-        ["bfury", "data/images/items/bfury_lg.png" ],
-        ["blink", "data/images/items/blink_lg.png"]
-    ]
+    "ability": "패시브",
+    "affect": "자신",
+    "type": "",
+    "recipe": [],
+    "upgrade": []
 }

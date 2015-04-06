@@ -4,23 +4,21 @@
     "desc": "이동 속도 +50",
     "img": "data/images/items/boots_lg.png",
     "cost": "450",
-    "story": "장화의 이동 속도 증가 효과는 서로 중첩되지 않습니다.",
-    "info": "장화의 이동 속도 증가 효과는 서로 중첩되지 않습니다.",
+    "story": "이동 속도를 높여주는 빠른 신발입니다.",
+    "info": "장화의 이동속도 증가 효과는 서로 중첩되지 않습니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["이동속도", "+50"]
     ],
-    "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
-    ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
-    "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png" , 2],
-        ["bfury", "data/images/items/bfury_lg.png" ],
-        ["blink", "data/images/items/blink_lg.png"]
+    "note": [],
+    "ability": "",
+    "affect": "",
+    "type": "",
+    "recipe": [],
+    "upgrade": [
+        ["tranquil_boots", "data/images/items/tranquil_boots_lg.png"],
+        ["phase_boots", "data/images/items/phase_boots_lg.png"],
+        ["power_treads", "data/images/items/power_treads_lg.png"],
+        ["arcane_boots", "data/images/items/arcane_boots_lg.png"],
+        ["travel_boots", "data/images/items/travel_boots_lg.png"]
     ]
 }

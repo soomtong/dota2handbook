@@ -4,23 +4,30 @@
     "desc": "피해 +40, 힘 +6, 근접 확률 25%, 원거리 10%",
     "img": "data/images/items/basher_lg.png",
     "cost": "2950",
-    "story": "강타 - 일정 확률로 대상을 1.4초 동안 기절시킵니다.",
+    "story": "정의로운 손에 쥐어지면 무시무시한 무기가 되는 이 망치는 적의 방어를 무너뜨릴 수 있으며 절대 과소평가할 수 없습니다.",
     "info": "강타 - 일정 확률로 대상을 1.4초 동안 기절시킵니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["피해", "4"],
+        ["힘", "4"],
+        ["강타: 근접 확률", "25%"],
+        ["강타: 원거리 확률", "10%"],
+        ["강타: 쿨다운", "2초"],
+        ["강타: 스턴시간", "1.4초"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "강타 효과는 마법면역을 무시합니다. 칠흑왕의 지팡이가 활성화되어 있어도 적용됩니다.",
+        "'슬라다', '영혼 파괴자', '트롤 전쟁군주', '얼굴없는 전사' 는 착용할 수 없습니다.",
+        "'여의봉'과 함께 사용할 수 있습니다. 동시에 발동한다면 강타 효과만 적용됩니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "ability": "패시브",
+    "affect": "적군",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png" , 2],
-        ["bfury", "data/images/items/bfury_lg.png" ],
-        ["blink", "data/images/items/blink_lg.png"]
+        ["belt_of_strength", "data/images/items/belt_of_strength_lg.png"],
+        ["javelin", "data/images/items/javelin_lg.png"],
+        ["recipe", "data/images/items/recipe_lg.png"]
+    ],
+    "upgrade": [
+        ["abyssal_blade", "data/images/items/abyssal_blade_lg.png"]
     ]
 }

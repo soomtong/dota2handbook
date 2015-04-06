@@ -9,18 +9,17 @@
     "table": [
         ["지능", "+6"]
     ],
-    "note": [
-    ],
+    "note": [],
     "ability": "",
     "affect": "",
     "type": "",
-    "recipe": [
-    ],
+    "recipe": [],
     "upgrade": [
         ["ancient_janggo", "data/images/items/ancient_janggo_lg.png"],
         ["blade_mail", "data/images/items/blade_mail_lg.png"],
         ["diffusal_blade", "data/images/items/diffusal_blade_lg.png"],
         ["oblivion_staff", "data/images/items/oblivion_staff_lg.png"],
         ["power_treads", "data/images/items/power_treads_lg.png"]
-    ]
+    ],
+    "upgrade": []
 }

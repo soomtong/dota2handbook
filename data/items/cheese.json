@@ -3,24 +3,21 @@
     "title": "치즈 Cheese",
     "desc": "2500HP, 1000MP",
     "img": "data/images/items/Cheese_icon.png",
-    "cost": "",
-    "story": "사용 즉시 2500의 체력과 1000의 마나를 회복합니다.",
-    "info": "사용 즉시 2500의 체력과 1000의 마나를 회복합니다.",
+    "cost": "-",
+    "story": "",
+    "info": "치즈 먹기(Eat Cheese) - 사용 즉시 2500의 체력과 1000의 마나를 회복합니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["치즈 먹기: 회복 체력", "2500"],
+        ["치즈 먹기: 회복 마나", "1000"],
+        ["치즈 먹기: 쿨다운", "40초"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "세번째 로샨이 죽었을 때부터 치즈를 드랍합니다.",
+        "모든 상점에 500골드로 판매할 수 있습니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
-    "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png" , 2],
-        ["bfury", "data/images/items/bfury_lg.png" ],
-        ["blink", "data/images/items/blink_lg.png"]
-    ]
+    "ability": "",
+    "affect": "자신",
+    "type": "",
+    "recipe": [],
+    "upgrade": []
 }

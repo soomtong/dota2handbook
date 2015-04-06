@@ -4,23 +4,28 @@
     "desc": "민첩 +30, 피해 +30, 회피 +35%, 공격 속도 +30",
     "img": "data/images/items/butterfly_lg.png",
     "cost": "6000",
-    "story": "",
-    "info": "",
+    "story": "전투에서 뛰어난 솜씨를 발휘할 수 있게 해 주는 무기로, 가장 강력하고 숙련된 전사만이 나비검을 휘두를 수 있습니다.",
+    "info": "날갯짓(Flutter) - 회피 보너스를 포기하고 8.0초 동안 20% 이동 속도 증가 효과를 얻습니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["민첩", "+30"],
+        ["피해", "+30"],
+        ["회피", "+30%"],
+        ["공격속도", "+30"],
+        ["날갯짓: 지속시간", "8초"],
+        ["날갯짓: 보너스 이동 속도", "20%"],
+        ["날갯짓: 쿨다운", "35초"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "소환된 환영은 회피 효과를 가지지만 보너스 이동 속도를 얻지 않습니다.",
+        "기술 시전시 시전자의 집중 기술을 중단합니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "ability": "",
+    "affect": "자신",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png" , 2],
-        ["bfury", "data/images/items/bfury_lg.png" ],
-        ["blink", "data/images/items/blink_lg.png"]
-    ]
+        ["quarterstaff", "data/images/items/quarterstaff_lg.png"],
+        ["talisman_of_evasion", "data/images/items/talisman_of_evasion_lg.png"],
+        ["eagle", "data/images/items/eagle_lg.png"]
+    ],
+    "upgrade": []
 }

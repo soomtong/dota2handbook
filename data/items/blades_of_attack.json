@@ -4,23 +4,19 @@
     "desc": "피해 +9",
     "img": "data/images/items/blades_of_attack_lg.png",
     "cost": "450",
-    "story": "",
+    "story": "쉽게 감출 수 있는 이 작은 칼날은 절대 무시할 수 없는 피해를 줍니다.",
     "info": "",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["피해", "+9"]
     ],
-    "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
-    ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
-    "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png" , 2],
-        ["bfury", "data/images/items/bfury_lg.png" ],
-        ["blink", "data/images/items/blink_lg.png"]
+    "note": [],
+    "ability": "",
+    "affect": "",
+    "type": "",
+    "recipe": [],
+    "upgrade": [
+        ["phase_boots", "data/images/items/phase_boots_lg.png"],
+        ["lesser_crit", "data/images/items/lesser_crit_lg.png"],
+        ["armlet", "data/images/items/armlet_lg.png"]
     ]
 }

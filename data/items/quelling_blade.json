@@ -24,6 +24,6 @@
     "ability": "대상 유닛 또는 와드, 패시브",
     "affect": "유닛",
     "type": "",
-    "recipe": [
-    ]
+    "recipe": [],
+    "upgrade": []
 }

@@ -4,23 +4,29 @@
     "desc": "피해 +22, 방어력 +6, 지능 +10",
     "img": "data/images/items/blade_mail_lg.png",
     "cost": "2200",
-    "story": "피해 반사 - 받은 피해를 반사하여 피해를 준 유닛에게 되돌립니다. 4.5초 동안 지속됩니다.",
-    "info": "피해 반사 - 받은 피해를 반사하여 피해를 준 유닛에게 되돌립니다. 4.5초 동안 지속됩니다.",
+    "story": "칼날을 두른 이 갑옷은 전투에서 희생을 마다하지 않는 순교자들이 입는 방어구입니다.",
+    "info": "피해 반사(Damage Return) - 받은 피해를 반사하여 피해를 준 유닛에게 되돌립니다. 4.5초 동안 지속됩니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["피해", "+22"],
+        ["방어력", "+6"],
+        ["지능", "+10"],
+        ["피해 반사: 반사 데미지", "100%"],
+        ["피해 반사: 지속 시간", "4.5초"],
+        ["피해 반사: 쿨다운", "17초"],
+        ["피해 반사: 시전 필요 마나", "25"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "자신에게 가해진 피해감소 효과를 통해 계산된 피해만 반사됩니다.",
+        "체력 소모 효과는 피해 반사에 적용되지 않습니다.",
+        "기술 시전시 시전자의 집중 기술을 중단합니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "ability": "",
+    "affect": "적군",
+    "type": "순수 피해",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png" , 2],
-        ["bfury", "data/images/items/bfury_lg.png" ],
-        ["blink", "data/images/items/blink_lg.png"]
-    ]
+        ["robe", "data/images/items/robe_lg.png"],
+        ["chainmail", "data/images/items/chainmail_lg.png"],
+        ["broadsword", "data/images/items/broadsword_lg.png"]
+    ],
+    "upgrade": []
 }

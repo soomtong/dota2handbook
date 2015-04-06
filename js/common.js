@@ -38,7 +38,9 @@ Panel = {
 
             // hack?, just works
             $.get('data/images/background/' + img).done(function (data) {
-                $('body').css('background-image', 'url(data/images/background/' + img + ')');
+                setTimeout(function () {
+                    $('body').css('background-image', 'url(data/images/background/' + img + ')');
+                }, 100);
             }).fail();
         }
 
