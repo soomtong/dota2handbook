@@ -1,0 +1,29 @@
+{
+    "id": "crimson_guard",
+    "title": "핏빛 수호 Crimson Guard",
+    "desc": "마나 재생 +50%, 힘 +6, 400HP / 8s",
+    "img": "data/images/items/crimson_guard_lg.png",
+    "cost": "875",
+    "story": "모두가 두려워하는 봄의 해괴수에 맞서고자 제작된 흉갑입니다. ",
+    "info": [
+        "시전 기술: 핏빛 수호 - 주위 아군 영웅에게 2의 방어력을 부여하고 공격을 받을 때마다 100% 확률로 50의 피해를 방어하는 효과를 줍니다. 10초 동안 지속됩니다.",
+        "지속 효과: 피해 방어 - 아이템을 보유한 영웅이 원거리인지 근접인지에 따라 각각 일정 확률로 피해를 방어합니다. "
+    ],
+    "table": [
+        ["마나", "4"],
+        ["쿨다운", "4"]
+    ],
+    "note": [
+        "100MP / 30s",
+        "공격을 받으면 마나 재생이 중단된다.",
+        "1초당 33마나 재생"
+    ],
+    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
+    "affect": "아군",
+    "type": "마법 또는 일반   ",
+    "recipe": [
+        ["clarity", "data/images/items/clarity_lg.png" , 2],
+        ["bfury", "data/images/items/bfury_lg.png" ],
+        ["blink", "data/images/items/blink_lg.png"]
+    ]
+}

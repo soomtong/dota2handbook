@@ -3,7 +3,7 @@
     "title": "용기의 메달 Medallion of Courage",
     "desc": "방어력 +6, 마나 재생 +50%, 방어력 감소 6 / 7s",
     "img": "data/images/items/medallion_of_courage_lg.png",
-    "cost": "1075",
+    "cost": "1200",
     "story": "용맹 - 자신과 대상의 방어력을 감소시킵니다. 7초 동안 지속됩니다.",
     "info": "용맹 - 자신과 대상의 방어력을 감소시킵니다. 7초 동안 지속됩니다.",
     "table": [

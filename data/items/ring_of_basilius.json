@@ -3,7 +3,7 @@
     "title": "바실리우스의 반지 Ring of Basilius",
     "desc": "피해 +6, 방어력 +1, 마나 재생 오라 0.65, 방어력 오라 2",
     "img": "data/images/items/ring_of_basilius_lg.png",
-    "cost": "500",
+    "cost": "525",
     "story": "바실리우스 오라 - 900의 범위 내에서 마나 회복과 방어력을 올려 줍니다.",
     "info": "바실리우스 오라 - 900의 범위 내에서 마나 회복과 방어력을 올려 줍니다.",
     "table": [

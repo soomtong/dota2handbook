@@ -139,7 +139,7 @@ var Items = React.createClass({
     },
     render: function () {
         var item = this.props.data;
-        var data, detail, ability, affect, type;
+        var data, detail, ability, affect, type, info;
         if (this.state.detail) {
             data = this.state.detail;
             if (data['ability']) {
@@ -151,12 +151,19 @@ var Items = React.createClass({
             if (data['type']) {
                 type = <p className="type">{ data['type'] }</p>
             }
+            if (_.isArray(data['info'])) {
+                info = data['info'].map(function (info) {
+                    return <p className="info lead">{ info }</p>;
+                })
+            } else {
+                info = <p className="info lead">{ data['info'] }</p>;
+            }
             detail = <div className="tools-alert detail-data">
                 <div className="deco"></div>
                 <span className="label label-yellow data-cost">{ data['cost'] }</span>
                 <h5>{ data['title'] }</h5>
                 <cite className="story">{ data['story'] }</cite>
-                <p className="info lead">{ data['info'] }</p>
+                { info }
                 <div className="data-table">{
                     _.isArray(data['table']) && data['table'].map(function (table) {
                         return <dl>

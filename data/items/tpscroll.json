@@ -3,7 +3,7 @@
     "title": "순간이동 주문서 Town Portal Scroll",
     "desc": "",
     "img": "data/images/items/tpscroll_lg.png",
-    "cost": "135",
+    "cost": "100",
     "story": "",
     "info": "순간이동 - 지정한 아군 건물로 순간이동합니다.",
     "table": [

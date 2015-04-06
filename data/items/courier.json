@@ -3,7 +3,7 @@
     "title": "동물 짐꾼 Animal Courier",
     "desc": "",
     "img": "data/images/items/courier_lg.png",
-    "cost": "150",
+    "cost": "120",
     "story": "이 동물을 잃는 자는 죽음으로 처벌받아 마땅합니다.",
     "info": "기지를 오가며 아이템을 전달하는 동물입니다.",
     "table": [

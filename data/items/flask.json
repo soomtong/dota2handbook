@@ -3,7 +3,7 @@
     "title": "치유 물약 Healing Salve",
     "desc": "400HP / 10s",
     "img": "data/images/items/flask_lg.png",
-    "cost": "115",
+    "cost": "110",
     "story": "깊은 상처도 빠르게 고쳐주는 마법의 물약입니다.",
     "info": "재생 - 대상 유닛에게 사용하여 지속해서 체력을 회복시킵니다. 공격을 받으면 효과가 중단됩니다.",
     "table": [

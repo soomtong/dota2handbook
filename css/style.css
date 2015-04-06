@@ -213,6 +213,10 @@ body {
 .detail-data span {
   color: #0f0f0f;
 }
+.detail-data p.info {
+  margin: 0.5em;
+  line-height: 1.4;
+}
 .detail-data .data-table {
   clear: both;
   border: 1px solid #4075bf;
@@ -226,7 +230,7 @@ body {
 .detail-data .data-table dl dt {
   float: left;
   clear: left;
-  width: 8em;
+  width: 46%;
   text-align: right;
   font-size: 0.9em;
   font-weight: bold;
@@ -235,7 +239,7 @@ body {
   padding: 0;
 }
 .detail-data .data-table dl dd {
-  margin: 4px 0 4px 8.5em;
+  margin-left: 54%;
   padding: 0;
 }
 .detail-data .data-note ul {
@@ -244,7 +248,7 @@ body {
   margin: 16px auto;
 }
 .detail-data .data-note li {
-  color: #666;
+  color: #484848;
   border: 0;
   list-style: circle;
   padding: 1px 0;
@@ -337,12 +341,6 @@ body {
   }
   .selector {
     display: none;
-  }
-  .data-table dl dt {
-    width: 8em !important;
-  }
-  .data-table dl dd {
-    margin-left: 8.5em !important;
   }
 }
 @media only screen and (max-width: 767px) {

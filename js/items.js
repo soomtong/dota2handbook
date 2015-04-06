@@ -139,7 +139,7 @@ var Items = React.createClass({displayName: "Items",
     },
     render: function () {
         var item = this.props.data;
-        var data, detail, ability, affect, type;
+        var data, detail, ability, affect, type, info;
         if (this.state.detail) {
             data = this.state.detail;
             if (data['ability']) {
@@ -151,12 +151,19 @@ var Items = React.createClass({displayName: "Items",
             if (data['type']) {
                 type = React.createElement("p", {className: "type"},  data['type'] )
             }
+            if (_.isArray(data['info'])) {
+                info = data['info'].map(function (info) {
+                    return React.createElement("p", {className: "info lead"},  info );
+                })
+            } else {
+                info = React.createElement("p", {className: "info lead"},  data['info'] );
+            }
             detail = React.createElement("div", {className: "tools-alert detail-data"}, 
                 React.createElement("div", {className: "deco"}), 
                 React.createElement("span", {className: "label label-yellow data-cost"},  data['cost'] ), 
                 React.createElement("h5", null,  data['title'] ), 
                 React.createElement("cite", {className: "story"},  data['story'] ), 
-                React.createElement("p", {className: "info lead"},  data['info'] ), 
+                 info, 
                 React.createElement("div", {className: "data-table"}, 
                     _.isArray(data['table']) && data['table'].map(function (table) {
                         return React.createElement("dl", null, 

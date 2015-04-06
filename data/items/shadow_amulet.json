@@ -3,7 +3,7 @@
     "title": "그림자 부적 Shadow Amulet",
     "desc": "공격 속도 +30",
     "img": "data/images/items/shadow_amulet_lg.png",
-    "cost": "1600",
+    "cost": "1400",
     "story": "사라지기 - 1.5초에 걸쳐 투명화됩니다. 움직이면 모습이 드러납니다.",
     "info": "사라지기 - 1.5초에 걸쳐 투명화됩니다. 움직이면 모습이 드러납니다.",
     "table": [

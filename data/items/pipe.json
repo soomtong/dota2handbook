@@ -3,7 +3,7 @@
     "title": "통찰의 파이프 Pipe of Insight",
     "desc": "체력 재생 +11, 주문 저항 +30%",
     "img": "data/images/items/pipe_lg.png",
-    "cost": "3625",
+    "cost": "3525",
     "story": "방어막 - 주위 아군 유닛에게 보호막을 걸어 400의 주문 피해를 막습니다.",
     "info": "방어막 - 주위 아군 유닛에게 보호막을 걸어 400의 주문 피해를 막습니다.",
     "table": [
