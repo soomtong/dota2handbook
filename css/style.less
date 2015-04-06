@@ -228,6 +228,7 @@ body {
 
 // details
 .detail-data {
+  .bordered(#eee, #f2f2f2, #ddd, #e2e2e2);
   .deco {
     .arrow-top(#eee, 7px, 14px);
   }
@@ -235,13 +236,125 @@ body {
     float: right;
     margin-top: 2px;
   }
-  .bordered(#eee, #f2f2f2, #ddd, #e2e2e2);
   margin: 0.5em 0;
   position: relative;
   background: hsla(@item-color, @bg-saturation, @bg-brighten, @bg-opacity);
   color: #0f0f0f;
   span {
     color: #0f0f0f;
+  }
+  .data-table {
+    clear: both;
+    border: 1px solid hsla(@item-color, 0.5, 0.5, 1);
+    margin: 8px auto;
+    padding: 4px 0;
+    dl {
+      margin: 0;
+      padding: 0;
+      dt {
+        float: left;
+        clear: left;
+        width: 8em;
+        text-align: right;
+        font-size: 0.9em;
+        font-weight: bold;
+        white-space: nowrap;
+        color: hsla(@item-color, 0.3, 0.3, 1);
+        padding: 0;
+      }
+      dd {
+        margin: 4px 0 4px 8.5em;
+        padding: 0;
+      }
+    }
+  }
+  .data-note {
+    ul {
+      border: 1px solid #c0c0c0;
+      padding: 8px 16px;
+      margin: 16px auto;
+    }
+    li {
+      color: #666;
+      border: 0;
+      list-style: circle;
+      padding: 1px 0;
+      margin-left: 1.5em;
+    }
+  }
+  .data-more {
+    padding: 1px 2px;
+    margin: 1px;
+    .ability::before {
+      content: "사용 : ";
+      color: #666;
+      font-size: 0.8em;
+    }
+    .ability {
+      content: 'prefix';
+      margin: 0;
+    }
+    .affect::before {
+      content: "대상 : ";
+      color: #666;
+      font-size: 0.8em;
+    }
+    .affect {
+      margin: 0;
+    }
+    .type::before {
+      content: "종류 : ";
+      color: #666;
+      font-size: 0.8em;
+    }
+    .type {
+      margin: 0;
+    }
+  }
+  .data-recipe {
+    .clearfix;    ul {
+      border: 1px solid #c0c0c0;
+      padding: 8px 16px;
+      margin: 16px auto;
+    }
+    li:first-child::before {
+      content: "하위 : ";
+      font-size: 0.8em;
+    }
+    li {
+      img {
+        height: 1.5em;
+      }
+      color: #666;
+      border: 0;
+      list-style: none;
+      padding: 1px 2px;
+      margin: 1px;
+      float: left;
+    }
+  }
+  .data-upgrade {
+    .clearfix;
+    ul {
+      border: 1px solid #c0c0c0;
+      padding: 8px 16px;
+      margin: 16px auto;
+    }
+    li:first-child::before {
+      content: "상위 : ";
+      font-size: 0.8em;
+    }
+    li {
+      img {
+        height: 1.5em;
+      }
+      color: #666;
+      border: 0;
+      list-style: none;
+      padding: 1px 2px;
+      margin: 1px;
+      float: left;
+    }
   }
 }
 
@@ -254,6 +367,16 @@ body {
   }
   .selector {
     display: none;
+  }
+  .data-table {
+    dl {
+      dt {
+        width: 8em !important;
+      }
+      dd {
+        margin-left: 8.5em !important;
+      }
+    }
   }
 }
 

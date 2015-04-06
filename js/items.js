@@ -82,7 +82,7 @@ var ItemFilter = React.createClass({displayName: "ItemFilter",
 var ItemList = React.createClass({displayName: "ItemList",
     render: function () {
         return (
-            React.createElement("div", {className: "nav nav-stats item-list"}, 
+            React.createElement("div", {className: "item-list"}, 
                 React.createElement("ul", null, 
                 this.props.viewList.map(function (item) {
                     return (
@@ -104,27 +104,29 @@ var Items = React.createClass({displayName: "Items",
     toggleDetail: function (e) {
         var $el = $(e.target), id;
 
-        if ($el.attr('id')) {
-            id = $el.attr('id').slice(4);
-        } else {
-            id = $el.parent().attr('id').slice(4);
-        }
+        if (!$el.hasClass('detail-data') && !$el.parents().hasClass('detail-data')) {
+            if ($el.attr('id')) {
+                id = $el.attr('id').slice(4);
+            } else {
+                id = $el.parent().attr('id').slice(4);
+            }
 
-        if (this.state.detail) {
-            this.setState({ detail: null });
+            if (this.state.detail) {
+                this.setState({ detail: null });
 
-            $el.remove('div.detail-data');
+                $el.remove('div.detail-data');
 
-            $el.removeClass('active');
-        } else {
-            if (id) {
-                $.getJSON('data/items/' + id + '.json', function (data) {
-                    if (this.isMounted()) {
-                        this.setState({ detail: data });
-                    }
-                }.bind(this));
+                $el.removeClass('active');
+            } else {
+                if (id) {
+                    $.getJSON('data/items/' + id + '.json', function (data) {
+                        if (this.isMounted()) {
+                            this.setState({ detail: data });
+                        }
+                    }.bind(this));
 
-                $el.addClass('active');
+                    $el.addClass('active');
+                }
             }
         }
     },
@@ -137,10 +139,53 @@ var Items = React.createClass({displayName: "Items",
     },
     render: function () {
         var item = this.props.data;
-        var detail, child;
+        var data, detail, ability, affect, type;
         if (this.state.detail) {
-            child = React.addons.createFragment(this.state.detail);
-            detail = React.createElement("div", {className: "tools-alert detail-data"},  child )
+            data = this.state.detail;
+            if (data['ability']) {
+                ability = React.createElement("p", {className: "ability"},  data['ability'] )
+            }
+            if (data['affect']) {
+                affect = React.createElement("p", {className: "affect"},  data['affect'] )
+            }
+            if (data['type']) {
+                type = React.createElement("p", {className: "type"},  data['type'] )
+            }
+            detail = React.createElement("div", {className: "tools-alert detail-data"}, 
+                React.createElement("div", {className: "deco"}), 
+                React.createElement("span", {className: "label label-yellow data-cost"},  data['cost'] ), 
+                React.createElement("h5", null,  data['title'] ), 
+                React.createElement("cite", {className: "story"},  data['story'] ), 
+                React.createElement("p", {className: "info lead"},  data['info'] ), 
+                React.createElement("div", {className: "data-table"}, 
+                    _.isArray(data['table']) && data['table'].map(function (table) {
+                        return React.createElement("dl", null, 
+                            React.createElement("dt", null,  table[0] ), 
+                            React.createElement("dd", null,  table[1] )
+                        );
+                    })
+                ), 
+                React.createElement("ul", {className: "data-note"}, 
+                    _.isArray(data['note']) && data['note'].map(function (list) {
+                        return React.createElement("li", null,  list );
+                    })
+                ), 
+                React.createElement("div", {className: "data-more"}, 
+                     ability, 
+                     affect, 
+                     type 
+                ), 
+                React.createElement("ul", {className: "data-recipe"}, 
+                    _.isArray(data['recipe']) && data['recipe'].map(function (recipe) {
+                        return React.createElement("li", null, React.createElement("img", {src:  recipe[1], alt:  recipe[0] }));
+                    })
+                ), 
+                React.createElement("ul", {className: "data-upgrade"}, 
+                    _.isArray(data['upgrade']) && data['upgrade'].map(function (upgrade) {
+                        return React.createElement("li", null, React.createElement("img", {src:  upgrade[1], alt:  upgrade[0] }));
+                    })
+                )
+            );
         }
         return (
             React.createElement("li", {id:  item.id}, 

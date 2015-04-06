@@ -18,6 +18,9 @@
     "affect": "",
     "type": "",
     "recipe": [
+        ["headdress", "data/images/items/headdress_lg.png"],
+        ["magic_wand", "data/images/items/magic_wand_lg.png"],
+        ["buckler", "data/images/items/buckler_lg.png"]
     ],
     "upgrade": [
         ["headdress", "data/images/items/headdress_lg.png"],

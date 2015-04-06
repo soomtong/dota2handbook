@@ -82,7 +82,7 @@ var HeroFilter = React.createClass({displayName: "HeroFilter",
 var HeroList = React.createClass({displayName: "HeroList",
     render: function () {
         return (
-            React.createElement("div", {className: "nav nav-stats hero-list"}, 
+            React.createElement("div", {className: "hero-list"}, 
                 React.createElement("ul", null, 
                 this.props.viewList.map(function (hero) {
                     return (
@@ -137,10 +137,13 @@ var Heroes = React.createClass({displayName: "Heroes",
     },
     render: function () {
         var hero = this.props.data;
-        var detail, child;
+        var detail;
         if (this.state.detail) {
-            child = React.addons.createFragment(this.state.detail);
-            detail = React.createElement("div", {className: "tools-alert detail-data"},  child )
+            detail = React.createElement("div", {className: "tools-alert detail-data"}, 
+                React.createElement("div", {className: "deco"}), 
+                React.createElement("span", {className: "label label-yellow data-cost"},  this.state.detail['cost'] ), 
+                React.createElement("h5", null,  this.state.detail['title'] )
+            );
         }
         return (
             React.createElement("li", {id:  hero.id}, 

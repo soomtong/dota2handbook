@@ -104,27 +104,29 @@ var Items = React.createClass({
     toggleDetail: function (e) {
         var $el = $(e.target), id;
 
-        if ($el.attr('id')) {
-            id = $el.attr('id').slice(4);
-        } else {
-            id = $el.parent().attr('id').slice(4);
-        }
+        if (!$el.hasClass('detail-data') && !$el.parents().hasClass('detail-data')) {
+            if ($el.attr('id')) {
+                id = $el.attr('id').slice(4);
+            } else {
+                id = $el.parent().attr('id').slice(4);
+            }
 
-        if (this.state.detail) {
-            this.setState({ detail: null });
+            if (this.state.detail) {
+                this.setState({ detail: null });
 
-            $el.remove('div.detail-data');
+                $el.remove('div.detail-data');
 
-            $el.removeClass('active');
-        } else {
-            if (id) {
-                $.getJSON('data/items/' + id + '.json', function (data) {
-                    if (this.isMounted()) {
-                        this.setState({ detail: data });
-                    }
-                }.bind(this));
+                $el.removeClass('active');
+            } else {
+                if (id) {
+                    $.getJSON('data/items/' + id + '.json', function (data) {
+                        if (this.isMounted()) {
+                            this.setState({ detail: data });
+                        }
+                    }.bind(this));
 
-                $el.addClass('active');
+                    $el.addClass('active');
+                }
             }
         }
     },
@@ -137,12 +139,52 @@ var Items = React.createClass({
     },
     render: function () {
         var item = this.props.data;
-        var detail;
+        var data, detail, ability, affect, type;
         if (this.state.detail) {
+            data = this.state.detail;
+            if (data['ability']) {
+                ability = <p className="ability">{ data['ability'] }</p>
+            }
+            if (data['affect']) {
+                affect = <p className="affect">{ data['affect'] }</p>
+            }
+            if (data['type']) {
+                type = <p className="type">{ data['type'] }</p>
+            }
             detail = <div className="tools-alert detail-data">
                 <div className="deco"></div>
-                <span className="label label-yellow data-cost">{ this.state.detail['cost'] }</span>
-                <h5>{ this.state.detail['title'] }</h5>
+                <span className="label label-yellow data-cost">{ data['cost'] }</span>
+                <h5>{ data['title'] }</h5>
+                <cite className="story">{ data['story'] }</cite>
+                <p className="info lead">{ data['info'] }</p>
+                <div className="data-table">{
+                    _.isArray(data['table']) && data['table'].map(function (table) {
+                        return <dl>
+                            <dt>{ table[0] }</dt>
+                            <dd>{ table[1] }</dd>
+                        </dl>;
+                    })
+                }</div>
+                <ul className="data-note">{
+                    _.isArray(data['note']) && data['note'].map(function (list) {
+                        return <li>{ list }</li>;
+                    })
+                }</ul>
+                <div className="data-more">
+                    { ability }
+                    { affect }
+                    { type }
+                </div>
+                <ul className="data-recipe">{
+                    _.isArray(data['recipe']) && data['recipe'].map(function (recipe) {
+                        return <li><img src={ recipe[1] } alt={ recipe[0] }/></li>;
+                    })
+                }</ul>
+                <ul className="data-upgrade">{
+                    _.isArray(data['upgrade']) && data['upgrade'].map(function (upgrade) {
+                        return <li><img src={ upgrade[1] } alt={ upgrade[0] }/></li>;
+                    })
+                }</ul>
             </div>;
         }
         return (

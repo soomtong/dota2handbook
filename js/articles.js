@@ -82,7 +82,7 @@ var ArticleFilter = React.createClass({displayName: "ArticleFilter",
 var ArticleList = React.createClass({displayName: "ArticleList",
     render: function () {
         return (
-            React.createElement("div", {className: "nav nav-stats article-list"}, 
+            React.createElement("div", {className: "article-list"}, 
                 React.createElement("ul", null, 
                 this.props.viewList.map(function (article) {
                     return (
@@ -137,10 +137,13 @@ var Articles = React.createClass({displayName: "Articles",
     },
     render: function () {
         var article = this.props.data;
-        var detail, child;
+        var detail;
         if (this.state.detail) {
-            child = React.addons.createFragment(this.state.detail);
-            detail = React.createElement("div", {className: "tools-alert detail-data"},  child )
+            detail = React.createElement("div", {className: "tools-alert detail-data"}, 
+                React.createElement("div", {className: "deco"}), 
+                React.createElement("span", {className: "label label-yellow data-cost"},  this.state.detail['cost'] ), 
+                React.createElement("h5", null,  this.state.detail['title'] )
+            );
         }
         return (
             React.createElement("li", {id:  article.id}, 

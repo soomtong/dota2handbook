@@ -17,7 +17,7 @@
     ],
     "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
     "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "type": "마법 또는 일반",
     "recipe": [
         ["clarity", "data/images/items/clarity_lg.png" , 2],
         ["bfury", "data/images/items/bfury_lg.png" ],
