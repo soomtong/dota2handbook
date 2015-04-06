@@ -82,7 +82,7 @@ var HeroFilter = React.createClass({
 var HeroList = React.createClass({
     render: function () {
         return (
-            <div className="nav nav-stats hero-list">
+            <div className="hero-list">
                 <ul>
                 {this.props.viewList.map(function (hero) {
                     return (
@@ -137,10 +137,13 @@ var Heroes = React.createClass({
     },
     render: function () {
         var hero = this.props.data;
-        var detail, child;
+        var detail;
         if (this.state.detail) {
-            child = React.addons.createFragment(this.state.detail);
-            detail = <div className="tools-alert detail-data">{ child }</div>
+            detail = <div className="tools-alert detail-data">
+                <div className="deco"></div>
+                <span className="label label-yellow data-cost">{ this.state.detail['cost'] }</span>
+                <h5>{ this.state.detail['title'] }</h5>
+            </div>;
         }
         return (
             <li id={ hero.id }>

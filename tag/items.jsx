@@ -82,7 +82,7 @@ var ItemFilter = React.createClass({
 var ItemList = React.createClass({
     render: function () {
         return (
-            <div className="nav nav-stats item-list">
+            <div className="item-list">
                 <ul>
                 {this.props.viewList.map(function (item) {
                     return (
@@ -137,10 +137,13 @@ var Items = React.createClass({
     },
     render: function () {
         var item = this.props.data;
-        var detail, child;
+        var detail;
         if (this.state.detail) {
-            child = React.addons.createFragment(this.state.detail);
-            detail = <div className="tools-alert detail-data">{ child }</div>
+            detail = <div className="tools-alert detail-data">
+                <div className="deco"></div>
+                <span className="label label-yellow data-cost">{ this.state.detail['cost'] }</span>
+                <h5>{ this.state.detail['title'] }</h5>
+            </div>;
         }
         return (
             <li id={ item.id }>
