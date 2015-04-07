@@ -172,24 +172,26 @@ var Items = React.createClass({
                         </dl>;
                     })
                 }</div>
-                <ul className="data-note">{
-                    _.isArray(data['note']) && data['note'].map(function (list) {
-                        return <li>{ list }</li>;
-                    })
-                }</ul>
+                <div className="data-note">
+                    <ul>{
+                        _.isArray(data['note']) && data['note'].map(function (list) {
+                            return <li>{ list }</li>;
+                        })
+                    }</ul>
+                </div>
                 <div className="data-more">
                     { ability }
                     { affect }
                     { type }
                 </div>
-                <ul className="data-recipe">{
-                    _.isArray(data['recipe']) && data['recipe'].map(function (recipe) {
-                        return <li><img src={ recipe[1] } alt={ recipe[0] }/></li>;
-                    })
-                }</ul>
                 <ul className="data-upgrade">{
                     _.isArray(data['upgrade']) && data['upgrade'].map(function (upgrade) {
                         return <li><img src={ upgrade[1] } alt={ upgrade[0] }/></li>;
+                    })
+                }</ul>
+                <ul className="data-recipe">{
+                    _.isArray(data['recipe']) && data['recipe'].map(function (recipe) {
+                        return <li><img src={ recipe[1] } alt={ recipe[0] }/></li>;
                     })
                 }</ul>
             </div>;

@@ -172,24 +172,26 @@ var Items = React.createClass({displayName: "Items",
                         );
                     })
                 ), 
-                React.createElement("ul", {className: "data-note"}, 
-                    _.isArray(data['note']) && data['note'].map(function (list) {
-                        return React.createElement("li", null,  list );
-                    })
+                React.createElement("div", {className: "data-note"}, 
+                    React.createElement("ul", null, 
+                        _.isArray(data['note']) && data['note'].map(function (list) {
+                            return React.createElement("li", null,  list );
+                        })
+                    )
                 ), 
                 React.createElement("div", {className: "data-more"}, 
                      ability, 
                      affect, 
                      type 
                 ), 
-                React.createElement("ul", {className: "data-recipe"}, 
-                    _.isArray(data['recipe']) && data['recipe'].map(function (recipe) {
-                        return React.createElement("li", null, React.createElement("img", {src:  recipe[1], alt:  recipe[0] }));
-                    })
-                ), 
                 React.createElement("ul", {className: "data-upgrade"}, 
                     _.isArray(data['upgrade']) && data['upgrade'].map(function (upgrade) {
                         return React.createElement("li", null, React.createElement("img", {src:  upgrade[1], alt:  upgrade[0] }));
+                    })
+                ), 
+                React.createElement("ul", {className: "data-recipe"}, 
+                    _.isArray(data['recipe']) && data['recipe'].map(function (recipe) {
+                        return React.createElement("li", null, React.createElement("img", {src:  recipe[1], alt:  recipe[0] }));
                     })
                 )
             );
