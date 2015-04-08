@@ -1,8 +1,3 @@
-body {
-  transition: background-image 1s ease-in-out;
-  background: #999999 no-repeat fixed center center;
-  background-size: cover;
-}
 .forms-inline-list {
   margin-bottom: 0.5em;
 }
@@ -17,6 +12,16 @@ body {
 }
 .debug2 {
   border: 4px solid blue;
+}
+#bg_holder {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: background-image 1s ease-in-out;
+  background: #999999 no-repeat fixed center center;
+  background-size: cover;
+  width: 100%;
 }
 .main-panel::-webkit-scrollbar {
   display: none;
@@ -341,9 +346,6 @@ body {
   }
   .selector {
     display: none;
-  }
-  .data-table dt {
-    width: 50%;
   }
 }
 @media only screen and (max-width: 767px) {

@@ -39,7 +39,7 @@ Panel = {
             // hack?, just works
             $.get('data/images/background/' + img).done(function (data) {
                 setTimeout(function () {
-                    $('body').css('background-image', 'url(data/images/background/' + img + ')');
+                    $('#bg_holder').css('background-image', 'url(data/images/background/' + img + ')');
                 }, 100);
             }).fail();
         }
@@ -70,6 +70,8 @@ Panel = {
         }
 
         $wrap.find('.main-panel').css('min-height', height + 'px');
+
+        $('#bg_holder').height(height);
     },
     swapPanel: function (before, after, to) {
         var $wrap = $('#wrap');
