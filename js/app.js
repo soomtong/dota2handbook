@@ -1,3 +1,5 @@
+IsChromeApp = false;
+
 function saveNowState(now) {
     if (window && window.localStorage) {
         window.localStorage.setItem('panelNow', now);

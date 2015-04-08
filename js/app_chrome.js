@@ -1,3 +1,5 @@
+IsChromeApp = true;
+
 function saveNowState(now) {
     if (chrome && chrome.storage && chrome.storage.local) {
         chrome.storage.local.set({ panelNow: now });

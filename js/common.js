@@ -67,6 +67,9 @@ Panel = {
             Panel['article'].css('display', 'none');
 
             Panel[Panel.getNow()].show();
+
+            // chrome app check for injected disabled scroll (overflow: hidden)
+            if (IsChromeApp) $wrap.find('.main-panel').css('height', height + 'px');
         }
 
         $wrap.find('.main-panel').css('min-height', height + 'px');
