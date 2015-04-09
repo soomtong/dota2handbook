@@ -1,17 +1,17 @@
 {
-    "id": "diffusal_blade",
+    "id": "diffusal_blade2",
     "title": "분산의 검 Diffusal Blade",
-    "desc": "민첩 +25, 지능 +6",
-    "img": "data/images/items/diffusal_blade_lg.png",
-    "cost": "3150",
+    "desc": "민첩 +30, 지능 +10",
+    "img": "data/images/items/diffusal_blade2_lg.png",
+    "cost": "3850",
     "story": "단숨에 적의 영혼까지 자를 수 있는 마법의 검입니다.",
     "info": [
         "정화(Purge) - 대상의 강화 효과를 제거하고 둔화시키며 대상이 소환수일 경우 피해를 줍니다.",
         "마나 분해(Manabreak) - 상대의 마나를 25만큼 소진시키고 같은 양의 물리 피해를 줍니다."
     ],
     "table": [
-        ["민첩", "+20"],
-        ["지능", "+6"],
+        ["민첩", "+35"],
+        ["지능", "+10"],
         ["정화: 시전 범위", "600"],
         ["정화: 이동속도 감소", "-100% ~ 0%"],
         ["정화: 이동속도 감소 유지 시간", "4초"],
@@ -33,12 +33,8 @@
     "affect": "",
     "type": "정화: 체력 감소, 마나 분해: 물리 피해",
     "recipe": [
-        ["robe", "data/images/items/robe_lg.png"],
-        ["blade_of_alacrity", "data/images/items/blade_of_alacrity_lg.png"],
-        ["blade_of_alacrity", "data/images/items/blade_of_alacrity_lg.png"],
-        ["recipe", "data/images/items/recipe_lg.png"]
+        ["diffusal_blade", "data/images/items/diffusal_blade_lg.png"]
     ],
     "upgrade": [
-        ["diffusal_blade2", "data/images/items/diffusal_blade2_lg.png"]
     ]
 }

@@ -1,11 +1,26 @@
 [
   {
-    "id": "100_mechanism_1", "title": "막타와 디나이", "subtitle": "Last hit & deny",
+    "id": "100_mechanism_1", "title": "막타와 디나이", "subtitle": "Last hit & Deny",
     "pic": "data/images/items/quelling_blade_lg.png",
     "article_category": 1, "article_type": "메"
   },
   {
     "id": "100_mechanism_2", "title": "마법 면역", "subtitle": "Spell Immunity",
+    "pic": "data/images/items/quelling_blade_lg.png",
+    "article_category": 1, "article_type": "메"
+  },
+  {
+    "id": "100_mechanism_3", "title": "마법 저항", "subtitle": "Magic Resistance",
+    "pic": "data/images/items/quelling_blade_lg.png",
+    "article_category": 1, "article_type": "메"
+  },
+  {
+    "id": "100_mechanism_4", "title": "데미지 타입", "subtitle": "Damage Types",
+    "pic": "data/images/items/quelling_blade_lg.png",
+    "article_category": 1, "article_type": "메"
+  },
+  {
+    "id": "100_mechanism_5", "title": "피해 방어", "subtitle": "Damage Block",
     "pic": "data/images/items/quelling_blade_lg.png",
     "article_category": 1, "article_type": "메"
   },

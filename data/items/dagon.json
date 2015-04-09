@@ -1,27 +1,33 @@
 {
     "id": "dagon",
     "title": "다곤 Dagon",
-    "desc": "지능 +13/15/17/19/21, 모든 능력치 +3, 피해 +9, 폭발 피해량 400/500/600/700/800",
+    "desc": "지능 +13, 모든 능력치 +3, 피해 +9, 폭발 피해량 400",
     "img": "data/images/items/dagon_lg.png",
-    "cost": "2800",
-    "story": "에너지 폭발 - 폭발을 일으켜 지정한 적 유닛에게 피해를 줍니다.",
+    "cost": "2720",
+    "story": "오래 쓸수록 더 강해지는 이 작은 지팡이는 마력을 불러내어 소유자의 손에 전해 줍니다.",
     "info": "에너지 폭발 - 폭발을 일으켜 지정한 적 유닛에게 피해를 줍니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["지능", "+13"],
+        ["모든 능력치", "+3"],
+        ["피해", "+9"],
+        ["에너지 폭발: 폭발 피해", "400"],
+        ["에너지 폭발: 시전 범위", "600"],
+        ["에너지 폭발: 쿨다운", "35초"],
+        ["에너지 폭발: 시전 필요 마나", "180"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "다곤의 피해는 회피하거나 저항할 수 없습니다.",
+        "대부분의 영웅이 가지는 마법 저항력 25%를 고려하면 증폭되거나 감소되지 않았을 경우 300의 피해를 줄 수 있습니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "ability": "지정된 대상",
+    "affect": "적군",
+    "type": "마법",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
+        ["null_talisman", "data/images/items/null_talisman_lg.png"],
+        ["staff_of_wizardry", "data/images/items/staff_of_wizardry_lg.png"],
+        ["recipe", "data/images/items/recipe_lg.png"]
     ],
-    "upgrade": []
+    "upgrade": [
+        ["dagon2", "data/images/items/dagon2_lg.png"]
+    ]
 }

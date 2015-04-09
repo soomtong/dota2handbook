@@ -4,24 +4,19 @@
     "desc": "피해 +46",
     "img": "data/images/items/demon_edge_lg.png",
     "cost": "2400",
-    "story": "",
+    "story": "악마 대장장이 아브지디안이 만든 오래된 무기 중 하나입니다. 아브지디안은 칼날이 얼마나 예리한지 시험하던 도중 날에 베어 죽음을 맞았습니다.",
     "info": "",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["피해", "+46"]
     ],
-    "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
-    ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
-    "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
-    ],
-    "upgrade": []
+    "note": [],
+    "ability": "",
+    "affect": "",
+    "type": "",
+    "recipe": [],
+    "upgrade": [
+        ["monkey_king_bar", "data/images/items/monkey_king_bar_lg.png"],
+        ["greater_crit", "data/images/items/greater_crit_lg.png"],
+        ["rapier", "data/images/items/rapier_lg.png"]
+    ]
 }

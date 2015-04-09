@@ -4,24 +4,32 @@
     "desc": "지능 +10, 마나 재생 +150%, 이동 속도 +40",
     "img": "data/images/items/cyclone_lg.png",
     "cost": "2700",
-    "story": "사이클론 - 대상 유닛이 2.5초 동안 사이클론에 휘말리며 무적 상태가 됩니다.",
+    "story": "수 세기를 거쳐 전해진 신비로운 홀입니다. 홀에서 일어나는 파괴적인 바람은 선한 목적으로도, 악한 목적으로도 쓰일 수 있습니다.",
     "info": "사이클론 - 대상 유닛이 2.5초 동안 사이클론에 휘말리며 무적 상태가 됩니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["지능", "+10"],
+        ["마나 재생", "+150%"],
+        ["이동 속도", "+40"],
+        ["사이클론: 시전 범위", "700"],
+        ["사이클론: 무적 지속 시간", "2.5초"],
+        ["사이클론: 낙하 피해", "50"],
+        ["사이클론: 쿨다운", "23초"],
+        ["사이클론: 시전 필요 마나", "75"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "사이클론을 통해 공중에 떠있는 동안 무적 상태가 됩니다.",
+        "사이클론을 통해 대상에게 적용된 마법 효과를 해제할 수 있습니다.",
+        "마법 면역 대상에게 사용할 수 없습니다. 자신이 마법 면역일 경우에는 사용 가능합니다.",
+        "로샨에게 사용할 수 있습니다. 단, 효과가 적용되지는 않습니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "ability": "",
+    "affect": "적군, 자신",
+    "type": "마법",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
+        ["sobi_mask", "data/images/items/sobi_mask_lg.png"],
+        ["void_stone", "data/images/items/void_stone_lg.png"],
+        ["staff_of_wizardry", "data/images/items/staff_of_wizardry_lg.png"],
+        ["recipe", "data/images/items/recipe_lg.png"]
     ],
     "upgrade": []
 }

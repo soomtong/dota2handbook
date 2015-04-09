@@ -4,24 +4,20 @@
     "desc": "주문 저항 +15%",
     "img": "data/images/items/cloak_lg.png",
     "cost": "550",
-    "story": "주문 저항 아이템의 효과는 서로 중첩되지 않습니다.",
-    "info": "주문 저항 아이템의 효과는 서로 중첩되지 않습니다.",
+    "story": "마법 재료로 만들어져 어떠한 마법도 떨쳐낼 수 있습니다.",
+    "info": "",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["마법 저항", "+15%"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "마법 저항의 효과는 곱셈으로 적용됩니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "ability": "",
+    "affect": "",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
     ],
-    "upgrade": []
+    "upgrade": [
+        ["hood_of_defiance", "data/images/items/hood_of_defiance_lg.png"]
+    ]
 }

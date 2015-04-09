@@ -4,24 +4,18 @@
     "desc": "피해 +21",
     "img": "data/images/items/claymore_lg.png",
     "cost": "1400",
-    "story": "",
+    "story": "갑옷도 능히 베어버리는 단단한 검입니다. 실전에 투입되는 검사들이 가장 먼저 선택하는 검이기도 합니다.",
     "info": "",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["피해", "+21"]
     ],
-    "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
-    ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
-    "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
-    ],
-    "upgrade": []
+    "note": [],
+    "ability": "",
+    "affect": "",
+    "type": "",
+    "recipe": [],
+    "upgrade": [
+        ["invis_sword", "data/images/items/invis_sword_lg.png"],
+        ["bfury", "data/images/items/bfury_lg.png"]
+    ]
 }

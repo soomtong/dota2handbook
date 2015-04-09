@@ -7,18 +7,16 @@
     "story": "인간 공주를 위해 제작된 우아하기 그지없는 머리 장식입니다.",
     "info": "",
     "table": [
-        ["힘", "+2"],
-        ["민첩", "+2"],
-        ["지능", "+2"]
+        ["모든 능력치", "+2"]
     ],
     "note": [],
     "ability": "",
     "affect": "",
     "type": "",
+    "recipe": [],
     "upgrade": [
-        ["bracer", "data/images/items/bracer_lg.png"],
         ["null_talisman", "data/images/items/null_talisman_lg.png"],
-        ["wraith_band", "data/images/items/wraith_band_lg.png"]
-    ],
-    "upgrade": []
+        ["wraith_band", "data/images/items/wraith_band_lg.png"],
+        ["bracer", "data/images/items/bracer_lg.png"]
+    ]
 }
