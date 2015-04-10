@@ -4,24 +4,22 @@
     "desc": "공격 속도 +30",
     "img": "data/images/items/hand_of_midas_lg.png",
     "cost": "2050",
-    "story": "금 변환 - 영웅이 아닌 대상을 처치하고 190 골드와 2.5배의 경험치를 획득합니다.",
-    "info": "금 변환 - 영웅이 아닌 대상을 처치하고 190 골드와 2.5배의 경험치를 획득합니다.",
+    "story": "알려지지 않은 마법으로 보존된 미다스의 손은 탐욕의 무기로, 동물을 희생하여 주인의 주머니를 두둑하게 채워 줍니다.",
+    "info": "금 변환 - 영웅이 아닌 대상을 처치하고 190 골드와 2.5배의 경험치를 획득합니다. 고대 크립에게는 사용할 수 없습니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["공격속도", "+30"],
+        ["금 변환: 시전 범위", "600"],
+        ["금 변환: 쿨다운", "100초"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "190골드는 안전 골드입니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "ability": "지정 대상",
+    "affect": "",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
+        ["gloves", "data/images/items/gloves_lg.png"],
+        ["recipe", "data/images/items/recipe_lg.png"]
     ],
     "upgrade": []
 }

@@ -4,24 +4,19 @@
     "desc": "공격 속도 +55",
     "img": "data/images/items/hyperstone_lg.png",
     "cost": "2000",
-    "story": "",
+    "story": "신비로운 돌을 깎아 만든 것으로, 무한한 열정을 이끌어 냅니다.",
     "info": "",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["공격 속도", "+55"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
-    "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
-    ],
-    "upgrade": []
+    "ability": "",
+    "affect": "",
+    "type": "",
+    "recipe": [],
+    "upgrade": [
+        ["assault", "data/images/items/assault_lg.png"],
+        ["mjollnir", "data/images/items/mjollnir_lg.png"]
+    ]
 }

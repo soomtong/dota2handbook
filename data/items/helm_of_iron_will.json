@@ -4,24 +4,20 @@
     "desc": "방어력 +5, 체력 재생 +3",
     "img": "data/images/items/helm_of_iron_will_lg.png",
     "cost": "950",
-    "story": "",
+    "story": "전투에서 쓰러진 전설적인 전사가 착용했던 투구입니다.",
     "info": "",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["방어력", "+5"],
+        ["체력재생", "+3"]
     ],
-    "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
-    ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
-    "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
-    ],
-    "upgrade": []
+    "note": [],
+    "ability": "",
+    "affect": "",
+    "type": "",
+    "recipe": [],
+    "upgrade": [
+        ["helm_of_the_dominator", "data/images/items/helm_of_the_dominator_lg.png"],
+        ["armlet", "data/images/items/armlet_lg.png"],
+        ["veil_of_discord", "data/images/items/veil_of_discord_lg.png"]
+    ]
 }

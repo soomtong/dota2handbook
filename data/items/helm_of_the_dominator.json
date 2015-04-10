@@ -4,24 +4,34 @@
     "desc": "피해 +20, 방어력 +5, 흡혈 15%",
     "img": "data/images/items/helm_of_the_dominator_lg.png",
     "cost": "1850",
-    "story": "지배 - 영웅과 고대 유닛을 제외한 유닛을 조종할 수 있습니다. 흡혈 - 공격에 흡혈 효과를 더합니다.",
-    "info": "지배 - 영웅과 고대 유닛을 제외한 유닛을 조종할 수 있습니다. 흡혈 - 공격에 흡혈 효과를 더합니다.",
+    "story": "죽은 강령술사의 강력한 투구입니다.",
+    "info": [
+        "지배(Dominate) - 영웅과 고대 유닛을 제외한 유닛을 조종할 수 있습니다.",
+        "흡혈(Lifesteal) - 공격에 흡혈 효과를 더합니다."
+    ],
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["피해", "+20"],
+        ["방어력", "+5"],
+        ["체력재생", "+3"],
+        ["지배: 시전 범위", "700"],
+        ["지배: 대상 유닛 체력 증가", "+500"],
+        ["지배: 쿨다운", "60초"],
+        ["지배: 시전 필요 마나", "75"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "지배 기술은 오직 하나의 유닛에만 적용됩니다.",
+        "지배자의 투구는 고유 공격 변형치입니다. 다른 고유 공격 변형치와 중첩되지 않습니다.",
+        "지배 효과가 사라지면 지배된 유닛은 즉시 사망합니다.",
+        "와드나 건물에는 흡혈 효과가 적용되지 않지만 공성 크립에는 흡혈이 가능합니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "ability": "지배: 지정 대상, 흡혈: 패시브",
+    "affect": "",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
+        ["lifesteal", "data/images/items/lifesteal_lg.png"],
+        ["helm_of_iron_will", "data/images/items/helm_of_iron_will_lg.png"]
     ],
-    "upgrade": []
+    "upgrade": [
+        ["satanic", "data/images/items/satanic_lg.png"]
+    ]
 }

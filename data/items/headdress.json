@@ -4,24 +4,27 @@
     "desc": "모든 능력치 +2, 체력 재생 오라 3",
     "img": "data/images/items/headdress_lg.png",
     "cost": "600",
-    "story": "재생의 오라 - 750의 범위 내에 있는 아군의 체력을 회복합니다.",
+    "story": "마음을 진정시키는 오라를 만들어 내어 전장에 있는 아군의 체력을 회복시켜 줍니다.",
     "info": "재생의 오라 - 750의 범위 내에 있는 아군의 체력을 회복합니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["모든 능력치", "+2"],
+        ["재생의 오라: 효과 범위", "750"],
+        ["재생의 오라: 체력 재생 보너스", "+3"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "재생의 오라 효과는 중첩되지 않습니다.",
+        "1분에 180 체력이 회복됩니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
+    "ability": "오라",
     "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
+        ["branches", "data/images/items/branches_lg.png"],
+        ["ring_of_regen", "data/images/items/ring_of_regen_lg.png"],
+        ["recipe", "data/images/items/recipe_lg.png"]
     ],
-    "upgrade": []
+    "upgrade": [
+        ["mekansm", "data/images/items/mekansm_lg.png"],
+        ["pipe", "data/images/items/pipe_lg.png"]
+    ]
 }

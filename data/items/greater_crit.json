@@ -4,24 +4,23 @@
     "desc": "피해 +81, 치명타 확률 25%, 치명타 피해량 240%",
     "img": "data/images/items/greater_crit_lg.png",
     "cost": "5550",
-    "story": "치명타 - 공격 시 일정 확률로 치명타를 가합니다.",
-    "info": "치명타 - 공격 시 일정 확률로 치명타를 가합니다.",
+    "story": "가장 강력한 전사들도 다루기 어려워하는 무기로, 놀라운 힘을 간직하고 있습니다.",
+    "info": "치명타(Critical Strike) - 공격 시 일정 확률로 치명타를 가합니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["피해", "+81"],
+        ["치명타: 확률", "+25%"],
+        ["치명타: 피해", "240%"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "일반 공격 피해가 평균 35%정도 증가됩니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "ability": "패시브",
+    "affect": "적군",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
+        ["lesser_crit", "data/images/items/lesser_crit_lg.png"],
+        ["demon_edge", "data/images/items/demon_edge_lg.png"],
+        ["recipe", "data/images/items/recipe_lg.png"]
     ],
     "upgrade": []
 }

@@ -4,24 +4,20 @@
     "desc": "공격 속도 +15",
     "img": "data/images/items/gloves_lg.png",
     "cost": "500",
-    "story": "",
+    "story": "한 쌍의 마법 장갑입니다. 이 장갑을 착용하면 무기가 종잇장처럼 가볍게 느껴집니다.",
     "info": "",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["공격속도", "+15"]
     ],
-    "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
-    ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
-    "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
-    ],
-    "upgrade": []
+    "note": [],
+    "ability": "",
+    "affect": "",
+    "type": "",
+    "recipe": [],
+    "upgrade": [
+        ["power_treads", "data/images/items/power_treads_lg.png"],
+        ["hand_of_midas", "data/images/items/hand_of_midas_lg.png"],
+        ["armlet", "data/images/items/armlet_lg.png"],
+        ["maelstrom", "data/images/items/maelstrom_lg.png"]
+    ]
 }

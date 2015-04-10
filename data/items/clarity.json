@@ -1,6 +1,7 @@
 {
     "id": "clarity",
     "title": "맑은 물약 Clarity",
+    "desc": "150MP / 40s",
     "img": "data/images/items/clarity_lg.png",
     "cost": "50",
     "story": "명상에 도움을 주는 맑고 깨끗한 물입니다.",
@@ -14,7 +15,7 @@
         "공격을 받으면 마나 재생이 중단됩니다.",
         "1초당 3.75마나 재생"
     ],
-    "ability": "",
+    "ability": "지정 대상(더블 클릭시 자신에게 적용)",
     "affect": "아군",
     "recipe": [],
     "upgrade": []

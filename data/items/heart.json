@@ -4,24 +4,24 @@
     "desc": "힘 +40, 체력 +300, 체력 회복 2% / 1s",
     "img": "data/images/items/heart_lg.png",
     "cost": "5500",
-    "story": "체력 재생 - 매초 최대 체력의 일정 비율만큼 체력을 회복합니다.",
-    "info": "체력 재생 - 매초 최대 체력의 일정 비율만큼 체력을 회복합니다.",
+    "story": "지금은 멸종한 괴물의 심장을 보존한 것으로 이 물건을 소지한 자는 강인한 힘을 얻습니다.",
+    "info": "체력 재생 - 매초 최대 체력의 일정 비율만큼 체력을 회복합니다. 적 영웅 또는 로샨에게 피해를 받으면 근접 영웅은 4초 동안, 원거리 영웅은 6초 동안 체력 회복 효과가 중단됩니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["힘", "+40"],
+        ["체력", "+300"],
+        ["체력 재생: 회복 체력", "2%/초"],
+        ["체력 재생: 쿨다운(근접, 원거리)", "4초, 6초"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "0.01초당 전체 체력의 0.02%가 재생됩니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "ability": "패시브",
+    "affect": "자신",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
+        ["vitality_booster", "data/images/items/vitality_booster_lg.png"],
+        ["reaver", "data/images/items/reaver_lg.png"],
+        ["recipe", "data/images/items/recipe_lg.png"]
     ],
     "upgrade": []
 }

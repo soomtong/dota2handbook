@@ -4,24 +4,23 @@
     "desc": "체력 재생 +8, 주문 저항 +30%",
     "img": "data/images/items/hood_of_defiance_lg.png",
     "cost": "2125",
-    "story": "",
+    "story": "마법 저항력이 있는 모피 두건으로 마법사들에게는 두려움의 대상입니다.",
     "info": "",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["체력 재생", "+9"],
+        ["주문 저항", "+30%"]
     ],
-    "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
-    ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "note": [],
+    "ability": "",
+    "affect": "",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
+        ["ring_of_regen", "data/images/items/ring_of_regen_lg.png"],
+        ["ring_of_regen", "data/images/items/ring_of_regen_lg.png"],
+        ["cloak", "data/images/items/cloak_lg.png"],
+        ["ring_of_health", "data/images/items/ring_of_health_lg.png"]
     ],
-    "upgrade": []
+    "upgrade": [
+        ["pipe", "data/images/items/pipe_lg.png"]
+    ]
 }
