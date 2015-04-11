@@ -20,6 +20,5 @@
         ["ultimate_scepter", "data/images/items/ultimate_scepter_lg.png"],
         ["black_king_bar", "data/images/items/black_king_bar_lg.png"],
         ["sange", "data/images/items/sange_lg.png"]
-    ],
-    "upgrade": []
+    ]
 }

@@ -4,24 +4,23 @@
     "desc": "피해 +21, 관통 확률 20%, 관통 피해량 40",
     "img": "data/images/items/javelin_lg.png",
     "cost": "1500",
-    "story": "관통 - 공격 시 일정 확률로 보너스 피해를 줍니다.",
+    "story": "평범한 창이지만 제대로 던지면 적의 갑옷을 꿰뚫는 위력을 보이기도 합니다.",
     "info": "관통 - 공격 시 일정 확률로 보너스 피해를 줍니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["피해", "+21"],
+        ["관통: 확률", "20%"],
+        ["관통: 피해", "40"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "관통 피해는 흡혈 효과에 영향을 줍니다.",
+        "관통 피해는 치명타나 가르기에 영향을 주지 않습니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
-    "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
-    ],
-    "upgrade": []
+    "ability": "패시브",
+    "affect": "적군",
+    "type": "마법",
+    "recipe": [],
+    "upgrade": [
+        ["basher", "data/images/items/basher_lg.png"],
+        ["monkey_king_bar", "data/images/items/monkey_king_bar_lg.png"]
+    ]
 }

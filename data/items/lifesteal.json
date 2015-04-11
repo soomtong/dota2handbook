@@ -4,24 +4,23 @@
     "desc": "흡혈 15%",
     "img": "data/images/items/lifesteal_lg.png",
     "cost": "900",
-    "story": "흡혈 - 공격에 흡혈을 부여합니다.",
+    "story": "시선이 닿는 적의 에너지를 빼앗는 가면입니다.",
     "info": "흡혈 - 공격에 흡혈을 부여합니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["흡혈: 흡혈량", "15%"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "섬뜩한 가면은 고유 공격 변형치입니다. 다른 고유 공격 변형치와 중첩되지 않습니다.",
+        "소환된 환영도 흡혈 효과를 보이지만 실제 흡혈 효과를 가지지 않습니다.",
+        "와드나 건물에는 흡혈 효과가 적용되지 않지만 공성 크립에는 흡혈이 가능합니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
-    "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
-    ],
-    "upgrade": []
+    "ability": "패시브",
+    "affect": "",
+    "type": "",
+    "recipe": [],
+    "upgrade": [
+        ["mask_of_madness", "data/images/items/mask_of_madness_lg.png"],
+        ["helm_of_the_dominator", "data/images/items/helm_of_the_dominator_lg.png"],
+        ["vladmir", "data/images/items/vladmir_lg.png"]
+    ]
 }

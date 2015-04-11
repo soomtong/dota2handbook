@@ -1,34 +1,33 @@
 {
-    "id": "necronomicon",
+    "id": "necronomicon3",
     "title": "네크로노미콘 Necronomicon",
     "desc": "지능 +15/21/24 힘 +8/12/16",
     "img": "data/images/items/necronomicon_lg.png",
-    "cost": "2700",
+    "cost": "3950",
     "story": "강령술과 악마학의 성배로 여겨지며, 각 장마다 강력하고도 사악한 힘이 담겨져 있습니다.",
     "info": "악마 소환(Demonic Summoning) - 주인을 위해 싸우는 네크로노미콘 전사와 네크로노미콘 궁수를 소환합니다. 네크로노미콘 전사와 궁수는 레벨이 오를수록 힘과 기술이 증가합니다. 40초 동안 지속됩니다.",
     "table": [
-        ["지능", "+15"],
-        ["힘", "+8"],
+        ["지능", "+24"],
+        ["힘", "+16"],
         ["악마 소환: 지속시간", "40초"],
         ["악마 소환: 쿨다운", "95초"],
         ["악마 소환: 시전 필요 마나", "50"]
     ],
     "note": [
-        "악마 전사: 마나 분쇄(Mana Break) - 25마나를 소모시키고 소모된 마나의 60%의 피해를 입힙니다.",
-        "악마 전사: 최후의 의지(Last Will) - 사망시 550의 마법 데미지를 입힙니다.",
-        "악마 궁수: 마나 번(Mana Burn) - 125마나를 소모시키고 소모된 마나의 100%의 피해를 입힙니다.",
-        "악마 궁수: 궁수의 오라(Archer Aura) - 악마 궁수 주변 900 범위에 이동속도를 3% 증가, 공격속도를 3 증가 오라를 제공합니다.",
+        "악마 전사: 마나 분쇄(Mana Break) - 75마나를 소모시키고 소모된 마나의 60%의 피해를 입힙니다.",
+        "악마 전사: 최후의 의지(Last Will) - 사망시 800의 마법 데미지를 입힙니다.",
+        "악마 전사: 진실의 시야(True Sight) - 악마 전사 주변 1000 범위에 진실의 시야를 제공합니다.",
+        "악마 궁수: 마나 번(Mana Burn) - 225마나를 소모시키고 소모된 마나의 100%의 피해를 입힙니다.",
+        "악마 궁수: 궁수의 오라(Archer Aura) - 악마 궁수 주변 900 범위에 이동속도를 9% 증가, 공격속도를 9 증가 오라를 제공합니다.",
         "기술 시전시 시전자의 집중 기술을 중단합니다."
     ],
     "ability": "",
     "affect": "",
     "type": "",
     "recipe": [
-        ["belt_of_strength", "data/images/items/belt_of_strength_lg.png"],
-        ["staff_of_wizardry", "data/images/items/staff_of_wizardry_lg.png"],
+        ["necronomicon2", "data/images/items/necronomicon2_lg.png"],
         ["recipe", "data/images/items/recipe_lg.png"]
     ],
     "upgrade": [
-        ["necronomicon2", "data/images/items/necronomicon2_lg.png"]
     ]
 }

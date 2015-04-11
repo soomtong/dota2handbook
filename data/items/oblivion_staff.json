@@ -4,24 +4,25 @@
     "desc": "지능 +6, 공격 속도 +10, 피해 +15, 마나 재생 +75%",
     "img": "data/images/items/oblivion_staff_lg.png",
     "cost": "1675",
-    "story": "",
+    "story": "평범한 지팡이처럼 보이지만 실제로는 원래의 소유자였던 엘드리치처럼 매우 강력한 무기입니다.",
     "info": "",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["지능", "+6"],
+        ["공격 속도", "+10"],
+        ["피해", "+15"],
+        ["마나 재생", "+75%"]
     ],
-    "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
-    ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "note": [],
+    "ability": "",
+    "affect": "",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
+        ["quarterstaff", "data/images/items/quarterstaff_lg.png"],
+        ["robe", "data/images/items/robe_lg.png"],
+        ["sobi_mask", "data/images/items/sobi_mask_lg.png"]
     ],
-    "upgrade": []
+    "upgrade": [
+        ["orchid", "data/images/items/orchid_lg.png"],
+        ["refresher", "data/images/items/refresher_lg.png"]
+    ]
 }

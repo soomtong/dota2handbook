@@ -4,24 +4,32 @@
     "desc": "피해 +24, 공격 속도 +25, 연쇄 확률 25%, 연쇄 피해량 120",
     "img": "data/images/items/maelstrom_lg.png",
     "cost": "2800",
-    "story": "연쇄 번개 - 공격 시 일정 확률로 연쇄 번개를 일으켜 4명의 대상을 타격하고 피해를 줍니다.",
-    "info": "연쇄 번개 - 공격 시 일정 확률로 연쇄 번개를 일으켜 4명의 대상을 타격하고 피해를 줍니다.",
+    "story": "신들을 위해 벼려낸 무기입니다. 혼돈의 망치를 손에 넣은 자는 번개의 힘을 다룰 수 있습니다.",
+    "info": "연쇄 번개(Chain Lightning) - 공격 시 일정 확률로 연쇄 번개를 일으켜 4명의 대상을 타격하고 피해를 줍니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["피해", "+24"],
+        ["공격 속도", "+25"],
+        ["연쇄 번개: 확률", "25%"],
+        ["연쇄 번개: 반동 범위", "900"],
+        ["연쇄 번개: 반동 횟수", "4회"],
+        ["연쇄 번개: 피해", "120"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "혼돈의 망치 효과는 다른 고유 공격 변형치와 중첩되지만 연쇄 번개가 발생하면 다른 고유 공격 변형치를 덮어씁니다.",
+        "마법 면역인 대상에게도 연쇄 번개가 이동할 수 있지만 피해는 주지 않습니다.",
+        "보이지 않는 상태의 적에게는 연쇄 번개가 이동하지 않습니다.",
+        "동일 대상에게 두번 연속 반동되지 않습니다.",
+        "연쇄 번개는 0.25초의 이동 시간을 가집니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "ability": "패시브",
+    "affect": "적군",
+    "type": "마법",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
+        ["gloves", "data/images/items/gloves_lg.png"],
+        ["mithril_hammer", "data/images/items/mithril_hammer_lg.png"],
+        ["recipe", "data/images/items/recipe_lg.png"]
     ],
-    "upgrade": []
+    "upgrade": [
+        ["mjollnir", "data/images/items/mjollnir_lg.png"]
+    ]
 }

@@ -4,24 +4,28 @@
     "desc": "피해 +88, 공격 속도 +15, 소형 강타 확률 35%, 소형 강타 피해 100",
     "img": "data/images/items/monkey_king_bar_lg.png",
     "cost": "5400",
-    "story": "소형 강타 - 공격 시 일정 확률로 잠시 적을 기절시키고 보너스 피해를 줍니다. 정밀 타격 - 자신의 공격이 빗나가지 않습니다.",
-    "info": "소형 강타 - 공격 시 일정 확률로 잠시 적을 기절시키고 보너스 피해를 줍니다. 정밀 타격 - 자신의 공격이 빗나가지 않습니다.",
+    "story": "뛰어난 전사가 사용했던 강력한 지팡이입니다.",
+    "info": [
+        "소형 강타(Mini-Bash) - 공격 시 일정 확률로 잠시 적을 기절시키고 보너스 피해를 줍니다.",
+        "정밀 타격(True Strike) - 공격이 빗나가지 않습니다. 적의 구조물을 공격할 때는 정밀 타격 효과가 적용되지 않습니다."
+    ],
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["피해", "+88"],
+        ["공격 속도", "+15"],
+        ["소형 강타: 발동 확률", "35%"],
+        ["소형 강타: 피해", "100"],
+        ["소형 강타: 기절 시간", "0.01초"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "여러 개의 여의봉을 착용할 수 있습니다. 소형 강타 효과는 독립적으로 발동됩니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "ability": "패시브",
+    "affect": "적군",
+    "type": "소형 강타: 마법",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
+        ["javelin", "data/images/items/javelin_lg.png"],
+        ["javelin", "data/images/items/javelin_lg.png"],
+        ["demon_edge", "data/images/items/demon_edge_lg.png"]
     ],
     "upgrade": []
 }

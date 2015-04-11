@@ -4,24 +4,28 @@
     "desc": "방어력 +6, 마나 재생 +50%, 방어력 감소 6 / 7s",
     "img": "data/images/items/medallion_of_courage_lg.png",
     "cost": "1200",
-    "story": "용맹 - 자신과 대상의 방어력을 감소시킵니다. 7초 동안 지속됩니다.",
-    "info": "용맹 - 자신과 대상의 방어력을 감소시킵니다. 7초 동안 지속됩니다.",
+    "story": "이 메달의 소유자는 전투를 두려워 하지 않을지어다!",
+    "info": "용맹(Valor) - 아군에게 시전하면 시전자의 방어력을 감소시키면서 대상의 방어력을 증가시킵니다. 적에게 시전하면 자신과 대상의 방어력을 감소시킵니다. 7초 동안 지속됩니다. 7초 동안 지속됩니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["방어력", "+7"],
+        ["마나재생", "+50%"],
+        ["용맹: 시전 범위", "1000"],
+        ["용맹: 자신 방어도 감소", "-7"],
+        ["용맹: 적군 방어도 감소", "-7"],
+        ["용맹: 아군 방어도 증가", "+7"],
+        ["용맹: 지속 시간", "7초"],
+        ["용맹: 쿨다운", "7초"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "와드나 건물, 공성 유닛에는 시전할 수 없습니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "ability": "지정 대상",
+    "affect": "",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
+        ["sobi_mask", "data/images/items/sobi_mask_lg.png"],
+        ["chainmail", "data/images/items/chainmail_lg.png"],
+        ["recipe", "data/images/items/recipe_lg.png"]
     ],
     "upgrade": []
 }
