@@ -4,24 +4,28 @@
     "desc": "힘 +10, 민첩 +10, 지능 +35, 마나 재생 +150%",
     "img": "data/images/items/sheepstick_lg.png",
     "cost": "5675",
-    "story": "주술 - 3.5초 동안 대상을 힘없는 동물로 변이시킵니다. 환영을 제거합니다.",
-    "info": "주술 - 3.5초 동안 대상을 힘없는 동물로 변이시킵니다. 환영을 제거합니다.",
+    "story": "바이스 교단이 가장 소중하게 지키는 유물이며, 마법사들이 가장 탐내는 유물이기도 합니다.",
+    "info": "주술(Hex) - 3.5초 동안 대상을 힘없는 동물로 변이시킵니다. 환영을 제거합니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["힘", "+10"],
+        ["민첩", "+10"],
+        ["지능", "+35"],
+        ["마나 재생", "+150%"],
+        ["주술: 시전 범위", "800"],
+        ["주술: 지속 시간", "3.5초"],
+        ["주술: 시전 소모 마나", "100"],
+        ["주술: 쿨다운", "35초"],
+        ["주술: 기본 이동 속도", "140"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "ability": "지정 대상",
+    "affect": "적군",
+    "type": "마법",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
+        ["void_stone", "data/images/items/void_stone_lg.png"],
+        ["ultimate_orb", "data/images/items/ultimate_orb_lg.png"],
+        ["mystic_staff", "data/images/items/mystic_staff_lg.png"]
     ],
     "upgrade": []
 }

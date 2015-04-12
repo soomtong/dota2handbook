@@ -4,24 +4,24 @@
     "desc": "마나 재생 +50%",
     "img": "data/images/items/sobi_mask_lg.png",
     "cost": "325",
-    "story": "",
+    "story": "마법사들과 흑마법사들이 다양한 의식을 치를 때 자주 사용하는 가면입니다.",
     "info": "",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["마나 재생", "+50%"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "아군과 공유할 수 있습니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
-    "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
-    ],
-    "upgrade": []
+    "ability": "",
+    "affect": "",
+    "type": "",
+    "recipe": [],
+    "upgrade": [
+        ["ring_of_basilius", "data/images/items/ring_of_basilius_lg.png"],
+        ["soul_ring", "data/images/items/soul_ring_lg.png"],
+        ["urn_of_shadows", "data/images/items/urn_of_shadows_lg.png"],
+        ["medallion_of_courage", "data/images/items/medallion_of_courage_lg.png"],
+        ["oblivion_staff", "data/images/items/oblivion_staff_lg.png"],
+        ["cyclone", "data/images/items/cyclone_lg.png"]
+    ]
 }

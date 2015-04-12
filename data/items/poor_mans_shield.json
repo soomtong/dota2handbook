@@ -1,27 +1,27 @@
 {
     "id": "poor_mans_shield",
     "title": "가난한 자의 방패 Poor Man's Shield",
-    "desc": "민첩 +6, 근접 방어 20, 원거리 방어 10, 방어 확률 60%",
+    "desc": "민첩 +6, 근접 방어 20, 원거리 방어 10, 방어 확률 53%",
     "img": "data/images/items/poor_mans_shield_lg.png",
     "cost": "550",
-    "story": "피해 방어 - 자신의 영웅 속성에 따라 물리 피해를 막아냅니다.",
-    "info": "피해 방어 - 자신의 영웅 속성에 따라 물리 피해를 막아냅니다.",
+    "story": "부서지고 낡았지만 보기보다는 공격을 꽤 막아냅니다.",
+    "info": "피해 방어 - 아이템을 보유한 영웅이 원거리인지 근접인지에 따라 각각 물리 피해를 막아냅니다. 가난한 자의 방패는 항상 적 영웅의 공격을 막아내지만, 크립의 공격은 일정한 확률로만 방어합니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["민첩", "+6"],
+        ["피해 방어: 근접 방어", "-20"],
+        ["피해 방어: 원거리 방어", "-10"],
+        ["피해 방어: 방어 확률", "53%"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "와드류의 공격은 피해 방어 효과가 발동하지 않습니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "ability": "패시브",
+    "affect": "자신",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
+        ["slippers", "data/images/items/slippers_lg.png"],
+        ["slippers", "data/images/items/slippers_lg.png"],
+        ["stout_shield", "data/images/items/stout_shield_lg.png"]
     ],
     "upgrade": []
 }

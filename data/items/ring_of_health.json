@@ -4,24 +4,21 @@
     "desc": "체력 재생 +5",
     "img": "data/images/items/ring_of_health_lg.png",
     "cost": "875",
-    "story": "",
+    "story": "뚱뚱한 하플링의 시체 아래에서 발견된 빛나는 반지입니다.",
     "info": "",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["체력 재생", "+5"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "아군과 공유할 수 있습니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
-    "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
-    ],
-    "upgrade": []
+    "ability": "",
+    "affect": "",
+    "type": "",
+    "recipe": [],
+    "upgrade": [
+        ["pers", "data/images/items/pers_lg.png"],
+        ["hood_of_defiance", "data/images/items/hood_of_defiance_lg.png"],
+        ["vanguard", "data/images/items/vanguard_lg.png"]
+    ]
 }

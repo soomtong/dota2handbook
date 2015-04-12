@@ -375,7 +375,7 @@
         "id": "216_urn_of_shadows", "title": "혼의 항아리", "subtitle": "Urn of Shadows",
         "pic": "data/images/items/urn_of_shadows_lg.png",
         "item_category": 6, "item_type": "support,upgrade,stat",
-        "spec_type": "힘나복술", "price": 875 
+        "spec_type": "돗힘나복술", "price": 875 
     },
     {
         "id": "217_ring_of_aquila", "title": "아퀼라의 반지", "subtitle": "Ring of Aquila",
@@ -489,13 +489,13 @@
         "id": "229_veil_of_discord", "title": "불화의 두건", "subtitle": "Veil of Discord",
         "pic": "data/images/items/veil_of_discord_lg.png",
         "item_category": 7, "item_type": "caster,upgrade,stat,damage,life",
-        "spec_type": "지방재술", "price": 2675 
+        "spec_type": "지방재술사", "price": 2675 
     },
     {
         "id": "230_rod_of_atos", "title": "에이토스의 마법봉", "subtitle": "Rod of Atos",
         "pic": "data/images/items/rod_of_atos_lg.png",
         "item_category": 7, "item_type": "caster,upgrade,stat",
-        "spec_type": "지생력술", "price": 3100 
+        "spec_type": "지생력동술", "price": 3100 
     },
     {
         "id": "231_ultimate_scepter", "title": "아가님의 홀", "subtitle": "Aghanim's Scepter",
@@ -699,13 +699,13 @@
         "id": "406_diffusal_blade", "title": "분산의 검", "subtitle": "Diffusal Blade",
         "pic": "data/images/items/diffusal_blade_lg.png",
         "item_category": 10, "item_type": "artifact,upgrade,stat",
-        "spec_type": "민지변효술", "price": 3150 
+        "spec_type": "민지변효동술", "price": 3150 
     },
     {
         "id": "406_diffusal_blade2", "title": "분산의 검 2", "subtitle": "Diffusal Blade 2",
         "pic": "data/images/items/diffusal_blade2_lg.png",
         "item_category": 10, "item_type": "artifact,upgrade,stat",
-        "spec_type": "민지변효술", "price": 3850
+        "spec_type": "민지변효동술", "price": 3850
     },
     {
         "id": "407_desolator", "title": "심판도", "subtitle": "Desolator",
@@ -717,7 +717,7 @@
         "id": "408_heavens_halberd", "title": "천상의 미늘창", "subtitle": "Heaven's Halberd",
         "pic": "data/images/items/heavens_halberd_lg.png",
         "item_category": 10, "item_type": "artifact,upgrade,stat,damage,life",
-        "spec_type": "힘피동력효술", "price": 3850 
+        "spec_type": "힘피동력효술회", "price": 3850 
     },
     {
         "id": "409_sange_and_yasha", "title": "산화와 야차", "subtitle": "Sange and Yasha",

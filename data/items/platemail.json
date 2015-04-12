@@ -4,24 +4,18 @@
     "desc": "방어력 +10",
     "img": "data/images/items/platemail_lg.png",
     "cost": "1400",
-    "story": "",
+    "story": "상체를 빈틈없이 보호하는 두꺼운 판금 갑옷입니다. 발등에 떨어뜨리지 않도록 주의하십시오.",
     "info": "",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["방어력", "+10"]
     ],
-    "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
-    ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
-    "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
-    ],
-    "upgrade": []
+    "note": [],
+    "ability": "",
+    "affect": "",
+    "type": "",
+    "recipe": [],
+    "upgrade": [
+        ["shivas_guard", "data/images/items/shivas_guard_lg.png"],
+        ["assault", "data/images/items/assault_lg.png"]
+    ]
 }

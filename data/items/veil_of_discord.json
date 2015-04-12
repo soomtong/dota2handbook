@@ -4,24 +4,28 @@
     "desc": "방어력 +6, 모든 능력치 +6, 체력 재생 +6, 피해 +6",
     "img": "data/images/items/veil_of_discord_lg.png",
     "cost": "2675",
-    "story": "마법 저항력 약화 - 마법 저항력을 약화시키는 강한 바람을 내뿜어 적이 받는 마법 피해를 증가시킵니다. 25 초 동안 지속됩니다.",
-    "info": "마법 저항력 약화 - 마법 저항력을 약화시키는 강한 바람을 내뿜어 적이 받는 마법 피해를 증가시킵니다. 25 초 동안 지속됩니다.",
+    "story": "타락한 마법사의 머리장식입니다.",
+    "info": "마법 저항력 약화 - 마법 저항력을 약화시키는 강한 바람을 내뿜어 적이 받는 마법 피해를 증가시킵니다. 25.0초 동안 지속됩니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["모든 능력치", "+6"],
+        ["체력 재생", "+6"],
+        ["방어력", "+6"],
+        ["피해", "+6"],
+        ["마법 저항력 약화: 시전 범위", "1000"],
+        ["마법 저항력 약화: 마법 피해 증가", "25%"],
+        ["마법 저항력 약화: 반경", "600"],
+        ["마법 저항력 약화: 지속시간", "25초"],
+        ["마법 저항력 약화: 쿨다운", "30초"],
+        ["마법 저항력 약화: 시전 소모 마나", "75"]
     ],
-    "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
-    ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "note": [],
+    "ability": "지정 범위",
+    "affect": "적군",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
+        ["null_talisman", "data/images/items/null_talisman_lg.png"],
+        ["helm_of_iron_will", "data/images/items/helm_of_iron_will_lg.png"],
+        ["recipe", "data/images/items/recipe_lg.png"]
     ],
     "upgrade": []
 }

@@ -4,24 +4,19 @@
     "desc": "피해 +10, 공격 속도 +10",
     "img": "data/images/items/quarterstaff_lg.png",
     "cost": "900",
-    "story": "",
+    "story": "빠르게 공격할 수 있는 기본적인 형태의 지팡이입니다.",
     "info": "",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["피해", "+10"],
+        ["공격 속도", "+10"]
     ],
-    "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
-    ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
-    "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
-    ],
-    "upgrade": []
+    "note": [],
+    "ability": "",
+    "affect": "",
+    "type": "",
+    "recipe": [],
+    "upgrade": [
+        ["oblivion_staff", "data/images/items/oblivion_staff_lg.png"],
+        ["butterfly", "data/images/items/butterfly_lg.png"]
+    ]
 }

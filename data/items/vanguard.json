@@ -1,27 +1,28 @@
 {
     "id": "vanguard",
     "title": "선봉 방패 Vanguard",
-    "desc": "체력 +250, 체력 재생 +6, 방어 확률 80%, 원거리 방어 20, 근접 방어 40",
+    "desc": "체력 +250, 체력 재생 +6, 방어 확률 67%, 원거리 방어 20, 근접 방어 40",
     "img": "data/images/items/vanguard_lg.png",
     "cost": "2225",
-    "story": "피해 방어 - 영웅의 종류에 따라 일정 확률로 피해를 방어합니다.",
-    "info": "피해 방어 - 영웅의 종류에 따라 일정 확률로 피해를 방어합니다.",
+    "story": "어떤 매서운 공격이라도 막아낼 수 있는 강력한 방패입니다.",
+    "info": "피해 방어 - 공격을 받을 때 아이템을 보유한 영웅이 원거리인지 근접인지에 따라 각각 일정 확률로 피해를 방어합니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["체력", "+250"],
+        ["체력 재생", "+6"],
+        ["피해 방어: 근접 방어", "-40"],
+        ["피해 방어: 원거리 방어", "-20"],
+        ["피해 방어: 방어 확률", "67%"]
     ],
-    "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
-    ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "note": [],
+    "ability": "패시브",
+    "affect": "자신",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
+        ["stout_shield", "data/images/items/stout_shield_lg.png"],
+        ["ring_of_health", "data/images/items/ring_of_health_lg.png"],
+        ["vitality_booster", "data/images/items/vitality_booster_lg.png"]
     ],
-    "upgrade": []
+    "upgrade": [
+        ["crimson_guard", "data/images/items/crimson_guard_lg.png"]
+    ]
 }

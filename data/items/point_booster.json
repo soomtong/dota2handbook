@@ -4,24 +4,20 @@
     "desc": "마나 +150, 체력 +200",
     "img": "data/images/items/point_booster_lg.png",
     "cost": "1200",
-    "story": "",
+    "story": "완벽한 형태를 갖춘 자수정으로 소지자의 몸과 마음에 기운을 불어넣어 줍니다.",
     "info": "",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["마나", "+150"],
+        ["체력", "+200"]
     ],
-    "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
-    ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
-    "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
-    ],
-    "upgrade": []
+    "note": [],
+    "ability": "",
+    "affect": "",
+    "type": "",
+    "recipe": [],
+    "upgrade": [
+        ["soul_booster", "data/images/items/soul_booster_lg.png"],
+        ["ultimate_scepter", "data/images/items/ultimate_scepter_lg.png"],
+        ["skadi", "data/images/items/skadi_lg.png"]
+    ]
 }

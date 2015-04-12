@@ -4,24 +4,29 @@
     "desc": "체력 재생 +2, 체력 흡수 오라 16%, 마나 재생 오라 0.8, 피해량 오라 15%, 방어력 오라 5",
     "img": "data/images/items/vladmir_lg.png",
     "cost": "2075",
-    "story": "블라드미르의 오라 - 주변 아군에게 다양한 보너스를 제공합니다. 블라드미르의 오라의 체력 흡수 효과는 근접 유닛에게만 영향을 줍니다.",
-    "info": "블라드미르의 오라 - 주변 아군에게 다양한 보너스를 제공합니다. 블라드미르의 오라의 체력 흡수 효과는 근접 유닛에게만 영향을 줍니다.",
+    "story": "죽은 흡혈귀의 원한이 씌인 섬뜩한 가면입니다.",
+    "info": "블라드미르의 오라 - 주변 아군에게 다양한 효과를 제공합니다. 블라드미르의 오라의 흡혈은 근접 유닛에게만 영향을 줍니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["체력 재생", "+2"],
+        ["블라드미르 오라: 범위", "900"],
+        ["블라드미르 오라: 체력 흡수", "16%"],
+        ["블라드미르 오라: 피해", "15%"],
+        ["블라드미르 오라: 방어력", "+5"],
+        ["블라드미르 오라: 마나 재생", "+0.8"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "블라드미르의 오라는 서로 중첩되지 않습니다.",
+        "바실리우스 오라나 아퀼라의 반지 오라와 중첩되지 않습니다.",
+        "블라디미르의 오라는 고유 공격 변형치가 아닙니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
+    "ability": "오라",
     "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
+        ["ring_of_regen", "data/images/items/ring_of_regen_lg.png"],
+        ["ring_of_basilius", "data/images/items/ring_of_basilius_lg.png"],
+        ["lifesteal", "data/images/items/lifesteal_lg.png"],
+        ["recipe", "data/images/items/recipe_lg.png"]
     ],
     "upgrade": []
 }

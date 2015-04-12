@@ -4,24 +4,25 @@
     "desc": "공격 속도 +30",
     "img": "data/images/items/shadow_amulet_lg.png",
     "cost": "1400",
-    "story": "사라지기 - 1.5초에 걸쳐 투명화됩니다. 움직이면 모습이 드러납니다.",
-    "info": "사라지기 - 1.5초에 걸쳐 투명화됩니다. 움직이면 모습이 드러납니다.",
+    "story": "",
+    "info": "사라지기 - 1.5초에 걸쳐 투명화됩니다. 움직이면 모습이 드러납니다. 자신에게 아이템을 사용할 때는 쿨다운이 적용되지 않습니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["공격 속도", "+30"],
+        ["사라지기: 시전 범위", "600"],
+        ["사라지기: 효과 발동 시간", "1.5초"],
+        ["사라지기: 쿨다운", "10초"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "자신에게 시전시 쿨다운이 적용되지 않습니다.",
+        "아군에게 시전시 지정 대상의 집중 기술을 중단시키지 않습니다.",
+        "사라지기 발동 시간이 되면 자동으로 이동과 공격을 멈춥니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
+    "ability": "지정 대상",
     "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
     ],
-    "upgrade": []
+    "upgrade": [
+        ["invis_sword", "data/images/items/invis_sword_lg.png"]
+    ]
 }

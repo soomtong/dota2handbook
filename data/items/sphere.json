@@ -4,24 +4,30 @@
     "desc": "모든 능력치 +15, 체력 재생 +6, 마나 재생 +150%, 피해 +10",
     "img": "data/images/items/sphere_lg.png",
     "cost": "5175",
-    "story": "마법 막기 - 17초마다 대상을 지정하는 주문을 대부분 막아냅니다. 아군 유닛에게 사용하여 일시적으로 효과를 전해줄 수 있습니다.",
-    "info": "마법 막기 - 17초마다 대상을 지정하는 주문을 대부분 막아냅니다. 아군 유닛에게 사용하여 일시적으로 효과를 전해줄 수 있습니다.",
+    "story": "역사상 가장 유명했던 영웅을 지켜 주었던 마법의 구슬입니다.",
+    "info": "마법 차단 - 대부분의 대상 지정 주문을 17초마다 1번씩 막아냅니다. 아군 유닛에게 사용하면 1회의 마법 차단 효과를 전해줄 수 있습니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["힘", "+15"],
+        ["민첩", "+15"],
+        ["지능", "+15"],
+        ["피해", "+10"],
+        ["체력 재생", "+6"],
+        ["마나 재생", "+150%"],
+        ["마법 차단: 시전 범위", "700"],
+        ["마법 차단: 지속 시간", "17초"]
     ],
     "note": [
         "100MP / 30s",
         "공격을 받으면 마나 재생이 중단된다.",
         "1초당 33마나 재생"
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "ability": "지정 대상(더블 클릭시 자신에게 적용)",
+    "affect": "자신 또는 아군",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
+        ["pers", "data/images/items/pers_lg.png"],
+        ["ultimate_orb", "data/images/items/ultimate_orb_lg.png"],
+        ["recipe", "data/images/items/recipe_lg.png"]
     ],
     "upgrade": []
 }

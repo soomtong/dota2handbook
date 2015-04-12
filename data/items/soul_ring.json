@@ -4,24 +4,27 @@
     "desc": "체력 재생 +3, 마나 재생 +50%, 150MP / 10s",
     "img": "data/images/items/soul_ring_lg.png",
     "cost": "800",
-    "story": "희생 - 150의 체력을 소모하여 150의 마나를 회복합니다. 10초 동안 지속됩니다.",
-    "info": "희생 - 150의 체력을 소모하여 150의 마나를 회복합니다. 10초 동안 지속됩니다.",
+    "story": "주위 영혼을 흡수하는 반지입니다.",
+    "info": "희생(Sacrifice) - 150의 체력을 소모하여 150의 마나를 회복합니다. 10초 동안 지속됩니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["체력 재생", "+3"],
+        ["마나 재생", "+50%"],
+        ["희생: 지속시간", "10초"],
+        ["희생: 쿨다운", "30초"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "희생의 지속시간이 끝나면 사용하지 않은 마나는 사라집니다.",
+        "희생의 지속시간이 끝나도 희생으로 사라진 체력은 회복되지 않습니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "ability": "",
+    "affect": "자신",
+    "type": "체력 감소",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
+        ["sobi_mask", "data/images/items/sobi_mask_lg.png"],
+        ["ring_of_regen", "data/images/items/ring_of_regen_lg.png"],
+        ["recipe", "data/images/items/recipe_lg.png"]
     ],
-    "upgrade": []
+    "upgrade": [
+        ["bloodstone", "data/images/items/bloodstone_lg.png"]
+    ]
 }

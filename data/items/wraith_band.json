@@ -4,24 +4,21 @@
     "desc": "힘 +3, 민첩 +6, 지능 +3, 피해 +3",
     "img": "data/images/items/wraith_band_lg.png",
     "cost": "485",
-    "story": "",
+    "story": "희미한 속삭임이 울려 나옵니다.",
     "info": "",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["모든 능력치", "+3"],
+        ["민첩", "+3"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "ability": "",
+    "affect": "",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
+        ["slippers", "data/images/items/slippers_lg.png"],
+        ["circlet", "data/images/items/circlet_lg.png"],
+        ["recipe", "data/images/items/recipe_lg.png"]
     ],
     "upgrade": []
 }

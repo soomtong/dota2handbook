@@ -4,24 +4,24 @@
     "desc": "피해 +65, 화상 피해량 50",
     "img": "data/images/items/radiance_lg.png",
     "cost": "5150",
-    "story": "화염 피해 - 주위 700의 반경 내에 있는 적에게 매초 피해를 줍니다.",
-    "info": "화염 피해 - 주위 700의 반경 내에 있는 적에게 매초 피해를 줍니다.",
+    "story": "주위 적을 불태워 피해를 주는 성스러운 무기입니다.",
+    "info": "화상 - 주위 700의 반경 내에 있는 적을 불태워 매초 피해를 줍니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["피해", "+65"],
+        ["화상: 범위", "700"],
+        ["화상: 피해", "50/초"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "오라의 적용 매커니즘 때문에 화상 범위에 벗어나더라도 0.5초 동안 효과가 남아 있습니다.",
+        "기술 토글시 시전자의 집중 기술을 중단시키지 않습니다.",
+        "화상의 피해는 중복되지 않습니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "ability": "토글",
+    "affect": "적군",
+    "type": "마법",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
+        ["relic", "data/images/items/relic_lg.png"],
+        ["recipe", "data/images/items/recipe_lg.png"]
     ],
     "upgrade": []
 }

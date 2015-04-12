@@ -4,7 +4,7 @@
     "desc": "지능 +10",
     "img": "data/images/items/staff_of_wizardry_lg.png",
     "cost": "1000",
-    "story": "가장 나이가 많은 마법사들이 물려준 마법의 힘을 지닌 지팡이입니다.",
+    "story": "원로 마법사들로부터 대대로 전해진 마력 깃든 지팡이입니다.",
     "info": "",
     "table": [
         ["지능", "+10"]
@@ -15,12 +15,11 @@
     "type": "",
     "recipe": [],
     "upgrade": [
-        ["ultimate_scepter", "data/images/items/ultimate_scepter_lg.png"],
-        ["dagon", "data/images/items/dagon_lg.png"],
-        ["cyclone", "data/images/items/cyclone_lg.png"],
         ["force_staff", "data/images/items/force_staff_lg.png"],
         ["necronomicon", "data/images/items/necronomicon_lg.png"],
-        ["rod_of_atos", "data/images/items/rod_of_atos_lg.png"]
-    ],
-    "upgrade": []
+        ["dagon", "data/images/items/dagon_lg.png"],
+        ["cyclone", "data/images/items/cyclone_lg.png"],
+        ["rod_of_atos", "data/images/items/rod_of_atos_lg.png"],
+        ["ultimate_scepter", "data/images/items/ultimate_scepter_lg.png"]
+    ]
 }

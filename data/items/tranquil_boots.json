@@ -4,24 +4,24 @@
     "desc": "이동 속도 +90, 방어력 +4, 체력 재생 +12",
     "img": "data/images/items/tranquil_boots_lg.png",
     "cost": "1000",
-    "story": "불능 - 공격을 하거나 공격을 받으면 13초 동안 체력 재생 효과를 잃고 이동 속도가 30 감소합니다.",
+    "story": "착용자의 생명을 연장시켜 줄 수 있지만 특별히 신뢰가 가지는 않습니다.",
     "info": "불능 - 공격을 하거나 공격을 받으면 13초 동안 체력 재생 효과를 잃고 이동 속도가 30 감소합니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["이동속도", "+90"],
+        ["체력 재생", "+12"],
+        ["방어력", "+4"],
+        ["불능: 이동속도 감소", "-30"],
+        ["불능: 체력 재생 감소", "-12"],
+        ["불능: 해제 쿨다운", "13초"]
     ],
-    "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
-    ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "note": [],
+    "ability": "패시브",
+    "affect": "자신",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
+        ["ring_of_protection", "data/images/items/ring_of_protection_lg.png"],
+        ["ring_of_regen", "data/images/items/ring_of_regen_lg.png"],
+        ["boots", "data/images/items/boots_lg.png"]
     ],
     "upgrade": []
 }

@@ -1,27 +1,36 @@
 {
     "id": "pipe",
     "title": "통찰의 파이프 Pipe of Insight",
-    "desc": "체력 재생 +11, 주문 저항 +30%",
+    "desc": "체력 재생 +9, 주문 저항 +30%",
     "img": "data/images/items/pipe_lg.png",
     "cost": "3525",
-    "story": "방어막 - 주위 아군 유닛에게 보호막을 걸어 400의 주문 피해를 막습니다.",
-    "info": "방어막 - 주위 아군 유닛에게 보호막을 걸어 400의 주문 피해를 막습니다.",
+    "story": "기원을 알 수 없는 강력한 계승물로서 마법을 막아내는 장벽을 생성합니다.",
+    "info": [
+        "방어막(Barrier) - 주위 아군 유닛에게 보호막을 걸어 400의 주문 피해를 막습니다.",
+        "통찰의 오라(Insight Aura) - 주위 아군 유닛에게 4의 체력 재생 효과를 부여합니다."
+    ],
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["체력 재생", "+9"],
+        ["주문 저항", "+30%"],
+        ["방어막: 적용 범위", "900"],
+        ["방어막: 주문 방어", "400"],
+        ["방어막: 지속 시간", "12초"],
+        ["방어막: 쿨다운", "60초"],
+        ["방어막: 시전 소모 마나", "100"],
+        ["통찰의 오라: 적용 범위", "750"],
+        ["통찰의 오라: 체력 재생", "+4"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "기술 시전시 시전자의 집중 기술을 중단시킵니다.",
+        "방어막 효과를 받은지 50초 이내 새로운 방어막 효과를 받을 수 없습니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
+    "ability": "",
     "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
+        ["headdress", "data/images/items/headdress_lg.png"],
+        ["hood_of_defiance", "data/images/items/hood_of_defiance_lg.png"],
+        ["recipe", "data/images/items/recipe_lg.png"]
     ],
     "upgrade": []
 }

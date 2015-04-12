@@ -4,24 +4,21 @@
     "desc": "피해 +60",
     "img": "data/images/items/relic_lg.png",
     "cost": "3800",
-    "story": "",
+    "story": "전세를 뒤집을 수 있는 고대의 무기입니다.",
     "info": "",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["피해", "+60"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+    "'해골 파쇄기', '악마의 검', '신광검: 주문식' 이 함께 있을 경우 '신광검', '신의 양날검', '심연의 검' 순으로 조합됩니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
-    "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
-    ],
-    "upgrade": []
+    "ability": "",
+    "affect": "",
+    "type": "",
+    "recipe": [],
+    "upgrade": [
+        ["radiance", "data/images/items/radiance_lg.png"],
+        ["rapier", "data/images/items/rapier_lg.png"],
+        ["abyssal_blade", "data/images/items/abyssal_blade_lg.png"]
+    ]
 }

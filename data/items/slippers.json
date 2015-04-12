@@ -17,6 +17,5 @@
     "upgrade": [
         ["poor_mans_shield", "data/images/items/poor_mans_shield_lg.png"],
         ["wraith_band", "data/images/items/wraith_band_lg.png"]
-    ],
-    "upgrade": []
+    ]
 }

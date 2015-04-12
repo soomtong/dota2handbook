@@ -1,27 +1,30 @@
 {
     "id": "skadi",
     "title": "스카디의 눈 Eye of Skadi",
-    "desc": "모든 능력치 +25, 체력 +250, 마나 +250, 이동 둔화 35%, 공격 둔화 35%",
+    "desc": "모든 능력치 +25, 체력 +250, 마나 +250, 이동 둔화 35%, 공격 둔화 -45",
     "img": "data/images/items/skadi_lg.png",
     "cost": "5675",
-    "story": "냉기 공격 - 공격 시 대상의 이동 속도와 공격 속도를 둔화시킵니다.",
+    "story": "하늘빛 용이 보호하는 매우 희귀한 계승물입니다.",
     "info": "냉기 공격 - 공격 시 대상의 이동 속도와 공격 속도를 둔화시킵니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["모든 능력치", "+25"],
+        ["체력", "+250"],
+        ["마나", "+250"],
+        ["냉기 공격: 이동속도 감소", "-35%"],
+        ["냉기 공격: 공격속도 감소", "-45"],
+        ["냉기 공격: 지속 시간(근접, 원거리)", "5초, 3초"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "스카디의 눈은 고유 공격 변형치입니다. 다른 고유 공격 변형치와 중첩되지 않습니다만 흡혈 공격 변형치와 결합할 수 있습니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "ability": "패시브",
+    "affect": "적군",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
+        ["orb_of_venom", "data/images/items/orb_of_venom_lg.png"],
+        ["point_booster", "data/images/items/point_booster_lg.png"],
+        ["ultimate_orb", "data/images/items/ultimate_orb_lg.png"],
+        ["ultimate_orb", "data/images/items/ultimate_orb_lg.png"]
     ],
     "upgrade": []
 }

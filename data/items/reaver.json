@@ -4,24 +4,18 @@
     "desc": "힘 +25",
     "img": "data/images/items/reaver_lg.png",
     "cost": "3200",
-    "story": "",
+    "story": "산을 통채로 찢어발길 수 있는 거대한 도끼입니다.",
     "info": "",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["힘", "+25"]
     ],
-    "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
-    ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
-    "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
-    ],
-    "upgrade": []
+    "note": [],
+    "ability": "",
+    "affect": "",
+    "type": "",
+    "recipe": [],
+    "upgrade": [
+        ["heart", "data/images/items/heart_lg.png"],
+        ["satanic", "data/images/items/satanic_lg.png"]
+    ]
 }

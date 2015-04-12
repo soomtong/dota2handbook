@@ -21,6 +21,5 @@
         ["sphere", "data/images/items/sphere_lg.png"],
         ["sheepstick", "data/images/items/sheepstick_lg.png"],
         ["manta", "data/images/items/manta_lg.png"]
-    ],
-    "upgrade": []
+    ]
 }

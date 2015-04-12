@@ -4,24 +4,33 @@
     "desc": "마나 재생 +50%, 힘 +6, 400HP / 8s",
     "img": "data/images/items/urn_of_shadows_lg.png",
     "cost": "875",
-    "story": "1400의 범위 내에서 적 영웅이 죽을 때마다 에너지를 충전합니다. 영혼 해방 - 아군 유닛의 체력을 서서히 회복시키면서 적 유닛에게 피해를 줍니다.",
-    "info": "1400의 범위 내에서 적 영웅이 죽을 때마다 에너지를 충전합니다. 영혼 해방 - 아군 유닛의 체력을 서서히 회복시키면서 적 유닛에게 피해를 줍니다.",
+    "story": "강력한 악마들의 재가 들어 있습니다.",
+    "info": [
+        "1400의 범위 내에서 적 영웅이 죽을 때마다 에너지를 충전합니다.",
+        "영혼 해방 - 아군 유닛의 체력을 서서히 회복시키면서 적 유닛에게 피해를 줍니다."
+    ],
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["마나 재생", "+50%"],
+        ["힘", "+6"],
+        ["영혼 해방: 시전 범위", "950"],
+        ["영혼 해방: 피해", "150"],
+        ["영혼 해방: 체력 회복", "400"],
+        ["영혼 해방: 지속 시간", "8초"],
+        ["영혼 해방: 쿨다운", "7초"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "영혼 해방으로 체력이 회복되는 동안 피해를 받으면 체력 재생이 중단됩니다.",
+        "영혼 해방으로 주는 피해는 순수 피해입니다.",
+        "적군에게 영혼 해방을 시전했을 경우 1초당 18.75의 순수 피해를 줍니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "ability": "지정 대상(더블 클릭시 자신에게 적용)",
+    "affect": "영웅",
+    "type": "순수",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
+        ["gauntlets", "data/images/items/gauntlets_lg.png"],
+        ["gauntlets", "data/images/items/gauntlets_lg.png"],
+        ["sobi_mask", "data/images/items/sobi_mask_lg.png"],
+        ["recipe", "data/images/items/recipe_lg.png"]
     ],
     "upgrade": []
 }

@@ -4,24 +4,24 @@
     "desc": "체력 +450, 마나 +400, 체력 재생 +4, 마나 재생 +100%",
     "img": "data/images/items/soul_booster_lg.png",
     "cost": "3300",
-    "story": "",
+    "story": "잃어버린 용기를 되찾으세요!",
     "info": "",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["체력", "+450"],
+        ["마나", "+400"],
+        ["체력 재생", "+4"],
+        ["마나 재생", "+100%"]
     ],
-    "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
-    ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "note": [],
+    "ability": "",
+    "affect": "",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
+        ["energy_booster", "data/images/items/energy_booster_lg.png"],
+        ["vitality_booster", "data/images/items/vitality_booster_lg.png"],
+        ["point_booster", "data/images/items/point_booster_lg.png"]
     ],
-    "upgrade": []
+    "upgrade": [
+        ["bloodstone", "data/images/items/bloodstone_lg.png"]
+    ]
 }

@@ -1,27 +1,30 @@
 {
     "id": "refresher",
     "title": "재생의 구슬 Refresher Orb",
-    "desc": "체력 재생 +5, 마나 재생 +200%, 피해 +40, 지능 +6",
+    "desc": "체력 재생 +5, 마나 재생 +200%, 피해 +40, 지능 +6, 공격 속도 +10",
     "img": "data/images/items/refresher_lg.png",
     "cost": "5225",
-    "story": "쿨다운 초기화 - 모든 아이템과 기술의 쿨다운을 초기화합니다.",
+    "story": "마법사들을 위해 만들어진 강력한 계승물입니다.",
     "info": "쿨다운 초기화 - 모든 아이템과 기술의 쿨다운을 초기화합니다.",
     "table": [
-        ["마나", "4"],
-        ["쿨다운", "4"]
+        ["체력 재생", "+5"],
+        ["마나 재생", "+200%"],
+        ["피해", "+40"],
+        ["공격속도", "+10"],
+        ["지능", "+6"],
+        ["쿨다운 초기화: 쿨다운", "195초"],
+        ["쿨다운 초기화: 시전 소모 마나", "375"]
     ],
     "note": [
-        "100MP / 30s",
-        "공격을 받으면 마나 재생이 중단된다.",
-        "1초당 33마나 재생"
+        "기술 시전시 시전자의 집중 기술을 중단시킵니다."
     ],
-    "ability": "지정된 대상(더블 클릭시 자신에게 적용)",
-    "affect": "아군",
-    "type": "마법 또는 일반   ",
+    "ability": "",
+    "affect": "",
+    "type": "",
     "recipe": [
-        ["clarity", "data/images/items/clarity_lg.png"],
-        ["bfury", "data/images/items/bfury_lg.png"],
-        ["blink", "data/images/items/blink_lg.png"]
+        ["pers", "data/images/items/pers_lg.png"],
+        ["oblivion_staff", "data/images/items/oblivion_staff_lg.png"],
+        ["recipe", "data/images/items/recipe_lg.png"]
     ],
     "upgrade": []
 }
