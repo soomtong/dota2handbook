@@ -111,7 +111,7 @@
         "id": "113_wisp", "title": "이오", "subtitle": "Io",
         "pic": "data/images/heroes/wisp_full.png",
         "hero_category": 1, "hero_type": "range,supp,lane,nuke",
-        "skill_type": "절순",
+        "skill_type": "순둔",
         "display_type": ["원거리","지원","전선 지원","누커"],
         "stat":[17, 14, 23], "str_inc": 1.9, "agi_inc": 1.6, "int_inc": 1.7,
         "speed": 295, "armor": -0.04, "attack": "43-52", "range": 575, "sight": "18/8"
@@ -399,7 +399,7 @@
         "id": "145_sniper", "title": "저격수", "subtitle": "Sniper",
         "pic": "data/images/heroes/sniper_full.png",
         "hero_category": 2, "hero_type": "range,carry",
-        "skill_type": "절둔",
+        "skill_type": "둔",
         "display_type": ["원거리","캐리"],
         "stat":[16, 21, 15], "str_inc": 1.7, "agi_inc": 2.9, "int_inc": 2.6,
         "speed": 290, "armor": 1.94, "attack": "36-42", "range": 550, "sight": "18/10"

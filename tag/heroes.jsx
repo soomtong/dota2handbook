@@ -181,6 +181,11 @@ var HeroPanel = React.createClass({
 
         // arrange by order
         var orderList = _.sortBy(heroData.dataList, heroData.orderTable[this.state.order]);
+        if(this.state.order == 'speed' || this.state.order == 'armor'
+            || this.state.order == 'range' || this.state.order == 'str_inc'
+            || this.state.order == 'agi_inc' || this.state.order == 'int_inc') {
+            orderList = _(orderList).reverse().value();
+        }
 
         this.setState({ viewList: orderList });
 
