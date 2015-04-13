@@ -42,13 +42,13 @@ Panel = {
                     $('#bg_holder').css('background-image', 'url(data/images/background/' + img + ')');
                 }, 100);
             }).fail();
+
+            Panel.interval = parseInt(Panel.interval * factor);
         }
 
         setTimeout(function () {
             Panel.replaceBackground();
         }, Panel.interval);
-
-        Panel.interval = parseInt(Panel.interval * factor);
     },
     viewPanel: function () {
         var $wrap = $('#wrap');
@@ -194,6 +194,9 @@ Item = {
             case 12:
                 return "룬";
                 break;
+            case 13:
+                return "로샨";
+                break;
         }
     },
     showTypeColor: function (id) {
@@ -233,6 +236,9 @@ Item = {
                 break;
             case 12:
                 return "badge badge-small badge-custom-rune";
+                break;
+            case 13:
+                return "badge badge-small badge-custom-roshan";
                 break;
         }
     }
