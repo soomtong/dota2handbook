@@ -231,7 +231,7 @@ var heroData = {
         {id: 'speed', title: '이동속도​'},
         {id: 'armor', title: '방어도​'},
         {id: 'range', title: '사거리​'},
-        {id: 'pow_inc', title: '힘 증가량'},
+        {id: 'str_inc', title: '힘 증가량'},
         {id: 'agi_inc', title: '민첩 증가량'},
         {id: 'int_inc', title: '지능 증가량'}
     ],
@@ -242,7 +242,7 @@ var heroData = {
         speed: 'speed',
         armor: 'armor',
         range: 'range',
-        pow_inc: 'pow_inc',
+        str_inc: 'str_inc',
         agi_inc: 'agi_inc',
         int_inc: 'int_inc'
     },
