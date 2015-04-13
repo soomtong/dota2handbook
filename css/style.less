@@ -247,6 +247,12 @@
     float: right;
     margin-top: 2px;
   }
+  .data-img {
+    float: right;
+    margin-top: 5px;
+    margin-right: 3px;
+    margin-left: 0.5em;
+  }
   margin: 0.5em 0;
   position: relative;
   background: hsla(@item-color, @bg-saturation, @bg-brighten, @bg-opacity);
@@ -279,6 +285,34 @@
       }
       dd {
         margin-left: 55%;
+        padding: 0;
+      }
+    }
+  }
+  .data-skill {
+    clear: both;
+    border: 1px solid hsla(@hero-color, 0.5, 0.5, 1);
+    margin: 8px auto;
+    padding: 4px 0.5em;
+    .story {
+      clear: both;
+    }
+    dl {
+      margin: 0;
+      padding: 0;
+      dt {
+        float: left;
+        clear: left;
+        width: 40%;
+        text-align: right;
+        font-size: 0.9em;
+        font-weight: bold;
+        white-space: nowrap;
+        color: hsla(@hero-color, 0.3, 0.2, 1);
+        padding: 0;
+      }
+      dd {
+        margin-left: 45%;
         padding: 0;
       }
     }

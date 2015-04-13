@@ -104,27 +104,29 @@ var Heroes = React.createClass({displayName: "Heroes",
     toggleDetail: function (e) {
         var $el = $(e.target), id;
 
-        if ($el.attr('id')) {
-            id = $el.attr('id').slice(4);
-        } else {
-            id = $el.parent().attr('id').slice(4);
-        }
+        if (!$el.hasClass('detail-data') && !$el.parents().hasClass('detail-data')) {
+            if ($el.attr('id')) {
+                id = $el.attr('id').slice(4);
+            } else {
+                id = $el.parent().attr('id').slice(4);
+            }
 
-        if (this.state.detail) {
-            this.setState({ detail: null });
+            if (this.state.detail) {
+                this.setState({ detail: null });
 
-            $el.remove('div.detail-data');
+                $el.remove('div.detail-data');
 
-            $el.removeClass('active');
-        } else {
-            if (id) {
-                $.getJSON('data/heroes/' + id + '.json', function (data) {
-                    if (this.isMounted()) {
-                        this.setState({ detail: data });
-                    }
-                }.bind(this));
+                $el.removeClass('active');
+            } else {
+                if (id) {
+                    $.getJSON('data/heroes/' + id + '.json', function (data) {
+                        if (this.isMounted()) {
+                            this.setState({ detail: data });
+                        }
+                    }.bind(this));
 
-                $el.addClass('active');
+                    $el.addClass('active');
+                }
             }
         }
     },
@@ -136,22 +138,76 @@ var Heroes = React.createClass({displayName: "Heroes",
         }
     },
     render: function () {
-        var hero = this.props.data;
-        var detail;
+        var item = this.props.data;
+        var data, detail, info, skill;
+
         if (this.state.detail) {
+            data = this.state.detail;
+
+            if (_.isArray(data['info'])) {
+                info = data['info'].map(function (info) {
+                    return React.createElement("p", {className: "info lead"},  info );
+                })
+            } else {
+                info = React.createElement("p", {className: "info lead"},  data['info'] );
+            }
+
+            skill = data['skill'].map(function (skill) {
+                var key = skill['key'] ? React.createElement("b", {className: "label label-black"},  skill['key'] ): '';
+
+                return React.createElement("div", {className: "data-skill"}, 
+                    React.createElement("img", {className: "data-img", src:  skill['img'] }), 
+                    React.createElement("h5", null,  key, " ",  skill['title'] ), 
+                    React.createElement("cite", {className: "story"},  skill['story'] ), 
+                    React.createElement("p", {className: "skill"},  skill['desc'] ), 
+                     _.isArray(skill['info']) && skill['info'].map(function (info) {
+                        return React.createElement("dl", null, 
+                            React.createElement("dt", null,  info[0] ), 
+                            React.createElement("dd", null,  info[1] )
+                        );
+                    }), 
+                    React.createElement("div", {className: "data-note"}, 
+                        React.createElement("ul", null, 
+                            _.isArray(skill['note']) && skill['note'].map(function (note) {
+                                return React.createElement("li", null,  note );
+                            })
+                        )
+                    )
+                );
+            });
+
             detail = React.createElement("div", {className: "tools-alert detail-data"}, 
                 React.createElement("div", {className: "deco"}), 
-                React.createElement("span", {className: "label label-yellow data-cost"},  this.state.detail['cost'] ), 
-                React.createElement("h5", null,  this.state.detail['title'] )
+                React.createElement("span", {className: "label label-yellow data-cost"},  data['type'] ), 
+                React.createElement("h5", null,  data['title'] ), 
+                React.createElement("cite", {className: "story"},  data['story'] ), 
+                React.createElement("div", {className: "data-skill"}, 
+                    _.isArray(data['table']) && data['table'].map(function (table) {
+                        return React.createElement("dl", null, 
+                            React.createElement("dt", null,  table[0] ), 
+                            React.createElement("dd", null,  table[1] )
+                        );
+                    })
+                ), 
+                 info, 
+                React.createElement("div", {className: "data-note"}, 
+                    React.createElement("ul", null, 
+                        _.isArray(data['note']) && data['note'].map(function (list) {
+                            return React.createElement("li", null,  list );
+                        })
+                    )
+                ), 
+                 skill 
             );
         }
+
         return (
-            React.createElement("li", {id:  hero.id}, 
-                React.createElement("img", {src:  hero.pic, alt:  hero.subtitle}), 
-                React.createElement("b", {className: "title"},  hero.title), 
-                React.createElement("small", {className: "subtitle"},  hero.subtitle), 
-                React.createElement("b", {className:  Hero.showTypeColor(hero.hero_category) },  Hero.showType(hero.hero_category) ), 
-             detail 
+            React.createElement("li", {id:  item.id}, 
+                React.createElement("img", {src:  item['pic'], alt:  item['subtitle'] }), 
+                React.createElement("b", {className: "title"},  item.title), 
+                React.createElement("small", {className: "subtitle"},  item['subtitle'] ), 
+                React.createElement("b", {className:  Item.showTypeColor(item['item_category']) },  Item.showType(item['item_category']) ), 
+                 detail 
             )
         );
     }

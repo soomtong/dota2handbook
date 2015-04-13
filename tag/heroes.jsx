@@ -104,27 +104,29 @@ var Heroes = React.createClass({
     toggleDetail: function (e) {
         var $el = $(e.target), id;
 
-        if ($el.attr('id')) {
-            id = $el.attr('id').slice(4);
-        } else {
-            id = $el.parent().attr('id').slice(4);
-        }
+        if (!$el.hasClass('detail-data') && !$el.parents().hasClass('detail-data')) {
+            if ($el.attr('id')) {
+                id = $el.attr('id').slice(4);
+            } else {
+                id = $el.parent().attr('id').slice(4);
+            }
 
-        if (this.state.detail) {
-            this.setState({ detail: null });
+            if (this.state.detail) {
+                this.setState({ detail: null });
 
-            $el.remove('div.detail-data');
+                $el.remove('div.detail-data');
 
-            $el.removeClass('active');
-        } else {
-            if (id) {
-                $.getJSON('data/heroes/' + id + '.json', function (data) {
-                    if (this.isMounted()) {
-                        this.setState({ detail: data });
-                    }
-                }.bind(this));
+                $el.removeClass('active');
+            } else {
+                if (id) {
+                    $.getJSON('data/heroes/' + id + '.json', function (data) {
+                        if (this.isMounted()) {
+                            this.setState({ detail: data });
+                        }
+                    }.bind(this));
 
-                $el.addClass('active');
+                    $el.addClass('active');
+                }
             }
         }
     },
@@ -136,22 +138,76 @@ var Heroes = React.createClass({
         }
     },
     render: function () {
-        var hero = this.props.data;
-        var detail;
+        var item = this.props.data;
+        var data, detail, info, skill;
+
         if (this.state.detail) {
+            data = this.state.detail;
+
+            if (_.isArray(data['info'])) {
+                info = data['info'].map(function (info) {
+                    return <p className="info lead">{ info }</p>;
+                })
+            } else {
+                info = <p className="info lead">{ data['info'] }</p>;
+            }
+
+            skill = data['skill'].map(function (skill) {
+                var key = skill['key'] ? <b className="label label-black">{ skill['key'] }</b>: '';
+
+                return <div className="data-skill">
+                    <img className="data-img" src={ skill['img'] }></img>
+                    <h5>{ key } { skill['title'] }</h5>
+                    <cite className="story">{ skill['story'] }</cite>
+                    <p className="skill">{ skill['desc'] }</p>
+                    { _.isArray(skill['info']) && skill['info'].map(function (info) {
+                        return <dl>
+                            <dt>{ info[0] }</dt>
+                            <dd>{ info[1] }</dd>
+                        </dl>;
+                    }) }
+                    <div className="data-note">
+                        <ul>{
+                            _.isArray(skill['note']) && skill['note'].map(function (note) {
+                                return <li>{ note }</li>;
+                            })
+                        }</ul>
+                    </div>
+                </div>;
+            });
+
             detail = <div className="tools-alert detail-data">
                 <div className="deco"></div>
-                <span className="label label-yellow data-cost">{ this.state.detail['cost'] }</span>
-                <h5>{ this.state.detail['title'] }</h5>
+                <span className="label label-yellow data-cost">{ data['type'] }</span>
+                <h5>{ data['title'] }</h5>
+                <cite className="story">{ data['story'] }</cite>
+                <div className="data-skill">{
+                    _.isArray(data['table']) && data['table'].map(function (table) {
+                        return <dl>
+                            <dt>{ table[0] }</dt>
+                            <dd>{ table[1] }</dd>
+                        </dl>;
+                    })
+                }</div>
+                { info }
+                <div className="data-note">
+                    <ul>{
+                        _.isArray(data['note']) && data['note'].map(function (list) {
+                            return <li>{ list }</li>;
+                        })
+                    }</ul>
+                </div>
+                { skill }
             </div>;
         }
+
         return (
-            <li id={ hero.id }>
-                <img src={ hero.pic } alt={ hero.subtitle }/>
-                <b className="title">{ hero.title }</b>
-                <small className="subtitle">{ hero.subtitle }</small>
-                <b className={ Hero.showTypeColor(hero.hero_category) }>{ Hero.showType(hero.hero_category) }</b>
-            { detail }
+            <li id={ item.id }>
+                <img src={ item['pic'] } alt={ item['subtitle'] }/>
+                <b className="title">{ item.title }</b>
+                <small className="subtitle">{ item['subtitle'] }</small>
+                <b className={ Item.showTypeColor(item['item_category']) }>{ Item.showType(item['item_category']) }</b>
+                { detail }
             </li>
         );
     }

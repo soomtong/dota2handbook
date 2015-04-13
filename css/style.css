@@ -219,6 +219,12 @@
   float: right;
   margin-top: 2px;
 }
+.detail-data .data-img {
+  float: right;
+  margin-top: 5px;
+  margin-right: 3px;
+  margin-left: 0.5em;
+}
 .detail-data span {
   color: #0f0f0f;
 }
@@ -249,6 +255,34 @@
 }
 .detail-data .data-table dl dd {
   margin-left: 55%;
+  padding: 0;
+}
+.detail-data .data-skill {
+  clear: both;
+  border: 1px solid #40bf55;
+  margin: 8px auto;
+  padding: 4px 0.5em;
+}
+.detail-data .data-skill .story {
+  clear: both;
+}
+.detail-data .data-skill dl {
+  margin: 0;
+  padding: 0;
+}
+.detail-data .data-skill dl dt {
+  float: left;
+  clear: left;
+  width: 40%;
+  text-align: right;
+  font-size: 0.9em;
+  font-weight: bold;
+  white-space: nowrap;
+  color: #244229;
+  padding: 0;
+}
+.detail-data .data-skill dl dd {
+  margin-left: 45%;
   padding: 0;
 }
 .detail-data .data-note ul {

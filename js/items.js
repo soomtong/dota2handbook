@@ -140,6 +140,7 @@ var Items = React.createClass({displayName: "Items",
     render: function () {
         var item = this.props.data;
         var data, detail, ability, affect, type, info;
+
         if (this.state.detail) {
             data = this.state.detail;
             if (data['ability']) {
@@ -158,6 +159,7 @@ var Items = React.createClass({displayName: "Items",
             } else {
                 info = React.createElement("p", {className: "info lead"},  data['info'] );
             }
+
             detail = React.createElement("div", {className: "tools-alert detail-data"}, 
                 React.createElement("div", {className: "deco"}), 
                 React.createElement("span", {className: "label label-yellow data-cost"},  data['cost'] ), 
@@ -196,12 +198,13 @@ var Items = React.createClass({displayName: "Items",
                 )
             );
         }
+
         return (
             React.createElement("li", {id:  item.id}, 
-                React.createElement("img", {src:  item.pic, alt:  item.subtitle}), 
+                React.createElement("img", {src:  item['pic'], alt:  item['subtitle'] }), 
                 React.createElement("b", {className: "title"},  item.title), 
-                React.createElement("small", {className: "subtitle"},  item.subtitle), 
-                React.createElement("b", {className:  Item.showTypeColor(item.item_category) },  Item.showType(item.item_category) ), 
+                React.createElement("small", {className: "subtitle"},  item['subtitle'] ), 
+                React.createElement("b", {className:  Item.showTypeColor(item['item_category']) },  Item.showType(item['item_category']) ), 
              detail 
             )
         );

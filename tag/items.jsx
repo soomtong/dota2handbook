@@ -140,6 +140,7 @@ var Items = React.createClass({
     render: function () {
         var item = this.props.data;
         var data, detail, ability, affect, type, info;
+
         if (this.state.detail) {
             data = this.state.detail;
             if (data['ability']) {
@@ -158,6 +159,7 @@ var Items = React.createClass({
             } else {
                 info = <p className="info lead">{ data['info'] }</p>;
             }
+
             detail = <div className="tools-alert detail-data">
                 <div className="deco"></div>
                 <span className="label label-yellow data-cost">{ data['cost'] }</span>
@@ -196,12 +198,13 @@ var Items = React.createClass({
                 }</ul>
             </div>;
         }
+
         return (
             <li id={ item.id }>
-                <img src={ item.pic } alt={ item.subtitle }/>
+                <img src={ item['pic'] } alt={ item['subtitle'] }/>
                 <b className="title">{ item.title }</b>
-                <small className="subtitle">{ item.subtitle }</small>
-                <b className={ Item.showTypeColor(item.item_category) }>{ Item.showType(item.item_category) }</b>
+                <small className="subtitle">{ item['subtitle'] }</small>
+                <b className={ Item.showTypeColor(item['item_category']) }>{ Item.showType(item['item_category']) }</b>
             { detail }
             </li>
         );

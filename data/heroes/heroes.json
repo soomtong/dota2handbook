@@ -6,7 +6,7 @@
         "skill_type": "절가",
         "display_type": ["근접","전투 개시자","무력화","지원","전선 지원"],
         "stat":[22, 12, 16], "str_inc": 2.5, "agi_inc": 1.5, "int_inc": 1.8,
-        "speed": 300, "armor": 2.68, "attack": "46-56", "range": 128, "sight": "18/8"
+        "speed": 310, "armor": 2.68, "attack": "46-56", "range": 128, "sight": "18/8"
     },
     {
         "id": "102_sven", "title": "스벤", "subtitle": "Sven",
