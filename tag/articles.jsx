@@ -142,6 +142,7 @@ var Articles = React.createClass({
     render: function () {
         var article = this.props.data;
         var detail;
+
         if (this.state.detail) {
             detail = <div className="tools-alert detail-data">
                 <div className="deco"></div>
@@ -149,12 +150,13 @@ var Articles = React.createClass({
                 <h5>{ this.state.detail['title'] }</h5>
             </div>;
         }
+
         return (
             <li id={ article.id }>
-                <img src={ article.pic } alt={ article.subtitle }/>
+                <img src={ article['pic'] } alt={ article['subtitle'] }/>
                 <b className="title">{ article.title }</b>
-                <small className="subtitle">{ article.subtitle }</small>
-                <b className="badge badge-small badge-white">{ Article.showType(article.article_category) }</b>
+                <small className="subtitle">{ article['subtitle'] }</small>
+                <b className="badge badge-small badge-white">{ Article.showType(article['article_category']) }</b>
             { detail }
             </li>
         );
