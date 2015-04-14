@@ -128,7 +128,7 @@ var Articles = React.createClass({displayName: "Articles",
 
                 $el.addClass('active');
 
-                _gaq.push(['_trackEvent', 'Hero Detail', 'view', title]);
+                _gaq.push(['_trackEvent', 'Article Detail', 'view', title]);
             }
         }
     },
@@ -142,6 +142,7 @@ var Articles = React.createClass({displayName: "Articles",
     render: function () {
         var article = this.props.data;
         var detail;
+
         if (this.state.detail) {
             detail = React.createElement("div", {className: "tools-alert detail-data"}, 
                 React.createElement("div", {className: "deco"}), 
@@ -149,12 +150,13 @@ var Articles = React.createClass({displayName: "Articles",
                 React.createElement("h5", null,  this.state.detail['title'] )
             );
         }
+
         return (
             React.createElement("li", {id:  article.id}, 
-                React.createElement("img", {src:  article.pic, alt:  article.subtitle}), 
+                React.createElement("img", {src:  article['pic'], alt:  article['subtitle'] }), 
                 React.createElement("b", {className: "title"},  article.title), 
-                React.createElement("small", {className: "subtitle"},  article.subtitle), 
-                React.createElement("b", {className: "badge badge-small badge-white"},  Article.showType(article.article_category) ), 
+                React.createElement("small", {className: "subtitle"},  article['subtitle'] ), 
+                React.createElement("b", {className: "badge badge-small badge-white"},  Article.showType(article['article_category']) ), 
              detail 
             )
         );
