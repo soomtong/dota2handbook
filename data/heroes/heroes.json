@@ -189,7 +189,7 @@
         "speed": 285, "armor": -0.32, "attack": "38-48", "range": 500, "sight": "18/8"
     },
     {
-        "id": "122_axe", "title": "도끼전사", "subtitle": "Axe",
+        "id": "201_axe", "title": "도끼전사", "subtitle": "Axe",
         "pic": "data/images/heroes/axe_full.png",
         "hero_category": 1, "hero_type": "melee,durable,init,disable,jungle,tank",
         "skill_type": "둔발",
@@ -198,7 +198,7 @@
         "speed": 290, "armor": 1.80, "attack": "49-53", "range": 128, "sight": "18/8"
     },
     {
-        "id": "123_pudge", "title": "퍼지", "subtitle": "Pudge",
+        "id": "202_pudge", "title": "퍼지", "subtitle": "Pudge",
         "pic": "data/images/heroes/pudge_full.png",
         "hero_category": 1, "hero_type": "melee,durable,disable",
         "skill_type": "절둔끌",
@@ -207,7 +207,7 @@
         "speed": 285, "armor": 0.96, "attack": "52-58", "range": 128, "sight": "18/8"
     },
     {
-        "id": "124_sand_king", "title": "모래 제왕", "subtitle": "Sand King",
+        "id": "203_sand_king", "title": "모래 제왕", "subtitle": "Sand King",
         "pic": "data/images/heroes/sand_king_full.png",
         "hero_category": 1, "hero_type": "melee,init,disable,nuke",
         "skill_type": "절둔은돌집",
@@ -216,7 +216,7 @@
         "speed": 300, "armor": 2.66, "attack": "43-59", "range": 128, "sight": "18/8"
     },
     {
-        "id": "125_slardar", "title": "슬라다", "subtitle": "Slardar",
+        "id": "204_slardar", "title": "슬라다", "subtitle": "Slardar",
         "pic": "data/images/heroes/slardar_full.png",
         "hero_category": 1, "hero_type": "melee,carry,durable,disable,init",
         "skill_type": "절방",
@@ -225,7 +225,7 @@
         "speed": 300, "armor": 5.38, "attack": "51-59", "range": 128, "sight": "18/8"
     },
     {
-        "id": "126_tidehunter", "title": "파도사냥꾼", "subtitle": "Tidehunter",
+        "id": "205_tidehunter", "title": "파도사냥꾼", "subtitle": "Tidehunter",
         "pic": "data/images/heroes/tidehunter_full.png",
         "hero_category": 1, "hero_type": "melee,init,durable,disable,supp",
         "skill_type": "절둔",
@@ -234,7 +234,7 @@
         "speed": 310, "armor": 3.10, "attack": "47-53", "range": 128, "sight": "18/8"
     },
     {
-        "id": "127_skeleton_king", "title": "망령 제왕", "subtitle": "Wraith King",
+        "id": "206_skeleton_king", "title": "망령 제왕", "subtitle": "Wraith King",
         "pic": "data/images/heroes/skeleton_king_full.png",
         "hero_category": 1, "hero_type": "melee,durable,carry,disable,tank",
         "skill_type": "절둔흡치",
@@ -243,7 +243,7 @@
         "speed": 300, "armor": 3.52, "attack": "54-56", "range": 128, "sight": "18/8"
     },
     {
-        "id": "128_life_stealer", "title": "흡혈마", "subtitle": "Lifestealer",
+        "id": "207_life_stealer", "title": "흡혈마", "subtitle": "Lifestealer",
         "pic": "data/images/heroes/life_stealer_full.png",
         "hero_category": 1, "hero_type": "melee,carry,durable,jungle,escape",
         "skill_type": "둔무흡",
@@ -252,7 +252,7 @@
         "speed": 315, "armor": 1.52, "attack": "57-67", "range": 128, "sight": "18/8"
     },
     {
-        "id": "129_night_stalker", "title": "밤의 추격자", "subtitle": "Night Stalker",
+        "id": "208_night_stalker", "title": "밤의 추격자", "subtitle": "Night Stalker",
         "pic": "data/images/heroes/night_stalker_full.png",
         "hero_category": 1, "hero_type": "melee,durable,init",
         "skill_type": "실절둔침",
@@ -261,7 +261,7 @@
         "speed": 295, "armor": 5.52, "attack": "57-61", "range": 128, "sight": "12/18"
     },
     {
-        "id": "130_doom_bringer", "title": "파멸의 사도", "subtitle": "Doom",
+        "id": "209_doom_bringer", "title": "파멸의 사도", "subtitle": "Doom",
         "pic": "data/images/heroes/doom_bringer_full.png",
         "hero_category": 1, "hero_type": "melee,durable,carry,nuke",
         "skill_type": "절침",
@@ -270,7 +270,7 @@
         "speed": 290, "armor": 0.54, "attack": "53-69", "range": 150, "sight": "18/8"
     },
     {
-        "id": "131_spirit_breaker", "title": "영혼 파괴자", "subtitle": "Spirit Breaker",
+        "id": "210_spirit_breaker", "title": "영혼 파괴자", "subtitle": "Spirit Breaker",
         "pic": "data/images/heroes/spirit_breaker_full.png",
         "hero_category": 1, "hero_type": "melee,durable,carry,init,disable",
         "skill_type": "절돌",
@@ -279,7 +279,7 @@
         "speed": 290, "armor": 5.38, "attack": "60-70", "range": 128, "sight": "18/8"
     },
     {
-        "id": "132_lycan", "title": "늑대인간", "subtitle": "Lycan",
+        "id": "211_lycan", "title": "늑대인간", "subtitle": "Lycan",
         "pic": "data/images/heroes/lycan_full.png",
         "hero_category": 1, "hero_type": "melee,carry,jungle,push,durable",
         "skill_type": "환치",
@@ -288,7 +288,7 @@
         "speed": 305, "armor": 3.24, "attack": "58-62", "range": 128, "sight": "18/8"
     },
     {
-        "id": "133_chaos_knight", "title": "혼돈 기사", "subtitle": "Chaos Knight",
+        "id": "212_chaos_knight", "title": "혼돈 기사", "subtitle": "Chaos Knight",
         "pic": "data/images/heroes/chaos_knight_full.png",
         "hero_category": 1, "hero_type": "melee,carry,disable,durable,push,hard",
         "skill_type": "절돌환치",
@@ -297,7 +297,7 @@
         "speed": 325, "armor": 3.96, "attack": "49-79", "range": 128, "sight": "18/8"
     },
     {
-        "id": "134_undying", "title": "언다잉", "subtitle": "Undying",
+        "id": "213_undying", "title": "언다잉", "subtitle": "Undying",
         "pic": "data/images/heroes/undying_full.png",
         "hero_category": 1, "hero_type": "melee,durable,push,disable,init",
         "skill_type": "둔힐환방능",
@@ -306,7 +306,7 @@
         "speed": 310, "armor": 3.40, "attack": "57-65", "range": 128, "sight": "18/8"
     },
     {
-        "id": "135_magnataur", "title": "마그누스", "subtitle": "Magnus",
+        "id": "214_magnataur", "title": "마그누스", "subtitle": "Magnus",
         "pic": "data/images/heroes/magnataur_full.png",
         "hero_category": 1, "hero_type": "melee,init,disable,nuke,carry",
         "skill_type": "절둔돌",
@@ -315,7 +315,7 @@
         "speed": 315, "armor": 4.10, "attack": "49-61", "range": 128, "sight": "18/8"
     },
     {
-        "id": "136_abaddon", "title": "아바돈", "subtitle": "Abaddon",
+        "id": "215_abaddon", "title": "아바돈", "subtitle": "Abaddon",
         "pic": "data/images/heroes/abaddon_full.png",
         "hero_category": 1, "hero_type": "melee,durable,supp,lane,tank",
         "skill_type": "둔힐",
@@ -324,7 +324,7 @@
         "speed": 310, "armor": 1.38, "attack": "55-65", "range": 128, "sight": "18/8"
     },
     {
-        "id": "137_antimage", "title": "항마사", "subtitle": "Anti-Mage",
+        "id": "301_antimage", "title": "항마사", "subtitle": "Anti-Mage",
         "pic": "data/images/heroes/antimage_full.png",
         "hero_category": 2, "hero_type": "melee,carry,escape,hard",
         "skill_type": "절돌순번",
@@ -333,7 +333,7 @@
         "speed": 315, "armor": 2.08, "attack": "49-53", "range": 128, "sight": "18/8"
     },
     {
-        "id": "138_drow_ranger", "title": "드로우 레인저", "subtitle": "Drow Ranger",
+        "id": "302_drow_ranger", "title": "드로우 레인저", "subtitle": "Drow Ranger",
         "pic": "data/images/heroes/drow_ranger_full.png",
         "hero_category": 2, "hero_type": "range,carry,hard",
         "skill_type": "둔침",
@@ -342,7 +342,7 @@
         "speed": 300, "armor": 0.64, "attack": "44-55", "range": 625, "sight": "18/8"
     },
     {
-        "id": "139_juggernaut", "title": "가면무사", "subtitle": "Juggernaut",
+        "id": "303_juggernaut", "title": "가면무사", "subtitle": "Juggernaut",
         "pic": "data/images/heroes/juggernaut_full.png",
         "hero_category": 2, "hero_type": "melee,carry,push",
         "skill_type": "힐무치",
@@ -351,7 +351,7 @@
         "speed": 305, "armor": 3.80, "attack": "44-48", "range": 128, "sight": "18/8"
     },
     {
-        "id": "140_mirana", "title": "미라나", "subtitle": "Mirana",
+        "id": "304_mirana", "title": "미라나", "subtitle": "Mirana",
         "pic": "data/images/heroes/mirana_full.png",
         "hero_category": 2, "hero_type": "range,carry,nuke,disable,escape",
         "skill_type": "절은돌",
@@ -360,7 +360,7 @@
         "speed": 300, "armor": 1.80, "attack": "38-49", "range": 600, "sight": "18/8"
     },
     {
-        "id": "141_morphling", "title": "모플링", "subtitle": "Morphling",
+        "id": "305_morphling", "title": "모플링", "subtitle": "Morphling",
         "pic": "data/images/heroes/morphling_full.png",
         "hero_category": 2, "hero_type": "range,carry,escape,init,nuke",
         "skill_type": "절돌환무순",
@@ -369,7 +369,7 @@
         "speed": 285, "armor": 1.36, "attack": "37-46", "range": 350, "sight": "18/8"
     },
     {
-        "id": "142_phantom_lancer", "title": "환영 창기사", "subtitle": "Phantom Lancer",
+        "id": "306_phantom_lancer", "title": "환영 창기사", "subtitle": "Phantom Lancer",
         "pic": "data/images/heroes/phantom_lancer_full.png",
         "hero_category": 2, "hero_type": "melee,carry,escape,push,hard",
         "skill_type": "둔은돌환",
@@ -378,7 +378,7 @@
         "speed": 290, "armor": 3.22, "attack": "45-67", "range": 128, "sight": "18/8"
     },
     {
-        "id": "143_vengefulspirit", "title": "복수 혼령", "subtitle": "Vengeful Spirit",
+        "id": "307_vengefulspirit", "title": "복수 혼령", "subtitle": "Vengeful Spirit",
         "pic": "data/images/heroes/vengefulspirit_full.png",
         "hero_category": 2, "hero_type": "range,supp,disable,lane,init",
         "skill_type": "절순",
@@ -387,7 +387,7 @@
         "speed": 295, "armor": 3.78, "attack": "39-53", "range": 400, "sight": "18/8"
     },
     {
-        "id": "144_riki", "title": "리키", "subtitle": "Riki",
+        "id": "308_riki", "title": "리키", "subtitle": "Riki",
         "pic": "data/images/heroes/riki_full.png",
         "hero_category": 2, "hero_type": "melee,carry,escape",
         "skill_type": "실둔은돌침",
@@ -396,7 +396,7 @@
         "speed": 300, "armor": 5.76, "attack": "48-52", "range": 128, "sight": "18/8"
     },
     {
-        "id": "145_sniper", "title": "저격수", "subtitle": "Sniper",
+        "id": "309_sniper", "title": "저격수", "subtitle": "Sniper",
         "pic": "data/images/heroes/sniper_full.png",
         "hero_category": 2, "hero_type": "range,carry",
         "skill_type": "둔",
@@ -405,7 +405,7 @@
         "speed": 290, "armor": 1.94, "attack": "36-42", "range": 550, "sight": "18/10"
     },
     {
-        "id": "146_templar_assassin", "title": "암살 기사", "subtitle": "Templar Assassin",
+        "id": "310_templar_assassin", "title": "암살 기사", "subtitle": "Templar Assassin",
         "pic": "data/images/heroes/templar_assassin_full.png",
         "hero_category": 2, "hero_type": "range,carry,escape",
         "skill_type": "둔은방",
@@ -414,7 +414,7 @@
         "speed": 305, "armor": 4.22, "attack": "53-59", "range": 140, "sight": "18/8"
     },
     {
-        "id": "147_luna", "title": "루나", "subtitle": "Luna",
+        "id": "311_luna", "title": "루나", "subtitle": "Luna",
         "pic": "data/images/heroes/luna_full.png",
         "hero_category": 2, "hero_type": "range,carry,nuke",
         "skill_type": "절",
@@ -423,7 +423,7 @@
         "speed": 330, "armor": 3.08, "attack": "48-54", "range": 330, "sight": "18/8"
     },
     {
-        "id": "148_bounty_hunter", "title": "현상금 사냥꾼", "subtitle": "Bounty Hunter",
+        "id": "312_bounty_hunter", "title": "현상금 사냥꾼", "subtitle": "Bounty Hunter",
         "pic": "data/images/heroes/bounty_hunter_full.png",
         "hero_category": 2, "hero_type": "melee,carry,escape,nuke",
         "skill_type": "절둔은치",
@@ -432,7 +432,7 @@
         "speed": 315, "armor": 5.94, "attack": "45-59", "range": 128, "sight": "18/10"
     },
     {
-        "id": "149_ursa", "title": "우르사", "subtitle": "Ursa",
+        "id": "313_ursa", "title": "우르사", "subtitle": "Ursa",
         "pic": "data/images/heroes/ursa_full.png",
         "hero_category": 2, "hero_type": "melee,carry,jungle,durable",
         "skill_type": "둔",
@@ -441,7 +441,7 @@
         "speed": 310, "armor": 5.52, "attack": "45-49", "range": 128, "sight": "18/8"
     },
     {
-        "id": "150_gyrocopter", "title": "자이로콥터", "subtitle": "Gyrocopter",
+        "id": "314_gyrocopter", "title": "자이로콥터", "subtitle": "Gyrocopter",
         "pic": "data/images/heroes/gyrocopter_full.png",
         "hero_category": 2, "hero_type": "range,disable,init,nuke",
         "skill_type": "절둔",
@@ -450,7 +450,7 @@
         "speed": 315, "armor": 4.36, "attack": "41-51", "range": 365, "sight": "18/8"
     },
     {
-        "id": "151_lone_druid", "title": "고독한 드루이드", "subtitle": "Lone Druid",
+        "id": "315_lone_druid", "title": "고독한 드루이드", "subtitle": "Lone Druid",
         "pic": "data/images/heroes/lone_druid_full.png",
         "hero_category": 2, "hero_type": "range,carry,durable,push,jungle",
         "skill_type": "속환",
@@ -459,7 +459,7 @@
         "speed": 325, "armor": 3.36, "attack": "46-50", "range": 550, "sight": "18/8"
     },
     {
-        "id": "152_naga_siren", "title": "나가 세이렌", "subtitle": "Naga Siren",
+        "id": "316_naga_siren", "title": "나가 세이렌", "subtitle": "Naga Siren",
         "pic": "data/images/heroes/naga_siren_full.png",
         "hero_category": 2, "hero_type": "melee,carry,disable,push,escape",
         "skill_type": "속환방",
@@ -468,7 +468,7 @@
         "speed": 320, "armor": 5.94, "attack": "44-46", "range": 128, "sight": "18/8"
     },
     {
-        "id": "153_troll_warlord", "title": "트롤 전쟁군주", "subtitle": "Troll Warlord",
+        "id": "317_troll_warlord", "title": "트롤 전쟁군주", "subtitle": "Troll Warlord",
         "pic": "data/images/heroes/troll_warlord_full.png",
         "hero_category": 2, "hero_type": "range,carry,hard",
         "skill_type": "실절둔",
@@ -477,7 +477,7 @@
         "speed": 300, "armor": 1.94, "attack": "38-56", "range": 500, "sight": "18/8"
     },
     {
-        "id": "154_ember_spirit", "title": "불꽃령", "subtitle": "Ember Spirit",
+        "id": "318_ember_spirit", "title": "불꽃령", "subtitle": "Ember Spirit",
         "pic": "data/images/heroes/ember_spirit_full.png",
         "hero_category": 2, "hero_type": "melee,carry,nuke",
         "skill_type": "속환순",
@@ -486,7 +486,7 @@
         "speed": 310, "armor": 1.08, "attack": "52-56", "range": 128, "sight": "18/8"
     },
     {
-        "id": "155_bloodseeker", "title": "혈귀", "subtitle": "Bloodseeker",
+        "id": "401_bloodseeker", "title": "혈귀", "subtitle": "Bloodseeker",
         "pic": "data/images/heroes/bloodseeker_full.png",
         "hero_category": 2, "hero_type": "melee,carry,jungle",
         "skill_type": "침힐흡",
@@ -495,7 +495,7 @@
         "speed": 300, "armor": 3.36, "attack": "53-59", "range": 128, "sight": "18/8"
     },
     {
-        "id": "156_nevermore", "title": "그림자 마귀", "subtitle": "Shadow Fiend",
+        "id": "402_nevermore", "title": "그림자 마귀", "subtitle": "Shadow Fiend",
         "pic": "data/images/heroes/nevermore_full.png",
         "hero_category": 2, "hero_type": "range,carry,nuke",
         "skill_type": "둔방",
@@ -504,7 +504,7 @@
         "speed": 305, "armor": 1.80, "attack": "35-41", "range": 500, "sight": "18/8"
     },
     {
-        "id": "157_razor", "title": "레이저", "subtitle": "Razor",
+        "id": "403_razor", "title": "레이저", "subtitle": "Razor",
         "pic": "data/images/heroes/razor_full.png",
         "hero_category": 2, "hero_type": "range,carry,durable,nuke",
         "skill_type": "둔방능",
@@ -513,7 +513,7 @@
         "speed": 295, "armor": 2.08, "attack": "45-47", "range": 475, "sight": "18/8"
     },
     {
-        "id": "158_venomancer", "title": "맹독사", "subtitle": "Venomancer",
+        "id": "404_venomancer", "title": "맹독사", "subtitle": "Venomancer",
         "pic": "data/images/heroes/venomancer_full.png",
         "hero_category": 2, "hero_type": "range,supp,nuke,init,push",
         "skill_type": "둔환",
@@ -522,7 +522,7 @@
         "speed": 285, "armor": 3.08, "attack": "46-48", "range": 450, "sight": "18/8"
     },
     {
-        "id": "159_faceless_void", "title": "얼굴없는 전사", "subtitle": "Faceless Void",
+        "id": "405_faceless_void", "title": "얼굴없는 전사", "subtitle": "Faceless Void",
         "pic": "data/images/heroes/faceless_void_full.png",
         "hero_category": 2, "hero_type": "melee,carry,init,disable,escape,hard",
         "skill_type": "절둔돌",
@@ -531,7 +531,7 @@
         "speed": 300, "armor": 3.94, "attack": "58-64", "range": 128, "sight": "18/8"
     },
     {
-        "id": "160_phantom_assassin", "title": "유령 자객", "subtitle": "Phantom Assassin",
+        "id": "406_phantom_assassin", "title": "유령 자객", "subtitle": "Phantom Assassin",
         "pic": "data/images/heroes/phantom_assassin_full.png",
         "hero_category": 2, "hero_type": "melee,carry,escape,hard",
         "skill_type": "둔돌치",
@@ -540,7 +540,7 @@
         "speed": 310, "armor": 4.22, "attack": "46-48", "range": 128, "sight": "18/8"
     },
     {
-        "id": "161_viper", "title": "바이퍼", "subtitle": "Viper",
+        "id": "407_viper", "title": "바이퍼", "subtitle": "Viper",
         "pic": "data/images/heroes/viper_full.png",
         "hero_category": 2, "hero_type": "range,carry,durable",
         "skill_type": "둔",
@@ -549,7 +549,7 @@
         "speed": 285, "armor": 1.94, "attack": "44-46", "range": 575, "sight": "18/8"
     },
     {
-        "id": "162_clinkz", "title": "클링츠", "subtitle": "Clinkz",
+        "id": "408_clinkz", "title": "클링츠", "subtitle": "Clinkz",
         "pic": "data/images/heroes/clinkz_full.png",
         "hero_category": 2, "hero_type": "range,carry,escape",
         "skill_type": "은",
@@ -558,7 +558,7 @@
         "speed": 300, "armor": 2.08, "attack": "37-43", "range": 600, "sight": "18/8"
     },
     {
-        "id": "163_broodmother", "title": "거미여왕", "subtitle": "Broodmother",
+        "id": "409_broodmother", "title": "거미여왕", "subtitle": "Broodmother",
         "pic": "data/images/heroes/broodmother_full.png",
         "hero_category": 2, "hero_type": "melee,push,carry,escape",
         "skill_type": "둔은",
@@ -567,7 +567,7 @@
         "speed": 295, "armor": 2.52, "attack": "44-50", "range": 128, "sight": "18/8"
     },
     {
-        "id": "164_weaver", "title": "길쌈꾼", "subtitle": "Weaver",
+        "id": "410_weaver", "title": "길쌈꾼", "subtitle": "Weaver",
         "pic": "data/images/heroes/weaver_full.png",
         "hero_category": 2, "hero_type": "range,carry,escape",
         "skill_type": "은방",
@@ -576,7 +576,7 @@
         "speed": 290, "armor": 0.96, "attack": "50-60", "range": 425, "sight": "18/8"
     },
     {
-        "id": "165_spectre", "title": "악령", "subtitle": "Spectre",
+        "id": "411_spectre", "title": "악령", "subtitle": "Spectre",
         "pic": "data/images/heroes/spectre_full.png",
         "hero_category": 2, "hero_type": "melee,carry,durable,hard",
         "skill_type": "둔순방반",
@@ -585,7 +585,7 @@
         "speed": 295, "armor": 3.22, "attack": "46-50", "range": 128, "sight": "18/8"
     },
     {
-        "id": "166_meepo", "title": "미포", "subtitle": "Meepo",
+        "id": "412_meepo", "title": "미포", "subtitle": "Meepo",
         "pic": "data/images/heroes/meepo_full.png",
         "hero_category": 2, "hero_type": "melee,carry,disable,init",
         "skill_type": "속환순",
@@ -594,7 +594,7 @@
         "speed": 305, "armor": 4.22, "attack": "39-45", "range": 128, "sight": "18/8"
     },
     {
-        "id": "167_nyx_assassin", "title": "닉스 암살자", "subtitle": "Nyx Assassin",
+        "id": "413_nyx_assassin", "title": "닉스 암살자", "subtitle": "Nyx Assassin",
         "pic": "data/images/heroes/nyx_assassin_full.png",
         "hero_category": 2, "hero_type": "melee,disable,nuke",
         "skill_type": "실은번반",
@@ -603,7 +603,7 @@
         "speed": 300, "armor": 3.66, "attack": "49-53", "range": 128, "sight": "18/8"
     },
     {
-        "id": "168_slark", "title": "슬라크", "subtitle": "Slark",
+        "id": "414_slark", "title": "슬라크", "subtitle": "Slark",
         "pic": "data/images/heroes/slark_full.png",
         "hero_category": 2, "hero_type": "melee,escape",
         "skill_type": "속둔은능",
@@ -612,7 +612,7 @@
         "speed": 305, "armor": 1.94, "attack": "54-62", "range": 128, "sight": "18/18"
     },
     {
-        "id": "169_medusa", "title": "메두사", "subtitle": "Medusa",
+        "id": "415_medusa", "title": "메두사", "subtitle": "Medusa",
         "pic": "data/images/heroes/medusa_full.png",
         "hero_category": 2, "hero_type": "range,carry",
         "skill_type": "둔",
@@ -621,7 +621,7 @@
         "speed": 290, "armor": 1.80, "attack": "44-50", "range": 600, "sight": "18/8"
     },
     {
-        "id": "170_terrorblade", "title": "테러블레이드", "subtitle": "Terrorblade",
+        "id": "416_terrorblade", "title": "테러블레이드", "subtitle": "Terrorblade",
         "pic": "data/images/heroes/terrorblade_full.png",
         "hero_category": 2, "hero_type": "melee,carry",
         "skill_type": "둔환",
@@ -630,7 +630,7 @@
         "speed": 315, "armor": 7.08, "attack": "48-54", "range": 128, "sight": "18/8"
     },
     {
-        "id": "171_crystal_maiden", "title": "수정의 여인", "subtitle": "Crystal Maiden",
+        "id": "501_crystal_maiden", "title": "수정의 여인", "subtitle": "Crystal Maiden",
         "pic": "data/images/heroes/crystal_maiden_full.png",
         "hero_category": 3, "hero_type": "range,supp,disable,nuke,lane",
         "skill_type": "속둔집",
@@ -639,7 +639,7 @@
         "speed": 280, "armor": 1.24, "attack": "38-44", "range": 600, "sight": "18/8"
     },
     {
-        "id": "172_puck", "title": "퍽", "subtitle": "Puck",
+        "id": "502_puck", "title": "퍽", "subtitle": "Puck",
         "pic": "data/images/heroes/puck_full.png",
         "hero_category": 3, "hero_type": "range,init,nuke,disable,escape",
         "skill_type": "절돌무순",
@@ -648,7 +648,7 @@
         "speed": 295, "armor": 2.08, "attack": "47-58", "range": 550, "sight": "18/8"
     },
     {
-        "id": "173_storm_spirit", "title": "폭풍령", "subtitle": "Storm Spirit",
+        "id": "503_storm_spirit", "title": "폭풍령", "subtitle": "Storm Spirit",
         "pic": "data/images/heroes/storm_spirit_full.png",
         "hero_category": 3, "hero_type": "range,carry,init,escape,disable",
         "skill_type": "둔돌끌",
@@ -657,7 +657,7 @@
         "speed": 295, "armor": 5.08, "attack": "45-55", "range": 480, "sight": "18/8"
     },
     {
-        "id": "174_windrunner", "title": "바람순찰자", "subtitle": "Windranger",
+        "id": "504_windrunner", "title": "바람순찰자", "subtitle": "Windranger",
         "pic": "data/images/heroes/windrunner_full.png",
         "hero_category": 3, "hero_type": "range,disable,nuke,supp,escape",
         "skill_type": "절",
@@ -666,7 +666,7 @@
         "speed": 295, "armor": 1.38, "attack": "44-56", "range": 600, "sight": "18/8"
     },
     {
-        "id": "175_zuus", "title": "제우스", "subtitle": "Zeus",
+        "id": "505_zuus", "title": "제우스", "subtitle": "Zeus",
         "pic": "data/images/heroes/zuus_full.png",
         "hero_category": 3, "hero_type": "range,nuke,supp",
         "skill_type": "절",
@@ -675,7 +675,7 @@
         "speed": 295, "armor": 1.54, "attack": "41-49", "range": 350, "sight": "18/8"
     },
     {
-        "id": "176_lina", "title": "리나", "subtitle": "Lina",
+        "id": "506_lina", "title": "리나", "subtitle": "Lina",
         "pic": "data/images/heroes/lina_full.png",
         "hero_category": 3, "hero_type": "range,nuke,disable,supp",
         "skill_type": "절",
@@ -684,7 +684,7 @@
         "speed": 295, "armor": 1.24, "attack": "40-58", "range": 650, "sight": "18/8"
     },
     {
-        "id": "177_shadow_shaman", "title": "그림자 주술사", "subtitle": "Shadow Shaman",
+        "id": "507_shadow_shaman", "title": "그림자 주술사", "subtitle": "Shadow Shaman",
         "pic": "data/images/heroes/shadow_shaman_full.png",
         "hero_category": 3, "hero_type": "range,push,disable,nuke,supp",
         "skill_type": "절집변",
@@ -693,7 +693,7 @@
         "speed": 285, "armor": 1.24, "attack": "47-54", "range": 500, "sight": "18/8"
     },
     {
-        "id": "178_tinker", "title": "땜장이", "subtitle": "Tinker",
+        "id": "508_tinker", "title": "땜장이", "subtitle": "Tinker",
         "pic": "data/images/heroes/tinker_full.png",
         "hero_category": 3, "hero_type": "range,nuke,push",
         "skill_type": "실집",
@@ -702,7 +702,7 @@
         "speed": 305, "armor": 3.82, "attack": "49-55", "range": 500, "sight": "18/8"
     },
     {
-        "id": "179_furion", "title": "자연의 예언자", "subtitle": "Nature's Prophet",
+        "id": "509_furion", "title": "자연의 예언자", "subtitle": "Nature's Prophet",
         "pic": "data/images/heroes/furion_full.png",
         "hero_category": 3, "hero_type": "range,jungle,push,carry,escape",
         "skill_type": "가환순",
@@ -711,7 +711,7 @@
         "speed": 295, "armor": 3.52, "attack": "45-59", "range": 600, "sight": "18/8"
     },
     {
-        "id": "170_enchantress", "title": "요술사", "subtitle": "Enchantress",
+        "id": "510_enchantress", "title": "요술사", "subtitle": "Enchantress",
         "pic": "data/images/heroes/enchantress_full.png",
         "hero_category": 3, "hero_type": "range,supp,push,durable,jungle",
         "skill_type": "둔힐",
@@ -720,7 +720,7 @@
         "speed": 310, "armor": 1.66, "attack": "47-57", "range": 550, "sight": "18/8"
     },
     {
-        "id": "181_jakiro", "title": "자키로", "subtitle": "Jakiro",
+        "id": "511_jakiro", "title": "자키로", "subtitle": "Jakiro",
         "pic": "data/images/heroes/jakiro_full.png",
         "hero_category": 3, "hero_type": "range,nuke,push,lane,disable",
         "skill_type": "절둔",
@@ -729,7 +729,7 @@
         "speed": 290, "armor": 2.40, "attack": "46-54", "range": 400, "sight": "18/8"
     },
     {
-        "id": "182_chen", "title": "첸", "subtitle": "Chen",
+        "id": "512_chen", "title": "첸", "subtitle": "Chen",
         "pic": "data/images/heroes/chen_full.png",
         "hero_category": 3, "hero_type": "range,supp,jungle,push",
         "skill_type": "둔힐순",
@@ -738,7 +738,7 @@
         "speed": 300, "armor": 1.10, "attack": "43-53", "range": 600, "sight": "18/8"
     },
     {
-        "id": "183_silencer", "title": "침묵술사", "subtitle": "Silencer",
+        "id": "513_silencer", "title": "침묵술사", "subtitle": "Silencer",
         "pic": "data/images/heroes/silencer_full.png",
         "hero_category": 3, "hero_type": "range,supp,carry,init",
         "skill_type": "침번능",
@@ -747,7 +747,7 @@
         "speed": 300, "armor": 1.24, "attack": "43-57", "range": 600, "sight": "18/8"
     },
     {
-        "id": "184_ogre_magi", "title": "오거 마법사", "subtitle": "Ogre Magi",
+        "id": "514_ogre_magi", "title": "오거 마법사", "subtitle": "Ogre Magi",
         "pic": "data/images/heroes/ogre_magi_full.png",
         "hero_category": 3, "hero_type": "range,nuke,disable,durable",
         "skill_type": "절",
@@ -756,7 +756,7 @@
         "speed": 295, "armor": 5.96, "attack": "58-64", "range": 128, "sight": "18/8"
     },
     {
-        "id": "185_rubick", "title": "루빅", "subtitle": "Rubick",
+        "id": "515_rubick", "title": "루빅", "subtitle": "Rubick",
         "pic": "data/images/heroes/rubick_full.png",
         "hero_category": 3, "hero_type": "range,disable,nuke",
         "skill_type": "절",
@@ -765,7 +765,7 @@
         "speed": 290, "armor": 0.96, "attack": "44-54", "range": 600, "sight": "18/8"
     },
     {
-        "id": "186_disruptor", "title": "디스럽터", "subtitle": "Disruptor",
+        "id": "516_disruptor", "title": "디스럽터", "subtitle": "Disruptor",
         "pic": "data/images/heroes/disruptor_full.png",
         "hero_category": 3, "hero_type": "range,nuke,supp,init,disable",
         "skill_type": "가침순",
@@ -774,7 +774,7 @@
         "speed": 300, "armor": 1.10, "attack": "49-53", "range": 600, "sight": "18/8"
     },
     {
-        "id": "187_keeper_of_the_light", "title": "빛의 수호자", "subtitle": "Keeper of the Light",
+        "id": "517_keeper_of_the_light", "title": "빛의 수호자", "subtitle": "Keeper of the Light",
         "pic": "data/images/heroes/keeper_of_the_light_full.png",
         "hero_category": 3, "hero_type": "range,nuke,supp,lane",
         "skill_type": "절밀순번",
@@ -783,16 +783,34 @@
         "speed": 315, "armor": 1.10, "attack": "40-54", "range": 600, "sight": "18/8"
     },
     {
-        "id": "188_skywrath_mage", "title": "하늘분노 마법사", "subtitle": "Skywrath Mage",
+        "id": "518_skywrath_mage", "title": "하늘분노 마법사", "subtitle": "Skywrath Mage",
         "pic": "data/images/heroes/skywrath_mage_full.png",
         "hero_category": 3, "hero_type": "range,nuke,supp",
         "skill_type": "둔침마",
         "display_type": ["원거리","누커","지원"],
         "stat":[19, 18, 27], "str_inc": 1.5, "agi_inc": 0.8, "int_inc": 3.6,
-        "speed": 315, "armor": 0.52, "attack": "39-49", "range": 600, "sight": "18/8"
+        "speed": 315, "armor": -0.18, "attack": "39-49", "range": 600, "sight": "18/8"
     },
     {
-        "id": "189_bane", "title": "악몽의 그림자", "subtitle": "Bane",
+        "id": "519_oracle", "title": "예지자", "subtitle": "Oracle",
+        "pic": "data/images/heroes/oracle_full.png",
+        "hero_category": 3, "hero_type": "range,nuke,lane,supp",
+        "skill_type": "속은힐집",
+        "display_type": ["원거리","누커","전선 지원","지원"],
+        "stat":[18, 15, 23], "str_inc": 1.9, "agi_inc": 1.7, "int_inc": 2.9,
+        "speed": 305, "armor": 2.1, "attack": "45-51", "range": 620, "sight": "18/8"
+    },
+    {
+        "id": "520_techies", "title": "기술단", "subtitle": "Techies",
+        "pic": "data/images/heroes/techies_full.png",
+        "hero_category": 3, "hero_type": "range",
+        "skill_type": "절",
+        "display_type": ["원거리"],
+        "stat":[22, 14, 17], "str_inc": 2.9, "agi_inc": 1.3, "int_inc": 2.0,
+        "speed": 270, "armor": 6.96, "attack": "29-31", "range": 700, "sight": "18/8"
+    },
+    {
+        "id": "601_bane", "title": "악몽의 그림자", "subtitle": "Bane",
         "pic": "data/images/heroes/bane_full.png",
         "hero_category": 3, "hero_type": "range,disable,nuke,supp",
         "skill_type": "절집번능",
@@ -801,7 +819,7 @@
         "speed": 315, "armor": 4.08, "attack": "55-61", "range": 400, "sight": "18/8"
     },
     {
-        "id": "190_lich", "title": "리치", "subtitle": "Lich",
+        "id": "602_lich", "title": "리치", "subtitle": "Lich",
         "pic": "data/images/heroes/lich_full.png",
         "hero_category": 3, "hero_type": "range,supp,lane,nuke",
         "skill_type": "절둔",
@@ -810,7 +828,7 @@
         "speed": 315, "armor": 1.10, "attack": "42-51", "range": 550, "sight": "18/8"
     },
     {
-        "id": "191_lion", "title": "라이온", "subtitle": "Lion",
+        "id": "603_lion", "title": "라이온", "subtitle": "Lion",
         "pic": "data/images/heroes/lion_full.png",
         "hero_category": 3, "hero_type": "range,disable,nuke,lane,supp",
         "skill_type": "절집변번",
@@ -819,7 +837,7 @@
         "speed": 290, "armor": 1.10, "attack": "42-48", "range": 600, "sight": "18/8"
     },
     {
-        "id": "192_witch_doctor", "title": "저주술사", "subtitle": "Witch Doctor",
+        "id": "604_witch_doctor", "title": "저주술사", "subtitle": "Witch Doctor",
         "pic": "data/images/heroes/witch_doctor_full.png",
         "hero_category": 3, "hero_type": "range,supp,disable",
         "skill_type": "절힐집",
@@ -828,7 +846,7 @@
         "speed": 305, "armor": 0.82, "attack": "51-61", "range": 600, "sight": "18/8"
     },
     {
-        "id": "193_enigma", "title": "에니그마", "subtitle": "Enigma",
+        "id": "605_enigma", "title": "에니그마", "subtitle": "Enigma",
         "pic": "data/images/heroes/enigma_full.png",
         "hero_category": 3, "hero_type": "range,disable,init,jungle,push",
         "skill_type": "절집환",
@@ -837,7 +855,7 @@
         "speed": 300, "armor": 3.96, "attack": "42-48", "range": 500, "sight": "18/8"
     },
     {
-        "id": "194_necrolyte", "title": "강령사제", "subtitle": "Necrophos",
+        "id": "606_necrolyte", "title": "강령사제", "subtitle": "Necrophos",
         "pic": "data/images/heroes/necrolyte_full.png",
         "hero_category": 3, "hero_type": "range,supp,durable,carry",
         "skill_type": "절힐",
@@ -846,7 +864,7 @@
         "speed": 290, "armor": 2.10, "attack": "44-48", "range": 550, "sight": "18/8"
     },
     {
-        "id": "195_warlock", "title": "흑마법사", "subtitle": "Warlock",
+        "id": "607_warlock", "title": "흑마법사", "subtitle": "Warlock",
         "pic": "data/images/heroes/warlock_full.png",
         "hero_category": 3, "hero_type": "range,init,supp,lane,disable",
         "skill_type": "절힐집환",
@@ -855,7 +873,7 @@
         "speed": 295, "armor": 2.40, "attack": "46-56", "range": 600, "sight": "18/8"
     },
     {
-        "id": "196_queenofpain", "title": "고통의 여왕", "subtitle": "Queen of Pain",
+        "id": "608_queenofpain", "title": "고통의 여왕", "subtitle": "Queen of Pain",
         "pic": "data/images/heroes/queenofpain_full.png",
         "hero_category": 3, "hero_type": "range,nuke,escape,carry",
         "skill_type": "둔순",
@@ -864,7 +882,7 @@
         "speed": 300, "armor": 1.52, "attack": "49-57", "range": 550, "sight": "18/8"
     },
     {
-        "id": "197_death_prophet", "title": "죽음의 예언자", "subtitle": "Death Prophet",
+        "id": "609_death_prophet", "title": "죽음의 예언자", "subtitle": "Death Prophet",
         "pic": "data/images/heroes/death_prophet_full.png",
         "hero_category": 3, "hero_type": "range,push,nuke,durable",
         "skill_type": "침흡",
@@ -873,7 +891,7 @@
         "speed": 280, "armor": 2.96, "attack": "44-56", "range": 600, "sight": "18/8"
     },
     {
-        "id": "198_pugna", "title": "퍼그나", "subtitle": "Pugna",
+        "id": "610_pugna", "title": "퍼그나", "subtitle": "Pugna",
         "pic": "data/images/heroes/pugna_full.png",
         "hero_category": 3, "hero_type": "range,nuke,push,supp",
         "skill_type": "둔집환마번",
@@ -882,7 +900,7 @@
         "speed": 320, "armor": 1.24, "attack": "45-53", "range": 600, "sight": "18/8"
     },
     {
-        "id": "199_dazzle", "title": "대즐", "subtitle": "Dazzle",
+        "id": "611_dazzle", "title": "대즐", "subtitle": "Dazzle",
         "pic": "data/images/heroes/dazzle_full.png",
         "hero_category": 3, "hero_type": "range,supp,lane",
         "skill_type": "절둔힐무방",
@@ -891,7 +909,7 @@
         "speed": 305, "armor": 1.94, "attack": "41-59", "range": 500, "sight": "18/8"
     },
     {
-        "id": "200_leshrac", "title": "레슈락", "subtitle": "Leshrac",
+        "id": "612_leshrac", "title": "레슈락", "subtitle": "Leshrac",
         "pic": "data/images/heroes/leshrac_full.png",
         "hero_category": 3, "hero_type": "range,nuke,push,disable,supp",
         "skill_type": "절",
@@ -900,7 +918,7 @@
         "speed": 315, "armor": 3.22, "attack": "45-49", "range": 600, "sight": "18/8"
     },
     {
-        "id": "201_dark_seer", "title": "어둠 현자", "subtitle": "Dark Seer",
+        "id": "613_dark_seer", "title": "어둠 현자", "subtitle": "Dark Seer",
         "pic": "data/images/heroes/dark_seer_full.png",
         "hero_category": 3, "hero_type": "range,init,nuke,escape",
         "skill_type": "환끌",
@@ -909,7 +927,7 @@
         "speed": 300, "armor": 5.68, "attack": "60-66", "range": 128, "sight": "18/8"
     },
     {
-        "id": "202_batrider", "title": "박쥐기수", "subtitle": "Batrider",
+        "id": "614_batrider", "title": "박쥐기수", "subtitle": "Batrider",
         "pic": "data/images/heroes/batrider_full.png",
         "hero_category": 3, "hero_type": "range,init,disable,nuke,escape",
         "skill_type": "절밀둔끌",
@@ -918,7 +936,7 @@
         "speed": 290, "armor": 2.10, "attack": "38-42", "range": 375, "sight": "12/8"
     },
     {
-        "id": "203_ancient_apparition", "title": "고대 영혼", "subtitle": "Ancient Apparition",
+        "id": "615_ancient_apparition", "title": "고대 영혼", "subtitle": "Ancient Apparition",
         "pic": "data/images/heroes/ancient_apparition_full.png",
         "hero_category": 3, "hero_type": "range,supp,disable,tank",
         "skill_type": "절밀둔",
@@ -927,7 +945,7 @@
         "speed": 295, "armor": 1.80, "attack": "44-54", "range": 600, "sight": "18/8"
     },
     {
-        "id": "204_invoker", "title": "원소술사", "subtitle": "Invoker",
+        "id": "616_invoker", "title": "원소술사", "subtitle": "Invoker",
         "pic": "data/images/heroes/invoker_full.png",
         "hero_category": 3, "hero_type": "range,carry,nuke,init,escape",
         "skill_type": "속절밀둔은환띄",
@@ -936,7 +954,7 @@
         "speed": 280, "armor": 1.80, "attack": "35-41", "range": 600, "sight": "18/8"
     },
     {
-        "id": "205_obsidian_destroyer", "title": "외계 침략자", "subtitle": "Outworld Devourer",
+        "id": "617_obsidian_destroyer", "title": "외계 침략자", "subtitle": "Outworld Devourer",
         "pic": "data/images/heroes/obsidian_destroyer_full.png",
         "hero_category": 3, "hero_type": "range,carry",
         "skill_type": "무능",
@@ -945,7 +963,7 @@
         "speed": 315, "armor": 5.36, "attack": "46-61", "range": 450, "sight": "18/8"
     },
     {
-        "id": "206_shadow_demon", "title": "그림자 악마", "subtitle": "Shadow Demon",
+        "id": "618_shadow_demon", "title": "그림자 악마", "subtitle": "Shadow Demon",
         "pic": "data/images/heroes/shadow_demon_full.png",
         "hero_category": 3, "hero_type": "range,supp,disable,nuke",
         "skill_type": "둔환",
@@ -954,12 +972,21 @@
         "speed": 295, "armor": 2.52, "attack": "50-54", "range": 500, "sight": "18/8"
     },
     {
-        "id": "207_visage", "title": "비사지", "subtitle": "Visage",
+        "id": "619_visage", "title": "비사지", "subtitle": "Visage",
         "pic": "data/images/heroes/visage_full.png",
         "hero_category": 3, "hero_type": "range,nuke,durable,disable",
         "skill_type": "절둔",
         "display_type": ["원거리","누커","생존력","무력화"],
         "stat":[22, 11, 24], "str_inc": 2.4, "agi_inc": 1.3, "int_inc": 2.5,
         "speed": 290, "armor": -0.46, "attack": "48-58", "range": 600, "sight": "18/8"
+    },
+    {
+        "id": "620_winter_wyvern", "title": "겨울 비룡", "subtitle": "Winter Wyvern",
+        "pic": "data/images/heroes/winter_wyvern_full.png",
+        "hero_category": 3, "hero_type": "range",
+        "skill_type": "속둔힐무",
+        "display_type": ["원거리"],
+        "stat":[25, 16, 24], "str_inc": 3.1, "agi_inc": 1.9, "int_inc": 2.1,
+        "speed": 285, "armor": 1.24, "attack": "38-45", "range": 475, "sight": "18/8"
     }
 ]
