@@ -102,13 +102,15 @@ var Heroes = React.createClass({
         };
     },
     toggleDetail: function (e) {
-        var $el = $(e.target), id;
+        var $el = $(e.target), id, title;
 
         if (!$el.hasClass('detail-data') && !$el.parents().hasClass('detail-data')) {
             if ($el.attr('id')) {
                 id = $el.attr('id').slice(4);
+                title = $el.find('b.title').text();
             } else {
                 id = $el.parent().attr('id').slice(4);
+                title = $el.parent().find('b.title').text();
             }
 
             if (this.state.detail) {
@@ -126,6 +128,8 @@ var Heroes = React.createClass({
                     }.bind(this));
 
                     $el.addClass('active');
+
+                    _gaq.push(['_trackEvent', 'Hero Detail', 'view', title]);
                 }
             }
         }

@@ -9,7 +9,11 @@ var PanelSelector = React.createClass({
         var after = $(e.target).attr('id').split('_')[0];
         var index = $(e.target).attr('rel');
 
+        e.preventDefault();
+
         Panel.swapPanel(before, after, index);
+
+        _gaq.push(['_trackEvent', 'Panel', 'swap', after]);
 
         // re queue panel selector order
         var id = this.state.panel;

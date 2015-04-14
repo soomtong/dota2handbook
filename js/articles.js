@@ -102,12 +102,14 @@ var Articles = React.createClass({displayName: "Articles",
         };
     },
     toggleDetail: function (e) {
-        var $el = $(e.target), id;
+        var $el = $(e.target), id, title;
 
         if ($el.attr('id')) {
             id = $el.attr('id').slice(4);
+            title = $el.find('b.title').text();
         } else {
             id = $el.parent().attr('id').slice(4);
+            title = $el.parent().find('b.title').text();
         }
 
         if (this.state.detail) {
@@ -125,6 +127,8 @@ var Articles = React.createClass({displayName: "Articles",
                 }.bind(this));
 
                 $el.addClass('active');
+
+                _gaq.push(['_trackEvent', 'Hero Detail', 'view', title]);
             }
         }
     },
