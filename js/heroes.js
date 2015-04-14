@@ -142,7 +142,7 @@ var Heroes = React.createClass({displayName: "Heroes",
         }
     },
     render: function () {
-        var item = this.props.data;
+        var hero = this.props.data;
         var data, detail, info, skill;
 
         if (this.state.detail) {
@@ -206,11 +206,11 @@ var Heroes = React.createClass({displayName: "Heroes",
         }
 
         return (
-            React.createElement("li", {id:  item.id}, 
-                React.createElement("img", {src:  item['pic'], alt:  item['subtitle'] }), 
-                React.createElement("b", {className: "title"},  item.title), 
-                React.createElement("small", {className: "subtitle"},  item['subtitle'] ), 
-                React.createElement("b", {className:  Item.showTypeColor(item['item_category']) },  Item.showType(item['item_category']) ), 
+            React.createElement("li", {id:  hero.id}, 
+                React.createElement("img", {src:  hero['pic'], alt:  hero['subtitle'] }), 
+                React.createElement("b", {className: "title"},  hero.title), 
+                React.createElement("small", {className: "subtitle"},  hero['subtitle'] ), 
+                React.createElement("b", {className:  Hero.showTypeColor(hero['hero_category']) },  Hero.showType(hero['hero_category']) ), 
                  detail 
             )
         );
