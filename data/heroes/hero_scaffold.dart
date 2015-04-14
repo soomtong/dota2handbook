@@ -51,18 +51,16 @@ void main () {
         ["충돌 크기","24"]
     ],
     "info": [
-        "지진술사는 강력한 전투 개시자이자 무력화 스킬을 가진 영웅입니다.",
-        "엄청난 사거리를 지닌 균열은 일직선상에 있는 모든 적들을 기절시킵니다. 특히 궁극기인 지진파 공명은 자신의 주변에 적이 많으면 많을수록 피해가 커지기 때문에 분신을 가진 영웅과 상대 시 엄청난 위력을 보여줍니다."
+        "",
+        ""
     ],
     "note": [
-        "지진파 공명 > 토템 강화 > 균열의 콤보가 자주 사용됩니다.",
-        "'점멸 단검'과 함께 순식간에 적진에 뛰어들어 피해를 줍니다.",
         "궁극기 스킬인 지진파 공명 때문에 많은 소환수나 환영을 사용하는 영웅의 카운터로 자주 사용됩니다."
     ],
     "skill": [
         {
             "key": "Q",
-            "img": "http://cdn.dota2.com/apps/dota2/images/abilities/earthshaker_fissure_hp2.png",
+            "img": "data/images/skill/earthshaker_fissure_hp2.png",
             "title":"균열 Fissure",
             "story":"니샤이 토템은 구조력을 일으켜 대지를 그 중심부까지 가릅니다.",
             "desc":"강력한 토템으로 지면을 강타하여 지나갈 수 없는 돌무더기를 만들고, 직선상 적에게 피해를 주는 동시에 기절에 빠뜨립니다.",
@@ -85,7 +83,7 @@ void main () {
         },
         {
             "key": "W",
-            "img": "http://cdn.dota2.com/apps/dota2/images/abilities/earthshaker_enchant_totem_hp2.png",
+            "img": "data/images/skill/earthshaker_enchant_totem_hp2.png",
             "title":"토템 강화 Enchant Totem",
             "story":"라이고르의 고릴라와 같은 힘은 산조차 무너뜨릴 수 있습니다.",
             "desc":"지진술사의 토템을 강화하여 다음 공격 시 추가 피해를 줍니다.",

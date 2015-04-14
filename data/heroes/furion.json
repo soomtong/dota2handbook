@@ -23,7 +23,7 @@
     "skill": [
         {
             "key": "Q",
-            "img": "http://cdn.dota2.com/apps/dota2/images/abilities/earthshaker_fissure_hp2.png",
+            "img": "data/images/skill/earthshaker_fissure_hp2.png",
             "title":"균열 Fissure",
             "story":"니샤이 토템은 구조력을 일으켜 대지를 그 중심부까지 가릅니다.",
             "desc":"강력한 토템으로 지면을 강타하여 지나갈 수 없는 돌무더기를 만들고, 직선상 적에게 피해를 주는 동시에 기절에 빠뜨립니다.",
@@ -46,7 +46,7 @@
         },
         {
             "key": "W",
-            "img": "http://cdn.dota2.com/apps/dota2/images/abilities/earthshaker_enchant_totem_hp2.png",
+            "img": "data/images/skill/earthshaker_enchant_totem_hp2.png",
             "title":"토템 강화 Enchant Totem",
             "story":"라이고르의 고릴라와 같은 힘은 산조차 무너뜨릴 수 있습니다.",
             "desc":"지진술사의 토템을 강화하여 다음 공격 시 추가 피해를 줍니다.",
