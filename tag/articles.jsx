@@ -128,7 +128,7 @@ var Articles = React.createClass({
 
                 $el.addClass('active');
 
-                _gaq.push(['_trackEvent', 'Hero Detail', 'view', title]);
+                _gaq.push(['_trackEvent', 'Article Detail', 'view', title]);
             }
         }
     },
