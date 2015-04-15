@@ -13,35 +13,113 @@ import 'dart:convert';
 // 3. write file if not exist
 final heroesFileName = 'heroes.json';
 
-void main () {
-  var herosFile = new File(heroesFileName).readAsString().then((String data) {
-    List heroesData = JSON.decode(data);
+void main() {
+    new File(heroesFileName).readAsString().then((String data) {
+        List heroesData = JSON.decode(data);
 
-    var heroName, heroTitle, heroType, fileName, content;
-    var createdFileCount = 0;
+        var heroName, heroTitle, heroType, fileName, selectedHero, content, skill, skills;
+        var createdFileCount = 0;
 
-    for (var hero in heroesData) {
-      heroName = hero['id'].substring(4);
-      heroTitle = hero['title'] + ' ' + hero['subtitle'];
-      fileName = heroName + '.json';
-      switch (hero['hero_category']) {
-          case 1:
-              heroType = '힘';
-              break;
-          case 2:
-              heroType = '민';
-              break;
-          case 3:
-              heroType = '지';
-              break;
-      }
+        new File('heroAllData.json').readAsString().then((String data) {
+            List heroSkillData = JSON.decode(data);
 
-      content = '''
+            print("match hero list ${heroSkillData.length}");
+
+            for (var hero in heroesData) {
+                heroName = hero['id'].substring(4);
+                heroTitle = hero['title'] + ' ' + hero['subtitle'];
+                fileName = heroName + '.json';
+
+                switch (hero['hero_category']) {
+                    case 1:
+                        heroType = '힘';
+                        break;
+                    case 2:
+                        heroType = '민';
+                        break;
+                    case 3:
+                        heroType = '지';
+                        break;
+                }
+
+                skills = [];
+
+                print(fileName);
+
+                for (var x in heroSkillData) {
+                    if (x['id'] == hero['title']) {
+                        selectedHero = x['data'];
+
+                        for (var s in selectedHero['skill']) {
+                            var info = "", index, sp, b = [];
+                            var temp = [];
+
+                            if (s['info1'].length > 0) {
+                                index = s['info1'].indexOf('쿨다운');
+
+                                if (index > -1) {
+                                    b = s['info1'].substring(0, index).split(':');
+
+                                    if (b.length > 1) {
+                                        b[0] = b[0] != null ? "\"${b[0].trim()}\"" : '';
+                                        b[1] = b[1] != null ? "\"${b[1].trim()}\"" : '';
+                                        print(b[0]);
+                                        temp.add(b);
+                                    }
+
+                                    b = s['info1'].substring(index).split(':');
+
+                                    if (b.length > 1) {
+                                        b[0] = b[0] != null ? "\"${b[0].trim()}\"" : '';
+                                        b[1] = b[1] != null ? "\"${b[1].trim()}\"" : '';
+                                        print(b[0]);
+                                        temp.add(b);
+                                    }
+                                }
+                            }
+
+                            sp = s['info2'].join(",");
+
+                            s['info2'].forEach((item) {
+                                b = item.split(':');
+
+                                if (b.length > 1) {
+                                    b[0] = b[0] != null ? "\"${b[0].trim()}\"" : '';
+                                    b[1] = b[1] != null ? "\"${b[1].trim()}\"" : '';
+                                    print(b[0]);
+                                    temp.add(b);
+                                }
+                            });
+
+                            info = temp.join(',\n                ');
+
+                            skill = '''
+
+        {
+            "key": "Q",
+            "img": "data/images/skill/earthshaker_fissure_hp2.png",
+            "title":"${s['title']} Fissure",
+            "story":"${s['desc']}",
+            "desc":"${s['story']}",
+            "info": [
+                ${info}
+            ]
+            ,
+            "note": [
+                "",
+                ""
+            ]
+        }
+    ''';
+                            skills.add(skill);
+                        }
+
+                        content = '''
 {
     "id": "${heroName}",
     "title": "${heroTitle}",
     "type": "${heroType}",
-    "story": "지진술사는 골렘이나 가고일과 마찬가지로 원래 대지의 일부였으나 지금은 자유롭게 대지 위를 걷는 존재가 되었다. 그렇다고 해서 지진술사가 골렘이나 가고일처럼 주인을 섬기는 것은 아니다. 지진술사는 바위의 깊은 틈 사이에서 끝없는 잠에 빠져 있던 중 지상에서 자유로이 움직이는 생명체의 존재를 느꼈고, 호기심을 갖기 시작했다. 어느 격동의 시기에 니샤이 봉우리에서 거대한 산사태가 시작되었다. 그로 인해 강은 줄기가 바뀌고 얕은 계곡들은 끝을 모를 심연으로 변모했다. 마침내 대지의 흔들림이 멎고 먼지가 내려앉기 시작했을 때, 거대한 바위 더미를 종잇장처럼 뚫고 지진술사가 모습을 드러냈다. 그는 세속의 야수 형상을 띄고 있었으며, 스스로 라이고르 스톤후프라는 이름을 부여했다. 이제 라이고르는 피를 흘리고, 숨을 쉬며, 죽을 수도 있는 생명체가 되었다. 그러나 영혼은 여전히 대지의 것이며, 항상 곁에 두고 있는 마법 토템에 그 힘을 저장해 두고 있다. 언젠가 라이고르가 다시 흙으로 돌아갈 때가 되면, 대지는 돌아온 아들을 반갑게 맞아줄 것이다.",
+    "story": "${selectedHero['story']}",
     "table":[
         ["이동속도","${hero['speed']}"],
         ["회전속도","0.9"],
@@ -55,58 +133,26 @@ void main () {
         ""
     ],
     "note": [
-        "궁극기 스킬인 지진파 공명 때문에 많은 소환수나 환영을 사용하는 영웅의 카운터로 자주 사용됩니다."
+        ""
     ],
-    "skill": [
-        {
-            "key": "Q",
-            "img": "data/images/skill/earthshaker_fissure_hp2.png",
-            "title":"균열 Fissure",
-            "story":"니샤이 토템은 구조력을 일으켜 대지를 그 중심부까지 가릅니다.",
-            "desc":"강력한 토템으로 지면을 강타하여 지나갈 수 없는 돌무더기를 만들고, 직선상 적에게 피해를 주는 동시에 기절에 빠뜨립니다.",
-            "info":[
-                ["마나 소모","125 / 140 / 155 / 170"],
-                ["쿨다운","15초"],
-                ["능력","목표 지점 지정"],
-                ["효과","적 유닛"],
-                ["피해유형","마법"],
-                ["주문면역","미관통"],
-                ["피해","125 / 175 / 225 / 275"],
-                ["균열 범위","1400"],
-                ["균열 지속시간","8초"],
-                ["기절 지속시간","1 / 1.25 / 1.5 / 1.75초"]
-            ],
-            "note": [
-                "균열의 넓이는 80 정도입니다.",
-                "날아가는 짐꾼이나 '비사지'의 소환수는 균열을 지나갈 수 있습니다."
-            ]
-        },
-        {
-            "key": "W",
-            "img": "data/images/skill/earthshaker_enchant_totem_hp2.png",
-            "title":"토템 강화 Enchant Totem",
-            "story":"라이고르의 고릴라와 같은 힘은 산조차 무너뜨릴 수 있습니다.",
-            "desc":"지진술사의 토템을 강화하여 다음 공격 시 추가 피해를 줍니다.",
-            "info":[
-                ["마나 소모","20 / 30 / 40 / 50"],
-                ["쿨다운","5"],
-                ["보너스 피해","100% / 200% / 300% / 400%"],
-                ["지속시간","14초"]
-            ],
-            "note": [
-                "토템 강화 다음 타격이 빗나가면 토템 강화가 소모되지 않습니다."
-            ]
-        }
-    ]
+    "skill": ${skills}
 }
 ''';
 
-      if (true || !new File(fileName).existsSync()) {
-        new File(fileName).writeAsStringSync(content);
-        createdFileCount++;
-      }
-    }
+                        if (true || !new File(fileName).existsSync()) {
+                            new File(fileName).writeAsStringSync(content);
+//              print(content);
+                            createdFileCount++;
+                        }
+                    } else {
 
-    print("${createdFileCount} file" + (createdFileCount > 1 ? "s" : "") + " created.");
-  });
+                    }
+                }
+
+
+            }
+            print("${createdFileCount} file" + (createdFileCount > 1 ? "s" : "") + " created.");
+
+        });
+    });
 }

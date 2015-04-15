@@ -135,7 +135,7 @@
         "speed": 290, "armor": 0.24, "attack": "51-55", "range": 128, "sight": "18/8"
     },
     {
-        "id": "116_bristleback", "title": "가시맷돼지", "subtitle": "Bristleback",
+        "id": "116_bristleback", "title": "가시멧돼지", "subtitle": "Bristleback",
         "pic": "data/images/heroes/bristleback_full.png",
         "hero_category": 1, "hero_type": "melee,durable,init,disable,tank",
         "skill_type": "둔방",
