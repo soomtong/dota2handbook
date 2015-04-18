@@ -20,8 +20,8 @@
     "skill": [
         {
             "key": "Q",
-            "img": "data/images/skill/earthshaker_fissure_hp2.png",
-            "title":"분노의 칼날 Fissure",
+            "img": "data/images/skill/juggernaut_blade_fury_hp2.png",
+            "title":"분노의 칼날 Blade Fury",
             "story":"유네로의 검술은 명성이 자자하며 전사들은 물론 마법사들에게도 두려움의 대상입니다.",
             "desc":"가면무사가 무기를 휘둘러 거센 칼날 폭풍을 일으킵니다. 이 동안에는 마법에 면역이 되고 인접한 적에게 피해를 줍니다. 5초 동안 지속됩니다.",
             "info": [
@@ -41,9 +41,9 @@
         }
     , 
         {
-            "key": "Q",
-            "img": "data/images/skill/earthshaker_fissure_hp2.png",
-            "title":"치유 와드 Fissure",
+            "key": "W",
+            "img": "data/images/skill/juggernaut_healing_ward_hp2.png",
+            "title":"치유 와드 Healing Ward",
             "story":"가면의 섬에서 배운 의식 중 하나입니다. 부두 주술을 활용한 치료법은 상당한 효과가 있습니다.",
             "desc":"치유 와드를 소환하여 주위 모든 아군 유닛을 치료합니다. 회복되는 체력은 최대 체력에 따라 달라집니다. 치유 와드는 소환된 후 450의 이동 속도로 움직일 수 있으며 25초 동안 지속됩니다.",
             "info": [
@@ -60,9 +60,9 @@
         }
     , 
         {
-            "key": "Q",
-            "img": "data/images/skill/earthshaker_fissure_hp2.png",
-            "title":"검무 Fissure",
+            "key": "E",
+            "img": "data/images/skill/juggernaut_blade_dance_hp2.png",
+            "title":"검무 Blade Dance",
             "story":"검술에 전념했던 가문의 마지막 유산입니다. 유네로는 이 검식의 명맥을 지킵니다.",
             "desc":"가면무사가 일정 확률로 공격마다 두 배의 피해를 줍니다.",
             "info": [
@@ -78,9 +78,9 @@
         }
     , 
         {
-            "key": "Q",
-            "img": "data/images/skill/earthshaker_fissure_hp2.png",
-            "title":"연속 베기 Fissure",
+            "key": "R",
+            "img": "data/images/skill/juggernaut_omni_slash_hp2.png",
+            "title":"연속 베기 Omnislash",
             "story":"'연습한 자만이 힘을 얻어 훈련의 과실을 맛볼 수 있습니다.'",
             "desc":"가면무사가 적을 향해 뛰어들어 피해를 준 후 주위 적 유닛들을 베며 매회 200~225의 피해를 줍니다. 연속베기로 공격하는 동안 가면무사는 무적 상태가 됩니다.아가님의 홀로 강화 가능",
             "info": [
