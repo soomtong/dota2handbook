@@ -20,8 +20,8 @@
     "skill": [
         {
             "key": "Q",
-            "img": "data/images/skill/earthshaker_fissure_hp2.png",
-            "title":"바위 쐐기 Fissure",
+            "img": "data/images/skill/nyx_assassin_impale_hp2.png",
+            "title":"바위 쐐기 Impale",
             "story":"광신적인 갑주벌레 전사는 모두 땅밑 경로에 조예가 깊어 전투에서 유리하게 활용합니다.",
             "desc":"땅에서 날카로운 바위를 일직선으로 솟구치게 하여 적 유닛을 공중으로 띄웁니다. 공중에 떠오른 적은 떨어질 때 피해를 받고 기절합니다.",
             "info": [
@@ -42,9 +42,9 @@
         }
     , 
         {
-            "key": "Q",
-            "img": "data/images/skill/earthshaker_fissure_hp2.png",
-            "title":"마나 불태우기 Fissure",
+            "key": "W",
+            "img": "data/images/skill/nyx_assassin_mana_burn_hp2.png",
+            "title":"마나 불태우기 Mana Burn",
             "story":"울티미르의 고서에는 약한 자들의 정신을 좀먹는 어느 갑주벌레의 이야기가 실려 있습니다.",
             "desc":"대상 적 영웅의 마나를 적 영웅의 지능에 비례해서 소진시키고 소진된 마나의 양만큼 피해를 줍니다.",
             "info": [
@@ -64,9 +64,9 @@
         }
     , 
         {
-            "key": "Q",
-            "img": "data/images/skill/earthshaker_fissure_hp2.png",
-            "title":"가시 등딱지 Fissure",
+            "key": "E",
+            "img": "data/images/skill/nyx_assassin_spiked_carapace_hp2.png",
+            "title":"가시 등딱지 Spiked Carapace",
             "story":"닉스 암살자의 갑각은 비교적 얇지만, 그 안에는 바늘처럼 날카로운 가시가 도사리고 있습니다.",
             "desc":"활성화되면 닉스 암살자에게 가해지는 피해를 반사하고 무효화하며 피해를 준 적을 기절시킵니다. 단, 공격한 적 영웅 하나당 한 번만 발동합니다.",
             "info": [
@@ -86,9 +86,9 @@
         }
     , 
         {
-            "key": "Q",
-            "img": "data/images/skill/earthshaker_fissure_hp2.png",
-            "title":"피의 복수 Fissure",
+            "key": "R",
+            "img": "data/images/skill/nyx_assassin_vendetta_hp2.png",
+            "title":"피의 복수 Vendetta",
             "story":"갑주벌레 전사들은 그들이 모시는 여왕의 영광을 위해 누구라도 처치할 각오가 되어 있습니다.",
             "desc":"닉스 암살자가 투명 상태가 되며 이동 속도 보너스를 얻습니다. 공격하면 투명 상태가 풀리면서 막대한 보너스 피해를 줍니다.",
             "info": [
